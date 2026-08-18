@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 type ProjectStatus = "在售" | "即将开盘" | "确定开发" | "土地供应";
-type Project = { id:number|string; name:string; area:string; status:ProjectStatus; units:number; sold:number; developer:string; tenure:string; launch:string; top:string; mrt:string; school:string; lat:number; lng:number; updatedAt?:string; source?:string };
+type Project = { id:number|string; name:string; area:string; status:ProjectStatus; units:number; sold:number; developer:string; tenure:string; launch:string; top:string; mrt:string; school:string; lat:number; lng:number; updatedAt?:string; source?:string; locationAccuracy?:"exact"|"district" };
 const fallbackProjects: Project[] = [
   { id: 1, name: "Dunearn House", area: "武吉知马 · D11", status: "在售" as ProjectStatus, units: 228, sold: 86, developer: "Frasers Property / Sekisui House", tenure: "99 年", launch: "2026 年 7 月", top: "2030", mrt: "Botanic Gardens · 760m", school: "南洋小学 · 1km 内", lat: 1.3268, lng: 103.8121 },
   { id: 2, name: "Thomson Reserve", area: "汤申 · D20", status: "即将开盘" as ProjectStatus, units: 540, sold: 0, developer: "待最终确认", tenure: "99 年", launch: "预计 2026 下半年", top: "待公布", mrt: "Upper Thomson · 320m", school: "爱同学校 · 1km 内", lat: 1.3545, lng: 103.8328 },
@@ -151,7 +151,7 @@ export default function Home() {
           <button className="close" aria-label="关闭项目详情" onClick={() => setSelected(null)}>×</button><div className="detail-title"><div><span className={`status ${statusClass[selected.status]}`}><i />{selected.status}</span><h1>{selected.name}</h1><p>{selected.area} · {selected.tenure}</p></div><button className="bookmark">☆</button></div>
           <div className="inventory"><div><strong>{selected.units.toLocaleString()}</strong><small>总户数</small></div><div><strong>{selected.status === "在售" ? selected.sold : "—"}</strong><small>已售</small></div><div><strong>{selected.status === "在售" ? selected.units-selected.sold : "—"}</strong><small>估算未售</small></div></div>
           <dl className="facts"><div><dt>开发商</dt><dd>{selected.developer}</dd></div><div><dt>预计开盘</dt><dd>{selected.launch}</dd></div><div><dt>预计 TOP</dt><dd>{selected.top}</dd></div><div><dt>最近地铁</dt><dd>{selected.mrt}</dd></div><div className="wide"><dt>附近学校</dt><dd>{selected.school}</dd></div></dl>
-          <div className="source-note"><span>{selected.source || "URA"}</span>库存来自开发商月报或开发商资料，最后核对于 {selected.updatedAt || dataUpdatedAt}</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
+          <div className="source-note"><span>{selected.source || "URA"}</span>库存来自开发商月报或开发商资料，最后核对于 {selected.updatedAt || dataUpdatedAt}{selected.locationAccuracy === "district" ? "；图钉暂按邮区中心定位，待补精确地址" : ""}</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
         </article>}
       </section>
     </section>

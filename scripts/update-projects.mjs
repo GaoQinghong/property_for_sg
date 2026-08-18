@@ -30,14 +30,35 @@ function periodValue(value = "") { const month=Number(value.slice(0,2)), year=20
 function latestSales(record) {
   return [...(record.developerSales || [])].sort((a, b) => periodValue(b.refPeriod)-periodValue(a.refPeriod))[0];
 }
+function validCoordinates(point) {
+  return point && Number.isFinite(point.lat) && Number.isFinite(point.lng) && point.lat >= 1.13 && point.lat <= 1.49 && point.lng >= 103.59 && point.lng <= 104.12;
+}
 function svy21ToWgs84(x, y) {
-  const a=6378137, f=1/298.257223563, oLat=1.366666, oLon=103.833333, n0=38744.572, e0=28001.642, k=1;
-  const e2=2*f-f*f, n=(a-Math.sqrt(a*a*(1-e2)))/(a+Math.sqrt(a*a*(1-e2))), G=a*(1-n)*(1-n*n)*(1+9*n*n/4+225*n**4/64)*(Math.PI/180);
-  const Np=n0+(y-n0)/k, sigma=Np* Math.PI/(180*G), latPrime=sigma+(3*n/2-27*n**3/32)*Math.sin(2*sigma)+(21*n*n/16-55*n**4/32)*Math.sin(4*sigma)+(151*n**3/96)*Math.sin(6*sigma)+(1097*n**4/512)*Math.sin(8*sigma);
-  const sin=Math.sin(latPrime), rho=a*(1-e2)/(1-e2*sin*sin)**1.5, v=a/Math.sqrt(1-e2*sin*sin), psi=v/rho, t=Math.tan(latPrime), E=(x-e0)/(k*v);
-  const lat=latPrime-(t/(k*rho))*(E*E/2-(5+3*t*t+psi-9*t*t*psi)*E**4/24+(61+90*t*t+45*t**4)*E**6/720);
-  const lon=oLon*Math.PI/180+(E-(1+2*t*t+psi)*E**3/6+(5+28*t*t+24*t**4)*E**5/120)/Math.cos(latPrime);
-  return { lat:lat*180/Math.PI, lng:lon*180/Math.PI };
+  // SVY21 is locally almost linear across Singapore. This local tangent-plane
+  // conversion is accurate enough for map pins and avoids the broken inverse
+  // projection previously placing otherwise valid projects outside Singapore.
+  const originLat=1.3666666667, originLng=103.8333333333, northing0=38744.572, easting0=28001.642;
+  const lat=originLat+(y-northing0)/110574;
+  const lng=originLng+(x-easting0)/(111320*Math.cos(originLat*Math.PI/180));
+  const point={lat,lng};
+  return validCoordinates(point) ? point : null;
+}
+
+const districtCentres = {
+  1:[1.282,103.852],2:[1.276,103.839],3:[1.289,103.817],4:[1.268,103.808],5:[1.304,103.783],6:[1.296,103.852],
+  7:[1.301,103.857],8:[1.313,103.855],9:[1.304,103.829],10:[1.316,103.807],11:[1.326,103.841],12:[1.326,103.861],
+  13:[1.341,103.872],14:[1.316,103.889],15:[1.306,103.912],16:[1.325,103.936],17:[1.357,103.965],18:[1.355,103.942],
+  19:[1.372,103.896],20:[1.354,103.837],21:[1.338,103.779],22:[1.340,103.706],23:[1.378,103.752],24:[1.385,103.695],
+  25:[1.438,103.786],26:[1.405,103.812],27:[1.423,103.837],28:[1.388,103.872]
+};
+function districtFallback(name, district) {
+  const centre=districtCentres[Number(district)] || [1.3521,103.8198];
+  let hash=0; for (const char of name) hash=(hash*31+char.charCodeAt(0))>>>0;
+  return {lat:centre[0]+((hash%101)-50)/10000,lng:centre[1]+(((hash>>>8)%101)-50)/10000};
+}
+function excludedNonResidential(name="") {
+  const value=name.toLowerCase();
+  return value.includes("service apartment") || value.includes("serviced apartment") || value.includes("hotel development") || value === "office/retail development";
 }
 async function geocode(query) {
   const url = new URL("https://www.onemap.gov.sg/api/common/elastic/search");
@@ -64,26 +85,33 @@ for (let index=0; index<periods.length; index+=4) {
 }
 const merged = [];
 const mergedKeys = new Set();
-const audit = { soldOut:[], missingCoordinates:[], notLaunched:[] };
+const audit = { soldOut:[], approximateCoordinates:[], excludedNonResidential:[], notLaunched:[] };
 
 for (const row of pipelineRows) {
   const key = normalise(row.project);
+  if (mergedKeys.has(key)) continue;
+  if (excludedNonResidential(row.project)) { audit.excludedNonResidential.push({name:row.project}); continue; }
   const old = oldByName.get(key) || {};
   const sales = salesByName.get(key);
   const month = sales && latestSales(sales);
   const units = Number(month?.unitsAvail || row.totalUnits || 0);
   const sold = Number(month?.soldToDate || 0);
   if (month && units > 0 && sold >= units) { audit.soldOut.push({name:row.project,units,sold}); continue; }
-  let coordinates = old.lat && old.lng ? {lat:old.lat,lng:old.lng} : null;
+  let coordinates = validCoordinates({lat:Number(old.lat),lng:Number(old.lng)}) ? {lat:Number(old.lat),lng:Number(old.lng)} : null;
   if (!coordinates && sales?.x && sales?.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
   if (!coordinates) coordinates = await geocode(`${row.street || row.project}, Singapore`);
-  if (!coordinates) { audit.missingCoordinates.push({name:row.project,street:row.street || "",units,sold,source:"pipeline"}); continue; }
+  let locationAccuracy="exact";
+  if (!validCoordinates(coordinates)) {
+    coordinates=districtFallback(row.project,row.district || sales?.district);
+    locationAccuracy="district";
+    audit.approximateCoordinates.push({name:row.project,district:row.district || sales?.district || "",source:"pipeline"});
+  }
   merged.push({
     id:key.toLowerCase(), name:row.project, area:old.area || `${row.street || "新加坡"} · D${String(row.district || sales?.district || "—").padStart(2,"0")}`,
     status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
     developer:row.developerName || sales?.developer || old.developer || "待公布", tenure:old.tenure || "待公布", launch:old.launch || "尚未公布",
     top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"), mrt:old.mrt || "待计算", school:old.school || "待计算",
-    ...coordinates, updatedAt, source:"URA"
+    ...coordinates, locationAccuracy, updatedAt, source:"URA"
   });
   mergedKeys.add(key);
 }
@@ -96,17 +124,24 @@ for (const [key, sales] of salesByName) {
   const month = latestSales(sales);
   const units = Number(month?.unitsAvail || 0), sold = Number(month?.soldToDate || 0);
   if (!units || sold >= units) continue;
-  if (Number(month?.launchedToDate || 0) === 0) { audit.notLaunched.push({name:sales.project,units,sold}); continue; }
+  if (excludedNonResidential(sales.project)) { audit.excludedNonResidential.push({name:sales.project}); continue; }
+  const launched=Number(month?.launchedToDate || 0);
+  if (launched === 0) audit.notLaunched.push({name:sales.project,units,sold});
   const old = oldByName.get(key) || {};
-  let coordinates = old.lat && old.lng ? {lat:old.lat,lng:old.lng} : null;
+  let coordinates = validCoordinates({lat:Number(old.lat),lng:Number(old.lng)}) ? {lat:Number(old.lat),lng:Number(old.lng)} : null;
   if (!coordinates && sales.x && sales.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
   if (!coordinates) coordinates = await geocode(`${sales.street || sales.project}, Singapore`);
-  if (!coordinates) { audit.missingCoordinates.push({name:sales.project,street:sales.street || "",units,sold,source:"developer-sales"}); continue; }
+  let locationAccuracy="exact";
+  if (!validCoordinates(coordinates)) {
+    coordinates=districtFallback(sales.project,sales.district);
+    locationAccuracy="district";
+    audit.approximateCoordinates.push({name:sales.project,district:sales.district || "",source:"developer-sales"});
+  }
   merged.push({
     id:key.toLowerCase(), name:sales.project, area:old.area || `${sales.street || "新加坡"} · D${String(sales.district || "—").padStart(2,"0")}`,
-    status:"在售", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
-    launch:old.launch || "已开盘", top:old.top || "待公布", mrt:old.mrt || "待计算", school:old.school || "待计算",
-    ...coordinates, updatedAt, source:"URA"
+    status:launched > 0 ? "在售" : "确定开发", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
+    launch:old.launch || (launched > 0 ? "已开盘" : "尚未公布"), top:old.top || "待公布", mrt:old.mrt || "待计算", school:old.school || "待计算",
+    ...coordinates, locationAccuracy, updatedAt, source:"URA"
   });
 }
 
@@ -118,4 +153,4 @@ merged.sort((a,b) => statusOrder[a.status] - statusOrder[b.status] || a.name.loc
 await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:merged}, null, 2)}\n`);
 await writeFile(new URL("../public/data/project-audit.json", import.meta.url), `${JSON.stringify({updatedAt,...audit}, null, 2)}\n`);
 console.log(`已更新 ${merged.length} 个项目（${updatedAt}）`);
-console.log(`审计：${audit.missingCoordinates.length} 个缺少坐标，${audit.soldOut.length} 个已售罄，${audit.notLaunched.length} 个尚未开售`);
+console.log(`审计：${audit.approximateCoordinates.length} 个使用区域级坐标，${audit.soldOut.length} 个已售罄，${audit.notLaunched.length} 个尚未开售，${audit.excludedNonResidential.length} 个非住宅项目已排除`);
