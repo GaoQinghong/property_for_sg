@@ -6,14 +6,19 @@ if (!accessKey) throw new Error("缺少 URA_ACCESS_KEY；请在 GitHub Actions s
 
 const today = new Date();
 const updatedAt = today.toISOString().slice(0, 10);
-const refPeriod = `${String(today.getUTCMonth() + 1).padStart(2, "0")}${String(today.getUTCFullYear()).slice(-2)}`;
+// URA publishes a month's developer-sales figures on the 15th of the following month.
+const latestPublishedMonth = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - 1, 1));
+const refPeriod = `${String(latestPublishedMonth.getUTCMonth() + 1).padStart(2, "0")}${String(latestPublishedMonth.getUTCFullYear()).slice(-2)}`;
 const oldData = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const oldByName = new Map(oldData.projects.map(project => [normalise(project.name), project]));
 
+const tokenResponse = await fetch("https://eservice.ura.gov.sg/uraDataService/insertNewToken/v1", { headers: { AccessKey: accessKey } });
+if (!tokenResponse.ok) throw new Error(`URA token 请求失败：${tokenResponse.status}`);
+const tokenPayload = await tokenResponse.json();
+if (tokenPayload.Status !== "Success" || !tokenPayload.Result) throw new Error(`URA token: ${tokenPayload.Message || tokenPayload.Status}`);
+const token = tokenPayload.Result;
+
 async function ura(service, extra = "") {
-  const tokenResponse = await fetch("https://eservice.ura.gov.sg/uraDataService/insertNewToken/v1", { headers: { AccessKey: accessKey } });
-  if (!tokenResponse.ok) throw new Error(`URA token 请求失败：${tokenResponse.status}`);
-  const token = (await tokenResponse.json()).Result;
   const response = await fetch(`https://eservice.ura.gov.sg/uraDataService/invokeUraDS/v1?service=${service}${extra}`, { headers: { AccessKey: accessKey, Token: token } });
   if (!response.ok) throw new Error(`URA ${service} 请求失败：${response.status}`);
   const payload = await response.json();
