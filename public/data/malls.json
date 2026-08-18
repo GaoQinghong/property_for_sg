@@ -1,0 +1,1388 @@
+[
+  {
+    "name": "100AM",
+    "type": "商场",
+    "lat": 1.274904,
+    "lng": 103.8436136
+  },
+  {
+    "name": "18 Tai Seng",
+    "type": "商场",
+    "lat": 1.3362972,
+    "lng": 103.8888324
+  },
+  {
+    "name": "313@Somerset",
+    "type": "商场",
+    "lat": 1.3010177,
+    "lng": 103.8382874
+  },
+  {
+    "name": "888 Plaza",
+    "type": "商场",
+    "lat": 1.4378145,
+    "lng": 103.7952897
+  },
+  {
+    "name": "Admiralty Place",
+    "type": "商场",
+    "lat": 1.4402582,
+    "lng": 103.8012976
+  },
+  {
+    "name": "Alexandra Central",
+    "type": "商场",
+    "lat": 1.2873166,
+    "lng": 103.8053276
+  },
+  {
+    "name": "Alexandra Retail Centre",
+    "type": "商场",
+    "lat": 1.2738572,
+    "lng": 103.8014062
+  },
+  {
+    "name": "Anchorpoint",
+    "type": "商场",
+    "lat": 1.2886901,
+    "lng": 103.8050249
+  },
+  {
+    "name": "Ang Mo Kio Hub",
+    "type": "商场",
+    "lat": 1.369444,
+    "lng": 103.8483419
+  },
+  {
+    "name": "Aperia Mall",
+    "type": "商场",
+    "lat": 1.3102913,
+    "lng": 103.8639739
+  },
+  {
+    "name": "Balestier Plaza",
+    "type": "商场",
+    "lat": 1.3257137,
+    "lng": 103.8503815
+  },
+  {
+    "name": "Balmoral Plaza",
+    "type": "商场",
+    "lat": 1.3164924,
+    "lng": 103.8354561
+  },
+  {
+    "name": "Beauty World Centre",
+    "type": "商场",
+    "lat": 1.3423587,
+    "lng": 103.7765589
+  },
+  {
+    "name": "Beauty World Plaza",
+    "type": "商场",
+    "lat": 1.3418287,
+    "lng": 103.7763037
+  },
+  {
+    "name": "Bedok Mall",
+    "type": "商场",
+    "lat": 1.3248368,
+    "lng": 103.929246
+  },
+  {
+    "name": "Bencoolen",
+    "type": "商场",
+    "lat": 1.2984401,
+    "lng": 103.8499177
+  },
+  {
+    "name": "Bencoolen Underground Mall",
+    "type": "商场",
+    "lat": 1.2981814,
+    "lng": 103.8496472
+  },
+  {
+    "name": "Big Block",
+    "type": "商场",
+    "lat": 1.292551,
+    "lng": 103.8389747
+  },
+  {
+    "name": "Boon Lay Shopping Centre",
+    "type": "商场",
+    "lat": 1.3463274,
+    "lng": 103.7124831
+  },
+  {
+    "name": "Bras Basah Complex",
+    "type": "商场",
+    "lat": 1.2968252,
+    "lng": 103.8536294
+  },
+  {
+    "name": "Broadway Plaza",
+    "type": "商场",
+    "lat": 1.3719352,
+    "lng": 103.8459597
+  },
+  {
+    "name": "Bugis Junction",
+    "type": "商场",
+    "lat": 1.2998158,
+    "lng": 103.8559023
+  },
+  {
+    "name": "Bugis+",
+    "type": "商场",
+    "lat": 1.2996734,
+    "lng": 103.8541655
+  },
+  {
+    "name": "Bukit Panjang Plaza",
+    "type": "商场",
+    "lat": 1.3800081,
+    "lng": 103.7643116
+  },
+  {
+    "name": "Bukit Timah Shopping Center",
+    "type": "商场",
+    "lat": 1.3432601,
+    "lng": 103.7760509
+  },
+  {
+    "name": "Canberra Plaza",
+    "type": "商场",
+    "lat": 1.4431827,
+    "lng": 103.8305208
+  },
+  {
+    "name": "Cathay Cineleisure Orchard",
+    "type": "商场",
+    "lat": 1.3014913,
+    "lng": 103.836491
+  },
+  {
+    "name": "Causeway Point",
+    "type": "商场",
+    "lat": 1.4360462,
+    "lng": 103.7860055
+  },
+  {
+    "name": "Century Square",
+    "type": "商场",
+    "lat": 1.3523858,
+    "lng": 103.9437898
+  },
+  {
+    "name": "Changi Airport Terminal 1",
+    "type": "商场",
+    "lat": 1.3627078,
+    "lng": 103.9910807
+  },
+  {
+    "name": "Changi Airport Terminal 2",
+    "type": "商场",
+    "lat": 1.3537945,
+    "lng": 103.9904486
+  },
+  {
+    "name": "Changi Airport Terminal 3",
+    "type": "商场",
+    "lat": 1.3546069,
+    "lng": 103.9850767
+  },
+  {
+    "name": "Changi City Point",
+    "type": "商场",
+    "lat": 1.3340339,
+    "lng": 103.9630451
+  },
+  {
+    "name": "City Plaza",
+    "type": "商场",
+    "lat": 1.3147731,
+    "lng": 103.8934464
+  },
+  {
+    "name": "City Square Mall",
+    "type": "商场",
+    "lat": 1.3113867,
+    "lng": 103.8565834
+  },
+  {
+    "name": "CityLink Mall",
+    "type": "商场",
+    "lat": 1.2922036,
+    "lng": 103.8545385
+  },
+  {
+    "name": "Clarke Quay Central",
+    "type": "商场",
+    "lat": 1.2889895,
+    "lng": 103.846628
+  },
+  {
+    "name": "Clementi 321",
+    "type": "商场",
+    "lat": 1.3119852,
+    "lng": 103.7650214
+  },
+  {
+    "name": "Cluny Court",
+    "type": "商场",
+    "lat": 1.3226411,
+    "lng": 103.8142722
+  },
+  {
+    "name": "Compass One",
+    "type": "商场",
+    "lat": 1.392017,
+    "lng": 103.8949564
+  },
+  {
+    "name": "Concorde Shopping Centre",
+    "type": "商场",
+    "lat": 1.2889501,
+    "lng": 103.8342288
+  },
+  {
+    "name": "Coronation Shopping Plaza",
+    "type": "商场",
+    "lat": 1.3238372,
+    "lng": 103.8100018
+  },
+  {
+    "name": "Crown Centre",
+    "type": "商场",
+    "lat": 1.3230316,
+    "lng": 103.8111607
+  },
+  {
+    "name": "Cuppage Plaza",
+    "type": "商场",
+    "lat": 1.3020387,
+    "lng": 103.8407359
+  },
+  {
+    "name": "Dairy Farm Mall",
+    "type": "商场",
+    "lat": 1.3660137,
+    "lng": 103.7750268
+  },
+  {
+    "name": "Dawson Place",
+    "type": "商场",
+    "lat": 1.2926708,
+    "lng": 103.8110959
+  },
+  {
+    "name": "Delfi Orchard",
+    "type": "商场",
+    "lat": 1.3071812,
+    "lng": 103.8284739
+  },
+  {
+    "name": "Depot Heights Shopping Centre",
+    "type": "商场",
+    "lat": 1.2811645,
+    "lng": 103.8103282
+  },
+  {
+    "name": "Design Orchard",
+    "type": "商场",
+    "lat": 1.3020646,
+    "lng": 103.8379316
+  },
+  {
+    "name": "Djitsun Mall Bedok",
+    "type": "商场",
+    "lat": 1.3261293,
+    "lng": 103.9295546
+  },
+  {
+    "name": "Downtown East",
+    "type": "商场",
+    "lat": 1.3773417,
+    "lng": 103.9545899
+  },
+  {
+    "name": "Downtown Gallery",
+    "type": "商场",
+    "lat": 1.2769037,
+    "lng": 103.8483666
+  },
+  {
+    "name": "Duo Residences",
+    "type": "商场",
+    "lat": 1.2998789,
+    "lng": 103.8586495
+  },
+  {
+    "name": "East Point",
+    "type": "商场",
+    "lat": 1.3427269,
+    "lng": 103.9529868
+  },
+  {
+    "name": "Eastlink Mall",
+    "type": "商场",
+    "lat": 1.3543611,
+    "lng": 103.9442853
+  },
+  {
+    "name": "Elias Mall",
+    "type": "商场",
+    "lat": 1.3785776,
+    "lng": 103.942013
+  },
+  {
+    "name": "Esplanade Xchange",
+    "type": "商场",
+    "lat": 1.2926076,
+    "lng": 103.8550321
+  },
+  {
+    "name": "Excelsior Shopping Centre",
+    "type": "商场",
+    "lat": 1.2920995,
+    "lng": 103.8496887
+  },
+  {
+    "name": "Fairprice Hub",
+    "type": "商场",
+    "lat": 1.3260464,
+    "lng": 103.6783782
+  },
+  {
+    "name": "Fajar Shopping Centre",
+    "type": "商场",
+    "lat": 1.3838176,
+    "lng": 103.770853
+  },
+  {
+    "name": "Far East Plaza",
+    "type": "商场",
+    "lat": 1.3071357,
+    "lng": 103.833913
+  },
+  {
+    "name": "Far East Shopping Centre",
+    "type": "商场",
+    "lat": 1.3055354,
+    "lng": 103.8300911
+  },
+  {
+    "name": "Fortune Centre",
+    "type": "商场",
+    "lat": 1.3003923,
+    "lng": 103.852284
+  },
+  {
+    "name": "Forum The Shopping Mall",
+    "type": "商场",
+    "lat": 1.3060918,
+    "lng": 103.8287068
+  },
+  {
+    "name": "Funan",
+    "type": "商场",
+    "lat": 1.2913892,
+    "lng": 103.8499874
+  },
+  {
+    "name": "Fusionopolis 1",
+    "type": "商场",
+    "lat": 1.2992432,
+    "lng": 103.7875698
+  },
+  {
+    "name": "Gek Poh Shopping Centre",
+    "type": "商场",
+    "lat": 1.3490537,
+    "lng": 103.6977256
+  },
+  {
+    "name": "GR.ID",
+    "type": "商场",
+    "lat": 1.3001326,
+    "lng": 103.8493281
+  },
+  {
+    "name": "Grandlink Square",
+    "type": "商场",
+    "lat": 1.3142925,
+    "lng": 103.8915347
+  },
+  {
+    "name": "Grantral Mall @ Clementi",
+    "type": "商场",
+    "lat": 1.3142963,
+    "lng": 103.7651379
+  },
+  {
+    "name": "Great World City",
+    "type": "商场",
+    "lat": 1.2936086,
+    "lng": 103.8318929
+  },
+  {
+    "name": "Greenridge Shopping Centre",
+    "type": "商场",
+    "lat": 1.3853423,
+    "lng": 103.7662295
+  },
+  {
+    "name": "Greenwich V",
+    "type": "商场",
+    "lat": 1.3875058,
+    "lng": 103.869389
+  },
+  {
+    "name": "Guoco Tower",
+    "type": "商场",
+    "lat": 1.2770148,
+    "lng": 103.8454718
+  },
+  {
+    "name": "HDB Hub",
+    "type": "商场",
+    "lat": 1.331993,
+    "lng": 103.8484823
+  },
+  {
+    "name": "Heartland Mall",
+    "type": "商场",
+    "lat": 1.3594964,
+    "lng": 103.8852025
+  },
+  {
+    "name": "Hillion Mall",
+    "type": "商场",
+    "lat": 1.3784413,
+    "lng": 103.7632996
+  },
+  {
+    "name": "HillV2 Mall",
+    "type": "商场",
+    "lat": 1.3633978,
+    "lng": 103.7643632
+  },
+  {
+    "name": "Holland Piazza",
+    "type": "商场",
+    "lat": 1.3106791,
+    "lng": 103.7952562
+  },
+  {
+    "name": "Holland Road Shopping Centre",
+    "type": "商场",
+    "lat": 1.3102935,
+    "lng": 103.7953505
+  },
+  {
+    "name": "Hougang 1",
+    "type": "商场",
+    "lat": 1.3757004,
+    "lng": 103.8795166
+  },
+  {
+    "name": "Hougang Green Shopping Mall",
+    "type": "商场",
+    "lat": 1.3792878,
+    "lng": 103.8879261
+  },
+  {
+    "name": "Hougang Mall",
+    "type": "商场",
+    "lat": 1.3724413,
+    "lng": 103.8937329
+  },
+  {
+    "name": "i12 Katong",
+    "type": "商场",
+    "lat": 1.3051668,
+    "lng": 103.9050423
+  },
+  {
+    "name": "Icon Link @ Club Street",
+    "type": "商场",
+    "lat": 1.2831971,
+    "lng": 103.846816
+  },
+  {
+    "name": "Icon Village",
+    "type": "商场",
+    "lat": 1.2751635,
+    "lng": 103.8445351
+  },
+  {
+    "name": "imall",
+    "type": "商场",
+    "lat": 1.303112,
+    "lng": 103.9065773
+  },
+  {
+    "name": "IMM",
+    "type": "商场",
+    "lat": 1.3347654,
+    "lng": 103.7466237
+  },
+  {
+    "name": "ION Orchard",
+    "type": "商场",
+    "lat": 1.3039546,
+    "lng": 103.8319742
+  },
+  {
+    "name": "Jalan Besar Plaza",
+    "type": "商场",
+    "lat": 1.3086303,
+    "lng": 103.8580368
+  },
+  {
+    "name": "JEM",
+    "type": "商场",
+    "lat": 1.3331331,
+    "lng": 103.7433992
+  },
+  {
+    "name": "Jewel Changi Airport",
+    "type": "商场",
+    "lat": 1.3602194,
+    "lng": 103.9896831
+  },
+  {
+    "name": "Jewel Changi Basement",
+    "type": "商场",
+    "lat": 1.3602685,
+    "lng": 103.9897711
+  },
+  {
+    "name": "Joo Chiat Complex",
+    "type": "商场",
+    "lat": 1.315894,
+    "lng": 103.8983948
+  },
+  {
+    "name": "Jubilee Square",
+    "type": "商场",
+    "lat": 1.3717857,
+    "lng": 103.8477765
+  },
+  {
+    "name": "Junction 10",
+    "type": "商场",
+    "lat": 1.3803507,
+    "lng": 103.7601295
+  },
+  {
+    "name": "Junction 8",
+    "type": "商场",
+    "lat": 1.3505856,
+    "lng": 103.8486604
+  },
+  {
+    "name": "Junction Nine",
+    "type": "商场",
+    "lat": 1.4331099,
+    "lng": 103.8416997
+  },
+  {
+    "name": "Jurong Point",
+    "type": "商场",
+    "lat": 1.3395495,
+    "lng": 103.7057717
+  },
+  {
+    "name": "Kallang Wave Mall",
+    "type": "商场",
+    "lat": 1.3034697,
+    "lng": 103.8732445
+  },
+  {
+    "name": "Kang Kar Mall",
+    "type": "商场",
+    "lat": 1.3717185,
+    "lng": 103.8942289
+  },
+  {
+    "name": "Katong Plaza",
+    "type": "商场",
+    "lat": 1.3042065,
+    "lng": 103.9038703
+  },
+  {
+    "name": "Katong Shopping Centre",
+    "type": "商场",
+    "lat": 1.3038781,
+    "lng": 103.9011475
+  },
+  {
+    "name": "Katong Square",
+    "type": "商场",
+    "lat": 1.3047052,
+    "lng": 103.9047193
+  },
+  {
+    "name": "Katong V",
+    "type": "商场",
+    "lat": 1.3031334,
+    "lng": 103.9032312
+  },
+  {
+    "name": "Keat Hong Shopping Centre",
+    "type": "商场",
+    "lat": 1.3773259,
+    "lng": 103.7444324
+  },
+  {
+    "name": "Kinex",
+    "type": "商场",
+    "lat": 1.3146526,
+    "lng": 103.894811
+  },
+  {
+    "name": "King's Arcade",
+    "type": "商场",
+    "lat": 1.3232798,
+    "lng": 103.8107148
+  },
+  {
+    "name": "Knightsbridge",
+    "type": "商场",
+    "lat": 1.3031632,
+    "lng": 103.8363537
+  },
+  {
+    "name": "Le Quest Mall",
+    "type": "商场",
+    "lat": 1.3559795,
+    "lng": 103.7411527
+  },
+  {
+    "name": "Leisure Park Kallang",
+    "type": "商场",
+    "lat": 1.3021844,
+    "lng": 103.8765537
+  },
+  {
+    "name": "Lentor Modern",
+    "type": "商场",
+    "lat": 1.3857396,
+    "lng": 103.8345464
+  },
+  {
+    "name": "Liat Tower",
+    "type": "商场",
+    "lat": 1.3051056,
+    "lng": 103.8307274
+  },
+  {
+    "name": "Liat Towers",
+    "type": "商场",
+    "lat": 1.3051056,
+    "lng": 103.8307274
+  },
+  {
+    "name": "Limbang Shopping Centre",
+    "type": "商场",
+    "lat": 1.3919766,
+    "lng": 103.7432118
+  },
+  {
+    "name": "Liv@Changi",
+    "type": "商场",
+    "lat": 1.3586506,
+    "lng": 103.9694484
+  },
+  {
+    "name": "Lot One Shoppers' Mall",
+    "type": "商场",
+    "lat": 1.385156,
+    "lng": 103.745025
+  },
+  {
+    "name": "Loyang Point",
+    "type": "商场",
+    "lat": 1.3669967,
+    "lng": 103.9646242
+  },
+  {
+    "name": "Lucky Plaza",
+    "type": "商场",
+    "lat": 1.304515,
+    "lng": 103.833963
+  },
+  {
+    "name": "MacPherson Mall",
+    "type": "商场",
+    "lat": 1.3318081,
+    "lng": 103.8793743
+  },
+  {
+    "name": "Mandarin Gallery",
+    "type": "商场",
+    "lat": 1.3020175,
+    "lng": 103.8365421
+  },
+  {
+    "name": "Marina Bay Link Mall",
+    "type": "商场",
+    "lat": 1.2809091,
+    "lng": 103.8537995
+  },
+  {
+    "name": "Marina One",
+    "type": "商场",
+    "lat": 1.2772634,
+    "lng": 103.8529601
+  },
+  {
+    "name": "Marina Square",
+    "type": "商场",
+    "lat": 1.291286,
+    "lng": 103.857535
+  },
+  {
+    "name": "Marsiling Mall Hawker Centre",
+    "type": "商场",
+    "lat": 1.4335488,
+    "lng": 103.7799603
+  },
+  {
+    "name": "Midpoint Orchard",
+    "type": "商场",
+    "lat": 1.3017606,
+    "lng": 103.8386507
+  },
+  {
+    "name": "Millenia Walk",
+    "type": "商场",
+    "lat": 1.2926443,
+    "lng": 103.8593181
+  },
+  {
+    "name": "Mustafa Centre",
+    "type": "商场",
+    "lat": 1.3101243,
+    "lng": 103.8553164
+  },
+  {
+    "name": "myVillage",
+    "type": "商场",
+    "lat": 1.3651486,
+    "lng": 103.8651556
+  },
+  {
+    "name": "nex",
+    "type": "商场",
+    "lat": 1.3504477,
+    "lng": 103.8723218
+  },
+  {
+    "name": "Ngee Ann City",
+    "type": "商场",
+    "lat": 1.3026133,
+    "lng": 103.8347141
+  },
+  {
+    "name": "Northpoint City",
+    "type": "商场",
+    "lat": 1.4281701,
+    "lng": 103.8362366
+  },
+  {
+    "name": "Northshore Plaza I",
+    "type": "商场",
+    "lat": 1.4166829,
+    "lng": 103.9020857
+  },
+  {
+    "name": "Northshore Plaza II",
+    "type": "商场",
+    "lat": 1.4178949,
+    "lng": 103.9013214
+  },
+  {
+    "name": "NTP+",
+    "type": "商场",
+    "lat": 1.351377,
+    "lng": 103.861709
+  },
+  {
+    "name": "Odeon Katong Shopping Complex",
+    "type": "商场",
+    "lat": 1.3046858,
+    "lng": 103.901932
+  },
+  {
+    "name": "Old Airport Road Food Centre & Shopping Mall",
+    "type": "商场",
+    "lat": 1.3082588,
+    "lng": 103.8858301
+  },
+  {
+    "name": "One Holland Village",
+    "type": "商场",
+    "lat": 1.3111168,
+    "lng": 103.7941049
+  },
+  {
+    "name": "Orchard Building",
+    "type": "商场",
+    "lat": 1.3014048,
+    "lng": 103.83735
+  },
+  {
+    "name": "Orchard Central",
+    "type": "商场",
+    "lat": 1.3006418,
+    "lng": 103.8398031
+  },
+  {
+    "name": "Orchard Gateway",
+    "type": "商场",
+    "lat": 1.3006994,
+    "lng": 103.8393128
+  },
+  {
+    "name": "Orchard Gateway @ Emerald",
+    "type": "商场",
+    "lat": 1.301653,
+    "lng": 103.8388682
+  },
+  {
+    "name": "Orchard Plaza",
+    "type": "商场",
+    "lat": 1.3012626,
+    "lng": 103.8411479
+  },
+  {
+    "name": "Orchard Shopping Centre",
+    "type": "商场",
+    "lat": 1.3014967,
+    "lng": 103.8378882
+  },
+  {
+    "name": "Orchard Towers",
+    "type": "商场",
+    "lat": 1.3069608,
+    "lng": 103.82921
+  },
+  {
+    "name": "OUE Downtown",
+    "type": "商场",
+    "lat": 1.2774025,
+    "lng": 103.8486711
+  },
+  {
+    "name": "Pacific Plaza",
+    "type": "商场",
+    "lat": 1.3065597,
+    "lng": 103.8321236
+  },
+  {
+    "name": "Palais Renaissance",
+    "type": "商场",
+    "lat": 1.3067203,
+    "lng": 103.8296522
+  },
+  {
+    "name": "Paragon",
+    "type": "商场",
+    "lat": 1.3038335,
+    "lng": 103.8356396
+  },
+  {
+    "name": "Parc Point",
+    "type": "商场",
+    "lat": 1.3607004,
+    "lng": 103.7387585
+  },
+  {
+    "name": "Parklane Shopping Mall",
+    "type": "商场",
+    "lat": 1.3006629,
+    "lng": 103.849441
+  },
+  {
+    "name": "PARKTOWN",
+    "type": "商场",
+    "lat": 1.3669054,
+    "lng": 103.9378084
+  },
+  {
+    "name": "Parkway Parade",
+    "type": "商场",
+    "lat": 1.3013803,
+    "lng": 103.9052851
+  },
+  {
+    "name": "Pasir Ris Mall",
+    "type": "商场",
+    "lat": 1.3738493,
+    "lng": 103.9487932
+  },
+  {
+    "name": "Paya Lebar Square",
+    "type": "商场",
+    "lat": 1.3188127,
+    "lng": 103.8926009
+  },
+  {
+    "name": "Peninsula Plaza",
+    "type": "商场",
+    "lat": 1.2923267,
+    "lng": 103.8508288
+  },
+  {
+    "name": "Pinery Mall",
+    "type": "商场",
+    "lat": 1.3437251,
+    "lng": 103.938949
+  },
+  {
+    "name": "Pioneer Mall",
+    "type": "商场",
+    "lat": 1.341702,
+    "lng": 103.6971791
+  },
+  {
+    "name": "Plantation Plaza",
+    "type": "商场",
+    "lat": 1.3575333,
+    "lng": 103.7341702
+  },
+  {
+    "name": "Plaza 8",
+    "type": "商场",
+    "lat": 1.3335115,
+    "lng": 103.9655221
+  },
+  {
+    "name": "Plaza Singapura",
+    "type": "商场",
+    "lat": 1.3004574,
+    "lng": 103.8452085
+  },
+  {
+    "name": "Punggol Plaza",
+    "type": "商场",
+    "lat": 1.3942878,
+    "lng": 103.9130446
+  },
+  {
+    "name": "Quayside Isle",
+    "type": "商场",
+    "lat": 1.2470884,
+    "lng": 103.8421833
+  },
+  {
+    "name": "Queensway Shopping Centre",
+    "type": "商场",
+    "lat": 1.287553,
+    "lng": 103.8034772
+  },
+  {
+    "name": "Raffles City Shopping Centre",
+    "type": "商场",
+    "lat": 1.2938989,
+    "lng": 103.8533513
+  },
+  {
+    "name": "Rivervale Mall",
+    "type": "商场",
+    "lat": 1.3922311,
+    "lng": 103.9044753
+  },
+  {
+    "name": "Rivervale Plaza",
+    "type": "商场",
+    "lat": 1.3853329,
+    "lng": 103.9019719
+  },
+  {
+    "name": "Rochester Mall",
+    "type": "商场",
+    "lat": 1.3056598,
+    "lng": 103.7882026
+  },
+  {
+    "name": "Roxy Square",
+    "type": "商场",
+    "lat": 1.3033509,
+    "lng": 103.9046069
+  },
+  {
+    "name": "Royal Square at Novena",
+    "type": "商场",
+    "lat": 1.3205254,
+    "lng": 103.8432202
+  },
+  {
+    "name": "Sembawang Shopping Centre",
+    "type": "商场",
+    "lat": 1.4418971,
+    "lng": 103.824931
+  },
+  {
+    "name": "Sengkang Grand Mall",
+    "type": "商场",
+    "lat": 1.3832033,
+    "lng": 103.8922549
+  },
+  {
+    "name": "Serene Centre",
+    "type": "商场",
+    "lat": 1.3225228,
+    "lng": 103.8136892
+  },
+  {
+    "name": "Shaw House",
+    "type": "商场",
+    "lat": 1.3058286,
+    "lng": 103.8315296
+  },
+  {
+    "name": "Shaw Plaza",
+    "type": "商场",
+    "lat": 1.3249589,
+    "lng": 103.8512623
+  },
+  {
+    "name": "Sim Lim Square",
+    "type": "商场",
+    "lat": 1.3030332,
+    "lng": 103.8530255
+  },
+  {
+    "name": "Simei Plaza /Blk 248",
+    "type": "商场",
+    "lat": 1.3435043,
+    "lng": 103.9536221
+  },
+  {
+    "name": "SingPost Centre",
+    "type": "商场",
+    "lat": 1.3189978,
+    "lng": 103.8947938
+  },
+  {
+    "name": "South Beach Avenue",
+    "type": "商场",
+    "lat": 1.294755,
+    "lng": 103.8559721
+  },
+  {
+    "name": "South Beach Quarter",
+    "type": "商场",
+    "lat": 1.2957356,
+    "lng": 103.8561555
+  },
+  {
+    "name": "Sprout @ AMK",
+    "type": "商场",
+    "lat": 1.3716745,
+    "lng": 103.8460142
+  },
+  {
+    "name": "Square 2",
+    "type": "商场",
+    "lat": 1.3207028,
+    "lng": 103.8441378
+  },
+  {
+    "name": "STELLAR@TE2",
+    "type": "商场",
+    "lat": 1.4350534,
+    "lng": 103.7881753
+  },
+  {
+    "name": "Sun Plaza",
+    "type": "商场",
+    "lat": 1.4481927,
+    "lng": 103.8195153
+  },
+  {
+    "name": "Sunshine Place",
+    "type": "商场",
+    "lat": 1.3777679,
+    "lng": 103.7390721
+  },
+  {
+    "name": "Sunshine Plaza",
+    "type": "商场",
+    "lat": 1.3003536,
+    "lng": 103.8509415
+  },
+  {
+    "name": "Suntec City",
+    "type": "商场",
+    "lat": 1.2949861,
+    "lng": 103.8578759
+  },
+  {
+    "name": "Taman Jurong Shopping Centre",
+    "type": "商场",
+    "lat": 1.3348278,
+    "lng": 103.7204648
+  },
+  {
+    "name": "Tampines 1",
+    "type": "商场",
+    "lat": 1.3542178,
+    "lng": 103.9450121
+  },
+  {
+    "name": "Tampines Mall",
+    "type": "商场",
+    "lat": 1.3525404,
+    "lng": 103.9447233
+  },
+  {
+    "name": "Tampines Mart",
+    "type": "商场",
+    "lat": 1.354402,
+    "lng": 103.9600729
+  },
+  {
+    "name": "Tang Plaza",
+    "type": "商场",
+    "lat": 1.3050171,
+    "lng": 103.8330376
+  },
+  {
+    "name": "Tanglin Mall",
+    "type": "商场",
+    "lat": 1.3048369,
+    "lng": 103.8238575
+  },
+  {
+    "name": "Tanjong Katong Complex",
+    "type": "商场",
+    "lat": 1.3163748,
+    "lng": 103.8943388
+  },
+  {
+    "name": "Tekka Centre",
+    "type": "商场",
+    "lat": 1.3062231,
+    "lng": 103.8505301
+  },
+  {
+    "name": "Tekka Place",
+    "type": "商场",
+    "lat": 1.3045905,
+    "lng": 103.8523178
+  },
+  {
+    "name": "The Cathay",
+    "type": "商场",
+    "lat": 1.2994807,
+    "lng": 103.8476565
+  },
+  {
+    "name": "The Centrepoint",
+    "type": "商场",
+    "lat": 1.301901,
+    "lng": 103.8398119
+  },
+  {
+    "name": "The Centris",
+    "type": "商场",
+    "lat": 1.3394539,
+    "lng": 103.7052344
+  },
+  {
+    "name": "The Clementi Mall",
+    "type": "商场",
+    "lat": 1.3149817,
+    "lng": 103.7642331
+  },
+  {
+    "name": "The Concourse",
+    "type": "商场",
+    "lat": 1.3008746,
+    "lng": 103.8618842
+  },
+  {
+    "name": "The Flow Mall",
+    "type": "商场",
+    "lat": 1.3045628,
+    "lng": 103.9042113
+  },
+  {
+    "name": "The Heeren",
+    "type": "商场",
+    "lat": 1.3026344,
+    "lng": 103.8373397
+  },
+  {
+    "name": "The Oasis",
+    "type": "商场",
+    "lat": 1.2876789,
+    "lng": 103.7903736
+  },
+  {
+    "name": "The Poiz Centre",
+    "type": "商场",
+    "lat": 1.331436,
+    "lng": 103.8685709
+  },
+  {
+    "name": "The Seletar Mall",
+    "type": "商场",
+    "lat": 1.3915468,
+    "lng": 103.8761903
+  },
+  {
+    "name": "The Shoppes at Marina Bay Sands",
+    "type": "商场",
+    "lat": 1.2840201,
+    "lng": 103.8588924
+  },
+  {
+    "name": "The Star Vista",
+    "type": "商场",
+    "lat": 1.3080015,
+    "lng": 103.7883825
+  },
+  {
+    "name": "The Woodgrove",
+    "type": "商场",
+    "lat": 1.4290911,
+    "lng": 103.7811363
+  },
+  {
+    "name": "The Woodleigh Mall",
+    "type": "商场",
+    "lat": 1.3386981,
+    "lng": 103.8717098
+  },
+  {
+    "name": "Thomson Plaza",
+    "type": "商场",
+    "lat": 1.3546006,
+    "lng": 103.8307974
+  },
+  {
+    "name": "Tiong Bahru Plaza",
+    "type": "商场",
+    "lat": 1.2864016,
+    "lng": 103.8273286
+  },
+  {
+    "name": "Trio",
+    "type": "商场",
+    "lat": 1.3090874,
+    "lng": 103.856928
+  },
+  {
+    "name": "United Square",
+    "type": "商场",
+    "lat": 1.3171615,
+    "lng": 103.8436059
+  },
+  {
+    "name": "Upper Serangoon Shopping Centre",
+    "type": "商场",
+    "lat": 1.3536238,
+    "lng": 103.8788344
+  },
+  {
+    "name": "Valley Point Shopping Centre",
+    "type": "商场",
+    "lat": 1.2931162,
+    "lng": 103.8270506
+  },
+  {
+    "name": "Velocity @ Novena Square",
+    "type": "商场",
+    "lat": 1.3197931,
+    "lng": 103.8438327
+  },
+  {
+    "name": "Vista Point",
+    "type": "商场",
+    "lat": 1.4309594,
+    "lng": 103.7939196
+  },
+  {
+    "name": "VivoCity",
+    "type": "商场",
+    "lat": 1.2643743,
+    "lng": 103.8220879
+  },
+  {
+    "name": "Waterway Point",
+    "type": "商场",
+    "lat": 1.4064594,
+    "lng": 103.9022278
+  },
+  {
+    "name": "West Coast Plaza",
+    "type": "商场",
+    "lat": 1.3036424,
+    "lng": 103.766276
+  },
+  {
+    "name": "West Mall",
+    "type": "商场",
+    "lat": 1.3500366,
+    "lng": 103.7492868
+  },
+  {
+    "name": "Westgate",
+    "type": "商场",
+    "lat": 1.3341755,
+    "lng": 103.7428751
+  },
+  {
+    "name": "Wheelock Place",
+    "type": "商场",
+    "lat": 1.3046867,
+    "lng": 103.8306774
+  },
+  {
+    "name": "White Sands",
+    "type": "商场",
+    "lat": 1.3724456,
+    "lng": 103.9497597
+  },
+  {
+    "name": "Wisma Atria",
+    "type": "商场",
+    "lat": 1.3036801,
+    "lng": 103.8332105
+  },
+  {
+    "name": "Wisteria Mall",
+    "type": "商场",
+    "lat": 1.41826,
+    "lng": 103.8412699
+  },
+  {
+    "name": "Woodlands North Plaza",
+    "type": "商场",
+    "lat": 1.4427432,
+    "lng": 103.7908061
+  },
+  {
+    "name": "Yew Tee Square",
+    "type": "商场",
+    "lat": 1.3981768,
+    "lng": 103.7470048
+  },
+  {
+    "name": "YewTee Point",
+    "type": "商场",
+    "lat": 1.3970877,
+    "lng": 103.7466613
+  },
+  {
+    "name": "Zhongshan Mall",
+    "type": "商场",
+    "lat": 1.3271466,
+    "lng": 103.8463151
+  }
+]

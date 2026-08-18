@@ -14,11 +14,7 @@ const projects = [
 const statusClass: Record<ProjectStatus, string> = { 在售: "sale", 即将开盘: "soon", 确定开发: "confirmed", 土地供应: "land" };
 type RailLine = { ref:string; name:string; color:string; status:"operating"|"future"; segments:number[][][] };
 type RailStation = { name:string; ref:string; lat:number; lng:number; station:string; status:"operating"|"future" };
-const places = [
-  {name:"南洋小学",type:"小学",lat:1.3211,lng:103.8078},{name:"莱佛士女子小学",type:"小学",lat:1.3327,lng:103.8065},{name:"爱同学校",type:"小学",lat:1.3607,lng:103.8331},{name:"美以美女校（小学）",type:"小学",lat:1.3249,lng:103.8282},{name:"River Valley Primary",type:"小学",lat:1.2935,lng:103.8363},{name:"Temasek Primary",type:"小学",lat:1.3175,lng:103.9453},{name:"Pei Hwa Presbyterian Primary",type:"小学",lat:1.3382,lng:103.7761},
-  {name:"华侨中学",type:"中学",lat:1.3258,lng:103.8056},{name:"国家初级学院",type:"中学",lat:1.3304,lng:103.8045},{name:"圣若瑟书院",type:"中学",lat:1.3328,lng:103.8286},{name:"CHIJ Secondary",type:"中学",lat:1.3329,lng:103.8428},{name:"Bukit Panjang Govt High",type:"中学",lat:1.3822,lng:103.7383},{name:"Temasek Secondary",type:"中学",lat:1.315,lng:103.9473},
-  {name:"ION Orchard",type:"商场",lat:1.304,lng:103.8318},{name:"Great World",type:"商场",lat:1.2938,lng:103.8319},{name:"VivoCity",type:"商场",lat:1.2644,lng:103.8221},{name:"Jewel Changi Airport",type:"商场",lat:1.3602,lng:103.9897},{name:"Junction 8",type:"商场",lat:1.3507,lng:103.8488},{name:"The Rail Mall",type:"商场",lat:1.3581,lng:103.7679},{name:"Parkway Parade",type:"商场",lat:1.3013,lng:103.9052},{name:"West Mall",type:"商场",lat:1.35,lng:103.7497},
-] as const;
+type Place = { name:string; type:"小学"|"中学"|"商场"; lat:number; lng:number; address?:string; nearestMrt?:string; bus?:string };
 
 export default function Home() {
   const [selected, setSelected] = useState(projects[0]);
@@ -28,6 +24,7 @@ export default function Home() {
   const [showMrt, setShowMrt] = useState(true);
   const [railLines, setRailLines] = useState<RailLine[]>([]);
   const [railStations, setRailStations] = useState<RailStation[]>([]);
+  const [places, setPlaces] = useState<Place[]>([]);
   const [placeFilters, setPlaceFilters] = useState({ 小学:true, 中学:true, 商场:true });
   const mapElement = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<any>(null);
@@ -43,7 +40,9 @@ export default function Home() {
     Promise.all([
       fetch("./data/mrt-lines.json").then(response => response.json()),
       fetch("./data/mrt-stations.json").then(response => response.json()),
-    ]).then(([lines, stations]) => { setRailLines(lines); setRailStations(stations); });
+      fetch("./data/schools.json").then(response => response.json()),
+      fetch("./data/malls.json").then(response => response.json()),
+    ]).then(([lines, stations, schools, malls]) => { setRailLines(lines); setRailStations(stations); setPlaces([...schools, ...malls]); });
   }, []);
 
   useEffect(() => {
@@ -106,10 +105,11 @@ export default function Home() {
     places.filter(place => placeFilters[place.type]).forEach(place => {
       const style = config[place.type];
       const markerType = place.type === "商场" ? "mall" : "school";
+      const details = place.address ? `<br>${place.address}${place.nearestMrt ? `<br>最近地铁：${place.nearestMrt}` : ""}` : "";
       L.marker([place.lat,place.lng], { icon:L.divIcon({ className:"place-marker-shell", html:`<span class="place-pin ${markerType}" style="--place-color:${style.color}">${style.symbol}</span>`, iconSize:[24,24], iconAnchor:[12,12] }) })
-        .bindTooltip(`<b>${place.name}</b><br>${place.type}`, { direction:"top", offset:[0,-8] }).addTo(placesLayer.current);
+        .bindTooltip(`<b>${place.name}</b><br>${place.type}${details}`, { direction:"top", offset:[0,-8] }).addTo(placesLayer.current);
     });
-  }, [mapReady, placeFilters]);
+  }, [mapReady, placeFilters, places]);
 
   useEffect(() => { mapInstance.current?.flyTo([selected.lat, selected.lng], Math.max(mapInstance.current.getZoom(), 13), { duration: .7 }); }, [selected]);
 
