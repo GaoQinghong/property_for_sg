@@ -108,7 +108,9 @@ for (const [key, sales] of salesByName) {
   });
 }
 
-for (const old of oldData.projects.filter(project => project.status === "土地供应")) merged.push({...old, updatedAt});
+for (const old of oldData.projects.filter(project => project.status === "土地供应" || project.source === "开发商资料")) {
+  if (!merged.some(project => normalise(project.name) === normalise(old.name))) merged.push({...old, updatedAt});
+}
 const statusOrder = { "在售":0, "即将开盘":1, "确定开发":2, "土地供应":3 };
 merged.sort((a,b) => statusOrder[a.status] - statusOrder[b.status] || a.name.localeCompare(b.name));
 await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:merged}, null, 2)}\n`);

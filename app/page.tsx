@@ -149,7 +149,7 @@ export default function Home() {
           <button className="close">×</button><div className="detail-title"><div><span className={`status ${statusClass[selected.status]}`}><i />{selected.status}</span><h1>{selected.name}</h1><p>{selected.area} · {selected.tenure}</p></div><button className="bookmark">☆</button></div>
           <div className="inventory"><div><strong>{selected.units.toLocaleString()}</strong><small>总户数</small></div><div><strong>{selected.status === "在售" ? selected.sold : "—"}</strong><small>已售</small></div><div><strong>{selected.status === "在售" ? selected.units-selected.sold : "—"}</strong><small>估算未售</small></div></div>
           <dl className="facts"><div><dt>开发商</dt><dd>{selected.developer}</dd></div><div><dt>预计开盘</dt><dd>{selected.launch}</dd></div><div><dt>预计 TOP</dt><dd>{selected.top}</dd></div><div><dt>最近地铁</dt><dd>{selected.mrt}</dd></div><div className="wide"><dt>附近学校</dt><dd>{selected.school}</dd></div></dl>
-          <div className="source-note"><span>URA</span>库存来自开发商月报，最后核对于 {selected.updatedAt || dataUpdatedAt}</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
+          <div className="source-note"><span>{selected.source || "URA"}</span>库存来自开发商月报或开发商资料，最后核对于 {selected.updatedAt || dataUpdatedAt}</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
         </article>
       </section>
     </section>

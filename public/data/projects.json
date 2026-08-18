@@ -3,6 +3,24 @@
   "source": "URA developer sales, URA pipeline and GLS programme",
   "projects": [
     {
+      "id": "8bt",
+      "name": "8@BT",
+      "area": "武吉知马 · D21",
+      "status": "在售",
+      "units": 158,
+      "sold": 111,
+      "developer": "Bukit One Pte. Ltd.",
+      "tenure": "99 年",
+      "launch": "已开盘",
+      "top": "2028",
+      "mrt": "Beauty World · 200m",
+      "school": "Pei Hwa Presbyterian Primary · 1km 内",
+      "lat": 1.34119,
+      "lng": 103.7769,
+      "updatedAt": "2026-08-18",
+      "source": "开发商资料"
+    },
+    {
       "id": "10evelyn",
       "name": "10 EVELYN",
       "area": "EVELYN ROAD · D11",
