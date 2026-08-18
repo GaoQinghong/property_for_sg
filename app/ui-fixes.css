@@ -5,13 +5,22 @@
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 5px;
     overflow: visible;
+    align-items: center;
+    min-height: 55px;
+    padding-bottom: 12px;
   }
 
   .status-tabs button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 0;
-    padding: 7px 3px;
+    height: 32px;
+    padding: 0 3px;
     font-size: 10px;
+    line-height: 1;
     white-space: nowrap;
+    overflow: hidden;
   }
 }
 
