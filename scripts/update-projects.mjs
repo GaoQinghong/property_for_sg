@@ -8,7 +8,6 @@ const today = new Date();
 const updatedAt = today.toISOString().slice(0, 10);
 // URA publishes a month's developer-sales figures on the 15th of the following month.
 const latestPublishedMonth = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() - 1, 1));
-const refPeriod = `${String(latestPublishedMonth.getUTCMonth() + 1).padStart(2, "0")}${String(latestPublishedMonth.getUTCFullYear()).slice(-2)}`;
 const oldData = JSON.parse(await readFile(DATA_FILE, "utf8"));
 const oldByName = new Map(oldData.projects.map(project => [normalise(project.name), project]));
 
@@ -27,8 +26,9 @@ async function ura(service, extra = "") {
 }
 
 function normalise(value = "") { return value.toUpperCase().replace(/[^A-Z0-9]/g, ""); }
+function periodValue(value = "") { const month=Number(value.slice(0,2)), year=2000+Number(value.slice(2,4)); return year*12+month; }
 function latestSales(record) {
-  return [...(record.developerSales || [])].sort((a, b) => String(b.refPeriod).localeCompare(String(a.refPeriod)))[0];
+  return [...(record.developerSales || [])].sort((a, b) => periodValue(b.refPeriod)-periodValue(a.refPeriod))[0];
 }
 function svy21ToWgs84(x, y) {
   const a=6378137, f=1/298.257223563, oLat=1.366666, oLon=103.833333, n0=38744.572, e0=28001.642, k=1;
@@ -49,11 +49,19 @@ async function geocode(query) {
   } catch { return null; }
 }
 
-const [salesRows, pipelineRows] = await Promise.all([
-  ura("PMI_Resi_Developer_Sales", `&refPeriod=${refPeriod}`),
-  ura("PMI_Resi_Pipeline")
-]);
-const salesByName = new Map(salesRows.map(row => [normalise(row.project), row]));
+const periods = Array.from({length:36}, (_, offset) => {
+  const date = new Date(Date.UTC(latestPublishedMonth.getUTCFullYear(), latestPublishedMonth.getUTCMonth() - (35-offset), 1));
+  return `${String(date.getUTCMonth()+1).padStart(2,"0")}${String(date.getUTCFullYear()).slice(-2)}`;
+});
+const pipelineRows = await ura("PMI_Resi_Pipeline");
+const salesByName = new Map();
+for (let index=0; index<periods.length; index+=4) {
+  const rows = (await Promise.all(periods.slice(index,index+4).map(period => ura("PMI_Resi_Developer_Sales", `&refPeriod=${period}`)))).flat();
+  for (const row of rows) {
+    const key = normalise(row.project), previous = salesByName.get(key);
+    if (!previous || periodValue(latestSales(row)?.refPeriod) >= periodValue(latestSales(previous)?.refPeriod)) salesByName.set(key,row);
+  }
+}
 const merged = [];
 
 for (const row of pipelineRows) {
