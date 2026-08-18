@@ -1,0 +1,1922 @@
+[
+  {
+    "name": "A",
+    "ref": "",
+    "lat": 1.3539198,
+    "lng": 103.9854577,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "A South",
+    "ref": "",
+    "lat": 1.3501080,
+    "lng": 103.9838301,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Admiralty",
+    "ref": "NS10",
+    "lat": 1.4406369,
+    "lng": 103.8009592,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Aljunied",
+    "ref": "EW9",
+    "lat": 1.3164515,
+    "lng": 103.8829087,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Ang Mo Kio",
+    "ref": "NS16",
+    "lat": 1.3700803,
+    "lng": 103.8495228,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Aviation Park",
+    "ref": "",
+    "lat": 1.3701715,
+    "lng": 104.0035168,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "B",
+    "ref": "",
+    "lat": 1.3583830,
+    "lng": 103.9873758,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Bahar Junction",
+    "ref": "JS7",
+    "lat": 1.3458098,
+    "lng": 103.7023562,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bakau",
+    "ref": "SE3",
+    "lat": 1.3880083,
+    "lng": 103.9054180,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Bangkit",
+    "ref": "BP9",
+    "lat": 1.3800412,
+    "lng": 103.7726501,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bartley",
+    "ref": "CC12",
+    "lat": 1.3429074,
+    "lng": 103.8797036,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bayfront",
+    "ref": "CC34;DT16",
+    "lat": 1.2826023,
+    "lng": 103.8596807,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bayshore",
+    "ref": "TE29",
+    "lat": 1.3128339,
+    "lng": 103.9423087,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Beach",
+    "ref": "",
+    "lat": 1.2512942,
+    "lng": 103.8177659,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Beauty World",
+    "ref": "DT5",
+    "lat": 1.3410913,
+    "lng": 103.7758776,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bedok",
+    "ref": "EW5",
+    "lat": 1.3239666,
+    "lng": 103.9302175,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bedok North",
+    "ref": "DT29",
+    "lat": 1.3345988,
+    "lng": 103.9183122,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bedok Reservoir",
+    "ref": "DT30",
+    "lat": 1.3366043,
+    "lng": 103.9324653,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bedok South",
+    "ref": "TE30",
+    "lat": 1.3164414,
+    "lng": 103.9490510,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bencoolen",
+    "ref": "DT21",
+    "lat": 1.2985197,
+    "lng": 103.8502804,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bendemeer",
+    "ref": "DT23",
+    "lat": 1.3136360,
+    "lng": 103.8627250,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bishan",
+    "ref": "NS17;CC15",
+    "lat": 1.3509891,
+    "lng": 103.8490389,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Boon Keng",
+    "ref": "NE9",
+    "lat": 1.3191325,
+    "lng": 103.8615549,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Boon Lay",
+    "ref": "EW27;JS8",
+    "lat": 1.3385504,
+    "lng": 103.7058124,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Botanic Gardens",
+    "ref": "CC19;DT9",
+    "lat": 1.3221033,
+    "lng": 103.8156468,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Braddell",
+    "ref": "NS18",
+    "lat": 1.3403018,
+    "lng": 103.8469229,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bras Basah",
+    "ref": "CC2",
+    "lat": 1.2968770,
+    "lng": 103.8507494,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Brickland",
+    "ref": "NS3A",
+    "lat": 1.3684672,
+    "lng": 103.7496337,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Bright Hill",
+    "ref": "CR13",
+    "lat": 1.3633284,
+    "lng": 103.8360892,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Buangkok",
+    "ref": "NE15",
+    "lat": 1.3829743,
+    "lng": 103.8931346,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bugis",
+    "ref": "EW12;DT14",
+    "lat": 1.2999465,
+    "lng": 103.8562753,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bukit Batok",
+    "ref": "NS2",
+    "lat": 1.3490572,
+    "lng": 103.7495906,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bukit Batok West",
+    "ref": "JE3",
+    "lat": 1.3455305,
+    "lng": 103.7397329,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Bukit Brown",
+    "ref": "CC18",
+    "lat": 1.3337476,
+    "lng": 103.8306792,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Bukit Gombak",
+    "ref": "NS3",
+    "lat": 1.3588929,
+    "lng": 103.7518249,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Bukit Panjang",
+    "ref": "BP6",
+    "lat": 1.3779175,
+    "lng": 103.7630947,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Buona Vista",
+    "ref": "CC22;EW21",
+    "lat": 1.3066258,
+    "lng": 103.7903450,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "C",
+    "ref": "",
+    "lat": 1.3619808,
+    "lng": 103.9889622,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Caldecott",
+    "ref": "CC17;TE9",
+    "lat": 1.3373669,
+    "lng": 103.8398137,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Canberra",
+    "ref": "NS12",
+    "lat": 1.4432131,
+    "lng": 103.8296301,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Cantonment",
+    "ref": "CC31",
+    "lat": 1.2731071,
+    "lng": 103.8370618,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Cashew",
+    "ref": "DT2",
+    "lat": 1.3693605,
+    "lng": 103.7647302,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Changi Airport",
+    "ref": "CG2",
+    "lat": 1.3575730,
+    "lng": 103.9885325,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Changi Terminal 5",
+    "ref": "TE32/CR1",
+    "lat": 1.3244201,
+    "lng": 103.9916376,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Cheng Lim",
+    "ref": "SW1",
+    "lat": 1.3962917,
+    "lng": 103.8937904,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Chinatown",
+    "ref": "NE4;DT19",
+    "lat": 1.2846877,
+    "lng": 103.8441354,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Chinese Garden",
+    "ref": "EW25",
+    "lat": 1.3424141,
+    "lng": 103.7325474,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Choa Chu Kang",
+    "ref": "NS4",
+    "lat": 1.3853167,
+    "lng": 103.7443250,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Choa Chu Kang West",
+    "ref": "JS2",
+    "lat": 1.3792150,
+    "lng": 103.7399997,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "City Hall",
+    "ref": "NS25;EW13",
+    "lat": 1.2930474,
+    "lng": 103.8526183,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Clarke Quay",
+    "ref": "NE5",
+    "lat": 1.2882602,
+    "lng": 103.8465975,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Clementi",
+    "ref": "EW23;CR17",
+    "lat": 1.3161343,
+    "lng": 103.7659042,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Commonwealth",
+    "ref": "EW20",
+    "lat": 1.3024428,
+    "lng": 103.7983085,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Compassvale",
+    "ref": "SE1",
+    "lat": 1.3945180,
+    "lng": 103.9004349,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Coral Edge",
+    "ref": "PE3",
+    "lat": 1.3938496,
+    "lng": 103.9126668,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Corporation",
+    "ref": "JS5",
+    "lat": 1.3529781,
+    "lng": 103.7138109,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Cove",
+    "ref": "PE1",
+    "lat": 1.3994614,
+    "lng": 103.9058025,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "D",
+    "ref": "",
+    "lat": 1.3610209,
+    "lng": 103.9918185,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Dakota",
+    "ref": "CC8",
+    "lat": 1.3084315,
+    "lng": 103.8886155,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Damai",
+    "ref": "PE7",
+    "lat": 1.4052407,
+    "lng": 103.9086177,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Defu",
+    "ref": "",
+    "lat": 1.3622098,
+    "lng": 103.8989695,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Dhoby Ghaut",
+    "ref": "NS24;NE6;CC1",
+    "lat": 1.2996015,
+    "lng": 103.8455539,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Dover",
+    "ref": "EW22",
+    "lat": 1.3114155,
+    "lng": 103.7786108,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Downtown",
+    "ref": "DT17",
+    "lat": 1.2795107,
+    "lng": 103.8527907,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "E",
+    "ref": "",
+    "lat": 1.3570046,
+    "lng": 103.9900385,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Elias",
+    "ref": "",
+    "lat": 1.3829106,
+    "lng": 103.9392805,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Enterprise",
+    "ref": "JS9",
+    "lat": 1.3328021,
+    "lng": 103.7085422,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Esplanade",
+    "ref": "CC3",
+    "lat": 1.2934413,
+    "lng": 103.8555276,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Eunos",
+    "ref": "EW7",
+    "lat": 1.3198016,
+    "lng": 103.9028891,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Expo",
+    "ref": "DT35;CG1",
+    "lat": 1.3350774,
+    "lng": 103.9626603,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "F",
+    "ref": "",
+    "lat": 1.3533610,
+    "lng": 103.9885985,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Fajar",
+    "ref": "BP10",
+    "lat": 1.3845932,
+    "lng": 103.7708754,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Farmway",
+    "ref": "SW2",
+    "lat": 1.3971948,
+    "lng": 103.8892243,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Farrer Park",
+    "ref": "NE8",
+    "lat": 1.3124898,
+    "lng": 103.8543375,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Farrer Road",
+    "ref": "CC20",
+    "lat": 1.3174554,
+    "lng": 103.8074893,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Fernvale",
+    "ref": "SW5",
+    "lat": 1.3919037,
+    "lng": 103.8762794,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Fort Canning",
+    "ref": "DT20",
+    "lat": 1.2924885,
+    "lng": 103.8443455,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Founders' Memorial",
+    "ref": "TE22A",
+    "lat": 1.2909230,
+    "lng": 103.8689681,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Gardens by the Bay",
+    "ref": "TE22",
+    "lat": 1.2792306,
+    "lng": 103.8679453,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Gek Poh",
+    "ref": "",
+    "lat": 1.3483266,
+    "lng": 103.6980778,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Geylang Bahru",
+    "ref": "DT24",
+    "lat": 1.3215052,
+    "lng": 103.8719586,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Great World",
+    "ref": "TE15",
+    "lat": 1.2946150,
+    "lng": 103.8333413,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Gul Circle",
+    "ref": "EW30",
+    "lat": 1.3196353,
+    "lng": 103.6606551,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "HarbourFront",
+    "ref": "CC29;NE1",
+    "lat": 1.2653620,
+    "lng": 103.8215518,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Havelock",
+    "ref": "TE16",
+    "lat": 1.2885493,
+    "lng": 103.8336740,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Haw Par Villa",
+    "ref": "CC25",
+    "lat": 1.2826782,
+    "lng": 103.7818531,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Hillview",
+    "ref": "DT3",
+    "lat": 1.3623489,
+    "lng": 103.7674628,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Holland Village",
+    "ref": "CC21",
+    "lat": 1.3117308,
+    "lng": 103.7964104,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Hong Kah",
+    "ref": "JS4",
+    "lat": 1.3581119,
+    "lng": 103.7261096,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Hougang",
+    "ref": "NE14",
+    "lat": 1.3708339,
+    "lng": 103.8913481,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Hume",
+    "ref": "DT4",
+    "lat": 1.3544682,
+    "lng": 103.7691242,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Imbiah",
+    "ref": "Imbiah",
+    "lat": 1.2539153,
+    "lng": 103.8194525,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Jalan Besar",
+    "ref": "DT22",
+    "lat": 1.3053738,
+    "lng": 103.8555634,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Jelapang",
+    "ref": "BP12",
+    "lat": 1.3866937,
+    "lng": 103.7645139,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Joo Koon",
+    "ref": "EW29",
+    "lat": 1.3277350,
+    "lng": 103.6782221,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Jurong East",
+    "ref": "NS1;EW24;JE5",
+    "lat": 1.3331080,
+    "lng": 103.7422939,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Jurong Hill",
+    "ref": "JS11",
+    "lat": 1.3185810,
+    "lng": 103.7102098,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Jurong Lake District",
+    "ref": "CR19",
+    "lat": 1.3275211,
+    "lng": 103.7391142,
+    "station": "public_transport",
+    "status": "operating"
+  },
+  {
+    "name": "Jurong Pier",
+    "ref": "JS12",
+    "lat": 1.3130220,
+    "lng": 103.7104354,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Jurong Town Hall",
+    "ref": "JE6",
+    "lat": 1.3264148,
+    "lng": 103.7452272,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Jurong West",
+    "ref": "JS6",
+    "lat": 1.3491904,
+    "lng": 103.7082891,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Kadaloor",
+    "ref": "PE5",
+    "lat": 1.3995492,
+    "lng": 103.9165080,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Kaki Bukit",
+    "ref": "DT28",
+    "lat": 1.3350694,
+    "lng": 103.9083722,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Kallang",
+    "ref": "EW10",
+    "lat": 1.3114669,
+    "lng": 103.8713388,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Kangkar",
+    "ref": "SE4",
+    "lat": 1.3839286,
+    "lng": 103.9022055,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Katong Park",
+    "ref": "TE24",
+    "lat": 1.2979605,
+    "lng": 103.8862178,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Keat Hong",
+    "ref": "BP3",
+    "lat": 1.3786034,
+    "lng": 103.7490207,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Kembangan",
+    "ref": "EW6",
+    "lat": 1.3210321,
+    "lng": 103.9129269,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Kent Ridge",
+    "ref": "CC24",
+    "lat": 1.2932604,
+    "lng": 103.7846807,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Keppel",
+    "ref": "CC30",
+    "lat": 1.2704618,
+    "lng": 103.8307080,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Khatib",
+    "ref": "NS14",
+    "lat": 1.4173597,
+    "lng": 103.8330179,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "King Albert Park",
+    "ref": "DT6",
+    "lat": 1.3356633,
+    "lng": 103.7838261,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Kovan",
+    "ref": "NE13",
+    "lat": 1.3602101,
+    "lng": 103.8850002,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Kranji",
+    "ref": "NS7",
+    "lat": 1.4252189,
+    "lng": 103.7619891,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Kupang",
+    "ref": "SW3",
+    "lat": 1.3982038,
+    "lng": 103.8812460,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Labrador Park",
+    "ref": "CC27",
+    "lat": 1.2722512,
+    "lng": 103.8029947,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Lakeside",
+    "ref": "EW26",
+    "lat": 1.3442500,
+    "lng": 103.7206931,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Lavender",
+    "ref": "EW11",
+    "lat": 1.3073608,
+    "lng": 103.8627743,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Layar",
+    "ref": "SW6",
+    "lat": 1.3920846,
+    "lng": 103.8800319,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Lentor",
+    "ref": "TE5",
+    "lat": 1.3847492,
+    "lng": 103.8363700,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Little India",
+    "ref": "NE7;DT12",
+    "lat": 1.3068795,
+    "lng": 103.8491743,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Lorong Chuan",
+    "ref": "CC14",
+    "lat": 1.3515428,
+    "lng": 103.8639545,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Loyang",
+    "ref": "",
+    "lat": 1.3714803,
+    "lng": 103.9720373,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "MacPherson",
+    "ref": "CC10;DT26",
+    "lat": 1.3262310,
+    "lng": 103.8895601,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Maju",
+    "ref": "CR16",
+    "lat": 1.3281232,
+    "lng": 103.7766813,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marina Bay",
+    "ref": "NS27;TE20;CC33",
+    "lat": 1.2754714,
+    "lng": 103.8553100,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marina South",
+    "ref": "TE21",
+    "lat": 1.2743140,
+    "lng": 103.8628857,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marina South Pier",
+    "ref": "NS28",
+    "lat": 1.2714463,
+    "lng": 103.8628203,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marine Parade",
+    "ref": "TE26",
+    "lat": 1.3037090,
+    "lng": 103.9070729,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marine Terrace",
+    "ref": "TE27",
+    "lat": 1.3066048,
+    "lng": 103.9150613,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marsiling",
+    "ref": "NS8",
+    "lat": 1.4325704,
+    "lng": 103.7741243,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Marymount",
+    "ref": "CC16",
+    "lat": 1.3486303,
+    "lng": 103.8395447,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Mattar",
+    "ref": "DT25",
+    "lat": 1.3268480,
+    "lng": 103.8833398,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Maxwell",
+    "ref": "TE18",
+    "lat": 1.2806224,
+    "lng": 103.8438816,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Mayflower",
+    "ref": "TE6",
+    "lat": 1.3722318,
+    "lng": 103.8368946,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Meridian",
+    "ref": "PE2",
+    "lat": 1.3969373,
+    "lng": 103.9088833,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Mount Pleasant",
+    "ref": "TE10",
+    "lat": 1.3285726,
+    "lng": 103.8351769,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Mountbatten",
+    "ref": "CC7",
+    "lat": 1.3063929,
+    "lng": 103.8824425,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Nanyang Crescent",
+    "ref": "JW4",
+    "lat": 1.3485428,
+    "lng": 103.6811253,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Nanyang Gateway",
+    "ref": "JW3",
+    "lat": 1.3537812,
+    "lng": 103.6866773,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Napier",
+    "ref": "TE12",
+    "lat": 1.3067154,
+    "lng": 103.8191494,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Newton",
+    "ref": "NS21;DT11",
+    "lat": 1.3130638,
+    "lng": 103.8378403,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Nibong",
+    "ref": "PW5",
+    "lat": 1.4118607,
+    "lng": 103.9003529,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Nicoll Highway",
+    "ref": "CC5",
+    "lat": 1.2998380,
+    "lng": 103.8638662,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Novena",
+    "ref": "NS20",
+    "lat": 1.3205156,
+    "lng": 103.8438709,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Oasis",
+    "ref": "PE6",
+    "lat": 1.4022903,
+    "lng": 103.9127339,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Orchard",
+    "ref": "NS22;TE14",
+    "lat": 1.3031258,
+    "lng": 103.8314155,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Orchard Boulevard",
+    "ref": "TE13",
+    "lat": 1.3031879,
+    "lng": 103.8238667,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Outram Park",
+    "ref": "EW16;NE3;TE17",
+    "lat": 1.2806944,
+    "lng": 103.8392552,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Pandan Reservoir",
+    "ref": "JE7",
+    "lat": 1.3204390,
+    "lng": 103.7448028,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Pasir Panjang",
+    "ref": "CC26",
+    "lat": 1.2761997,
+    "lng": 103.7913536,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Pasir Ris",
+    "ref": "EW1;CR5",
+    "lat": 1.3712899,
+    "lng": 103.9494734,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Pasir Ris East",
+    "ref": "",
+    "lat": 1.3668934,
+    "lng": 103.9607704,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Paya Lebar",
+    "ref": "CC9;EW8",
+    "lat": 1.3174981,
+    "lng": 103.8926569,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Pending",
+    "ref": "BP8",
+    "lat": 1.3761841,
+    "lng": 103.7712587,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Peng Kang Hill",
+    "ref": "JW5",
+    "lat": 1.3428682,
+    "lng": 103.6785915,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Petir",
+    "ref": "BP7",
+    "lat": 1.3777652,
+    "lng": 103.7666291,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Phoenix",
+    "ref": "BP5",
+    "lat": 1.3786164,
+    "lng": 103.7580080,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Pioneer",
+    "ref": "EW28",
+    "lat": 1.3375884,
+    "lng": 103.6974103,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Potong Pasir",
+    "ref": "NE10",
+    "lat": 1.3314333,
+    "lng": 103.8690386,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Prince Edward Road",
+    "ref": "CC32",
+    "lat": 1.2732860,
+    "lng": 103.8470995,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Promenade",
+    "ref": "CC4;DT15",
+    "lat": 1.2931139,
+    "lng": 103.8605649,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Punggol",
+    "ref": "NE17;CP4;PTC",
+    "lat": 1.4053834,
+    "lng": 103.9026401,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Punggol Coast",
+    "ref": "NE18",
+    "lat": 1.4149656,
+    "lng": 103.9101169,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Punggol Point",
+    "ref": "PW3",
+    "lat": 1.4168517,
+    "lng": 103.9066511,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Queenstown",
+    "ref": "EW19",
+    "lat": 1.2946226,
+    "lng": 103.8060366,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Raffles Place",
+    "ref": "NS26;EW14",
+    "lat": 1.2834767,
+    "lng": 103.8517605,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Ranggung",
+    "ref": "SE5",
+    "lat": 1.3840465,
+    "lng": 103.8973612,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Redhill",
+    "ref": "EW18",
+    "lat": 1.2896482,
+    "lng": 103.8167677,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Renjong",
+    "ref": "SW8",
+    "lat": 1.3867294,
+    "lng": 103.8905331,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Resorts World",
+    "ref": "Resorts World",
+    "lat": 1.2555418,
+    "lng": 103.8209626,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Riviera",
+    "ref": "PE4",
+    "lat": 1.3945460,
+    "lng": 103.9161500,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Rochor",
+    "ref": "DT13",
+    "lat": 1.3039433,
+    "lng": 103.8524654,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Rumbia",
+    "ref": "SE2",
+    "lat": 1.3914749,
+    "lng": 103.9059729,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Sam Kee",
+    "ref": "PW1",
+    "lat": 1.4097175,
+    "lng": 103.9048838,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Samudera",
+    "ref": "PW4",
+    "lat": 1.4158890,
+    "lng": 103.9021396,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Segar",
+    "ref": "BP11",
+    "lat": 1.3877855,
+    "lng": 103.7695804,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Sembawang",
+    "ref": "NS11",
+    "lat": 1.4490928,
+    "lng": 103.8200555,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Sengkang",
+    "ref": "NE16;STC",
+    "lat": 1.3916988,
+    "lng": 103.8954828,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Senja",
+    "ref": "BP13",
+    "lat": 1.3826778,
+    "lng": 103.7623822,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Serangoon",
+    "ref": "CC13;NE12",
+    "lat": 1.3498065,
+    "lng": 103.8726779,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Serangoon North",
+    "ref": "",
+    "lat": 1.3704489,
+    "lng": 103.8740127,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Shenton Way",
+    "ref": "TE19",
+    "lat": 1.2775343,
+    "lng": 103.8509192,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Siglap",
+    "ref": "TE28",
+    "lat": 1.3095907,
+    "lng": 103.9300245,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Simei",
+    "ref": "EW3",
+    "lat": 1.3431881,
+    "lng": 103.9533710,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Sixth Avenue",
+    "ref": "DT7",
+    "lat": 1.3310950,
+    "lng": 103.7972459,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Somerset",
+    "ref": "NS23",
+    "lat": 1.3003304,
+    "lng": 103.8391340,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Soo Teck",
+    "ref": "PW7",
+    "lat": 1.4053322,
+    "lng": 103.8972682,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "South View",
+    "ref": "BP2",
+    "lat": 1.3802716,
+    "lng": 103.7452826,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Springleaf",
+    "ref": "TE4",
+    "lat": 1.3981667,
+    "lng": 103.8178577,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Stadium",
+    "ref": "CC6",
+    "lat": 1.3028724,
+    "lng": 103.8753512,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Stevens",
+    "ref": "DT10;TE11",
+    "lat": 1.3199757,
+    "lng": 103.8257629,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Sumang",
+    "ref": "PW6",
+    "lat": 1.4084614,
+    "lng": 103.8985641,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Sungei Bedok",
+    "ref": "TE31;DT37",
+    "lat": 1.3203915,
+    "lng": 103.9572601,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tai Seng",
+    "ref": "CC11",
+    "lat": 1.3354010,
+    "lng": 103.8882093,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tampines",
+    "ref": "DT32;EW2",
+    "lat": 1.3542293,
+    "lng": 103.9440831,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tampines East",
+    "ref": "DT33",
+    "lat": 1.3559944,
+    "lng": 103.9547313,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tampines North",
+    "ref": "",
+    "lat": 1.3693179,
+    "lng": 103.9381953,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tampines West",
+    "ref": "DT31",
+    "lat": 1.3457034,
+    "lng": 103.9385284,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tan Kah Kee",
+    "ref": "DT8",
+    "lat": 1.3259029,
+    "lng": 103.8072601,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tanah Merah",
+    "ref": "EW4;CG",
+    "lat": 1.3271777,
+    "lng": 103.9464864,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tanjong Katong",
+    "ref": "TE25",
+    "lat": 1.2995936,
+    "lng": 103.8973782,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tanjong Pagar",
+    "ref": "EW15",
+    "lat": 1.2766096,
+    "lng": 103.8457124,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tanjong Rhu",
+    "ref": "TE23",
+    "lat": 1.2973432,
+    "lng": 103.8734592,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tavistock",
+    "ref": "",
+    "lat": 1.3700401,
+    "lng": 103.8635863,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tawas",
+    "ref": "JW2",
+    "lat": 1.3506557,
+    "lng": 103.6918893,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Teck Ghee",
+    "ref": "CR12",
+    "lat": 1.3650823,
+    "lng": 103.8432935,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Teck Lee",
+    "ref": "PW2",
+    "lat": 1.4127821,
+    "lng": 103.9065894,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Teck Whye",
+    "ref": "BP4",
+    "lat": 1.3766705,
+    "lng": 103.7536471,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "Telok Ayer",
+    "ref": "DT18",
+    "lat": 1.2823549,
+    "lng": 103.8482749,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Telok Blangah",
+    "ref": "CC28",
+    "lat": 1.2708897,
+    "lng": 103.8098738,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tengah",
+    "ref": "JS3",
+    "lat": 1.3662254,
+    "lng": 103.7300925,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tengah Park",
+    "ref": "JE2",
+    "lat": 1.3522936,
+    "lng": 103.7368054,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Tengah Plantation",
+    "ref": "JE1",
+    "lat": 1.3573609,
+    "lng": 103.7334060,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Thanggam",
+    "ref": "SW4",
+    "lat": 1.3973334,
+    "lng": 103.8756345,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Tiong Bahru",
+    "ref": "EW17",
+    "lat": 1.2861318,
+    "lng": 103.8269565,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Toa Payoh",
+    "ref": "NS19",
+    "lat": 1.3326170,
+    "lng": 103.8471407,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Toh Guan",
+    "ref": "JE4",
+    "lat": 1.3400465,
+    "lng": 103.7426012,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Tongkang",
+    "ref": "SW7",
+    "lat": 1.3894081,
+    "lng": 103.8858267,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Tuas Crescent",
+    "ref": "EW31",
+    "lat": 1.3211582,
+    "lng": 103.6489064,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tuas Link",
+    "ref": "EW33",
+    "lat": 1.3402939,
+    "lng": 103.6367718,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tuas West Road",
+    "ref": "EW32",
+    "lat": 1.3300518,
+    "lng": 103.6395694,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Tukang",
+    "ref": "JS10",
+    "lat": 1.3253215,
+    "lng": 103.7092754,
+    "station": "subway",
+    "status": "future"
+  },
+  {
+    "name": "Turf City",
+    "ref": "CR14",
+    "lat": 1.3409016,
+    "lng": 103.7942518,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Ubi",
+    "ref": "DT27",
+    "lat": 1.3299411,
+    "lng": 103.8992487,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Upper Changi",
+    "ref": "DT34",
+    "lat": 1.3419019,
+    "lng": 103.9614705,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Upper Thomson",
+    "ref": "TE8",
+    "lat": 1.3545690,
+    "lng": 103.8328271,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "VivoCity",
+    "ref": "S1",
+    "lat": 1.2650990,
+    "lng": 103.8223324,
+    "station": "monorail",
+    "status": "operating"
+  },
+  {
+    "name": "West Coast",
+    "ref": "CR18",
+    "lat": 1.3105779,
+    "lng": 103.7579588,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Woodlands",
+    "ref": "TE2;NS9",
+    "lat": 1.4359096,
+    "lng": 103.7874624,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Woodlands North",
+    "ref": "TE1",
+    "lat": 1.4482886,
+    "lng": 103.7857125,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Woodlands North RTS",
+    "ref": "",
+    "lat": 1.4478101,
+    "lng": 103.7866218,
+    "station": "light_rail",
+    "status": "operating"
+  },
+  {
+    "name": "Woodlands South",
+    "ref": "TE3",
+    "lat": 1.4267326,
+    "lng": 103.7937804,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Woodlands Train Checkpoint",
+    "ref": "",
+    "lat": 1.4450308,
+    "lng": 103.7699930,
+    "station": "train",
+    "status": "operating"
+  },
+  {
+    "name": "Woodleigh",
+    "ref": "NE11",
+    "lat": 1.3392017,
+    "lng": 103.8707517,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Xilin",
+    "ref": "DT36",
+    "lat": 1.3286564,
+    "lng": 103.9648995,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Yew Tee",
+    "ref": "NS5",
+    "lat": 1.3974608,
+    "lng": 103.7474009,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Yio Chu Kang",
+    "ref": "NS15",
+    "lat": 1.3817905,
+    "lng": 103.8449359,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "Yishun",
+    "ref": "NS13",
+    "lat": 1.4293839,
+    "lng": 103.8350282,
+    "station": "subway",
+    "status": "operating"
+  },
+  {
+    "name": "one-north",
+    "ref": "CC23",
+    "lat": 1.2996498,
+    "lng": 103.7873872,
+    "station": "subway",
+    "status": "operating"
+  }
+]
