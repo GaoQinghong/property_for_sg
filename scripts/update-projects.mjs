@@ -64,6 +64,7 @@ for (let index=0; index<periods.length; index+=4) {
 }
 const merged = [];
 const mergedKeys = new Set();
+const audit = { soldOut:[], missingCoordinates:[], notLaunched:[] };
 
 for (const row of pipelineRows) {
   const key = normalise(row.project);
@@ -72,11 +73,11 @@ for (const row of pipelineRows) {
   const month = sales && latestSales(sales);
   const units = Number(month?.unitsAvail || row.totalUnits || 0);
   const sold = Number(month?.soldToDate || 0);
-  if (month && units > 0 && sold >= units) continue;
+  if (month && units > 0 && sold >= units) { audit.soldOut.push({name:row.project,units,sold}); continue; }
   let coordinates = old.lat && old.lng ? {lat:old.lat,lng:old.lng} : null;
   if (!coordinates && sales?.x && sales?.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
   if (!coordinates) coordinates = await geocode(`${row.street || row.project}, Singapore`);
-  if (!coordinates) continue;
+  if (!coordinates) { audit.missingCoordinates.push({name:row.project,street:row.street || "",units,sold,source:"pipeline"}); continue; }
   merged.push({
     id:key.toLowerCase(), name:row.project, area:old.area || `${row.street || "新加坡"} · D${String(row.district || sales?.district || "—").padStart(2,"0")}`,
     status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
@@ -94,12 +95,13 @@ for (const [key, sales] of salesByName) {
   if (mergedKeys.has(key)) continue;
   const month = latestSales(sales);
   const units = Number(month?.unitsAvail || 0), sold = Number(month?.soldToDate || 0);
-  if (!units || sold >= units || Number(month?.launchedToDate || 0) === 0) continue;
+  if (!units || sold >= units) continue;
+  if (Number(month?.launchedToDate || 0) === 0) { audit.notLaunched.push({name:sales.project,units,sold}); continue; }
   const old = oldByName.get(key) || {};
   let coordinates = old.lat && old.lng ? {lat:old.lat,lng:old.lng} : null;
   if (!coordinates && sales.x && sales.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
   if (!coordinates) coordinates = await geocode(`${sales.street || sales.project}, Singapore`);
-  if (!coordinates) continue;
+  if (!coordinates) { audit.missingCoordinates.push({name:sales.project,street:sales.street || "",units,sold,source:"developer-sales"}); continue; }
   merged.push({
     id:key.toLowerCase(), name:sales.project, area:old.area || `${sales.street || "新加坡"} · D${String(sales.district || "—").padStart(2,"0")}`,
     status:"在售", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
@@ -114,4 +116,6 @@ for (const old of oldData.projects.filter(project => project.status === "土地�
 const statusOrder = { "在售":0, "即将开盘":1, "确定开发":2, "土地供应":3 };
 merged.sort((a,b) => statusOrder[a.status] - statusOrder[b.status] || a.name.localeCompare(b.name));
 await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:merged}, null, 2)}\n`);
+await writeFile(new URL("../public/data/project-audit.json", import.meta.url), `${JSON.stringify({updatedAt,...audit}, null, 2)}\n`);
 console.log(`已更新 ${merged.length} 个项目（${updatedAt}）`);
+console.log(`审计：${audit.missingCoordinates.length} 个缺少坐标，${audit.soldOut.length} 个已售罄，${audit.notLaunched.length} 个尚未开售`);
