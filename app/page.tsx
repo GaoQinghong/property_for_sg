@@ -3,7 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 type ProjectStatus = "在售" | "即将开盘" | "确定开发" | "土地供应";
-const projects = [
+type Project = { id:number|string; name:string; area:string; status:ProjectStatus; units:number; sold:number; developer:string; tenure:string; launch:string; top:string; mrt:string; school:string; lat:number; lng:number; updatedAt?:string; source?:string };
+const fallbackProjects: Project[] = [
   { id: 1, name: "Dunearn House", area: "武吉知马 · D11", status: "在售" as ProjectStatus, units: 228, sold: 86, developer: "Frasers Property / Sekisui House", tenure: "99 年", launch: "2026 年 7 月", top: "2030", mrt: "Botanic Gardens · 760m", school: "南洋小学 · 1km 内", lat: 1.3268, lng: 103.8121 },
   { id: 2, name: "Thomson Reserve", area: "汤申 · D20", status: "即将开盘" as ProjectStatus, units: 540, sold: 0, developer: "待最终确认", tenure: "99 年", launch: "预计 2026 下半年", top: "待公布", mrt: "Upper Thomson · 320m", school: "爱同学校 · 1km 内", lat: 1.3545, lng: 103.8328 },
   { id: 3, name: "Narra Residences", area: "山景 · D23", status: "在售" as ProjectStatus, units: 540, sold: 193, developer: "Santander Properties", tenure: "99 年", launch: "2026 年", top: "2030", mrt: "Hillview · 1.2km", school: "CHIJ Our Lady Queen of Peace", lat: 1.3659, lng: 103.7634 },
@@ -17,7 +18,9 @@ type RailStation = { name:string; ref:string; lat:number; lng:number; station:st
 type Place = { name:string; type:"小学"|"中学"|"商场"; lat:number; lng:number; address?:string; nearestMrt?:string; bus?:string };
 
 export default function Home() {
-  const [selected, setSelected] = useState(projects[0]);
+  const [projects, setProjects] = useState<Project[]>(fallbackProjects);
+  const [selected, setSelected] = useState<Project>(fallbackProjects[0]);
+  const [dataUpdatedAt, setDataUpdatedAt] = useState("2026-08-18");
   const [activeStatus, setActiveStatus] = useState<ProjectStatus | "全部">("全部");
   const [query, setQuery] = useState("");
   const [mapReady, setMapReady] = useState(false);
@@ -38,11 +41,17 @@ export default function Home() {
 
   useEffect(() => {
     Promise.all([
+      fetch("./data/projects.json").then(response => response.json()),
       fetch("./data/mrt-lines.json").then(response => response.json()),
       fetch("./data/mrt-stations.json").then(response => response.json()),
       fetch("./data/schools.json").then(response => response.json()),
       fetch("./data/malls.json").then(response => response.json()),
-    ]).then(([lines, stations, schools, malls]) => { setRailLines(lines); setRailStations(stations); setPlaces([...schools, ...malls]); });
+    ]).then(([projectData, lines, stations, schools, malls]) => {
+      const nextProjects = projectData.projects || projectData;
+      if (nextProjects.length) { setProjects(nextProjects); setSelected(nextProjects[0]); }
+      if (projectData.updatedAt) setDataUpdatedAt(projectData.updatedAt);
+      setRailLines(lines); setRailStations(stations); setPlaces([...schools, ...malls]);
+    }).catch(error => console.error("数据文件载入失败，使用内置后备数据", error));
   }, []);
 
   useEffect(() => {
@@ -116,7 +125,7 @@ export default function Home() {
   return <main className="app-shell">
     <header className="topbar">
       <a className="brand" href="#"><span className="brand-mark">SG</span><span><strong>狮城新盘地图</strong><small>私人住宅与 EC 研究工具</small></span></a>
-      <div className="header-meta"><span className="live-dot" />数据更新于 2026-08-18 <button>数据说明</button></div>
+      <div className="header-meta"><span className="live-dot" />数据更新于 {dataUpdatedAt} <button>数据说明</button></div>
     </header>
     <section className="workspace">
       <aside className="sidebar">
@@ -140,7 +149,7 @@ export default function Home() {
           <button className="close">×</button><div className="detail-title"><div><span className={`status ${statusClass[selected.status]}`}><i />{selected.status}</span><h1>{selected.name}</h1><p>{selected.area} · {selected.tenure}</p></div><button className="bookmark">☆</button></div>
           <div className="inventory"><div><strong>{selected.units.toLocaleString()}</strong><small>总户数</small></div><div><strong>{selected.status === "在售" ? selected.sold : "—"}</strong><small>已售</small></div><div><strong>{selected.status === "在售" ? selected.units-selected.sold : "—"}</strong><small>估算未售</small></div></div>
           <dl className="facts"><div><dt>开发商</dt><dd>{selected.developer}</dd></div><div><dt>预计开盘</dt><dd>{selected.launch}</dd></div><div><dt>预计 TOP</dt><dd>{selected.top}</dd></div><div><dt>最近地铁</dt><dd>{selected.mrt}</dd></div><div className="wide"><dt>附近学校</dt><dd>{selected.school}</dd></div></dl>
-          <div className="source-note"><span>URA</span>库存来自开发商月报，最后核对于 2026-08-18</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
+          <div className="source-note"><span>URA</span>库存来自开发商月报，最后核对于 {selected.updatedAt || dataUpdatedAt}</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
         </article>
       </section>
     </section>

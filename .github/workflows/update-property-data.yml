@@ -1,0 +1,37 @@
+name: Update property data
+
+on:
+  schedule:
+    - cron: "25 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: property-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Fetch URA project data
+        run: npm run data:update-projects
+        env:
+          URA_ACCESS_KEY: ${{ secrets.URA_ACCESS_KEY }}
+      - name: Verify production build
+        run: npm run build:pages
+      - name: Commit data changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/projects.json
+          git diff --cached --quiet || git commit -m "Update URA property data"
+          git push

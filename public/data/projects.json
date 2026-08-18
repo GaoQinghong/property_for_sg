@@ -1,0 +1,12 @@
+{
+  "updatedAt": "2026-08-18",
+  "source": "URA developer sales, URA pipeline and GLS programme",
+  "projects": [
+    { "id": 1, "name": "Dunearn House", "area": "武吉知马 · D11", "status": "在售", "units": 228, "sold": 86, "developer": "Frasers Property / Sekisui House", "tenure": "99 年", "launch": "2026 年 7 月", "top": "2030", "mrt": "Botanic Gardens · 760m", "school": "南洋小学 · 1km 内", "lat": 1.3268, "lng": 103.8121, "updatedAt": "2026-08-18" },
+    { "id": 2, "name": "Thomson Reserve", "area": "汤申 · D20", "status": "即将开盘", "units": 540, "sold": 0, "developer": "待最终确认", "tenure": "99 年", "launch": "预计 2026 下半年", "top": "待公布", "mrt": "Upper Thomson · 320m", "school": "爱同学校 · 1km 内", "lat": 1.3545, "lng": 103.8328, "updatedAt": "2026-08-18" },
+    { "id": 3, "name": "Narra Residences", "area": "山景 · D23", "status": "在售", "units": 540, "sold": 193, "developer": "Santander Properties", "tenure": "99 年", "launch": "2026 年", "top": "2030", "mrt": "Hillview · 1.2km", "school": "CHIJ Our Lady Queen of Peace", "lat": 1.3659, "lng": 103.7634, "updatedAt": "2026-08-18" },
+    { "id": 4, "name": "River Valley Green (Parcel C)", "area": "里峇峇利 · D09", "status": "确定开发", "units": 470, "sold": 0, "developer": "土地已中标", "tenure": "99 年", "launch": "尚未公布", "top": "待公布", "mrt": "Great World · 450m", "school": "River Valley Primary · 1km 内", "lat": 1.2936, "lng": 103.8258, "updatedAt": "2026-08-18" },
+    { "id": 5, "name": "Bayshore Drive", "area": "东海岸 · D16", "status": "确定开发", "units": 1280, "sold": 0, "developer": "土地已中标", "tenure": "99 年", "launch": "尚未公布", "top": "待公布", "mrt": "Bayshore · 120m", "school": "Temasek Primary", "lat": 1.3126, "lng": 103.9412, "updatedAt": "2026-08-18" },
+    { "id": 6, "name": "Marina Gardens Lane", "area": "滨海湾 · D01", "status": "土地供应", "units": 775, "sold": 0, "developer": "尚未招标", "tenure": "99 年", "launch": "预计 2026 年 8 月卖地", "top": "待公布", "mrt": "Marina South · 180m", "school": "—", "lat": 1.2786, "lng": 103.8682, "updatedAt": "2026-08-18" }
+  ]
+}
