@@ -22,6 +22,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Check updater syntax
+        run: node --check scripts/update-projects.mjs
       - name: Fetch URA project data
         run: npm run data:update-projects
         env:
