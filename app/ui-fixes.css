@@ -1,0 +1,30 @@
+/* Responsive overrides kept separate from the minified base stylesheet. */
+@media (min-width: 801px) {
+  .status-tabs {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 5px;
+    overflow: visible;
+  }
+
+  .status-tabs button {
+    min-width: 0;
+    padding: 7px 3px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
+
+.primary-action {
+  text-decoration: none;
+}
+
+.project-marker-shell.active {
+  z-index: 1000 !important;
+}
+
+.project-marker-shell.active .real-map-pin {
+  border-color: #ef4444;
+  transform: scale(1.25);
+  box-shadow: 0 5px 18px rgba(239, 68, 68, 0.42);
+}
