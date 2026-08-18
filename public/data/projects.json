@@ -207,7 +207,7 @@
       "school": "待计算",
       "lat": 1.3048,
       "lng": 103.8593,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -226,7 +226,7 @@
       "school": "待计算",
       "lat": 1.3565,
       "lng": 103.9416,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -264,7 +264,7 @@
       "school": "待计算",
       "lat": 1.3841999999999999,
       "lng": 103.8767,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -283,7 +283,7 @@
       "school": "待计算",
       "lat": 1.3010000000000002,
       "lng": 103.7844,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -340,7 +340,7 @@
       "school": "待计算",
       "lat": 1.4197,
       "lng": 103.8408,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -378,7 +378,7 @@
       "school": "待计算",
       "lat": 1.3765999999999998,
       "lng": 103.7541,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -416,7 +416,7 @@
       "school": "待计算",
       "lat": 1.31,
       "lng": 103.91600000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -435,7 +435,7 @@
       "school": "待计算",
       "lat": 1.3557,
       "lng": 103.96130000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -454,7 +454,7 @@
       "school": "待计算",
       "lat": 1.3873,
       "lng": 103.69569999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -511,7 +511,7 @@
       "school": "待计算",
       "lat": 1.3017,
       "lng": 103.83239999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -549,7 +549,7 @@
       "school": "待计算",
       "lat": 1.3034000000000001,
       "lng": 103.7846,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -568,7 +568,7 @@
       "school": "待计算",
       "lat": 1.3101,
       "lng": 103.90750000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -587,7 +587,7 @@
       "school": "待计算",
       "lat": 1.3076,
       "lng": 103.7876,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -606,7 +606,7 @@
       "school": "待计算",
       "lat": 1.3111000000000002,
       "lng": 103.89349999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -625,7 +625,7 @@
       "school": "待计算",
       "lat": 1.3096,
       "lng": 103.9133,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -663,7 +663,7 @@
       "school": "待计算",
       "lat": 1.4068,
       "lng": 103.81649999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -682,7 +682,7 @@
       "school": "待计算",
       "lat": 1.3032000000000001,
       "lng": 103.77850000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -777,7 +777,7 @@
       "school": "待计算",
       "lat": 1.3359,
       "lng": 103.7025,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -815,7 +815,7 @@
       "school": "待计算",
       "lat": 1.355,
       "lng": 103.96560000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -872,7 +872,7 @@
       "school": "待计算",
       "lat": 1.4040000000000001,
       "lng": 103.807,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -891,7 +891,7 @@
       "school": "待计算",
       "lat": 1.4075,
       "lng": 103.8159,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -986,7 +986,7 @@
       "school": "待计算",
       "lat": 1.339,
       "lng": 103.7759,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1062,7 +1062,7 @@
       "school": "待计算",
       "lat": 1.3135000000000001,
       "lng": 103.89,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1081,7 +1081,7 @@
       "school": "待计算",
       "lat": 1.2812000000000001,
       "lng": 103.85690000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1100,7 +1100,7 @@
       "school": "待计算",
       "lat": 1.3889,
       "lng": 103.6909,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1157,7 +1157,7 @@
       "school": "待计算",
       "lat": 1.3597,
       "lng": 103.9413,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1214,7 +1214,7 @@
       "school": "待计算",
       "lat": 1.3579999999999999,
       "lng": 103.9464,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1233,7 +1233,7 @@
       "school": "待计算",
       "lat": 1.3350000000000002,
       "lng": 103.7798,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1252,7 +1252,7 @@
       "school": "待计算",
       "lat": 1.3865999999999998,
       "lng": 103.8674,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1271,7 +1271,7 @@
       "school": "待计算",
       "lat": 1.3897,
       "lng": 103.8731,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1290,7 +1290,7 @@
       "school": "待计算",
       "lat": 1.2871,
       "lng": 103.8193,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1328,7 +1328,7 @@
       "school": "待计算",
       "lat": 1.3547,
       "lng": 103.9452,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1347,7 +1347,7 @@
       "school": "待计算",
       "lat": 1.306,
       "lng": 103.83109999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1366,7 +1366,7 @@
       "school": "待计算",
       "lat": 1.3007,
       "lng": 103.8262,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1442,7 +1442,7 @@
       "school": "待计算",
       "lat": 1.3432000000000002,
       "lng": 103.71000000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1461,7 +1461,7 @@
       "school": "待计算",
       "lat": 1.4186,
       "lng": 103.83890000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1480,7 +1480,7 @@
       "school": "待计算",
       "lat": 1.4026,
       "lng": 103.8087,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1499,7 +1499,7 @@
       "school": "待计算",
       "lat": 1.3019,
       "lng": 103.91590000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1518,7 +1518,7 @@
       "school": "待计算",
       "lat": 1.3813,
       "lng": 103.6993,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1537,7 +1537,7 @@
       "school": "待计算",
       "lat": 1.3005,
       "lng": 103.78150000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1556,7 +1556,7 @@
       "school": "待计算",
       "lat": 1.3228,
       "lng": 103.8566,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1575,7 +1575,7 @@
       "school": "待计算",
       "lat": 1.3211000000000002,
       "lng": 103.8626,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1632,7 +1632,7 @@
       "school": "待计算",
       "lat": 1.3165,
       "lng": 103.8862,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1670,7 +1670,7 @@
       "school": "待计算",
       "lat": 1.3127,
       "lng": 103.8078,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1689,7 +1689,7 @@
       "school": "待计算",
       "lat": 1.3071000000000002,
       "lng": 103.78020000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1746,7 +1746,7 @@
       "school": "待计算",
       "lat": 1.338,
       "lng": 103.7052,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1784,7 +1784,7 @@
       "school": "待计算",
       "lat": 1.3257,
       "lng": 103.863,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1803,7 +1803,7 @@
       "school": "待计算",
       "lat": 1.3385,
       "lng": 103.7748,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1822,7 +1822,7 @@
       "school": "待计算",
       "lat": 1.3014000000000001,
       "lng": 103.8321,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1841,7 +1841,7 @@
       "school": "待计算",
       "lat": 1.3387,
       "lng": 103.7804,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1936,7 +1936,7 @@
       "school": "待计算",
       "lat": 1.3241,
       "lng": 103.9367,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -1974,7 +1974,7 @@
       "school": "待计算",
       "lat": 1.2866,
       "lng": 103.8214,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2031,7 +2031,7 @@
       "school": "待计算",
       "lat": 1.3205,
       "lng": 103.80590000000001,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2050,7 +2050,7 @@
       "school": "待计算",
       "lat": 1.3888999999999998,
       "lng": 103.8769,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2069,7 +2069,7 @@
       "school": "待计算",
       "lat": 1.3448,
       "lng": 103.7089,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2088,7 +2088,7 @@
       "school": "待计算",
       "lat": 1.383,
       "lng": 103.869,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2107,7 +2107,7 @@
       "school": "待计算",
       "lat": 1.3044,
       "lng": 103.83239999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2164,7 +2164,7 @@
       "school": "待计算",
       "lat": 1.376,
       "lng": 103.7482,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2183,7 +2183,7 @@
       "school": "待计算",
       "lat": 1.308,
       "lng": 103.82879999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2202,7 +2202,7 @@
       "school": "待计算",
       "lat": 1.305,
       "lng": 103.7854,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2221,7 +2221,7 @@
       "school": "待计算",
       "lat": 1.386,
       "lng": 103.6989,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2240,7 +2240,7 @@
       "school": "待计算",
       "lat": 1.3034000000000001,
       "lng": 103.83059999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2259,7 +2259,7 @@
       "school": "待计算",
       "lat": 1.3305,
       "lng": 103.8606,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2278,7 +2278,7 @@
       "school": "待计算",
       "lat": 1.3107,
       "lng": 103.8589,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2297,7 +2297,7 @@
       "school": "待计算",
       "lat": 1.3063,
       "lng": 103.82579999999999,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2316,7 +2316,7 @@
       "school": "待计算",
       "lat": 1.3057,
       "lng": 103.9088,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
@@ -2335,7 +2335,7 @@
       "school": "待计算",
       "lat": 1.4397,
       "lng": 103.7858,
-      "locationAccuracy": "district",
+      "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
       "source": "URA"
     },
