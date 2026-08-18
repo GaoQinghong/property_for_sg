@@ -3,6 +3,24 @@
   "source": "URA developer sales, URA pipeline and GLS programme",
   "projects": [
     {
+      "id": "upperhouseatorchardboulevard",
+      "name": "UPPERHOUSE at Orchard Boulevard",
+      "area": "乌节路 · D10",
+      "status": "在售",
+      "units": 301,
+      "sold": 242,
+      "developer": "United Venture Development (No. 7) Pte. Ltd.",
+      "tenure": "99 年",
+      "launch": "2025 年 7 月",
+      "top": "2029",
+      "mrt": "Orchard Boulevard · 130m",
+      "school": "River Valley Primary",
+      "lat": 1.30201,
+      "lng": 103.82415,
+      "updatedAt": "2026-08-18",
+      "source": "开发商资料"
+    },
+    {
       "id": "8bt",
       "name": "8@BT",
       "area": "武吉知马 · D21",
