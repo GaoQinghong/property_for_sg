@@ -19,7 +19,7 @@ type Place = { name:string; type:"小学"|"中学"|"商场"; lat:number; lng:num
 
 export default function Home() {
   const [projects, setProjects] = useState<Project[]>(fallbackProjects);
-  const [selected, setSelected] = useState<Project>(fallbackProjects[0]);
+  const [selected, setSelected] = useState<Project | null>(null);
   const [dataUpdatedAt, setDataUpdatedAt] = useState("2026-08-18");
   const [activeStatus, setActiveStatus] = useState<ProjectStatus | "全部">("全部");
   const [query, setQuery] = useState("");
@@ -48,7 +48,7 @@ export default function Home() {
       fetch("./data/malls.json").then(response => response.json()),
     ]).then(([projectData, lines, stations, schools, malls]) => {
       const nextProjects = projectData.projects || projectData;
-      if (nextProjects.length) { setProjects(nextProjects); setSelected(nextProjects[0]); }
+      if (nextProjects.length) setProjects(nextProjects);
       if (projectData.updatedAt) setDataUpdatedAt(projectData.updatedAt);
       setRailLines(lines); setRailStations(stations); setPlaces([...schools, ...malls]);
     }).catch(error => console.error("数据文件载入失败，使用内置后备数据", error));
@@ -120,7 +120,9 @@ export default function Home() {
     });
   }, [mapReady, placeFilters, places]);
 
-  useEffect(() => { mapInstance.current?.flyTo([selected.lat, selected.lng], Math.max(mapInstance.current.getZoom(), 13), { duration: .7 }); }, [selected]);
+  useEffect(() => {
+    if (selected) mapInstance.current?.flyTo([selected.lat, selected.lng], Math.max(mapInstance.current.getZoom(), 13), { duration: .7 });
+  }, [selected]);
 
   return <main className="app-shell">
     <header className="topbar">
@@ -132,7 +134,7 @@ export default function Home() {
         <div className="search-wrap"><label htmlFor="search">搜索项目、地区或开发商</label><div className="search-box"><span>⌕</span><input id="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="例如：武吉知马" /></div></div>
         <div className="status-tabs">{(["全部", "在售", "即将开盘", "确定开发", "土地供应"] as const).map(status => <button key={status} className={activeStatus === status ? "active" : ""} onClick={() => setActiveStatus(status)}>{status}</button>)}</div>
         <div className="results-head"><span><b>{visible.length}</b> 个项目</span><button>筛选 <span className="filter-count">3</span></button></div>
-        <div className="project-list">{visible.map(project => <button key={project.id} className={`project-card ${selected.id === project.id ? "selected" : ""}`} onClick={() => setSelected(project)}>
+        <div className="project-list">{visible.map(project => <button key={project.id} className={`project-card ${selected?.id === project.id ? "selected" : ""}`} onClick={() => setSelected(project)}>
           <div className="card-top"><span className={`status ${statusClass[project.status]}`}><i />{project.status}</span><span className="units">{project.units.toLocaleString()} 户</span></div>
           <h2>{project.name}</h2><p>{project.area} · {project.tenure}</p>
           <div className="card-stats"><span><small>开盘</small>{project.launch}</span><span><small>最近地铁</small>{project.mrt.split(" · ")[0]}</span></div>
@@ -145,12 +147,12 @@ export default function Home() {
           {(["小学","中学","商场"] as const).map(type => <button key={type} className={placeFilters[type] ? `active ${type}` : type} onClick={() => setPlaceFilters(value => ({...value,[type]:!value[type]}))}><span>{type === "商场" ? "购" : type[0]}</span>{type}</button>)}
         </div>
         <div className="legend"><span><i className="sale" />在售</span><span><i className="soon" />即将开盘</span><span><i className="confirmed" />确定开发</span><span><i className="land" />土地供应</span></div>
-        <article className="detail-card">
-          <button className="close">×</button><div className="detail-title"><div><span className={`status ${statusClass[selected.status]}`}><i />{selected.status}</span><h1>{selected.name}</h1><p>{selected.area} · {selected.tenure}</p></div><button className="bookmark">☆</button></div>
+        {selected && <article className="detail-card">
+          <button className="close" aria-label="关闭项目详情" onClick={() => setSelected(null)}>×</button><div className="detail-title"><div><span className={`status ${statusClass[selected.status]}`}><i />{selected.status}</span><h1>{selected.name}</h1><p>{selected.area} · {selected.tenure}</p></div><button className="bookmark">☆</button></div>
           <div className="inventory"><div><strong>{selected.units.toLocaleString()}</strong><small>总户数</small></div><div><strong>{selected.status === "在售" ? selected.sold : "—"}</strong><small>已售</small></div><div><strong>{selected.status === "在售" ? selected.units-selected.sold : "—"}</strong><small>估算未售</small></div></div>
           <dl className="facts"><div><dt>开发商</dt><dd>{selected.developer}</dd></div><div><dt>预计开盘</dt><dd>{selected.launch}</dd></div><div><dt>预计 TOP</dt><dd>{selected.top}</dd></div><div><dt>最近地铁</dt><dd>{selected.mrt}</dd></div><div className="wide"><dt>附近学校</dt><dd>{selected.school}</dd></div></dl>
           <div className="source-note"><span>{selected.source || "URA"}</span>库存来自开发商月报或开发商资料，最后核对于 {selected.updatedAt || dataUpdatedAt}</div><button className="primary-action">查看完整项目资料 <span>→</span></button>
-        </article>
+        </article>}
       </section>
     </section>
   </main>;
