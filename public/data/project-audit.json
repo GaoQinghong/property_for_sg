@@ -1,0 +1,787 @@
+{
+  "updatedAt": "2026-08-18",
+  "soldOut": [
+    {
+      "name": "Novo Place",
+      "units": 504,
+      "sold": 504
+    },
+    {
+      "name": "Lentor Central Residences",
+      "units": 477,
+      "sold": 477
+    },
+    {
+      "name": "Lyndenwoods",
+      "units": 343,
+      "sold": 343
+    },
+    {
+      "name": "Skye at Holland",
+      "units": 666,
+      "sold": 666
+    },
+    {
+      "name": "Blossoms By The Park",
+      "units": 275,
+      "sold": 275
+    },
+    {
+      "name": "Lentor Hills Residences",
+      "units": 598,
+      "sold": 598
+    },
+    {
+      "name": "Hillhaven",
+      "units": 341,
+      "sold": 341
+    },
+    {
+      "name": "Lentor Mansion",
+      "units": 533,
+      "sold": 533
+    }
+  ],
+  "missingCoordinates": [
+    {
+      "name": "Emerald Of Katong",
+      "street": "Jalan Tembusu",
+      "units": 846,
+      "sold": 844,
+      "source": "pipeline"
+    },
+    {
+      "name": "Pollen Collection II",
+      "street": "Pollen Crescent/Pollen Lane/Pollen Rise/Pollen Terrace",
+      "units": 186,
+      "sold": 42,
+      "source": "pipeline"
+    },
+    {
+      "name": "Luxus Hills",
+      "street": "Luxus Hill Heights/Luxus Hill Road/Luxus Hill View",
+      "units": 156,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Landed housing development",
+      "street": "Nim Road/Ang Mo Kio Avenue 5",
+      "units": 6,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Luxus Hills",
+      "street": "Luxus Hill Road/Seletar Road",
+      "units": 156,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Parktown Residence",
+      "street": "Tampines Street 62",
+      "units": 1193,
+      "sold": 1167,
+      "source": "pipeline"
+    },
+    {
+      "name": "Elta",
+      "street": "Clementi Avenue 1",
+      "units": 501,
+      "sold": 414,
+      "source": "pipeline"
+    },
+    {
+      "name": "Nava Grove",
+      "street": "Pine Grove",
+      "units": 552,
+      "sold": 551,
+      "source": "pipeline"
+    },
+    {
+      "name": "The Orie",
+      "street": "Lorong 1 Toa Payoh",
+      "units": 777,
+      "sold": 741,
+      "source": "pipeline"
+    },
+    {
+      "name": "Aurelle Of Tampines",
+      "street": "Tampines Street 62",
+      "units": 760,
+      "sold": 757,
+      "source": "pipeline"
+    },
+    {
+      "name": "One Marina Gardens",
+      "street": "Marina Gardens Lane",
+      "units": 937,
+      "sold": 659,
+      "source": "pipeline"
+    },
+    {
+      "name": "Service apartments/Office/retail development",
+      "street": "Robinson Road",
+      "units": 15,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Bloomsbury Residences",
+      "street": "Media Circle",
+      "units": 358,
+      "sold": 316,
+      "source": "pipeline"
+    },
+    {
+      "name": "Zyon Grand",
+      "street": "Zion Road",
+      "units": 706,
+      "sold": 636,
+      "source": "pipeline"
+    },
+    {
+      "name": "Canberra Crescent Residences",
+      "street": "Canberra Crescent",
+      "units": 376,
+      "sold": 341,
+      "source": "pipeline"
+    },
+    {
+      "name": "Otto Place",
+      "street": "Plantation Close",
+      "units": 600,
+      "sold": 596,
+      "source": "pipeline"
+    },
+    {
+      "name": "The Sen",
+      "street": "Jalan Jurong Kechil",
+      "units": 347,
+      "sold": 143,
+      "source": "pipeline"
+    },
+    {
+      "name": "River Green",
+      "street": "River Valley Green",
+      "units": 524,
+      "sold": 495,
+      "source": "pipeline"
+    },
+    {
+      "name": "Coastal Cabana",
+      "street": "Jalan Loyang Besar",
+      "units": 748,
+      "sold": 617,
+      "source": "pipeline"
+    },
+    {
+      "name": "Springleaf Residence",
+      "street": "Upper Thomson Road",
+      "units": 941,
+      "sold": 920,
+      "source": "pipeline"
+    },
+    {
+      "name": "Promenade Peak",
+      "street": "Zion Promenade",
+      "units": 596,
+      "sold": 429,
+      "source": "pipeline"
+    },
+    {
+      "name": "Faber Residence",
+      "street": "Faber Walk",
+      "units": 399,
+      "sold": 386,
+      "source": "pipeline"
+    },
+    {
+      "name": "Pinery Residences",
+      "street": "Bedok Reservoir Road",
+      "units": 588,
+      "sold": 550,
+      "source": "pipeline"
+    },
+    {
+      "name": "Lentor Gardens Residences",
+      "street": "Lentor Gardens",
+      "units": 499,
+      "sold": 270,
+      "source": "pipeline"
+    },
+    {
+      "name": "Rivelle Tampines",
+      "street": "Tampines Street 95",
+      "units": 572,
+      "sold": 557,
+      "source": "pipeline"
+    },
+    {
+      "name": "River Modern",
+      "street": "River Valley Green",
+      "units": 455,
+      "sold": 428,
+      "source": "pipeline"
+    },
+    {
+      "name": "Vela Bay",
+      "street": "Bayshore Walk",
+      "units": 515,
+      "sold": 382,
+      "source": "pipeline"
+    },
+    {
+      "name": "Hudson Place Residences",
+      "street": "Media Circle",
+      "units": 327,
+      "sold": 213,
+      "source": "pipeline"
+    },
+    {
+      "name": "Tengah Garden Residences/Tengah Garden Galleria",
+      "street": "Tengah Garden Avenue",
+      "units": 863,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Wynwood Grand",
+      "street": "Woodlands Drive 17",
+      "units": 430,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Lucerne Grand",
+      "street": "Lakeside Drive",
+      "units": 570,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Solano Grand",
+      "street": "Senja Close",
+      "units": 302,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Amberwood at Holland",
+      "street": "Holland Link",
+      "units": 212,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Kassia",
+      "street": "Flora Drive",
+      "units": 276,
+      "sold": 229,
+      "source": "pipeline"
+    },
+    {
+      "name": "Service apartments/Hotel/retail development",
+      "street": "Hoe Chiang Road",
+      "units": 46,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Terra Hill",
+      "street": "Yew Siang Road",
+      "units": 270,
+      "sold": 212,
+      "source": "pipeline"
+    },
+    {
+      "name": "The Reserve Residences",
+      "street": "Jalan Anak Bukit",
+      "units": 732,
+      "sold": 722,
+      "source": "pipeline"
+    },
+    {
+      "name": "Grand Dunman",
+      "street": "Dunman Road",
+      "units": 1008,
+      "sold": 917,
+      "source": "pipeline"
+    },
+    {
+      "name": "Pinetree Hill",
+      "street": "Pine Grove",
+      "units": 520,
+      "sold": 519,
+      "source": "pipeline"
+    },
+    {
+      "name": "The Lakegarden Residences",
+      "street": "Yuan Ching Road",
+      "units": 306,
+      "sold": 303,
+      "source": "pipeline"
+    },
+    {
+      "name": "Sora",
+      "street": "Yuan Ching Road",
+      "units": 440,
+      "sold": 226,
+      "source": "pipeline"
+    },
+    {
+      "name": "J�€?den",
+      "street": "Jurong East Central 1",
+      "units": 368,
+      "sold": 362,
+      "source": "pipeline"
+    },
+    {
+      "name": "Hillock Green",
+      "street": "Lentor Central",
+      "units": 474,
+      "sold": 470,
+      "source": "pipeline"
+    },
+    {
+      "name": "Lentoria",
+      "street": "Lentor Hills Road",
+      "units": 267,
+      "sold": 252,
+      "source": "pipeline"
+    },
+    {
+      "name": "The Robertson Opus/Robertson Walk",
+      "street": "Unity Street",
+      "units": 348,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "Luxus Hills",
+      "street": "Luxus Hill Heights/Seletar Green Walk",
+      "units": 156,
+      "sold": 0,
+      "source": "pipeline"
+    },
+    {
+      "name": "GRAND DUNMAN",
+      "street": "DUNMAN ROAD",
+      "units": 1008,
+      "sold": 917,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE LAKEGARDEN RESIDENCES",
+      "street": "YUAN CHING ROAD",
+      "units": 306,
+      "sold": 303,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE RESERVE RESIDENCES",
+      "street": "JALAN ANAK BUKIT",
+      "units": 732,
+      "sold": 722,
+      "source": "developer-sales"
+    },
+    {
+      "name": "COPEN GRAND",
+      "street": "TENGAH GARDEN WALK",
+      "units": 639,
+      "sold": 638,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE HILL @ONE-NORTH",
+      "street": "SLIM BARRACKS RISE",
+      "units": 142,
+      "sold": 141,
+      "source": "developer-sales"
+    },
+    {
+      "name": "TERRA HILL",
+      "street": "YEW SIANG ROAD",
+      "units": 270,
+      "sold": 212,
+      "source": "developer-sales"
+    },
+    {
+      "name": "CLAYDENCE",
+      "street": "99 STILL ROAD",
+      "units": 28,
+      "sold": 20,
+      "source": "developer-sales"
+    },
+    {
+      "name": "PINETREE HILL",
+      "street": "PINE GROVE",
+      "units": 520,
+      "sold": 519,
+      "source": "developer-sales"
+    },
+    {
+      "name": "TEMBUSU GRAND",
+      "street": "JALAN TEMBUSU",
+      "units": 638,
+      "sold": 632,
+      "source": "developer-sales"
+    },
+    {
+      "name": "CASHEW GREEN",
+      "street": "CASHEW ROAD",
+      "units": 19,
+      "sold": 17,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE GIVERNY RESIDENCES",
+      "street": "ROBIN DRIVE",
+      "units": 6,
+      "sold": 2,
+      "source": "developer-sales"
+    },
+    {
+      "name": "SPRING WATERS VILLAS",
+      "street": "JALAN MATA AYER",
+      "units": 6,
+      "sold": 4,
+      "source": "developer-sales"
+    },
+    {
+      "name": "BELGRAVIA ACE",
+      "street": "BELGRAVIA DRIVE",
+      "units": 107,
+      "sold": 83,
+      "source": "developer-sales"
+    },
+    {
+      "name": "SOPHIA REGENCY",
+      "street": "SOPHIA ROAD",
+      "units": 38,
+      "sold": 0,
+      "source": "developer-sales"
+    },
+    {
+      "name": "POLLEN COLLECTION",
+      "street": "POLLEN VIEW/POLLEN CRESCENT/POLLEN WALK/POLLEN PLACE",
+      "units": 132,
+      "sold": 124,
+      "source": "developer-sales"
+    },
+    {
+      "name": "GEMS VILLE",
+      "street": "LORONG 13 GEYLANG",
+      "units": 24,
+      "sold": 7,
+      "source": "developer-sales"
+    },
+    {
+      "name": "J'DEN",
+      "street": "JURONG EAST CENTRAL 1",
+      "units": 368,
+      "sold": 362,
+      "source": "developer-sales"
+    },
+    {
+      "name": "HILLOCK GREEN",
+      "street": "LENTOR CENTRAL",
+      "units": 474,
+      "sold": 470,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE ARCADY AT BOON KENG",
+      "street": "SAINT BARNABAS LANE",
+      "units": 172,
+      "sold": 107,
+      "source": "developer-sales"
+    },
+    {
+      "name": "LENTORIA",
+      "street": "LENTOR HILLS ROAD",
+      "units": 267,
+      "sold": 252,
+      "source": "developer-sales"
+    },
+    {
+      "name": "SORA",
+      "street": "YUAN CHING ROAD",
+      "units": 440,
+      "sold": 226,
+      "source": "developer-sales"
+    },
+    {
+      "name": "KASSIA",
+      "street": "FLORA DRIVE",
+      "units": 276,
+      "sold": 229,
+      "source": "developer-sales"
+    },
+    {
+      "name": "NAVA GROVE",
+      "street": "PINE GROVE",
+      "units": 552,
+      "sold": 551,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE GATZ",
+      "street": "LOR 32 GEYLANG",
+      "units": 6,
+      "sold": 0,
+      "source": "developer-sales"
+    },
+    {
+      "name": "EMERALD OF KATONG",
+      "street": "JALAN TEMBUSU",
+      "units": 846,
+      "sold": 844,
+      "source": "developer-sales"
+    },
+    {
+      "name": "AUREA",
+      "street": "BEACH ROAD/NICOLL HIGHWAY",
+      "units": 188,
+      "sold": 70,
+      "source": "developer-sales"
+    },
+    {
+      "name": "AURELLE OF TAMPINES",
+      "street": "TAMPINES STREET 62",
+      "units": 760,
+      "sold": 757,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE ORIE",
+      "street": "LORONG 1 TOA PAYOH",
+      "units": 777,
+      "sold": 741,
+      "source": "developer-sales"
+    },
+    {
+      "name": "PARKTOWN RESIDENCE",
+      "street": "TAMPINES STREET 62",
+      "units": 1193,
+      "sold": 1167,
+      "source": "developer-sales"
+    },
+    {
+      "name": "OCHO",
+      "street": "LORONG 32 GEYLANG",
+      "units": 20,
+      "sold": 1,
+      "source": "developer-sales"
+    },
+    {
+      "name": "ELTA",
+      "street": "CLEMENTI AVENUE 1",
+      "units": 501,
+      "sold": 414,
+      "source": "developer-sales"
+    },
+    {
+      "name": "ONE MARINA GARDENS",
+      "street": "MARINA GARDENS LANE",
+      "units": 937,
+      "sold": 659,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE BRONZE",
+      "street": "BOON TECK ROAD",
+      "units": 27,
+      "sold": 0,
+      "source": "developer-sales"
+    },
+    {
+      "name": "BLOOMSBURY RESIDENCES",
+      "street": "MEDIA CIRCLE",
+      "units": 358,
+      "sold": 316,
+      "source": "developer-sales"
+    },
+    {
+      "name": "OTTO PLACE",
+      "street": "PLANTATION CLOSE",
+      "units": 600,
+      "sold": 596,
+      "source": "developer-sales"
+    },
+    {
+      "name": "POLLEN COLLECTION II",
+      "street": "POLLEN RISE / POLLEN LANE / POLLEN TERRACE / POLLEN CRESCENT",
+      "units": 186,
+      "sold": 42,
+      "source": "developer-sales"
+    },
+    {
+      "name": "CANBERRA CRESCENT RESIDENCES",
+      "street": "CANBERRA CRESCENT",
+      "units": 376,
+      "sold": 341,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE ROBERTSON OPUS",
+      "street": "UNITY STREET",
+      "units": 348,
+      "sold": 210,
+      "source": "developer-sales"
+    },
+    {
+      "name": "PROMENADE PEAK",
+      "street": "ZION PROMENADE",
+      "units": 596,
+      "sold": 429,
+      "source": "developer-sales"
+    },
+    {
+      "name": "RIVER GREEN",
+      "street": "RIVER VALLEY GREEN",
+      "units": 524,
+      "sold": 495,
+      "source": "developer-sales"
+    },
+    {
+      "name": "ZYON GRAND",
+      "street": "KIM SENG ROAD",
+      "units": 706,
+      "sold": 636,
+      "source": "developer-sales"
+    },
+    {
+      "name": "FABER RESIDENCE",
+      "street": "FABER WALK",
+      "units": 399,
+      "sold": 386,
+      "source": "developer-sales"
+    },
+    {
+      "name": "THE SEN",
+      "street": "JALAN JURONG KECHIL",
+      "units": 347,
+      "sold": 143,
+      "source": "developer-sales"
+    },
+    {
+      "name": "SPRINGLEAF RESIDENCE",
+      "street": "UPPER THOMSON ROAD",
+      "units": 941,
+      "sold": 920,
+      "source": "developer-sales"
+    },
+    {
+      "name": "COASTAL CABANA",
+      "street": "JALAN LOYANG BESAR",
+      "units": 748,
+      "sold": 617,
+      "source": "developer-sales"
+    },
+    {
+      "name": "DUET @ EMILY",
+      "street": "2 MOUNT EMILY ROAD",
+      "units": 20,
+      "sold": 2,
+      "source": "developer-sales"
+    },
+    {
+      "name": "RIVER MODERN",
+      "street": "RIVER VALLEY GREEN",
+      "units": 455,
+      "sold": 428,
+      "source": "developer-sales"
+    },
+    {
+      "name": "RIVELLE TAMPINES",
+      "street": "TAMPINES STREET 95",
+      "units": 572,
+      "sold": 557,
+      "source": "developer-sales"
+    },
+    {
+      "name": "PINERY RESIDENCES",
+      "street": "BEDOK RESERVOIR ROAD",
+      "units": 588,
+      "sold": 550,
+      "source": "developer-sales"
+    },
+    {
+      "name": "VELA BAY",
+      "street": "BAYSHORE WALK",
+      "units": 515,
+      "sold": 382,
+      "source": "developer-sales"
+    },
+    {
+      "name": "TENGAH GARDEN RESIDENCES",
+      "street": "TENGAH GARDEN AVENUE",
+      "units": 863,
+      "sold": 861,
+      "source": "developer-sales"
+    },
+    {
+      "name": "HUDSON PLACE RESIDENCES",
+      "street": "MEDIA CIRCLE",
+      "units": 327,
+      "sold": 213,
+      "source": "developer-sales"
+    },
+    {
+      "name": "LENTOR GARDENS RESIDENCES",
+      "street": "LENTOR GARDENS",
+      "units": 499,
+      "sold": 270,
+      "source": "developer-sales"
+    }
+  ],
+  "notLaunched": [
+    {
+      "name": "LANDED HOUSING DEVELOPMENT",
+      "units": 6,
+      "sold": 0
+    },
+    {
+      "name": "THE CAIRNHILL",
+      "units": 75,
+      "sold": 0
+    },
+    {
+      "name": "SUNSTONE HILL",
+      "units": 28,
+      "sold": 0
+    },
+    {
+      "name": "ONE LEONIE RESIDENCES",
+      "units": 37,
+      "sold": 0
+    },
+    {
+      "name": "THE RANZ",
+      "units": 14,
+      "sold": 0
+    },
+    {
+      "name": "LUXUS HILLS",
+      "units": 156,
+      "sold": 0
+    },
+    {
+      "name": "THE OPAL HAUZ",
+      "units": 12,
+      "sold": 0
+    },
+    {
+      "name": "SOPHIA MEADOW",
+      "units": 41,
+      "sold": 0
+    },
+    {
+      "name": "VERD�‰ JOO CHIAT",
+      "units": 18,
+      "sold": 0
+    }
+  ]
+}
