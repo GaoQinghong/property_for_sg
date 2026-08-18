@@ -63,6 +63,7 @@ for (let index=0; index<periods.length; index+=4) {
   }
 }
 const merged = [];
+const mergedKeys = new Set();
 
 for (const row of pipelineRows) {
   const key = normalise(row.project);
@@ -81,6 +82,28 @@ for (const row of pipelineRows) {
     status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
     developer:row.developerName || sales?.developer || old.developer || "待公布", tenure:old.tenure || "待公布", launch:old.launch || "尚未公布",
     top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"), mrt:old.mrt || "待计算", school:old.school || "待计算",
+    ...coordinates, updatedAt, source:"URA"
+  });
+  mergedKeys.add(key);
+}
+
+// URA's public pipeline list excludes non-landed projects below 200 units and
+// landed projects below 15 units. Developer-sales data has no such size floor,
+// so add every smaller project that still has unsold developer inventory.
+for (const [key, sales] of salesByName) {
+  if (mergedKeys.has(key)) continue;
+  const month = latestSales(sales);
+  const units = Number(month?.unitsAvail || 0), sold = Number(month?.soldToDate || 0);
+  if (!units || sold >= units || Number(month?.launchedToDate || 0) === 0) continue;
+  const old = oldByName.get(key) || {};
+  let coordinates = old.lat && old.lng ? {lat:old.lat,lng:old.lng} : null;
+  if (!coordinates && sales.x && sales.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
+  if (!coordinates) coordinates = await geocode(`${sales.street || sales.project}, Singapore`);
+  if (!coordinates) continue;
+  merged.push({
+    id:key.toLowerCase(), name:sales.project, area:old.area || `${sales.street || "新加坡"} · D${String(sales.district || "—").padStart(2,"0")}`,
+    status:"在售", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
+    launch:old.launch || "已开盘", top:old.top || "待公布", mrt:old.mrt || "待计算", school:old.school || "待计算",
     ...coordinates, updatedAt, source:"URA"
   });
 }
