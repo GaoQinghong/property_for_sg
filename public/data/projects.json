@@ -13,13 +13,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Newton · 470m",
+      "school": "ST. JOSEPH'S INSTITUTION JUNIOR · 650m",
       "lat": 1.3162289156916256,
       "lng": 103.84059309437204,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "19nassim",
@@ -32,13 +33,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Napier · 250m",
+      "school": "ALEXANDRA PRIMARY SCHOOL · 1.7km",
       "lat": 1.306650408538045,
       "lng": 103.82141037452769,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "21anderson",
@@ -51,13 +53,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Stevens · 850m",
+      "school": "SINGAPORE CHINESE GIRLS' PRIMARY SCHOOL · 930m",
       "lat": 1.3127174861512272,
       "lng": 103.82805174283611,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "8bt",
@@ -70,13 +73,14 @@
       "tenure": "99 年",
       "launch": "已开盘",
       "top": "2028",
-      "mrt": "Beauty World · 200m",
-      "school": "Pei Hwa Presbyterian Primary · 1km 内",
+      "mrt": "Beauty World · 110m",
+      "school": "PEI HWA PRESBYTERIAN PRIMARY SCHOOL · 340m",
       "lat": 1.34119,
       "lng": 103.7769,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "amberhouse",
@@ -89,13 +93,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Tanjong Katong · 400m",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 430m",
       "lat": 1.3014954500487077,
       "lng": 103.90048221564145,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "ardorresidence",
@@ -108,13 +113,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Tanjong Katong · 790m",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 170m",
       "lat": 1.3064505791049135,
       "lng": 103.89935772938263,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "arinaeastresidences",
@@ -127,13 +133,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Katong Park · 270m",
+      "school": "KONG HWA SCHOOL · 1.3km",
       "lat": 1.2996477428984266,
       "lng": 103.88447913425043,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "artisan8",
@@ -146,13 +153,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Upper Thomson · 380m",
+      "school": "AI TONG SCHOOL · 840m",
       "lat": 1.3538122854711396,
       "lng": 103.8361873551056,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "aspenlinq",
@@ -165,13 +173,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Somerset · 550m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 440m",
       "lat": 1.295407585722555,
       "lng": 103.83992218972487,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "atlassia",
@@ -184,13 +193,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Eunos · 750m",
+      "school": "HAIG GIRLS' SCHOOL · 230m",
       "lat": 1.3132340571353647,
       "lng": 103.9013133127317,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "aurea",
@@ -203,13 +213,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3048,
-      "lng": 103.8593,
+      "mrt": "Nicoll Highway · 420m",
+      "school": "FARRER PARK PRIMARY SCHOOL · 2.0km",
+      "lat": 1.30307225912463,
+      "lng": 103.865780528188,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "aurelleoftampines",
@@ -222,13 +233,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3565,
-      "lng": 103.9416,
+      "mrt": "Tampines North · 260m",
+      "school": "ANGSANA PRIMARY SCHOOL · 420m",
+      "lat": 1.36731560476474,
+      "lng": 103.939379516767,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "bagnallhaus",
@@ -241,13 +253,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Sungei Bedok · 270m",
+      "school": "TEMASEK PRIMARY SCHOOL · 1.1km",
       "lat": 1.3200449382647441,
       "lng": 103.95485631497013,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "belgraviaace",
@@ -260,13 +273,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3841999999999999,
-      "lng": 103.8767,
+      "mrt": "Tavistock · 1.1km",
+      "school": "ROSYTH SCHOOL · 1.3km",
+      "lat": 1.37960484253499,
+      "lng": 103.864829049245,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "bloomsburyresidences",
@@ -279,13 +293,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2028",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3010000000000002,
-      "lng": 103.7844,
+      "mrt": "Commonwealth · 1000m",
+      "school": "NEW TOWN PRIMARY SCHOOL · 830m",
+      "lat": 1.29422458022706,
+      "lng": 103.794684599549,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "botanicclunypark",
@@ -298,13 +313,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Botanic Gardens · 380m",
+      "school": "NANYANG PRIMARY SCHOOL · 550m",
       "lat": 1.3198304243645504,
       "lng": 103.81312318257777,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "boulevard88",
@@ -317,13 +333,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Orchard Boulevard · 460m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 1.5km",
       "lat": 1.3050396569146978,
       "lng": 103.82755060018856,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "canberracrescentresidences",
@@ -336,13 +353,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4197,
-      "lng": 103.8408,
+      "mrt": "Canberra · 390m",
+      "school": "SEMBAWANG PRIMARY SCHOOL · 1.0km",
+      "lat": 1.44668569489023,
+      "lng": 103.829892157106,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "canninghillpiers",
@@ -355,13 +373,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Fort Canning · 130m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 980m",
       "lat": 1.2913591702427687,
       "lng": 103.84447222263722,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "cashewgreen",
@@ -374,13 +393,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3765999999999998,
-      "lng": 103.7541,
+      "mrt": "Cashew · 470m",
+      "school": "BUKIT PANJANG PRIMARY SCHOOL · 250m",
+      "lat": 1.37208103125372,
+      "lng": 103.767973690319,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "chuanpark",
@@ -393,13 +413,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2027",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Lorong Chuan · 160m",
+      "school": "ST. GABRIEL'S PRIMARY SCHOOL · 450m",
       "lat": 1.352255085948648,
       "lng": 103.86524895665492,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "claydence",
@@ -412,13 +433,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.31,
-      "lng": 103.91600000000001,
+      "mrt": "Eunos · 810m",
+      "school": "HAIG GIRLS' SCHOOL · 440m",
+      "lat": 1.31337478618605,
+      "lng": 103.906277704888,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "coastalcabana",
@@ -431,13 +453,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2028",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3557,
-      "lng": 103.96130000000001,
+      "mrt": "Pasir Ris · 1.0km",
+      "school": "CASUARINA PRIMARY SCHOOL · 530m",
+      "lat": 1.37745408150082,
+      "lng": 103.95662588933,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "copengrand",
@@ -450,13 +473,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3873,
-      "lng": 103.69569999999999,
+      "mrt": "Tengah · 670m",
+      "school": "PIONEER PRIMARY SCHOOL · 690m",
+      "lat": 1.36019637459595,
+      "lng": 103.730338137569,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "cuscadenreserve",
@@ -469,13 +493,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Orchard Boulevard · 160m",
+      "school": "ALEXANDRA PRIMARY SCHOOL · 1.4km",
       "lat": 1.3036889126167617,
       "lng": 103.82524922445256,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "dalveyhaus",
@@ -488,13 +513,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Stevens · 430m",
+      "school": "SINGAPORE CHINESE GIRLS' PRIMARY SCHOOL · 610m",
       "lat": 1.316179621463326,
       "lng": 103.82525054606458,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "duetemily",
@@ -507,13 +533,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3017,
-      "lng": 103.83239999999999,
+      "mrt": "Little India · 280m",
+      "school": "ST. MARGARET'S SCHOOL (PRIMARY) · 390m",
+      "lat": 1.30441456274538,
+      "lng": 103.84938392703,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "dunearnhouse",
@@ -526,13 +553,14 @@
       "tenure": "99 年",
       "launch": "2026 年 7 月",
       "top": "2030",
-      "mrt": "Botanic Gardens · 760m",
-      "school": "南洋小学 · 1km 内",
+      "mrt": "Tan Kah Kee · 550m",
+      "school": "RAFFLES GIRLS' PRIMARY SCHOOL · 740m",
       "lat": 1.3268,
       "lng": 103.8121,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "elta",
@@ -545,13 +573,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3034000000000001,
-      "lng": 103.7846,
+      "mrt": "Clementi · 730m",
+      "school": "PEI TONG PRIMARY SCHOOL · 700m",
+      "lat": 1.31007611112404,
+      "lng": 103.768360083926,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "emeraldofkatong",
@@ -564,13 +593,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3101,
-      "lng": 103.90750000000001,
+      "mrt": "Tanjong Katong · 620m",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 190m",
+      "lat": 1.30496699586451,
+      "lng": 103.898832811628,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "faberresidence",
@@ -583,13 +613,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2028",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3076,
-      "lng": 103.7876,
+      "mrt": "Clementi · 1.1km",
+      "school": "NAN HUA PRIMARY SCHOOL · 530m",
+      "lat": 1.32206266552798,
+      "lng": 103.757521414519,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "gemsville",
@@ -602,13 +633,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3111000000000002,
-      "lng": 103.89349999999999,
+      "mrt": "Aljunied · 700m",
+      "school": "GEYLANG METHODIST SCHOOL (PRIMARY) · 850m",
+      "lat": 1.31315255602735,
+      "lng": 103.877522007799,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "granddunman",
@@ -621,13 +653,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3096,
-      "lng": 103.9133,
+      "mrt": "Dakota · 780m",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 720m",
+      "lat": 1.30956005754787,
+      "lng": 103.89554915439,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "grange1866",
@@ -640,13 +673,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Orchard · 450m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 1.0km",
       "lat": 1.2999534172019263,
       "lng": 103.82893008746653,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "hillockgreen",
@@ -659,13 +693,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2026",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4068,
-      "lng": 103.81649999999999,
+      "mrt": "Lentor · 280m",
+      "school": "ANDERSON PRIMARY SCHOOL · 830m",
+      "lat": 1.38559144181968,
+      "lng": 103.834012429317,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "hudsonplaceresidences",
@@ -678,13 +713,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2029",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3032000000000001,
-      "lng": 103.77850000000001,
+      "mrt": "Commonwealth · 1000m",
+      "school": "NEW TOWN PRIMARY SCHOOL · 830m",
+      "lat": 1.29422458022706,
+      "lng": 103.794684599549,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "ikigai",
@@ -697,13 +733,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Novena · 480m",
+      "school": "ST. JOSEPH'S INSTITUTION JUNIOR · 130m",
       "lat": 1.3179823589061244,
       "lng": 103.84734922709124,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "jansenhouse",
@@ -716,13 +753,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Kovan · 940m",
+      "school": "ZHONGHUA PRIMARY SCHOOL · 740m",
       "lat": 1.3598943759264004,
       "lng": 103.87654426212418,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "jervoismansion",
@@ -735,13 +773,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Tiong Bahru · 840m",
+      "school": "ALEXANDRA PRIMARY SCHOOL · 220m",
       "lat": 1.2933312098468537,
       "lng": 103.82455561672114,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "jervoisprive",
@@ -754,17 +793,18 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Redhill · 600m",
+      "school": "ALEXANDRA PRIMARY SCHOOL · 760m",
       "lat": 1.2948265874770362,
       "lng": 103.81833844326765,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "jden",
-      "name": "J�€?den",
+      "name": "J’den",
       "area": "Jurong East Central 1 · D22",
       "status": "在售",
       "units": 368,
@@ -773,13 +813,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3359,
-      "lng": 103.7025,
+      "mrt": "Jurong East · 210m",
+      "school": "FUHUA PRIMARY SCHOOL · 590m",
+      "lat": 1.33283197093058,
+      "lng": 103.74044385053,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "ksuites",
@@ -792,13 +833,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Eunos · 970m",
+      "school": "HAIG GIRLS' SCHOOL · 600m",
       "lat": 1.3127022575406444,
       "lng": 103.90794962012464,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "kassia",
@@ -811,13 +853,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.355,
-      "lng": 103.96560000000001,
+      "mrt": "Tampines East · 1.2km",
+      "school": "EAST SPRING PRIMARY SCHOOL · 550m",
+      "lat": 1.356478425661,
+      "lng": 103.965385495032,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "koparatnewton",
@@ -830,13 +873,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Newton · 340m",
+      "school": "ANGLO-CHINESE SCHOOL (JUNIOR) · 410m",
       "lat": 1.312665166889918,
       "lng": 103.84087977293977,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "kovanjewel",
@@ -849,13 +893,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Kovan · 500m",
+      "school": "PAYA LEBAR METHODIST GIRLS' SCHOOL (PRIMARY) · 990m",
       "lat": 1.357870846760384,
       "lng": 103.88112800638433,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "lentorgardensresidences",
@@ -868,13 +913,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4040000000000001,
-      "lng": 103.807,
+      "mrt": "Lentor · 440m",
+      "school": "ANDERSON PRIMARY SCHOOL · 950m",
+      "lat": 1.38263937260931,
+      "lng": 103.833054006019,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "lentoria",
@@ -887,13 +933,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2027",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4075,
-      "lng": 103.8159,
+      "mrt": "Lentor · 190m",
+      "school": "ANDERSON PRIMARY SCHOOL · 720m",
+      "lat": 1.38377235597759,
+      "lng": 103.834969325119,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "mattarresidences",
@@ -906,13 +953,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Mattar · 240m",
+      "school": "CANOSSA CATHOLIC PRIMARY SCHOOL · 110m",
       "lat": 1.3255778778346248,
       "lng": 103.88162796167406,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "meyerblue",
@@ -925,13 +973,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2028",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Katong Park · 640m",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 1.4km",
       "lat": 1.2961862318780708,
       "lng": 103.8917305802188,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "midtownbay",
@@ -944,13 +993,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Esplanade · 380m",
+      "school": "ST. MARGARET'S SCHOOL (PRIMARY) · 1.5km",
       "lat": 1.296302317485899,
       "lng": 103.85732295323933,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "narraresidences",
@@ -963,13 +1013,14 @@
       "tenure": "99 年",
       "launch": "2026 年",
       "top": "2030",
-      "mrt": "Hillview · 1.2km",
-      "school": "CHIJ Our Lady Queen of Peace",
+      "mrt": "Cashew · 410m",
+      "school": "CHIJ OUR LADY QUEEN OF PEACE · 520m",
       "lat": 1.3659,
       "lng": 103.7634,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "navagrove",
@@ -982,13 +1033,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.339,
-      "lng": 103.7759,
+      "mrt": "Dover · 910m",
+      "school": "PEI TONG PRIMARY SCHOOL · 770m",
+      "lat": 1.31837347170308,
+      "lng": 103.774344276705,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "newportresidences",
@@ -1001,13 +1053,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Prince Edward Road · 230m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 620m",
       "lat": 1.27368777727476,
       "lng": 103.845060205824,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "northgaia",
@@ -1020,13 +1073,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Yishun · 1.3km",
+      "school": "CHONGFU SCHOOL · 760m",
       "lat": 1.4354986549334872,
       "lng": 103.84525884194532,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 4
     },
     {
       "id": "norwoodgrand",
@@ -1039,13 +1093,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Woodlands South · 480m",
+      "school": "INNOVA PRIMARY SCHOOL · 340m",
       "lat": 1.42641140556342,
       "lng": 103.789444793951,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "ocho",
@@ -1058,13 +1113,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3135000000000001,
-      "lng": 103.89,
+      "mrt": "Dakota · 520m",
+      "school": "KONG HWA SCHOOL · 200m",
+      "lat": 1.3127554264012,
+      "lng": 103.886949834246,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "onemarinagardens",
@@ -1077,13 +1133,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.2812000000000001,
-      "lng": 103.85690000000001,
+      "mrt": "Marina South · 170m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 2.6km",
+      "lat": 1.27580060851268,
+      "lng": 103.862936192351,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "ottoplace",
@@ -1096,13 +1153,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3889,
-      "lng": 103.6909,
+      "mrt": "Chinese Garden · 970m",
+      "school": "JURONG PRIMARY SCHOOL · 370m",
+      "lat": 1.35045825712906,
+      "lng": 103.735902353592,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "parcclematis",
@@ -1115,13 +1173,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Clementi · 730m",
+      "school": "NAN HUA PRIMARY SCHOOL · 310m",
       "lat": 1.317694318770107,
       "lng": 103.75956787491648,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 4
     },
     {
       "id": "parksuites",
@@ -1134,13 +1193,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Dover · 800m",
+      "school": "HENRY PARK PRIMARY SCHOOL · 90m",
       "lat": 1.3168538660416174,
       "lng": 103.78327648849093,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "parktownresidence",
@@ -1153,13 +1213,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3597,
-      "lng": 103.9413,
+      "mrt": "Tampines North · 260m",
+      "school": "ANGSANA PRIMARY SCHOOL · 420m",
+      "lat": 1.36731560476474,
+      "lng": 103.939379516767,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "penrith",
@@ -1172,13 +1233,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2029",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Redhill · 710m",
+      "school": "QUEENSTOWN PRIMARY SCHOOL · 590m",
       "lat": 1.29482148558901,
       "lng": 103.813000857523,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "phoenixresidences",
@@ -1191,13 +1253,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Petir · 1.1km",
+      "school": "WEST VIEW PRIMARY SCHOOL · 940m",
       "lat": 1.3755720457221934,
       "lng": 103.75737782028334,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "pineryresidences",
@@ -1210,13 +1273,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3579999999999999,
-      "lng": 103.9464,
+      "mrt": "Bedok North · 450m",
+      "school": "DAMAI PRIMARY SCHOOL · 160m",
+      "lat": 1.33701921598054,
+      "lng": 103.921576589266,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "pinetreehill",
@@ -1229,13 +1293,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2026",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3350000000000002,
-      "lng": 103.7798,
+      "mrt": "Dover · 910m",
+      "school": "PEI TONG PRIMARY SCHOOL · 770m",
+      "lat": 1.31837347170308,
+      "lng": 103.774344276705,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "pollencollection",
@@ -1248,13 +1313,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3865999999999998,
-      "lng": 103.8674,
+      "mrt": "Tavistock · 1.3km",
+      "school": "JING SHAN PRIMARY SCHOOL · 1.3km",
+      "lat": 1.38109386973247,
+      "lng": 103.859231190163,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "pollencollectionii",
@@ -1267,13 +1333,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3897,
-      "lng": 103.8731,
+      "mrt": "Tavistock · 990m",
+      "school": "JING SHAN PRIMARY SCHOOL · 1.3km",
+      "lat": 1.37873122195192,
+      "lng": 103.861773309636,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "promenadepeak",
@@ -1286,13 +1353,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.2871,
-      "lng": 103.8193,
+      "mrt": "Great World · 280m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 420m",
+      "lat": 1.29207822160278,
+      "lng": 103.833011927889,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "pullmanresidencesnewton",
@@ -1305,13 +1373,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Newton · 210m",
+      "school": "ANGLO-CHINESE SCHOOL (PRIMARY) · 620m",
       "lat": 1.3146181517688227,
       "lng": 103.83893129412323,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "rivelletampines",
@@ -1324,13 +1393,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3547,
-      "lng": 103.9452,
+      "mrt": "Tampines West · 580m",
+      "school": "ST. ANTHONY'S CANOSSIAN PRIMARY SCHOOL · 650m",
+      "lat": 1.34062297973769,
+      "lng": 103.939869417599,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "rivergreen",
@@ -1343,13 +1413,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.306,
-      "lng": 103.83109999999999,
+      "mrt": "Great World · 220m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 150m",
+      "lat": 1.29352743591357,
+      "lng": 103.834975548304,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "rivermodern",
@@ -1362,13 +1433,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3007,
-      "lng": 103.8262,
+      "mrt": "Great World · 220m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 150m",
+      "lat": 1.29352743591357,
+      "lng": 103.834975548304,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "royalhallmark",
@@ -1381,13 +1453,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Tanjong Katong · 1.1km",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 470m",
       "lat": 1.3090608745607992,
       "lng": 103.89838895480221,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "skywatersresidences",
@@ -1400,13 +1473,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Shenton Way · 260m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 980m",
       "lat": 1.27731975064011,
       "lng": 103.848596793501,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "sophiaregency",
@@ -1419,13 +1493,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Rochor · 400m",
+      "school": "ST. MARGARET'S SCHOOL (PRIMARY) · 430m",
       "lat": 1.30208598515708,
       "lng": 103.849366883599,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "sora",
@@ -1438,13 +1513,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3432000000000002,
-      "lng": 103.71000000000001,
+      "mrt": "Lakeside · 1.1km",
+      "school": "LAKESIDE PRIMARY SCHOOL · 870m",
+      "lat": 1.33515865468896,
+      "lng": 103.725064456872,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "springwatersvillas",
@@ -1457,13 +1533,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4186,
-      "lng": 103.83890000000001,
+      "mrt": "Yishun · 1.2km",
+      "school": "JIEMIN PRIMARY SCHOOL · 690m",
+      "lat": 1.4283246219686,
+      "lng": 103.824254004775,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "springleafresidence",
@@ -1476,13 +1553,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4026,
-      "lng": 103.8087,
+      "mrt": "Mayflower · 1.1km",
+      "school": "AI TONG SCHOOL · 1.2km",
+      "lat": 1.37007517956729,
+      "lng": 103.827677980584,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "tembusugrand",
@@ -1495,13 +1573,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3019,
-      "lng": 103.91590000000001,
+      "mrt": "Tanjong Katong · 620m",
+      "school": "TANJONG KATONG PRIMARY SCHOOL · 190m",
+      "lat": 1.30496699586451,
+      "lng": 103.898832811628,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "tengahgardenresidences",
@@ -1514,13 +1593,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3813,
-      "lng": 103.6993,
+      "mrt": "Tengah · 1.2km",
+      "school": "PIONEER PRIMARY SCHOOL · 250m",
+      "lat": 1.35560799166186,
+      "lng": 103.731026437915,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "terrahill",
@@ -1533,13 +1613,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3005,
-      "lng": 103.78150000000001,
+      "mrt": "Pasir Panjang · 170m",
+      "school": "BLANGAH RISE PRIMARY SCHOOL · 1.8km",
+      "lat": 1.27712469463822,
+      "lng": 103.792551001341,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "thearcadyatboonkeng",
@@ -1552,13 +1633,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3228,
-      "lng": 103.8566,
+      "mrt": "Boon Keng · 480m",
+      "school": "BENDEMEER PRIMARY SCHOOL · 160m",
+      "lat": 1.32287512333652,
+      "lng": 103.863771749512,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "thebronze",
@@ -1571,13 +1653,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3211000000000002,
-      "lng": 103.8626,
+      "mrt": "Toa Payoh · 710m",
+      "school": "HONG WEN SCHOOL · 1.0km",
+      "lat": 1.32696389310037,
+      "lng": 103.850111651353,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "thecollectiveatonesophia",
@@ -1590,13 +1673,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Rochor · 400m",
+      "school": "ST. MARGARET'S SCHOOL (PRIMARY) · 430m",
       "lat": 1.30208598515708,
       "lng": 103.849366883599,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "thecontinuum",
@@ -1609,13 +1693,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Dakota · 750m",
+      "school": "KONG HWA SCHOOL · 810m",
       "lat": 1.3103067749532964,
       "lng": 103.89505680273433,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "thegatz",
@@ -1628,13 +1713,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3165,
-      "lng": 103.8862,
+      "mrt": "Dakota · 520m",
+      "school": "KONG HWA SCHOOL · 200m",
+      "lat": 1.3127554264012,
+      "lng": 103.886949834246,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "thegazania",
@@ -1647,13 +1733,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Bartley · 250m",
+      "school": "PAYA LEBAR METHODIST GIRLS' SCHOOL (PRIMARY) · 880m",
       "lat": 1.3451081382032468,
       "lng": 103.87906135544067,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "thegivernyresidences",
@@ -1666,13 +1753,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3127,
-      "lng": 103.8078,
+      "mrt": "Stevens · 250m",
+      "school": "SINGAPORE CHINESE GIRLS' PRIMARY SCHOOL · 240m",
+      "lat": 1.31897186853126,
+      "lng": 103.827800647322,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "thehillonenorth",
@@ -1685,13 +1773,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3071000000000002,
-      "lng": 103.78020000000001,
+      "mrt": "Buona Vista · 400m",
+      "school": "FAIRFIELD METHODIST SCHOOL (PRIMARY) · 570m",
+      "lat": 1.30309474446985,
+      "lng": 103.789820626187,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "thehillshore",
@@ -1704,13 +1793,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Haw Par Villa · 500m",
+      "school": "FAIRFIELD METHODIST SCHOOL (PRIMARY) · 1.6km",
       "lat": 1.2869668975861035,
       "lng": 103.78050454429156,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "thehyde",
@@ -1723,13 +1813,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Newton · 760m",
+      "school": "ANGLO-CHINESE SCHOOL (PRIMARY) · 640m",
       "lat": 1.3144145242433647,
       "lng": 103.83114960430746,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "thelakegardenresidences",
@@ -1742,13 +1833,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.338,
-      "lng": 103.7052,
+      "mrt": "Lakeside · 1.1km",
+      "school": "LAKESIDE PRIMARY SCHOOL · 870m",
+      "lat": 1.33515865468896,
+      "lng": 103.725064456872,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "themyst",
@@ -1761,13 +1853,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Cashew · 360m",
+      "school": "CHIJ OUR LADY QUEEN OF PEACE · 310m",
       "lat": 1.36916295281535,
       "lng": 103.767937546001,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "theorie",
@@ -1780,13 +1873,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3257,
-      "lng": 103.863,
+      "mrt": "Caldecott · 420m",
+      "school": "KHENG CHENG SCHOOL · 430m",
+      "lat": 1.33698816679954,
+      "lng": 103.843534461049,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "thereserveresidences",
@@ -1799,13 +1893,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3385,
-      "lng": 103.7748,
+      "mrt": "Beauty World · 270m",
+      "school": "PEI HWA PRESBYTERIAN PRIMARY SCHOOL · 360m",
+      "lat": 1.34071468946651,
+      "lng": 103.778236154267,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "therobertsonopus",
@@ -1818,13 +1913,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3014000000000001,
-      "lng": 103.8321,
+      "mrt": "Fort Canning · 260m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 700m",
+      "lat": 1.29208342667403,
+      "lng": 103.842017809894,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "thesen",
@@ -1837,13 +1933,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3387,
-      "lng": 103.7804,
+      "mrt": "Beauty World · 620m",
+      "school": "BUKIT TIMAH PRIMARY SCHOOL · 660m",
+      "lat": 1.34252322913484,
+      "lng": 103.770461917002,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "theshorefront",
@@ -1856,13 +1953,14 @@
       "tenure": "待公布",
       "launch": "已开盘",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Pasir Ris East · 1.4km",
+      "school": "CASUARINA PRIMARY SCHOOL · 790m",
       "lat": 1.3790762660675449,
       "lng": 103.9601742293813,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "tmwmaxwell",
@@ -1875,13 +1973,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Maxwell · 190m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 720m",
       "lat": 1.2795512783646,
       "lng": 103.845209377351,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "unionsquareresidences",
@@ -1894,13 +1993,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Havelock · 330m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 670m",
       "lat": 1.28825972041875,
       "lng": 103.836657784125,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "upperhouseatorchardboulevard",
@@ -1914,12 +2014,13 @@
       "launch": "2025 年 7 月",
       "top": "2029",
       "mrt": "Orchard Boulevard · 130m",
-      "school": "River Valley Primary",
+      "school": "ALEXANDRA PRIMARY SCHOOL · 1.2km",
       "lat": 1.30201,
       "lng": 103.82415,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "velabay",
@@ -1932,13 +2033,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3241,
-      "lng": 103.9367,
+      "mrt": "Bayshore · 340m",
+      "school": "TEMASEK PRIMARY SCHOOL · 590m",
+      "lat": 1.31220413200913,
+      "lng": 103.945310801736,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "wresidencesmarinaviewsingapore",
@@ -1951,13 +2053,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Shenton Way · 160m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 1.1km",
       "lat": 1.27665847621022,
       "lng": 103.849834278615,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "zyongrand",
@@ -1970,13 +2073,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.2866,
-      "lng": 103.8214,
+      "mrt": "Havelock · 300m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 520m",
+      "lat": 1.29105652559567,
+      "lng": 103.832706845153,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "thomsonreserve",
@@ -1989,13 +2093,14 @@
       "tenure": "99 年",
       "launch": "预计 2026 下半年",
       "top": "2030",
-      "mrt": "Upper Thomson · 320m",
-      "school": "爱同学校 · 1km 内",
+      "mrt": "Upper Thomson · 10m",
+      "school": "AI TONG SCHOOL · 680m",
       "lat": 1.3545,
       "lng": 103.8328,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "51ansonansoncentre",
@@ -2008,13 +2113,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2028",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Prince Edward Road · 230m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 620m",
       "lat": 1.27368777727476,
       "lng": 103.845060205824,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "amberwoodatholland",
@@ -2027,13 +2133,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3205,
-      "lng": 103.80590000000001,
+      "mrt": "King Albert Park · 950m",
+      "school": "METHODIST GIRLS' SCHOOL (PRIMARY) · 720m",
+      "lat": 1.3286386372329,
+      "lng": 103.788626509062,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "landedhousingdevelopment",
@@ -2046,13 +2153,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3888999999999998,
-      "lng": 103.8769,
+      "mrt": "Tavistock · 1.3km",
+      "school": "FERNVALE PRIMARY SCHOOL · 1.6km",
+      "lat": 1.38167856743236,
+      "lng": 103.862815590225,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "lucernegrand",
@@ -2065,13 +2173,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3448,
-      "lng": 103.7089,
+      "mrt": "Lakeside · 190m",
+      "school": "RULANG PRIMARY SCHOOL · 480m",
+      "lat": 1.34266612648188,
+      "lng": 103.72016090709,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 4
     },
     {
       "id": "luxushills",
@@ -2084,13 +2193,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.383,
-      "lng": 103.869,
+      "mrt": "Serangoon North · 1.1km",
+      "school": "HOUGANG PRIMARY SCHOOL · 790m",
+      "lat": 1.38034950248551,
+      "lng": 103.874331999365,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "oneleonieresidences",
@@ -2103,13 +2213,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3044,
-      "lng": 103.83239999999999,
+      "mrt": "Great World · 410m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 630m",
+      "lat": 1.29794866053609,
+      "lng": 103.831860350575,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "residentialapartments",
@@ -2122,13 +2233,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Orchard Boulevard · 200m",
+      "school": "ALEXANDRA PRIMARY SCHOOL · 1.5km",
       "lat": 1.30465158301868,
       "lng": 103.824907858738,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "skywatersresidencestheskywaters",
@@ -2141,13 +2253,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
+      "mrt": "Shenton Way · 260m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 980m",
       "lat": 1.27731975064011,
       "lng": 103.848596793501,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "solanogrand",
@@ -2160,13 +2273,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2030",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.376,
-      "lng": 103.7482,
+      "mrt": "Segar · 860m",
+      "school": "WEST SPRING PRIMARY SCHOOL · 500m",
+      "lat": 1.38840078202788,
+      "lng": 103.761839479474,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "sophiameadow",
@@ -2179,13 +2293,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.308,
-      "lng": 103.82879999999999,
+      "mrt": "Dhoby Ghaut · 350m",
+      "school": "ST. MARGARET'S SCHOOL (PRIMARY) · 260m",
+      "lat": 1.30207416743824,
+      "lng": 103.847440560966,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "sunstonehill",
@@ -2198,13 +2313,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.305,
-      "lng": 103.7854,
+      "mrt": "Haw Par Villa · 130m",
+      "school": "FAIRFIELD METHODIST SCHOOL (PRIMARY) · 2.0km",
+      "lat": 1.28264736511971,
+      "lng": 103.783023154032,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 0
     },
     {
       "id": "tengahgardenresidencestengahgardengalleria",
@@ -2217,13 +2333,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2029",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.386,
-      "lng": 103.6989,
+      "mrt": "Tengah · 1.2km",
+      "school": "PIONEER PRIMARY SCHOOL · 250m",
+      "lat": 1.35560799166186,
+      "lng": 103.731026437915,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "thecairnhill",
@@ -2236,13 +2353,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3034000000000001,
-      "lng": 103.83059999999999,
+      "mrt": "Newton · 690m",
+      "school": "ANGLO-CHINESE SCHOOL (JUNIOR) · 330m",
+      "lat": 1.30703592752249,
+      "lng": 103.839204520989,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "theopalhauz",
@@ -2255,13 +2373,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3305,
-      "lng": 103.8606,
+      "mrt": "Potong Pasir · 450m",
+      "school": "ST ANDREW'S SCHOOL (JUNIOR) · 450m",
+      "lat": 1.32788935328125,
+      "lng": 103.867079415089,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": "theranz",
@@ -2274,13 +2393,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3107,
-      "lng": 103.8589,
+      "mrt": "Farrer Park · 300m",
+      "school": "FARRER PARK PRIMARY SCHOOL · 430m",
+      "lat": 1.31507104891283,
+      "lng": 103.853717233509,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 3
     },
     {
       "id": "therobertsonopusrobertsonwalk",
@@ -2293,17 +2413,18 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3063,
-      "lng": 103.82579999999999,
+      "mrt": "Fort Canning · 260m",
+      "school": "RIVER VALLEY PRIMARY SCHOOL · 700m",
+      "lat": 1.29208342667403,
+      "lng": 103.842017809894,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "verdjoochiat",
-      "name": "VERD�‰ JOO CHIAT",
+      "name": "VERDÉ JOO CHIAT",
       "area": "JOO CHIAT TERRACE · D15",
       "status": "确定开发",
       "units": 18,
@@ -2312,13 +2433,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "待公布",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.3057,
-      "lng": 103.9088,
+      "mrt": "Eunos · 560m",
+      "school": "HAIG GIRLS' SCHOOL · 340m",
+      "lat": 1.31474253282808,
+      "lng": 103.902421310724,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 1
     },
     {
       "id": "wynwoodgrand",
@@ -2331,13 +2453,14 @@
       "tenure": "待公布",
       "launch": "尚未公布",
       "top": "2030",
-      "mrt": "待计算",
-      "school": "待计算",
-      "lat": 1.4397,
-      "lng": 103.7858,
+      "mrt": "Woodlands South · 80m",
+      "school": "INNOVA PRIMARY SCHOOL · 490m",
+      "lat": 1.42597988052759,
+      "lng": 103.793722412868,
       "locationAccuracy": "exact",
       "updatedAt": "2026-08-18",
-      "source": "URA"
+      "source": "URA",
+      "schoolsWithin1km": 2
     },
     {
       "id": 6,
@@ -2350,11 +2473,13 @@
       "tenure": "99 年",
       "launch": "预计 2026 年 8 月卖地",
       "top": "待公布",
-      "mrt": "Marina South · 180m",
-      "school": "—",
-      "lat": 1.2786,
-      "lng": 103.8682,
-      "updatedAt": "2026-08-18"
+      "mrt": "Marina South · 170m",
+      "school": "CANTONMENT PRIMARY SCHOOL · 2.6km",
+      "lat": 1.27580060851268,
+      "lng": 103.862936192351,
+      "updatedAt": "2026-08-18",
+      "locationAccuracy": "exact",
+      "schoolsWithin1km": 0
     }
   ]
 }

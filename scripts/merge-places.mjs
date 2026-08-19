@@ -18,7 +18,9 @@ const locationOf = element => ({ lat: element.lat ?? element.center?.lat, lng: e
 const moe = parseCsv(await readFile(process.argv[2] ?? "/tmp/moe_schools.csv", "utf8"));
 const osm = JSON.parse(await readFile(process.argv[3] ?? "/tmp/sg_schools_malls.json", "utf8")).elements;
 let overrides = [];
-try { overrides = JSON.parse(await readFile("public/data/school-geocode-overrides.json", "utf8")); } catch {}
+// The overrides file is optional — absent or malformed simply means no manual
+// geocode corrections are applied.
+try { overrides = JSON.parse(await readFile("public/data/school-geocode-overrides.json", "utf8")); } catch { overrides = []; }
 const overridesByPostal = new Map(overrides.map(item => [item.postalCode, item]));
 const osmSchools = osm.filter(item => item.tags?.amenity === "school" && item.tags?.name && locationOf(item).lat);
 const byName = new Map();

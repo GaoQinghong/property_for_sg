@@ -1,0 +1,269 @@
+{
+  "note": "开发商集团目录。归属与官方链接均取自开发商自有域名上的项目组合页（见每个 group 的 source），不采信中介引流站。year 只在官网明确标注时填写，未标注则留空，不做推测。新增条目请沿用同样标准。",
+  "updatedAt": "2026-08-19",
+  "groups": {
+    "hoi-hup": {
+      "name": "Hoi Hup Realty",
+      "nameZh": "海福地产",
+      "website": "https://www.hoihup.com/",
+      "source": "https://www.hoihup.com/Portfolio/All",
+      "match": ["hoi hup"],
+      "projects": [
+        { "name": "Pinery Residences", "url": "https://www.hoihup.com/Portfolio-Detail/71/Pinery-Residences" },
+        { "name": "Otto Place", "url": "https://www.hoihup.com/Portfolio-Detail/64/OttoPlace-EC" },
+        { "name": "Novo Place", "url": "https://www.hoihup.com/Portfolio-Detail/9/Plantation-Close-EC" },
+        { "name": "Ki Residences at Brookvale", "year": 2024, "url": "https://www.hoihup.com/Portfolio-Detail/16/Ki-Residences-at-Brookvale" },
+        { "name": "Parc Central Residences", "year": 2024, "url": "https://www.hoihup.com/Portfolio-Detail/15/Parc-Central-Residences" },
+        { "name": "The Continuum", "year": 2023, "url": "https://www.hoihup.com/Portfolio-Detail/8/The-Continuum" },
+        { "name": "Terra Hill", "year": 2023, "url": "https://www.hoihup.com/Portfolio-Detail/7/Terra-Hill" },
+        { "name": "Parc Canberra", "year": 2023, "url": "https://www.hoihup.com/Portfolio-Detail/13/Parc-Canberra" },
+        { "name": "Sophia Hills", "year": 2018, "url": "https://www.hoihup.com/Portfolio-Detail/12/Sophia-Hills" }
+      ]
+    },
+    "uol": {
+      "name": "UOL Group",
+      "nameZh": "华业集团",
+      "website": "https://uolhomes.com.sg/",
+      "source": "https://uolhomes.com.sg/collection/",
+      "match": ["uol", "united venture development"],
+      "projects": [
+        { "name": "UPPERHOUSE at Orchard Boulevard", "url": "https://uolhomes.com.sg/project/upperhouse-at-orchard-boulevard/" },
+        { "name": "PARKTOWN Residence", "url": "https://uolhomes.com.sg/project/parktownresidence/" },
+        { "name": "Meyer Blue", "url": "https://uolhomes.com.sg/project/meyer-blue/" },
+        { "name": "Skye at Holland", "url": "https://uolhomes.com.sg/project/skye-at-holland/" },
+        { "name": "Watten House", "year": 2027, "url": "https://uolhomes.com.sg/project/site-at-watten-estate/" },
+        { "name": "Pinetree Hill", "year": 2027, "url": "https://uolhomes.com.sg/project/pinetree-hill/" },
+        { "name": "AMO Residence", "year": 2026, "url": "https://uolhomes.com.sg/project/amo-residence/" },
+        { "name": "The Watergardens", "year": 2026, "url": "https://uolhomes.com.sg/project/the-watergardens/" },
+        { "name": "Clavon", "year": 2025, "url": "https://uolhomes.com.sg/project/clavon/" }
+      ]
+    },
+    "cdl": {
+      "name": "City Developments Limited",
+      "nameZh": "城市发展",
+      "website": "https://www.cdl.com.sg/",
+      "source": "https://www.cdl.com.sg/residential-property-gallery",
+      "domains": ["cdl.com.sg", "cdlhomes.com.sg"],
+      "match": ["cdl", "city developments"],
+      "projects": [
+        { "name": "Newport Residences", "url": "https://www.cdl.com.sg/" },
+        { "name": "Lucerne Grand", "url": "https://www.cdl.com.sg/" },
+        { "name": "Zyon Grand", "url": "https://www.cdl.com.sg/" },
+        { "name": "The Orie", "url": "https://www.cdl.com.sg/" },
+        { "name": "Kassia", "url": "https://www.cdl.com.sg/" },
+        { "name": "Norwood Grand", "url": "https://www.cdl.com.sg/" },
+        { "name": "Union Square Residences", "url": "https://www.cdl.com.sg/" },
+        { "name": "The Myst", "url": "https://www.cdl.com.sg/" },
+        { "name": "CanningHill Piers", "url": "https://www.cdl.com.sg/" },
+        { "name": "Lumina Grand", "year": 2026, "url": "https://www.cdl.com.sg/" },
+        { "name": "Haus on Handy", "year": 2023, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Piermont Grand", "year": 2023, "url": "https://www.cdlhomes.com.sg/piermontgrand/overview.html" },
+        { "name": "Whistler Grand", "year": 2022, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "The Tapestry", "year": 2021, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Forest Woods", "year": 2020, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Coco Palms", "year": 2018, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "The Criterion", "year": 2018, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Commonwealth Towers", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "D'Nest", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "New Futura", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "The Brownstone", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "The Venue Residences and Shoppes", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" }
+      ]
+    },
+    "guocoland": {
+      "name": "GuocoLand",
+      "nameZh": "国浩房地产",
+      "website": "https://www.guocoland.com.sg/",
+      "source": "https://www.guocoland.com.sg/resi_sg.shtml",
+      "match": ["guocoland", "guoco midtown"],
+      "projects": [
+        { "name": "Springleaf Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Lentor Mansion", "year": 2027, "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Lentor Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Midtown Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Midtown Bay", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Meyer Mansion", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Martin Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Wallich Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Leedon Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Goodwood Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" }
+      ]
+    },
+    "singhaiyi": {
+      "name": "SingHaiyi Group",
+      "nameZh": "新海逸集团",
+      "website": "https://www.singhaiyi.com/",
+      "source": "https://www.singhaiyi.com/property-projects.html",
+      "match": ["singhaiyi", "sing-haiyi"],
+      "projects": [
+        { "name": "Sora", "url": "https://www.singhaiyi.com/cn/sora.html" },
+        { "name": "Skywaters Residences", "url": "https://www.singhaiyi.com/cn/skywaters-residences.html" },
+        { "name": "Grand Dunman", "url": "https://www.singhaiyi.com/property-projects.html" },
+        { "name": "Parc Clematis", "url": "https://www.singhaiyi.com/property-projects.html" },
+        { "name": "The Gazania", "url": "https://www.singhaiyi.com/completed-projects.html" },
+        { "name": "The Lilium", "url": "https://www.singhaiyi.com/completed-projects.html" },
+        { "name": "City Suites", "url": "https://www.singhaiyi.com/completed-projects.html" },
+        { "name": "The Vales", "url": "https://www.singhaiyi.com/completed-projects.html" }
+      ]
+    },
+    "mcl-land": {
+      "name": "MCL Land",
+      "nameZh": "美联地产",
+      "website": "https://www.mclland.com.sg/",
+      "source": "https://www.mclland.com.sg/about-us",
+      "match": ["mcl land"],
+      "projects": [
+        { "name": "Nava Grove", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Elta", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Copen Grand", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Tembusu Grand", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Piccadilly Grand", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Leedon Green", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "J Gateway", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Margaret Ville", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Lake Grande", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Sol Acres", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Hallmark Residences", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Ripple Bay", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "The Estuary", "url": "https://www.mclland.com.sg/about-us" }
+      ]
+    },
+    "sim-lian": {
+      "name": "Sim Lian Group",
+      "nameZh": "森联集团",
+      "website": "https://www.simlian.com.sg/",
+      "source": "https://www.simlian.com.sg/portfolio/residential/our-portfolio/",
+      "match": ["sim lian"],
+      "projects": [
+        { "name": "Aurelle of Tampines", "url": "https://www.simlian.com.sg/property/aurelleoftampines/" },
+        { "name": "Emerald of Katong", "url": "https://www.simlian.com.sg/property/emeraldofkatong/" },
+        { "name": "Treasure at Tampines", "url": "https://www.simlian.com.sg/property/treasure-at-tampines/" },
+        { "name": "The Lincoln Residences", "year": 2011, "url": "https://www.simlian.com.sg/portfolio/residential/our-portfolio/lincoln-residences/" }
+      ]
+    },
+    "bukit-sembawang": {
+      "name": "Bukit Sembawang Estates",
+      "nameZh": "武吉士巴旺",
+      "website": "https://www.bukitsembawang.sg/",
+      "source": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio",
+      "match": ["singapore united estates"],
+      "projects": [
+        { "name": "8@BT", "url": "https://www.bukitsembawang.sg/8atbt" },
+        { "name": "Pollen Collection II", "url": "https://www.bukitsembawang.sg/PollenCollection-2" },
+        { "name": "Pollen Collection", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Pollen-Collection" },
+        { "name": "Luxus Hills", "url": "https://www.bukitsembawang.sg/LuxusHills" },
+        { "name": "Nim Collection", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "Watercove", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "LIV @ MB", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "The Atelier", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "8 St Thomas", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "Skyline Residences", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "Paterson Suites", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" }
+      ]
+    },
+    "far-east": {
+      "name": "Far East Organization",
+      "nameZh": "远东机构",
+      "website": "https://www.fareast.com/",
+      "source": "https://www.fareast.com/en/new-developments",
+      "domains": ["fareast.com", "fareast.com.sg", "amberhouse.com.sg", "aurea.com.sg", "reside.com.sg"],
+      "match": ["fe landmark", "fec "],
+      "projects": [
+        { "name": "AUREA", "url": "https://www.aurea.com.sg/" },
+        { "name": "AMBER HOUSE", "url": "https://www.amberhouse.com.sg/en" },
+        { "name": "The Reserve Residences", "url": "https://www.fareast.com.sg/en/residential/the-reserve-residences" },
+        { "name": "RESIDE at River Valley", "url": "https://www.reside.com.sg/" }
+      ]
+    },
+    "allgreen": {
+      "name": "Allgreen Properties",
+      "nameZh": "长丰地产",
+      "website": "https://allgreen.com.sg/",
+      "source": "https://allgreen.com.sg/project-category/live/current-projects/",
+      "domains": ["allgreen.com.sg", "promenadepeak.com.sg"],
+      "match": ["allgreen"],
+      "projects": [
+        { "name": "Promenade Peak", "url": "https://www.promenadepeak.com.sg/" },
+        { "name": "Pasir Ris 8", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
+        { "name": "Royalgreen", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
+        { "name": "Juniper Hill", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
+        { "name": "Fourth Avenue Residences", "url": "https://www.allgreen.com.sg/local-projects/past-projects/fourthavenueresidences/" },
+        { "name": "SkySuites@Anson", "url": "https://www.allgreen.com.sg/local-projects/past-projects/skysuitesanson/" },
+        { "name": "Cairnhill Residences", "url": "https://www.allgreen.com.sg/local-projects/past-projects/cairnhill-residences/" },
+        { "name": "Chestnut Green", "url": "https://www.allgreen.com.sg/local-projects/past-projects/chestnut-green/" },
+        { "name": "Dairy Farm Estate", "url": "https://www.allgreen.com.sg/local-projects/past-projects/dairy-farm-estate/" }
+      ]
+    },
+    "sing-holdings": {
+      "name": "Sing Holdings",
+      "nameZh": "成峰控股",
+      "website": "https://singholdings.com/",
+      "source": "https://singholdings.com/about/",
+      "match": ["sing holdings"],
+      "projects": [
+        { "name": "North Gaia", "url": "https://singholdings.com/about/" },
+        { "name": "Parc Botannia", "url": "https://singholdings.com/about/" },
+        { "name": "Robin Residences", "url": "https://singholdings.com/about/" },
+        { "name": "Bellerive", "url": "https://singholdings.com/about/" },
+        { "name": "The Laurels", "url": "https://singholdings.com/about/" },
+        { "name": "Waterwoods", "url": "https://singholdings.com/about/" }
+      ]
+    },
+    "kingsford": {
+      "name": "Kingsford Development",
+      "nameZh": "金昌集团",
+      "website": "https://kingsford.com.sg/",
+      "source": "https://kingsford.com.sg/singapore/",
+      "match": ["kingsford"],
+      "projects": [
+        { "name": "Lentor Gardens Residences", "url": "https://kingsford.com.sg/property/lentor-gardens-residences/" },
+        { "name": "One Marina Gardens", "url": "https://kingsford.com.sg/property/one-marina-gardens/" },
+        { "name": "Chuan Park", "url": "https://kingsford.com.sg/property/chuan-park/" },
+        { "name": "The Hill @One North", "url": "https://kingsford.com.sg/property/the-hill-one-north/" },
+        { "name": "Normanton Park", "url": "https://kingsford.com.sg/property/normanton-park/" },
+        { "name": "Kingsford Waterbay", "url": "https://kingsford.com.sg/property/kingsford-waterbay/" },
+        { "name": "Kingsford Hillview Peak", "url": "https://kingsford.com.sg/property/kingsford-hillview-peak/" }
+      ]
+    },
+    "singland": {
+      "name": "Singapore Land Group",
+      "nameZh": "新加坡置地",
+      "website": "https://www.singaporeland.com/",
+      "source": "https://www.singaporeland.com/portfolio_category/residential/",
+      "match": ["singapore land group"],
+      "projects": []
+    },
+    "capitaland": {
+      "name": "CapitaLand Development",
+      "nameZh": "凯德置地",
+      "website": "https://www.capitaland.com/",
+      "source": "https://www.capitaland.com/",
+      "match": ["capitaland"],
+      "projects": []
+    }
+  },
+  "spvOverrides": {
+    "_note": "不透明 SPV → 集团。每条都需单独查证后再加；合资项目列出全部参与方。",
+    "topaz residential pte ltd/topaz commercial pte ltd": ["uol", "singland", "capitaland"],
+    "grand dunman pte ltd": ["singhaiyi"],
+    "taurus properties sg pte ltd": ["cdl", "mcl-land"],
+    "tembusu residential pte ltd": ["cdl", "mcl-land"],
+    "transcend residential (toa payoh) pte ltd": ["cdl"],
+    "tripartite developers pte ltd": ["cdl"],
+    "united venture development (meyer) pte ltd": ["uol", "singland"],
+    "united venture development (no. 5) pte ltd": ["uol", "singland"],
+    "lakeside residential pte ltd": ["singhaiyi"],
+    "shenton residential property pte. ltd": ["singhaiyi"],
+    "springleaf residence pte ltd": ["guocoland"],
+    "guoco midtown pte ltd/midtown bay pte ltd": ["guocoland"],
+    "golden ray edge 3 pte ltd": ["mcl-land"],
+    "hc land (clementi) pte ltd": ["mcl-land"],
+    "tamarind development pte ltd": ["uol", "singland", "capitaland"],
+    "chuan park development pte ltd": ["kingsford"],
+    "fe landmark pte ltd/fec residences trustee pte ltd/fec retail trustee pte ltd": ["far-east"],
+    "urban park pte ltd": ["far-east"],
+    "gmc property pte. ltd.": ["far-east"],
+    "bukit one pte. ltd.": ["bukit-sembawang"],
+    "valerian residential pte ltd": ["allgreen"]
+  }
+}
