@@ -1,4 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { geocodeProject, validCoordinates } from "./lib/geo.mjs";
+import { enrichProjects } from "./lib/enrich.mjs";
+import { findUnrepaired, repairMojibake } from "./lib/text.mjs";
 
 const DATA_FILE = new URL("../public/data/projects.json", import.meta.url);
 const accessKey = process.env.URA_ACCESS_KEY;
@@ -30,8 +33,15 @@ function periodValue(value = "") { const month=Number(value.slice(0,2)), year=20
 function latestSales(record) {
   return [...(record.developerSales || [])].sort((a, b) => periodValue(b.refPeriod)-periodValue(a.refPeriod))[0];
 }
-function validCoordinates(point) {
-  return point && Number.isFinite(point.lat) && Number.isFinite(point.lng) && point.lat >= 1.13 && point.lat <= 1.49 && point.lng >= 103.59 && point.lng <= 104.12;
+/**
+ * Reuse a previously stored position only when it was an exact fix. District
+ * fallbacks land inside Singapore too, so accepting any in-bounds coordinate
+ * pinned every fallback permanently and stopped it ever being re-geocoded.
+ */
+function reusableCoordinates(old) {
+  if (old.locationAccuracy !== "exact") return null;
+  const point = { lat: Number(old.lat), lng: Number(old.lng) };
+  return validCoordinates(point) ? point : null;
 }
 function svy21ToWgs84(x, y) {
   // SVY21 is locally almost linear across Singapore. This local tangent-plane
@@ -59,15 +69,6 @@ function districtFallback(name, district) {
 function excludedNonResidential(name="") {
   const value=name.toLowerCase();
   return value.includes("service apartment") || value.includes("serviced apartment") || value.includes("hotel development") || value === "office/retail development";
-}
-async function geocode(query) {
-  const url = new URL("https://www.onemap.gov.sg/api/common/elastic/search");
-  url.search = new URLSearchParams({ searchVal:query, returnGeom:"Y", getAddrDetails:"Y", pageNum:"1" });
-  try {
-    const result = await fetch(url, { headers:{ "User-Agent":"property_for_sg data updater" } }).then(r => r.json());
-    const hit = result.results?.[0];
-    return hit ? { lat:Number(hit.LATITUDE), lng:Number(hit.LONGITUDE) } : null;
-  } catch { return null; }
 }
 
 const periods = Array.from({length:36}, (_, offset) => {
@@ -97,9 +98,9 @@ for (const row of pipelineRows) {
   const units = Number(month?.unitsAvail || row.totalUnits || 0);
   const sold = Number(month?.soldToDate || 0);
   if (month && units > 0 && sold >= units) { audit.soldOut.push({name:row.project,units,sold}); continue; }
-  let coordinates = validCoordinates({lat:Number(old.lat),lng:Number(old.lng)}) ? {lat:Number(old.lat),lng:Number(old.lng)} : null;
+  let coordinates = reusableCoordinates(old);
   if (!coordinates && sales?.x && sales?.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
-  if (!coordinates) coordinates = await geocode(`${row.street || row.project}, Singapore`);
+  if (!coordinates) coordinates = await geocodeProject({ project: row.project, street: row.street });
   let locationAccuracy="exact";
   if (!validCoordinates(coordinates)) {
     coordinates=districtFallback(row.project,row.district || sales?.district);
@@ -110,7 +111,7 @@ for (const row of pipelineRows) {
     id:key.toLowerCase(), name:row.project, area:old.area || `${row.street || "新加坡"} · D${String(row.district || sales?.district || "—").padStart(2,"0")}`,
     status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
     developer:row.developerName || sales?.developer || old.developer || "待公布", tenure:old.tenure || "待公布", launch:old.launch || "尚未公布",
-    top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"), mrt:old.mrt || "待计算", school:old.school || "待计算",
+    top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"),
     ...coordinates, locationAccuracy, updatedAt, source:"URA"
   });
   mergedKeys.add(key);
@@ -128,9 +129,9 @@ for (const [key, sales] of salesByName) {
   const launched=Number(month?.launchedToDate || 0);
   if (launched === 0) audit.notLaunched.push({name:sales.project,units,sold});
   const old = oldByName.get(key) || {};
-  let coordinates = validCoordinates({lat:Number(old.lat),lng:Number(old.lng)}) ? {lat:Number(old.lat),lng:Number(old.lng)} : null;
+  let coordinates = reusableCoordinates(old);
   if (!coordinates && sales.x && sales.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
-  if (!coordinates) coordinates = await geocode(`${sales.street || sales.project}, Singapore`);
+  if (!coordinates) coordinates = await geocodeProject({ project: sales.project, street: sales.street });
   let locationAccuracy="exact";
   if (!validCoordinates(coordinates)) {
     coordinates=districtFallback(sales.project,sales.district);
@@ -140,7 +141,7 @@ for (const [key, sales] of salesByName) {
   merged.push({
     id:key.toLowerCase(), name:sales.project, area:old.area || `${sales.street || "新加坡"} · D${String(sales.district || "—").padStart(2,"0")}`,
     status:launched > 0 ? "在售" : "确定开发", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
-    launch:old.launch || (launched > 0 ? "已开盘" : "尚未公布"), top:old.top || "待公布", mrt:old.mrt || "待计算", school:old.school || "待计算",
+    launch:old.launch || (launched > 0 ? "已开盘" : "尚未公布"), top:old.top || "待公布",
     ...coordinates, locationAccuracy, updatedAt, source:"URA"
   });
 }
@@ -149,8 +150,22 @@ for (const old of oldData.projects.filter(project => project.status === "土地�
   if (!merged.some(project => normalise(project.name) === normalise(old.name))) merged.push({...old, updatedAt});
 }
 const statusOrder = { "在售":0, "即将开盘":1, "确定开发":2, "土地供应":3 };
-merged.sort((a,b) => statusOrder[a.status] - statusOrder[b.status] || a.name.localeCompare(b.name));
-await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:merged}, null, 2)}\n`);
+merged.sort((a,b) => (statusOrder[a.status] ?? 99) - (statusOrder[b.status] ?? 99) || a.name.localeCompare(b.name));
+
+for (const project of merged) project.name = repairMojibake(project.name);
+const stillMangled = findUnrepaired(merged.map(project => project.name));
+if (stillMangled.length) console.warn(`⚠ URA 返回的名称仍有乱码：${stillMangled.join(", ")}`);
+
+// Derive nearest-MRT and nearby-school facts from the reference datasets that
+// already ship with the site, so the detail card never shows a placeholder for
+// a project we do have an exact position for.
+const [stations, schools] = await Promise.all([
+  readFile(new URL("../public/data/mrt-stations.json", import.meta.url), "utf8").then(JSON.parse),
+  readFile(new URL("../public/data/schools.json", import.meta.url), "utf8").then(JSON.parse),
+]);
+const enriched = enrichProjects(merged, { stations, schools });
+
+await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:enriched}, null, 2)}\n`);
 await writeFile(new URL("../public/data/project-audit.json", import.meta.url), `${JSON.stringify({updatedAt,...audit}, null, 2)}\n`);
 console.log(`已更新 ${merged.length} 个项目（${updatedAt}）`);
 console.log(`审计：${audit.approximateCoordinates.length} 个使用区域级坐标，${audit.soldOut.length} 个已售罄，${audit.notLaunched.length} 个尚未开售，${audit.excludedNonResidential.length} 个非住宅项目已排除`);

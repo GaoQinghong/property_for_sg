@@ -28,8 +28,12 @@ jobs:
         run: npm run data:update-projects
         env:
           URA_ACCESS_KEY: ${{ secrets.URA_ACCESS_KEY }}
+      # Guards the freshly fetched data before it is committed: coordinates in
+      # bounds, no mojibake, and no distances derived from fallback pins.
+      - name: Validate data
+        run: npm test
       - name: Verify production build
-        run: npm run build:pages
+        run: npm run build
       - name: Commit data changes
         run: |
           git config user.name "github-actions[bot]"

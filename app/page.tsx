@@ -1,162 +1,528 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import "./ui-fixes.css";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import {
+  PLACE_TYPES,
+  STATUS_CLASS,
+  UNLOCATED,
+  type PlaceType,
+  type Project,
+} from "./types";
+import { DISTRICT_NAMES, districtLabel, districtOf, streetOf } from "./districts";
+import {
+  groupLabel,
+  officialProjectUrl,
+  pastProjects,
+  resolveGroups,
+  searchUrl,
+  type DeveloperDirectory,
+} from "./developers";
+import {
+  useDeveloperDirectory,
+  useFavourites,
+  usePlaceData,
+  useProjects,
+  useRailData,
+} from "./useMapData";
 
-type ProjectStatus = "在售" | "即将开盘" | "确定开发" | "土地供应";
-type Project = { id:number|string; name:string; area:string; status:ProjectStatus; units:number; sold:number; developer:string; tenure:string; launch:string; top:string; mrt:string; school:string; lat:number; lng:number; updatedAt?:string; source?:string; locationAccuracy?:"exact"|"district"; website?:string };
-const projectDetailsUrl = (project: Project) => project.website || `https://www.google.com/search?q=${encodeURIComponent(`${project.name} Singapore condominium official project`)}`;
-const fallbackProjects: Project[] = [
-  { id: 1, name: "Dunearn House", area: "武吉知马 · D11", status: "在售" as ProjectStatus, units: 228, sold: 86, developer: "Frasers Property / Sekisui House", tenure: "99 年", launch: "2026 年 7 月", top: "2030", mrt: "Botanic Gardens · 760m", school: "南洋小学 · 1km 内", lat: 1.3268, lng: 103.8121 },
-  { id: 2, name: "Thomson Reserve", area: "汤申 · D20", status: "即将开盘" as ProjectStatus, units: 540, sold: 0, developer: "待最终确认", tenure: "99 年", launch: "预计 2026 下半年", top: "待公布", mrt: "Upper Thomson · 320m", school: "爱同学校 · 1km 内", lat: 1.3545, lng: 103.8328 },
-  { id: 3, name: "Narra Residences", area: "山景 · D23", status: "在售" as ProjectStatus, units: 540, sold: 193, developer: "Santander Properties", tenure: "99 年", launch: "2026 年", top: "2030", mrt: "Hillview · 1.2km", school: "CHIJ Our Lady Queen of Peace", lat: 1.3659, lng: 103.7634 },
-  { id: 4, name: "River Valley Green (Parcel C)", area: "里峇峇利 · D09", status: "确定开发" as ProjectStatus, units: 470, sold: 0, developer: "土地已中标", tenure: "99 年", launch: "尚未公布", top: "待公布", mrt: "Great World · 450m", school: "River Valley Primary · 1km 内", lat: 1.2936, lng: 103.8258 },
-  { id: 5, name: "Bayshore Drive", area: "东海岸 · D16", status: "确定开发" as ProjectStatus, units: 1280, sold: 0, developer: "土地已中标", tenure: "99 年", launch: "尚未公布", top: "待公布", mrt: "Bayshore · 120m", school: "Temasek Primary", lat: 1.3126, lng: 103.9412 },
-  { id: 6, name: "Marina Gardens Lane", area: "滨海湾 · D01", status: "土地供应" as ProjectStatus, units: 775, sold: 0, developer: "尚未招标", tenure: "99 年", launch: "预计 2026 年 8 月卖地", top: "待公布", mrt: "Marina South · 180m", school: "—", lat: 1.2786, lng: 103.8682 },
-];
-const statusClass: Record<ProjectStatus, string> = { 在售: "sale", 即将开盘: "soon", 确定开发: "confirmed", 土地供应: "land" };
-type RailLine = { ref:string; name:string; color:string; status:"operating"|"future"; segments:number[][][] };
-type RailStation = { name:string; ref:string; lat:number; lng:number; station:string; status:"operating"|"future" };
-type Place = { name:string; type:"小学"|"中学"|"商场"; lat:number; lng:number; address?:string; nearestMrt?:string; bus?:string };
+const STATUS_FILTERS = ["全部", "在售", "即将开盘", "确定开发", "土地供应"] as const;
+type StatusFilter = (typeof STATUS_FILTERS)[number];
+
+/** Place pins are noise at city zoom, so they only render once zoomed in. */
+const PLACE_MIN_ZOOM = 13;
+
+const PLACE_STYLE: Record<PlaceType, { symbol: string; color: string }> = {
+  小学: { symbol: "小", color: "#3a6394" },
+  中学: { symbol: "中", color: "#5c4589" },
+  商场: { symbol: "购", color: "#a8445c" },
+};
+
+/** Leaflet tooltips take raw HTML, so anything from the data files is escaped. */
+const escapeHtml = (value: string) =>
+  value.replace(/[&<>"']/g, (char) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char] as string);
 
 export default function Home() {
-  const [projects, setProjects] = useState<Project[]>(fallbackProjects);
-  const [selected, setSelected] = useState<Project | null>(null);
-  const [dataUpdatedAt, setDataUpdatedAt] = useState("2026-08-18");
-  const [activeStatus, setActiveStatus] = useState<ProjectStatus | "全部">("全部");
+  const { projects, updatedAt, status: dataStatus } = useProjects();
+  const directory = useDeveloperDirectory();
+  const { favourites, toggle: toggleFavourite } = useFavourites();
+
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [activeStatus, setActiveStatus] = useState<StatusFilter>("全部");
   const [query, setQuery] = useState("");
-  const [mapReady, setMapReady] = useState(false);
+  const [onlyFavourites, setOnlyFavourites] = useState(false);
   const [showMrt, setShowMrt] = useState(true);
-  const [railLines, setRailLines] = useState<RailLine[]>([]);
-  const [railStations, setRailStations] = useState<RailStation[]>([]);
-  const [places, setPlaces] = useState<Place[]>([]);
-  const [placeFilters, setPlaceFilters] = useState({ 小学:true, 中学:true, 商场:true });
+  // Schools and malls stay off until asked for: 557 extra pins bury the
+  // projects, and their data is only fetched when a layer is switched on.
+  const [placeFilters, setPlaceFilters] = useState<Record<PlaceType, boolean>>({
+    小学: false, 中学: false, 商场: false,
+  });
+  const [listOpen, setListOpen] = useState(false);
+  const [showDataInfo, setShowDataInfo] = useState(false);
+  const [mapReady, setMapReady] = useState(false);
+  // Bumped on every pan/zoom so viewport-dependent layers re-render; `zoom` is
+  // kept in state rather than read off the map ref during render.
+  const [mapView, setMapView] = useState({ zoom: 11, version: 0 });
+
+  const { lines: railLines, stations: railStations } = useRailData(showMrt);
+  const anyPlaceLayer = placeFilters.小学 || placeFilters.中学 || placeFilters.商场;
+  const places = usePlaceData(placeFilters.小学 || placeFilters.中学, placeFilters.商场);
+
   const mapElement = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<any>(null);
-  const markerLayer = useRef<any>(null);
-  const mrtLayer = useRef<any>(null);
-  const placesLayer = useRef<any>(null);
-  const visible = useMemo(() => projects.filter((project) => {
+  const mapInstance = useRef<L.Map | null>(null);
+  const markerLayer = useRef<L.LayerGroup | null>(null);
+  const mrtLayer = useRef<L.LayerGroup | null>(null);
+  const placesLayer = useRef<L.LayerGroup | null>(null);
+  const stationRenderer = useRef<L.Canvas | null>(null);
+  const markersById = useRef(new Map<string, L.Marker>());
+
+  const visible = useMemo(() => {
     const keyword = query.trim().toLowerCase();
-    return (activeStatus === "全部" || project.status === activeStatus) && (!keyword || `${project.name} ${project.area} ${project.developer}`.toLowerCase().includes(keyword));
-  }), [activeStatus, query]);
-
-  useEffect(() => {
-    Promise.all([
-      fetch("./data/projects.json").then(response => response.json()),
-      fetch("./data/mrt-lines.json").then(response => response.json()),
-      fetch("./data/mrt-stations.json").then(response => response.json()),
-      fetch("./data/schools.json").then(response => response.json()),
-      fetch("./data/malls.json").then(response => response.json()),
-    ]).then(([projectData, lines, stations, schools, malls]) => {
-      const nextProjects = projectData.projects || projectData;
-      if (nextProjects.length) setProjects(nextProjects);
-      if (projectData.updatedAt) setDataUpdatedAt(projectData.updatedAt);
-      setRailLines(lines); setRailStations(stations); setPlaces([...schools, ...malls]);
-    }).catch(error => console.error("数据文件载入失败，使用内置后备数据", error));
-  }, []);
-
-  useEffect(() => {
-    let cancelled = false;
-    const startMap = () => {
-      if (cancelled || !mapElement.current || mapInstance.current) return;
-      const L = (window as any).L;
-      if (!L) return;
-      const map = L.map(mapElement.current, { zoomControl: false, attributionControl: true }).setView([1.3521, 103.8198], 11);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap contributors" }).addTo(map);
-      L.control.zoom({ position: "topright" }).addTo(map);
-      mapInstance.current = map;
-      markerLayer.current = L.layerGroup().addTo(map);
-      mrtLayer.current = L.layerGroup().addTo(map);
-      placesLayer.current = L.layerGroup().addTo(map);
-      setMapReady(true);
-    };
-    if ((window as any).L) startMap();
-    else {
-      const stylesheet = document.createElement("link");
-      stylesheet.rel = "stylesheet"; stylesheet.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
-      document.head.appendChild(stylesheet);
-      const script = document.createElement("script");
-      script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"; script.onload = startMap;
-      document.head.appendChild(script);
-    }
-    return () => { cancelled = true; mapInstance.current?.remove(); mapInstance.current = null; };
-  }, []);
-
-  useEffect(() => {
-    const L = (window as any).L;
-    if (!L || !markerLayer.current) return;
-    markerLayer.current.clearLayers();
-    visible.forEach(project => {
-      const active = selected?.id === project.id ? " active" : "";
-      const marker = L.marker([project.lat, project.lng], { icon: L.divIcon({ className: `project-marker-shell${active}`, html: `<span class="real-map-pin ${statusClass[project.status]}">${project.units}</span>`, iconSize: [44, 34], iconAnchor: [22, 30] }) });
-      marker.bindTooltip(`<b>${project.name}</b><br>${project.area}`, { direction: "top", offset: [0, -25] });
-      marker.on("click", () => setSelected(project));
-      marker.addTo(markerLayer.current);
+    return projects.filter((project) => {
+      if (activeStatus !== "全部" && project.status !== activeStatus) return false;
+      if (onlyFavourites && !favourites.has(String(project.id))) return false;
+      if (!keyword) return true;
+      return `${project.name} ${project.area} ${project.developer}`.toLowerCase().includes(keyword);
     });
-  }, [visible, mapReady, selected]);
+  }, [projects, activeStatus, query, onlyFavourites, favourites]);
+
+  // Derived, not stored: a project filtered out of `visible` therefore closes
+  // its own detail card, which previously stayed open describing a project
+  // that no longer had a pin on the map.
+  const selected = useMemo(
+    () => visible.find((project) => String(project.id) === selectedId) ?? null,
+    [visible, selectedId],
+  );
 
   useEffect(() => {
-    const L = (window as any).L;
-    if (!L || !mrtLayer.current) return;
-    mrtLayer.current.clearLayers();
+    if (!mapElement.current || mapInstance.current) return;
+    const map = L.map(mapElement.current, { zoomControl: false, attributionControl: true })
+      .setView([1.3521, 103.8198], 11);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "© OpenStreetMap contributors",
+    }).addTo(map);
+    L.control.zoom({ position: "topright" }).addTo(map);
+
+    mapInstance.current = map;
+    // Stations are drawn on a canvas: 240 individual SVG nodes measurably
+    // slowed panning on the previous build.
+    stationRenderer.current = L.canvas({ padding: 0.3 });
+    markerLayer.current = L.layerGroup().addTo(map);
+    mrtLayer.current = L.layerGroup().addTo(map);
+    placesLayer.current = L.layerGroup().addTo(map);
+
+    const onViewChange = () => setMapView((value) => ({ zoom: map.getZoom(), version: value.version + 1 }));
+    map.on("moveend zoomend", onViewChange);
+    const markers = markersById.current;
+    setMapReady(true);
+
+    return () => {
+      map.off("moveend zoomend", onViewChange);
+      map.remove();
+      mapInstance.current = null;
+      markerLayer.current = null;
+      mrtLayer.current = null;
+      placesLayer.current = null;
+      markers.clear();
+      setMapReady(false);
+    };
+  }, []);
+
+  // Project pins: rebuilt only when the filtered set changes, never on
+  // selection — selection just toggles a class on the existing element.
+  useEffect(() => {
+    const layer = markerLayer.current;
+    if (!mapReady || !layer) return;
+    layer.clearLayers();
+    markersById.current.clear();
+
+    visible.forEach((project) => {
+      const id = String(project.id);
+      const marker = L.marker([project.lat, project.lng], {
+        icon: L.divIcon({
+          className: "project-marker-shell",
+          html: `<span class="real-map-pin ${STATUS_CLASS[project.status]}">${project.units}</span>`,
+          iconSize: [44, 34],
+          iconAnchor: [22, 30],
+        }),
+        keyboard: false,
+      });
+      const approximate = project.locationAccuracy === "district"
+        ? "<br><em>位置为邮区中心估算</em>" : "";
+      marker.bindTooltip(
+        `<b>${escapeHtml(project.name)}</b><br>${escapeHtml(project.area)}${approximate}`,
+        { direction: "top", offset: [0, -25] },
+      );
+      marker.on("click", () => setSelectedId(id));
+      marker.addTo(layer);
+      markersById.current.set(id, marker);
+    });
+  }, [visible, mapReady]);
+
+  useEffect(() => {
+    markersById.current.forEach((marker, id) => {
+      marker.getElement()?.classList.toggle("active", id === selectedId);
+    });
+  }, [selectedId, visible, mapReady]);
+
+  useEffect(() => {
+    const layer = mrtLayer.current;
+    if (!mapReady || !layer) return;
+    layer.clearLayers();
     if (!showMrt) return;
-    railLines.forEach(line => line.segments.forEach(points => L.polyline(points, { color:line.color, weight:line.status === "future" ? 2.2 : 2.6, opacity:line.status === "future" ? .22 : .28, dashArray:line.status === "future" ? "7 7" : undefined, lineCap:"round" }).bindTooltip(`${line.ref} · ${line.status === "future" ? "未来线路" : "运营线路"}`, { sticky:true }).addTo(mrtLayer.current)));
-    railStations.forEach(station => {
+
+    railLines.forEach((line) => line.segments.forEach((points) => {
+      L.polyline(points, {
+        color: line.color,
+        weight: line.status === "future" ? 2.2 : 2.6,
+        opacity: line.status === "future" ? 0.3 : 0.4,
+        dashArray: line.status === "future" ? "7 7" : undefined,
+        lineCap: "round",
+        interactive: false,
+      }).addTo(layer);
+    }));
+
+    railStations.forEach((station) => {
       const future = station.status === "future";
-      L.circleMarker([station.lat,station.lng], { radius:future ? 4.5 : 3.6, color:future ? "#65736c" : "#fff", weight:future ? 1.5 : 1.3, dashArray:future ? "2 2" : undefined, fillColor:future ? "#fff" : "#44534c", fillOpacity:future ? .78 : .72 })
-        .bindTooltip(`<b>${station.name}</b><br>${station.ref || "站码待公布"} · ${future ? "建设中 / 规划中" : "运营中"}`, { direction:"top" }).addTo(mrtLayer.current);
+      L.circleMarker([station.lat, station.lng], {
+        renderer: stationRenderer.current ?? undefined,
+        radius: future ? 4.5 : 3.6,
+        color: future ? "#65736c" : "#fff",
+        weight: future ? 1.5 : 1.3,
+        dashArray: future ? "2 2" : undefined,
+        fillColor: future ? "#fff" : "#44534c",
+        fillOpacity: future ? 0.78 : 0.72,
+      }).bindTooltip(
+        `<b>${escapeHtml(station.name)}</b><br>${escapeHtml(station.ref || "站码待公布")} · ${future ? "建设中 / 规划中" : "运营中"}`,
+        { direction: "top" },
+      ).addTo(layer);
     });
   }, [mapReady, showMrt, railLines, railStations]);
 
+  // Schools and malls are culled to the current viewport so the map never
+  // holds hundreds of off-screen DOM pins.
   useEffect(() => {
-    const L = (window as any).L;
-    if (!L || !placesLayer.current) return;
-    placesLayer.current.clearLayers();
-    const config:Record<string,{symbol:string,color:string}> = { 小学:{symbol:"小",color:"#4878b7"}, 中学:{symbol:"中",color:"#7255a6"}, 商场:{symbol:"购",color:"#c35c72"} };
-    places.filter(place => placeFilters[place.type]).forEach(place => {
-      const style = config[place.type];
-      const markerType = place.type === "商场" ? "mall" : "school";
-      const details = place.address ? `<br>${place.address}${place.nearestMrt ? `<br>最近地铁：${place.nearestMrt}` : ""}` : "";
-      L.marker([place.lat,place.lng], { icon:L.divIcon({ className:"place-marker-shell", html:`<span class="place-pin ${markerType}" style="--place-color:${style.color}">${style.symbol}</span>`, iconSize:[24,24], iconAnchor:[12,12] }) })
-        .bindTooltip(`<b>${place.name}</b><br>${place.type}${details}`, { direction:"top", offset:[0,-8] }).addTo(placesLayer.current);
+    const layer = placesLayer.current;
+    const map = mapInstance.current;
+    if (!mapReady || !layer || !map) return;
+    layer.clearLayers();
+    if (!anyPlaceLayer || map.getZoom() < PLACE_MIN_ZOOM) return;
+
+    const bounds = map.getBounds().pad(0.2);
+    places.forEach((place) => {
+      if (!placeFilters[place.type]) return;
+      if (!bounds.contains([place.lat, place.lng])) return;
+      const style = PLACE_STYLE[place.type];
+      const details = place.address
+        ? `<br>${escapeHtml(place.address)}${place.nearestMrt ? `<br>最近地铁：${escapeHtml(place.nearestMrt)}` : ""}`
+        : "";
+      L.marker([place.lat, place.lng], {
+        icon: L.divIcon({
+          className: "place-marker-shell",
+          html: `<span class="place-pin ${place.type === "商场" ? "mall" : "school"}" style="--place-color:${style.color}">${style.symbol}</span>`,
+          iconSize: [24, 24],
+          iconAnchor: [12, 12],
+        }),
+        keyboard: false,
+      }).bindTooltip(
+        `<b>${escapeHtml(place.name)}</b><br>${place.type}${details}`,
+        { direction: "top", offset: [0, -8] },
+      ).addTo(layer);
     });
-  }, [mapReady, placeFilters, places]);
+  }, [mapReady, placeFilters, places, anyPlaceLayer, mapView]);
 
   useEffect(() => {
-    if (selected) mapInstance.current?.flyTo([selected.lat, selected.lng], Math.max(mapInstance.current.getZoom(), 13), { duration: .7 });
+    if (!selected || !mapInstance.current) return;
+    const map = mapInstance.current;
+    map.flyTo([selected.lat, selected.lng], Math.max(map.getZoom(), 13), { duration: 0.7 });
   }, [selected]);
+
+  const selectProject = (project: Project) => {
+    setSelectedId(String(project.id));
+    setListOpen(false);
+  };
 
   return <main className="app-shell">
     <header className="topbar">
-      <a className="brand" href="#"><span className="brand-mark">SG</span><span><strong>狮城新盘地图</strong><small>私人住宅与 EC 研究工具</small></span></a>
-      <div className="header-meta"><span className="live-dot" />数据更新于 {dataUpdatedAt} <button>数据说明</button></div>
+      <div className="brand">
+        <span className="brand-mark" aria-hidden="true">SG</span>
+        <span>
+          <h1>狮城新盘地图</h1>
+          <small>私人住宅与 EC 研究工具</small>
+        </span>
+      </div>
+      <div className="header-meta">
+        {dataStatus === "ready" && <><span className="live-dot" aria-hidden="true" />数据更新于 {updatedAt}</>}
+        {dataStatus === "loading" && <>正在载入数据…</>}
+        {dataStatus === "error" && <span className="load-error">数据载入失败，请刷新重试</span>}
+        <button type="button" onClick={() => setShowDataInfo(true)}>数据说明</button>
+      </div>
     </header>
+
     <section className="workspace">
-      <aside className="sidebar">
-        <div className="search-wrap"><label htmlFor="search">搜索项目、地区或开发商</label><div className="search-box"><span>⌕</span><input id="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="例如：武吉知马" /></div></div>
-        <div className="status-tabs">{(["全部", "在售", "即将开盘", "确定开发", "土地供应"] as const).map(status => <button key={status} className={activeStatus === status ? "active" : ""} onClick={() => setActiveStatus(status)}>{status}</button>)}</div>
-        <div className="results-head"><span><b>{visible.length}</b> 个项目</span><button>筛选 <span className="filter-count">3</span></button></div>
-        <div className="project-list">{visible.map(project => <button key={project.id} className={`project-card ${selected?.id === project.id ? "selected" : ""}`} onClick={() => setSelected(project)}>
-          <div className="card-top"><span className={`status ${statusClass[project.status]}`}><i />{project.status}</span><span className="units">{project.units.toLocaleString()} 户</span></div>
-          <h2>{project.name}</h2><p>{project.area} · {project.tenure}</p>
-          <div className="card-stats"><span><small>开盘</small>{project.launch}</span><span><small>最近地铁</small>{project.mrt.split(" · ")[0]}</span></div>
-        </button>)}{!visible.length && <div className="empty">没有符合条件的项目</div>}</div>
+      <aside className={`sidebar ${listOpen ? "open" : ""}`}>
+        <div className="search-wrap">
+          <label htmlFor="search">搜索项目、地区或开发商</label>
+          <div className="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="例如：武吉知马"
+            />
+          </div>
+        </div>
+
+        <div className="status-tabs" role="group" aria-label="按项目状态筛选">
+          {STATUS_FILTERS.map((status) => <button
+            key={status}
+            type="button"
+            className={activeStatus === status ? "active" : ""}
+            aria-pressed={activeStatus === status}
+            onClick={() => setActiveStatus(status)}
+          >{status}</button>)}
+        </div>
+
+        <div className="results-head">
+          <span><b>{visible.length}</b> 个项目</span>
+          <button
+            type="button"
+            className={onlyFavourites ? "favourite-filter active" : "favourite-filter"}
+            aria-pressed={onlyFavourites}
+            onClick={() => setOnlyFavourites((value) => !value)}
+          >★ 只看收藏 <span className="filter-count">{favourites.size}</span></button>
+        </div>
+
+        <div className="project-list">
+          {visible.map((project) => <button
+            key={project.id}
+            type="button"
+            className={`project-card ${String(project.id) === selectedId ? "selected" : ""}`}
+            aria-current={String(project.id) === selectedId}
+            onClick={() => selectProject(project)}
+          >
+            <div className="card-top">
+              <span className={`status ${STATUS_CLASS[project.status]}`}><i aria-hidden="true" />{project.status}</span>
+              <span className="units">
+                {favourites.has(String(project.id)) && <span className="card-star" aria-label="已收藏">★</span>}
+                {project.units.toLocaleString()} 户
+              </span>
+            </div>
+            <h3>{project.name}</h3>
+            <p>
+              {streetOf(project.area)}
+              {districtOf(project.area) && <span className="card-district">
+                {districtLabel(districtOf(project.area)!)} · {DISTRICT_NAMES[districtOf(project.area)!]}
+              </span>}
+            </p>
+            <div className="card-stats">
+              <span><small>开盘</small>{project.launch}</span>
+              <span><small>最近地铁</small>{project.mrt.split(" · ")[0]}</span>
+            </div>
+          </button>)}
+          {!visible.length && dataStatus === "ready" && <div className="empty">没有符合条件的项目</div>}
+          {dataStatus === "loading" && <div className="empty">正在载入项目数据…</div>}
+          {dataStatus === "error" && <div className="empty">项目数据载入失败，请刷新页面重试。</div>}
+        </div>
       </aside>
+
       <section className="map" aria-label="新加坡项目地图">
         <div ref={mapElement} className="real-map" />
-        <div className="map-layers">
-          <button className={showMrt ? "active mrt" : "mrt"} onClick={() => setShowMrt(value => !value)}><span>M</span>MRT</button>
-          {(["小学","中学","商场"] as const).map(type => <button key={type} className={placeFilters[type] ? `active ${type}` : type} onClick={() => setPlaceFilters(value => ({...value,[type]:!value[type]}))}><span>{type === "商场" ? "购" : type[0]}</span>{type}</button>)}
+
+        <div className="map-layers" role="group" aria-label="地图图层">
+          <button
+            type="button"
+            className={showMrt ? "active mrt" : "mrt"}
+            aria-pressed={showMrt}
+            onClick={() => setShowMrt((value) => !value)}
+          ><span aria-hidden="true">M</span>MRT</button>
+          {PLACE_TYPES.map((type) => <button
+            key={type}
+            type="button"
+            className={placeFilters[type] ? `active place-${PLACE_STYLE[type].symbol}` : `place-${PLACE_STYLE[type].symbol}`}
+            aria-pressed={placeFilters[type]}
+            onClick={() => setPlaceFilters((value) => ({ ...value, [type]: !value[type] }))}
+          ><span aria-hidden="true">{PLACE_STYLE[type].symbol}</span>{type}</button>)}
         </div>
-        <div className="legend"><span><i className="sale" />在售</span><span><i className="soon" />即将开盘</span><span><i className="confirmed" />确定开发</span><span><i className="land" />土地供应</span></div>
-        {selected && <article className="detail-card">
-          <button className="close" aria-label="关闭项目详情" onClick={() => setSelected(null)}>×</button><div className="detail-title"><div><span className={`status ${statusClass[selected.status]}`}><i />{selected.status}</span><h1>{selected.name}</h1><p>{selected.area} · {selected.tenure}</p></div><button className="bookmark">☆</button></div>
-          <div className="inventory"><div><strong>{selected.units.toLocaleString()}</strong><small>总户数</small></div><div><strong>{selected.status === "在售" ? selected.sold : "—"}</strong><small>已售</small></div><div><strong>{selected.status === "在售" ? selected.units-selected.sold : "—"}</strong><small>估算未售</small></div></div>
-          <dl className="facts"><div><dt>开发商</dt><dd>{selected.developer}</dd></div><div><dt>预计开盘</dt><dd>{selected.launch}</dd></div><div><dt>预计 TOP</dt><dd>{selected.top}</dd></div><div><dt>最近地铁</dt><dd>{selected.mrt}</dd></div><div className="wide"><dt>附近学校</dt><dd>{selected.school}</dd></div></dl>
-          <div className="source-note"><span>{selected.source || "URA"}</span>库存来自开发商月报或开发商资料，最后核对于 {selected.updatedAt || dataUpdatedAt}{selected.locationAccuracy === "district" ? "；图钉暂按邮区中心定位，待补精确地址" : ""}</div><a className="primary-action" href={projectDetailsUrl(selected)} target="_blank" rel="noopener noreferrer">查看完整项目资料 <span>→</span></a>
-        </article>}
+
+        {anyPlaceLayer && mapReady && mapView.zoom < PLACE_MIN_ZOOM
+          && <p className="zoom-hint" role="status">放大地图以显示学校与商场</p>}
+
+        <button
+          type="button"
+          className="list-toggle"
+          aria-expanded={listOpen}
+          onClick={() => setListOpen((value) => !value)}
+        >{listOpen ? "收起列表" : `项目列表 (${visible.length})`}</button>
+
+        <div className="legend">
+          <span><i className="sale" aria-hidden="true" />在售</span>
+          <span><i className="soon" aria-hidden="true" />即将开盘</span>
+          <span><i className="confirmed" aria-hidden="true" />确定开发</span>
+          <span><i className="land" aria-hidden="true" />土地供应</span>
+        </div>
+
+        {selected && <ProjectDetail
+          project={selected}
+          directory={directory}
+          dataUpdatedAt={updatedAt}
+          favourite={favourites.has(String(selected.id))}
+          onToggleFavourite={() => toggleFavourite(String(selected.id))}
+          onClose={() => setSelectedId(null)}
+        />}
       </section>
     </section>
+
+    {showDataInfo && <DataInfo updatedAt={updatedAt} onClose={() => setShowDataInfo(false)} />}
   </main>;
+}
+
+function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleFavourite, onClose }: {
+  project: Project;
+  directory: DeveloperDirectory;
+  dataUpdatedAt: string;
+  favourite: boolean;
+  onToggleFavourite: () => void;
+  onClose: () => void;
+}) {
+  const onSale = project.status === "在售";
+  const unlocated = project.mrt === UNLOCATED;
+  const district = districtOf(project.area);
+  const groups = resolveGroups(project, directory);
+  const official = officialProjectUrl(project, groups);
+  const history = pastProjects(project, groups);
+  return <article className="detail-card">
+    <button className="close" type="button" aria-label="关闭项目详情" onClick={onClose}>×</button>
+    <div className="detail-title">
+      <div>
+        <span className={`status ${STATUS_CLASS[project.status]}`}><i aria-hidden="true" />{project.status}</span>
+        <h2>{project.name}</h2>
+        <p>{project.area}{project.tenure !== "待公布" ? ` · ${project.tenure}` : ""}</p>
+      </div>
+      <button
+        type="button"
+        className={favourite ? "bookmark active" : "bookmark"}
+        aria-pressed={favourite}
+        aria-label={favourite ? "取消收藏" : "收藏该项目"}
+        onClick={onToggleFavourite}
+      >{favourite ? "★" : "☆"}</button>
+    </div>
+
+    <div className="inventory">
+      <div><strong>{project.units.toLocaleString()}</strong><small>总户数</small></div>
+      <div><strong>{onSale ? project.sold.toLocaleString() : "—"}</strong><small>已售</small></div>
+      <div><strong>{onSale ? (project.units - project.sold).toLocaleString() : "—"}</strong><small>估算未售</small></div>
+    </div>
+
+    <dl className="facts">
+      <div>
+        <dt>邮区</dt>
+        <dd>{district ? <>{districtLabel(district)}<span className="district-name">{DISTRICT_NAMES[district]}</span></> : "待公布"}</dd>
+      </div>
+      <div><dt>街道</dt><dd>{streetOf(project.area) || "待公布"}</dd></div>
+      <div className="wide">
+        <dt>开发商<span className="unit-note">URA 登记</span></dt>
+        <dd>
+          {project.developer}
+          {groups.length > 0
+            ? <span className="developer-groups">
+                {groups.length > 1 && <span className="jv-note">合资：</span>}
+                {groups.map((group) => <a
+                  key={group.name}
+                  className="developer-group"
+                  href={group.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >{groupLabel(group)} ↗</a>)}
+              </span>
+            : <span className="school-count">所属集团待查证</span>}
+        </dd>
+      </div>
+      <div><dt>预计开盘</dt><dd>{project.launch}</dd></div>
+      <div><dt>预计 TOP</dt><dd>{project.top}</dd></div>
+      <div><dt>最近地铁<span className="unit-note">直线</span></dt><dd>{project.mrt}</dd></div>
+      <div className="wide">
+        <dt>最近小学<span className="unit-note">直线</span></dt>
+        <dd>
+          {project.school}
+          {typeof project.schoolsWithin1km === "number"
+            && <span className="school-count">1km 内 {project.schoolsWithin1km} 所小学</span>}
+        </dd>
+      </div>
+    </dl>
+
+    {history.length > 0 && <section className="developer-history">
+      <h3>该开发商的其他楼盘<span className="unit-note">由近到远</span></h3>
+      <ol>
+        {history.map((entry) => <li key={`${entry.group}-${entry.name}`}>
+          <a href={entry.url} target="_blank" rel="noopener noreferrer">{entry.name}</a>
+          <span className="history-meta">
+            {groups.length > 1 && <span className="history-group">{entry.group}</span>}
+            <span className="history-year">{entry.year ?? "在售 / 筹备"}</span>
+          </span>
+        </li>)}
+      </ol>
+      <p className="history-source">
+        取自{groups.map((group, index) => <span key={group.name}>
+          {index > 0 && "、"}
+          <a href={group.source} target="_blank" rel="noopener noreferrer">{group.name} 官网</a>
+        </span>)}，年份为官网标注的落成年，未标注者为在售或筹备中。
+      </p>
+    </section>}
+
+    <div className="source-note">
+      <span>{project.source || "URA"}</span>
+      库存来自 URA 开发商月报，最后核对于 {project.updatedAt || dataUpdatedAt}
+      {unlocated && "；该项目尚未取得精确地址，图钉按邮区中心估算，距离数据暂缺"}
+    </div>
+    <a className="primary-action" href={official ?? searchUrl(project)} target="_blank" rel="noopener noreferrer">
+      {official ? "查看开发商官方项目页" : "搜索该项目资料"} <span aria-hidden="true">→</span>
+    </a>
+  </article>;
+}
+
+function DataInfo({ updatedAt, onClose }: { updatedAt: string; onClose: () => void }) {
+  const dialog = useRef<HTMLDialogElement>(null);
+
+  // The native dialog gives Escape handling, focus trapping and an inert
+  // backdrop without reimplementing any of it.
+  useEffect(() => {
+    const element = dialog.current;
+    if (!element) return;
+    element.showModal();
+    // A click landing on the dialog box itself rather than its contents is a
+    // click on the backdrop.
+    const onClick = (event: MouseEvent) => { if (event.target === element) element.close(); };
+    element.addEventListener("click", onClick);
+    return () => element.removeEventListener("click", onClick);
+  }, []);
+
+  return <dialog
+    className="modal"
+    ref={dialog}
+    aria-labelledby="data-info-title"
+    onClose={onClose}
+  >
+    <div className="modal-body">
+      <button className="close" type="button" aria-label="关闭" onClick={() => dialog.current?.close()}>×</button>
+      <h2 id="data-info-title">数据说明</h2>
+      <dl>
+        <dt>项目与库存</dt>
+        <dd>URA 开发商销售月报（PMI_Resi_Developer_Sales）与住宅供应管道（PMI_Resi_Pipeline），每日自动同步，最后更新 {updatedAt}。URA 在次月 15 日发布上月销售数据。</dd>
+        <dt>坐标</dt>
+        <dd>优先取 URA 提供的 SVY21 坐标，其余通过 OneMap 地理编码。仍无法解析的项目按邮区中心估算，详情卡片会明确标注。</dd>
+        <dt>地铁与学校距离</dt>
+        <dd>由项目坐标与 OSM 站点、MOE 学校名录计算的<b>直线距离</b>，非步行距离，仅供粗略参考。</dd>
+        <dt>轨道线路</dt>
+        <dd>OpenStreetMap，含建设中与规划中线路（虚线）。几何已按 4m 容差简化。</dd>
+        <dt>开发商与历史楼盘</dt>
+        <dd>URA 登记的是项目公司（SPV）而非集团，且多数项目为合资。集团归属与历史楼盘均取自各开发商官网自有域名，逐条人工查证，链接不收中介引流站。目前仅部分项目完成查证，未查证的只显示 URA 原始开发商名。</dd>
+      </dl>
+      <p className="modal-note">本站为研究工具，数据可能滞后或有误，购房决策请以开发商与官方公告为准。</p>
+    </div>
+  </dialog>;
 }
