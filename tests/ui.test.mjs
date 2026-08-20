@@ -72,6 +72,7 @@ async function mount() {
     "mrt-stations.json": await readData("mrt-stations.json"),
     "schools.json": await readData("schools.json"),
     "malls.json": await readData("malls.json"),
+    "districts.json": await readData("districts.json"),
   };
   const requested = [];
   window.fetch = async (input) => {
@@ -193,7 +194,7 @@ test("交互控件带有 aria-pressed 状态", async () => {
   const tabs = document.querySelectorAll(".status-tabs button[aria-pressed]");
   assert.equal(tabs.length, 5);
   const layers = document.querySelectorAll(".map-layers button[aria-pressed]");
-  assert.equal(layers.length, 4);
+  assert.equal(layers.length, 5);
 });
 
 test("临界楼盘同时显示确定与部分栋两个口径", async () => {
@@ -211,4 +212,35 @@ test("临界楼盘同时显示确定与部分栋两个口径", async () => {
   assert.match(text, /1km 内 1 所小学/);
   assert.match(text, /另 1 所仅部分栋可及/);
   assert.ok(document.querySelector(".detail-card .school-note"), "应给出门牌跨度的说明");
+});
+
+test("邮区图层默认关闭，开启后才下载边界并画出色块", async () => {
+  const { window, document, requested } = await mount();
+  assert.ok(!requested.includes("districts.json"), "默认不应下载邮区边界");
+
+  const toggle = [...document.querySelectorAll(".map-layers button")]
+    .find((b) => b.textContent.includes("邮区"));
+  assert.ok(toggle, "应有邮区图层按钮");
+  assert.equal(toggle.getAttribute("aria-pressed"), "false");
+
+  toggle.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
+  for (let i = 0; i < 12; i += 1) await new Promise((r) => window.setTimeout(r, 0));
+
+  assert.equal(toggle.getAttribute("aria-pressed"), "true");
+  assert.ok(requested.includes("districts.json"), "开启后应下载邮区边界");
+
+  const legend = document.querySelector(".district-legend");
+  assert.ok(legend, "应显示供应量图例");
+  assert.match(legend.textContent, /当前筛选下的项目数/);
+});
+
+test("邮区色块用单色渐变编码供应量，而非 28 种身份色", async () => {
+  const districts = await readData("districts.json");
+  const seen = new Set(districts.features.map((f) => f.properties.district));
+  assert.equal(seen.size, 28, `应覆盖 28 个邮区，实际 ${seen.size}`);
+  assert.equal(Object.keys(districts.labels ?? {}).length, 28, "每个邮区应有一个标签锚点");
+
+  const source = await readFile(new URL("app/districtLayer.ts", projectRoot), "utf8");
+  const hexes = new Set([...source.matchAll(/#[0-9a-f]{6}/gi)].map((m) => m[0].toLowerCase()));
+  assert.ok(hexes.size <= 6, `渐变档位应精简，实际 ${hexes.size} 个色值`);
 });

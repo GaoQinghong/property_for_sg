@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Place, Project, RailLine, RailStation } from "./types";
 import { EMPTY_DIRECTORY, type DeveloperDirectory } from "./developers";
+import { EMPTY_DISTRICTS, type DistrictCollection } from "./districtLayer";
 
 const dataUrl = (name: string) => new URL(`./data/${name}`, document.baseURI).href;
 
@@ -120,6 +121,11 @@ export function useDeveloperDirectoryState(): DeveloperDirectoryState {
 
 export function useDeveloperDirectory(): DeveloperDirectory {
   return useDeveloperDirectoryState().directory;
+}
+
+/** Postal-district polygons, fetched the first time the layer is switched on. */
+export function useDistricts(enabled: boolean): DistrictCollection {
+  return useLazyDataset<DistrictCollection>("districts.json", enabled, EMPTY_DISTRICTS);
 }
 
 /** Project ids the visitor has starred, persisted across sessions. */

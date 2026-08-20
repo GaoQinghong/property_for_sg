@@ -93,3 +93,20 @@ npm run data:capture-footprints    # 抓门牌点 + 重算 1km 口径
 ## 部署
 
 推送到 `main` 即触发 GitHub Pages 构建（先跑 lint / typecheck / test，再构建 `pages-dist/`）。`vite.config.ts` 里的 `base` 必须与仓库名一致。
+
+### 邮区边界与色块
+
+新加坡没有官方的 D01–D28 多边形 —— 邮区由邮编前两位（sector）定义，不是画好的边界。`scripts/build-districts.mjs` 以 URA Master Plan 官方分区边界（332 个 subzone）为几何底子，用落在其中的地址邮编标出所属 D 区，相邻同区的分区在图上自然连成一片。
+
+sector → 邮区的映射（`scripts/lib/districts.mjs`）与 124 个项目的 URA 官方标注比对过，114/116 一致；2 处差异是 URA 自身在交界处与邮编口径不符。
+
+已知局限，界面均有标注：
+
+- **12/332 个分区横跨两个邮区**（如 Ulu Pandan 跨 D10/D21），按占多数者着色
+- **61 个分区内没有任何地址**（水体、军事用地、港口），归属按最近分区推断
+
+色块用**单色渐变编码当前筛选下的项目数**，不是 28 种身份色 —— 28 种颜色远超人眼可区分的分类色上限，且颜色本身不承载信息。身份由 D 编号标签承载。渐变档位经 `dataviz` 的调色板验证器（ordinal 模式）全项通过，调整颜色前须重跑。
+
+```bash
+npm run data:build-districts   # 重新拉取边界并重算归属
+```
