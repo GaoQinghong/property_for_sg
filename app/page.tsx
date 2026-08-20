@@ -11,6 +11,7 @@ import {
   type Project,
 } from "./types";
 import { DISTRICT_NAMES, districtLabel, districtOf, streetOf } from "./districts";
+import { SUPPLY_BUCKETS, countByDistrict, fillFor, type DistrictFeature } from "./districtLayer";
 import {
   groupLabel,
   developerProjectDateLabel,
@@ -25,6 +26,7 @@ import {
   useFavourites,
   usePlaceData,
   useProjects,
+  useDistricts,
   useRailData,
 } from "./useMapData";
 
@@ -55,6 +57,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
   const [onlyFavourites, setOnlyFavourites] = useState(false);
   const [showMrt, setShowMrt] = useState(true);
+  const [showDistricts, setShowDistricts] = useState(false);
   // Schools and malls stay off until asked for: 557 extra pins bury the
   // projects, and their data is only fetched when a layer is switched on.
   const [placeFilters, setPlaceFilters] = useState<Record<PlaceType, boolean>>({
@@ -68,6 +71,7 @@ export default function Home() {
   const [mapView, setMapView] = useState({ zoom: 11, version: 0 });
 
   const { lines: railLines, stations: railStations } = useRailData(showMrt);
+  const districts = useDistricts(showDistricts);
   const anyPlaceLayer = placeFilters.小学 || placeFilters.中学 || placeFilters.商场;
   const places = usePlaceData(placeFilters.小学 || placeFilters.中学, placeFilters.商场);
 
@@ -76,6 +80,7 @@ export default function Home() {
   const markerLayer = useRef<L.LayerGroup | null>(null);
   const mrtLayer = useRef<L.LayerGroup | null>(null);
   const placesLayer = useRef<L.LayerGroup | null>(null);
+  const districtLayer = useRef<L.LayerGroup | null>(null);
   const stationRenderer = useRef<L.Canvas | null>(null);
   const markersById = useRef(new Map<string, L.Marker>());
 
@@ -113,6 +118,8 @@ export default function Home() {
     stationRenderer.current = L.canvas({ padding: 0.3 });
     markerLayer.current = L.layerGroup().addTo(map);
     mrtLayer.current = L.layerGroup().addTo(map);
+    // Added before the others so the wash sits under every pin.
+    districtLayer.current = L.layerGroup().addTo(map);
     placesLayer.current = L.layerGroup().addTo(map);
 
     const onViewChange = () => setMapView((value) => ({ zoom: map.getZoom(), version: value.version + 1 }));
@@ -127,6 +134,7 @@ export default function Home() {
       markerLayer.current = null;
       mrtLayer.current = null;
       placesLayer.current = null;
+      districtLayer.current = null;
       markers.clear();
       setMapReady(false);
     };
@@ -168,6 +176,57 @@ export default function Home() {
       marker.getElement()?.classList.toggle("active", id === selectedId);
     });
   }, [selectedId, visible, mapReady]);
+
+  // Postal districts. Singapore publishes no polygon for D01–D28 — they are
+  // defined by postal-code sectors — so these are URA subzone boundaries
+  // labelled by the districts of the addresses inside them.
+  useEffect(() => {
+    const layer = districtLayer.current;
+    if (!mapReady || !layer) return;
+    layer.clearLayers();
+    if (!showDistricts) return;
+
+    const counts = countByDistrict(visible);
+
+    districts.features.forEach((feature: DistrictFeature) => {
+      const { district, subzone, straddles, inferred } = feature.properties;
+      const count = counts.get(district) ?? 0;
+      const fill = fillFor(count);
+      const shape = L.geoJSON(feature, {
+        style: {
+          color: "#2c3f36",
+          weight: 0.7,
+          opacity: 0.45,
+          fillColor: fill ?? "#ffffff",
+          fillOpacity: fill ? 0.42 : 0.04,
+        },
+      });
+      const caveat = straddles
+        ? `<br><em>该分区跨 D${straddles.join(" / D")}，按占多数者着色</em>`
+        : inferred ? "<br><em>区内无地址，归属按最近分区推断</em>" : "";
+      shape.bindTooltip(
+        `<b>${districtLabel(district)} · ${escapeHtml(DISTRICT_NAMES[district] ?? "")}</b>`
+        + `<br>${escapeHtml(subzone)}｜当前筛选下 ${count} 个项目${caveat}`,
+        { sticky: true },
+      );
+      shape.addTo(layer);
+    });
+
+    Object.entries(districts.labels ?? {}).forEach(([key, point]) => {
+      const district = Number(key);
+      const count = counts.get(district) ?? 0;
+      L.marker([point.lat, point.lng], {
+        icon: L.divIcon({
+          className: "district-label-shell",
+          html: `<span class="district-label${count ? "" : " empty"}">${districtLabel(district)}</span>`,
+          iconSize: [34, 18],
+          iconAnchor: [17, 9],
+        }),
+        interactive: false,
+        keyboard: false,
+      }).addTo(layer);
+    });
+  }, [mapReady, showDistricts, districts, visible]);
 
   useEffect(() => {
     const layer = mrtLayer.current;
@@ -343,6 +402,12 @@ export default function Home() {
         <div className="map-layers" role="group" aria-label="地图图层">
           <button
             type="button"
+            className={showDistricts ? "active districts" : "districts"}
+            aria-pressed={showDistricts}
+            onClick={() => setShowDistricts((value) => !value)}
+          ><span aria-hidden="true">D</span>邮区</button>
+          <button
+            type="button"
             className={showMrt ? "active mrt" : "mrt"}
             aria-pressed={showMrt}
             onClick={() => setShowMrt((value) => !value)}
@@ -365,6 +430,15 @@ export default function Home() {
           aria-expanded={listOpen}
           onClick={() => setListOpen((value) => !value)}
         >{listOpen ? "收起列表" : `项目列表 (${visible.length})`}</button>
+
+        {showDistricts && <div className="legend district-legend">
+          <span className="legend-title">当前筛选下的项目数</span>
+          <span className="ramp">
+            {[...SUPPLY_BUCKETS].reverse().map((bucket) => <span key={bucket.label}>
+              <i style={{ background: bucket.color }} aria-hidden="true" />{bucket.label}
+            </span>)}
+          </span>
+        </div>}
 
         <div className="legend">
           <span><i className="sale" aria-hidden="true" />在售</span>
