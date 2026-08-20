@@ -91,18 +91,33 @@ export function usePlaceData(schoolsEnabled: boolean, mallsEnabled: boolean) {
  * The developer directory is small (a few KB) and every detail card needs it,
  * so it loads alongside the projects rather than lazily.
  */
-export function useDeveloperDirectory(): DeveloperDirectory {
-  const [directory, setDirectory] = useState<DeveloperDirectory>(EMPTY_DIRECTORY);
+export type DeveloperDirectoryState = {
+  directory: DeveloperDirectory;
+  status: "loading" | "ready" | "error";
+};
+
+export function useDeveloperDirectoryState(): DeveloperDirectoryState {
+  const [state, setState] = useState<DeveloperDirectoryState>({
+    directory: EMPTY_DIRECTORY,
+    status: "loading",
+  });
 
   useEffect(() => {
     let cancelled = false;
     loadJson<DeveloperDirectory>("developers.json")
-      .then((data) => { if (!cancelled) setDirectory(data); })
-      .catch((error) => console.error("开发商目录载入失败", error));
+      .then((data) => { if (!cancelled) setState({ directory: data, status: "ready" }); })
+      .catch((error) => {
+        console.error("开发商目录载入失败", error);
+        if (!cancelled) setState({ directory: EMPTY_DIRECTORY, status: "error" });
+      });
     return () => { cancelled = true; };
   }, []);
 
-  return directory;
+  return state;
+}
+
+export function useDeveloperDirectory(): DeveloperDirectory {
+  return useDeveloperDirectoryState().directory;
 }
 
 /** Project ids the visitor has starred, persisted across sessions. */

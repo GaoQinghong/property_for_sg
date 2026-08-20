@@ -46,7 +46,7 @@ tests/                  数据校验与 UI 集成测试
 | `mrt-stations.json` / `mrt-lines.json` | 轨道站点与线路（含规划中） | OpenStreetMap |
 | `schools.json` | 中小学名录与坐标 | MOE + OpenStreetMap |
 | `malls.json` | 商场坐标 | OpenStreetMap |
-| `developers.json` | 开发商集团、官网、历史楼盘 | 各开发商官网自有域名（人工查证） |
+| `developers.json` | 开发商集团、官网、代表楼盘与事实来源 | 开发商官网、年报、SGX、项目官方资料（人工查证） |
 | `project-audit.json` | 每次同步被排除 / 降级的项目 | 更新脚本产出 |
 
 ### 开发商集团目录
@@ -57,9 +57,9 @@ URA 的 `developer` 字段登记的是项目公司（SPV），不是集团 —�
 2. 项目出现在某集团官网自己发布的项目列表里
 3. SPV 名本身带集团品牌（如 `CDL Selesta Pte Ltd`）
 
-**这份目录是覆盖不全的，这是刻意的** —— 每一条归属和链接都经过单独查证，宁可留空也不推测。当前覆盖 49/124 个项目、14 个集团（CDL、UOL、SingLand、CapitaLand、MCL Land、GuocoLand、SingHaiyi、Hoi Hup、Sim Lian、Bukit Sembawang、Far East、Kingsford、Sing Holdings、Allgreen）。解析不出集团的项目只显示 URA 登记的开发商名，并标注「所属集团待查证」。
+**这份目录是覆盖不全的，这是刻意的** —— 每一条归属和链接都经过单独查证，宁可留空也不推测。目前收录 16 个集团、153 条可核验或当前项目记录；UOL 与其子公司 Singapore Land 合并为同一排名实体。解析不出集团的项目只显示 URA 登记的开发商名，并标注「所属集团待查证」。
 
-链接只允许指向开发商自有域名（在 `domains` 字段声明），中介引流站一律不收 —— `tests/developers.test.mjs` 会强制这条规则。扩充目录时请沿用同样标准：先在开发商官网上找到该项目，再登记。
+`url` 只允许指向开发商自有域名（在 `domains` 字段声明），确保地图主按钮始终打开开发商页面；事实证据另存在 `sourceUrl`，可指向开发商年报、SGX 或项目官方资料。中介引流站一律不收，`tests/developers.test.mjs` 会强制校验。日期通过 `yearType` 区分实际 TOP、竣工、预计 TOP、预计竣工和预计空置交付，不把不同口径混写。
 
 ### 自动更新
 

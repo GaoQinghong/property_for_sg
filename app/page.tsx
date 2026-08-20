@@ -13,6 +13,7 @@ import {
 import { DISTRICT_NAMES, districtLabel, districtOf, streetOf } from "./districts";
 import {
   groupLabel,
+  developerProjectDateLabel,
   officialProjectUrl,
   pastProjects,
   resolveGroups,
@@ -245,8 +246,8 @@ export default function Home() {
     setListOpen(false);
   };
 
-  return <main className="app-shell">
-    <header className="topbar">
+  return <main className="app-shell" data-route-root tabIndex={-1}>
+    <header className="topbar map-topbar">
       <div className="brand">
         <span className="brand-mark" aria-hidden="true">SG</span>
         <span>
@@ -254,10 +255,16 @@ export default function Home() {
           <small>私人住宅与 EC 研究工具</small>
         </span>
       </div>
+      <nav className="site-nav" aria-label="网站页面">
+        <a href="#/" className="active" aria-current="page">楼盘地图</a>
+        <a href="#/developers">开发商排名</a>
+      </nav>
       <div className="header-meta">
-        {dataStatus === "ready" && <><span className="live-dot" aria-hidden="true" />数据更新于 {updatedAt}</>}
-        {dataStatus === "loading" && <>正在载入数据…</>}
-        {dataStatus === "error" && <span className="load-error">数据载入失败，请刷新重试</span>}
+        <span className="data-updated">
+          {dataStatus === "ready" && <><span className="live-dot" aria-hidden="true" />数据更新于 {updatedAt}</>}
+          {dataStatus === "loading" && <>正在载入数据…</>}
+          {dataStatus === "error" && <span className="load-error">数据载入失败，请刷新重试</span>}
+        </span>
         <button type="button" onClick={() => setShowDataInfo(true)}>数据说明</button>
       </div>
     </header>
@@ -463,13 +470,13 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
     </dl>
 
     {history.length > 0 && <section className="developer-history">
-      <h3>该开发商的其他楼盘<span className="unit-note">由近到远</span></h3>
+      <h3>该开发商的其他楼盘<span className="unit-note">按已知年份排序</span></h3>
       <ol>
         {history.map((entry) => <li key={`${entry.group}-${entry.name}`}>
           <a href={entry.url} target="_blank" rel="noopener noreferrer">{entry.name}</a>
           <span className="history-meta">
             {groups.length > 1 && <span className="history-group">{entry.group}</span>}
-            <span className="history-year">{entry.year ?? "在售 / 筹备"}</span>
+            <span className="history-year">{developerProjectDateLabel(entry)}</span>
           </span>
         </li>)}
       </ol>
@@ -477,7 +484,7 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
         取自{groups.map((group, index) => <span key={group.name}>
           {index > 0 && "、"}
           <a href={group.source} target="_blank" rel="noopener noreferrer">{group.name} 官网</a>
-        </span>)}，年份为官网标注的落成年，未标注者为在售或筹备中。
+        </span>)}。实际 TOP、竣工、预计 TOP 与预计空置交付分别标注；未披露年份的不作推测。
       </p>
     </section>}
 
@@ -529,7 +536,7 @@ function DataInfo({ updatedAt, onClose }: { updatedAt: string; onClose: () => vo
         <dt>轨道线路</dt>
         <dd>OpenStreetMap，含建设中与规划中线路（虚线）。几何已按 4m 容差简化。</dd>
         <dt>开发商与历史楼盘</dt>
-        <dd>URA 登记的是项目公司（SPV）而非集团，且多数项目为合资。集团归属与历史楼盘均取自各开发商官网自有域名，逐条人工查证，链接不收中介引流站。目前仅部分项目完成查证，未查证的只显示 URA 原始开发商名。</dd>
+        <dd>URA 登记的是项目公司（SPV）而非集团，且多数项目为合资。集团归属与代表楼盘取自开发商官网、年报、SGX 或项目官方资料，逐条人工查证，不收中介引流站。目前仅部分项目完成集团匹配，未查证的只显示 URA 原始开发商名。</dd>
       </dl>
       <p className="modal-note">本站为研究工具，数据可能滞后或有误，购房决策请以开发商与官方公告为准。</p>
     </div>

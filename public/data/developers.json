@@ -1,6 +1,6 @@
 {
-  "note": "开发商集团目录。归属与官方链接均取自开发商自有域名上的项目组合页（见每个 group 的 source），不采信中介引流站。year 只在官网明确标注时填写，未标注则留空，不做推测。新增条目请沿用同样标准。",
-  "updatedAt": "2026-08-19",
+  "note": "开发商集团目录。归属、户数、产权与日期只采用开发商官网、年报、SGX 或项目官方资料；actual_top、completion、estimated_top 与 expected_vp 分开保存，未披露则留空，不做推测。",
+  "updatedAt": "2026-08-20",
   "groups": {
     "hoi-hup": {
       "name": "Hoi Hup Realty",
@@ -12,20 +12,20 @@
         { "name": "Pinery Residences", "url": "https://www.hoihup.com/Portfolio-Detail/71/Pinery-Residences" },
         { "name": "Otto Place", "url": "https://www.hoihup.com/Portfolio-Detail/64/OttoPlace-EC" },
         { "name": "Novo Place", "url": "https://www.hoihup.com/Portfolio-Detail/9/Plantation-Close-EC" },
-        { "name": "Ki Residences at Brookvale", "year": 2024, "url": "https://www.hoihup.com/Portfolio-Detail/16/Ki-Residences-at-Brookvale" },
-        { "name": "Parc Central Residences", "year": 2024, "url": "https://www.hoihup.com/Portfolio-Detail/15/Parc-Central-Residences" },
-        { "name": "The Continuum", "year": 2023, "url": "https://www.hoihup.com/Portfolio-Detail/8/The-Continuum" },
-        { "name": "Terra Hill", "year": 2023, "url": "https://www.hoihup.com/Portfolio-Detail/7/Terra-Hill" },
+        { "name": "Ki Residences at Brookvale", "year": 2024, "top": "2024", "yearType": "completion", "units": 660, "tenure": "999 年", "url": "https://www.hoihup.com/Portfolio-Detail/16/Ki-Residences-at-Brookvale" },
+        { "name": "Parc Central Residences", "year": 2024, "top": "2024", "yearType": "completion", "units": 700, "tenure": "99 年", "propertyType": "EC", "url": "https://www.hoihup.com/Portfolio-Detail/15/Parc-Central-Residences" },
+        { "name": "The Continuum", "year": 2023, "top": "2027-11-17", "yearType": "expected_vp", "units": 816, "tenure": "永久产权", "url": "https://www.hoihup.com/Portfolio-Detail/8/The-Continuum", "sourceUrl": "https://thecontinuum.hoihup.com/static/pdf/ebrochure-cn.pdf" },
+        { "name": "Terra Hill", "year": 2023, "top": "2028-01-09", "yearType": "expected_vp", "units": 270, "tenure": "永久产权", "url": "https://www.hoihup.com/Portfolio-Detail/7/Terra-Hill", "sourceUrl": "https://terrahill.hoihup.com/contact.html" },
         { "name": "Parc Canberra", "year": 2023, "url": "https://www.hoihup.com/Portfolio-Detail/13/Parc-Canberra" },
-        { "name": "Sophia Hills", "year": 2018, "url": "https://www.hoihup.com/Portfolio-Detail/12/Sophia-Hills" }
+        { "name": "Sophia Hills", "year": 2018, "top": "2018", "yearType": "completion", "units": 493, "tenure": "99 年", "url": "https://www.hoihup.com/Portfolio-Detail/12/Sophia-Hills" }
       ]
     },
     "uol": {
       "name": "UOL Group",
-      "nameZh": "华业集团",
+      "nameZh": "华业集团 / 新加坡置地",
       "website": "https://uolhomes.com.sg/",
       "source": "https://uolhomes.com.sg/collection/",
-      "match": ["uol", "united venture development"],
+      "match": ["uol", "united venture development", "singapore land group"],
       "projects": [
         { "name": "UPPERHOUSE at Orchard Boulevard", "url": "https://uolhomes.com.sg/project/upperhouse-at-orchard-boulevard/" },
         { "name": "PARKTOWN Residence", "url": "https://uolhomes.com.sg/project/parktownresidence/" },
@@ -35,7 +35,12 @@
         { "name": "Pinetree Hill", "year": 2027, "url": "https://uolhomes.com.sg/project/pinetree-hill/" },
         { "name": "AMO Residence", "year": 2026, "url": "https://uolhomes.com.sg/project/amo-residence/" },
         { "name": "The Watergardens", "year": 2026, "url": "https://uolhomes.com.sg/project/the-watergardens/" },
-        { "name": "Clavon", "year": 2025, "url": "https://uolhomes.com.sg/project/clavon/" }
+        { "name": "Clavon", "year": 2025, "url": "https://uolhomes.com.sg/project/clavon/" },
+        { "name": "Avenue South Residence", "top": "2023", "yearType": "completion", "units": 1074, "tenure": "99 年", "url": "https://uolhomes.com.sg/project/avenue-south-residence/" },
+        { "name": "The Tre Ver", "top": "2022", "yearType": "completion", "units": 729, "tenure": "99 年", "url": "https://uolhomes.com.sg/project/the-tre-ver/" },
+        { "name": "Principal Garden", "top": "2018", "yearType": "completion", "units": 663, "tenure": "99 年", "url": "https://uolhomes.com.sg/project/principal-garden/" },
+        { "name": "Katong Regency", "top": "2015", "yearType": "completion", "units": 244, "tenure": "永久产权", "url": "https://uolhomes.com.sg/project/katong-regency/" },
+        { "name": "One-North Residences", "top": "2009", "yearType": "completion", "units": 405, "tenure": "99 年", "url": "https://uolhomes.com.sg/project/one-north-residences/" }
       ]
     },
     "cdl": {
@@ -56,16 +61,16 @@
         { "name": "The Myst", "url": "https://www.cdl.com.sg/" },
         { "name": "CanningHill Piers", "url": "https://www.cdl.com.sg/" },
         { "name": "Lumina Grand", "year": 2026, "url": "https://www.cdl.com.sg/" },
-        { "name": "Haus on Handy", "year": 2023, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Haus on Handy", "year": 2023, "top": "2023", "yearType": "completion", "units": 188, "tenure": "99 年", "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "Piermont Grand", "year": 2023, "url": "https://www.cdlhomes.com.sg/piermontgrand/overview.html" },
-        { "name": "Whistler Grand", "year": 2022, "url": "https://www.cdl.com.sg/residential-property-gallery" },
-        { "name": "The Tapestry", "year": 2021, "url": "https://www.cdl.com.sg/residential-property-gallery" },
-        { "name": "Forest Woods", "year": 2020, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Whistler Grand", "year": 2022, "top": "2022", "yearType": "completion", "units": 716, "tenure": "99 年", "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "The Tapestry", "year": 2021, "top": "2021", "yearType": "completion", "units": 861, "tenure": "99 年", "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "Forest Woods", "year": 2020, "top": "2020", "yearType": "completion", "units": 519, "tenure": "99 年", "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "Coco Palms", "year": 2018, "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "The Criterion", "year": 2018, "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "Commonwealth Towers", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "D'Nest", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
-        { "name": "New Futura", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
+        { "name": "New Futura", "year": 2017, "top": "2017", "yearType": "completion", "units": 124, "tenure": "永久产权", "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "The Brownstone", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" },
         { "name": "The Venue Residences and Shoppes", "year": 2017, "url": "https://www.cdl.com.sg/residential-property-gallery" }
       ]
@@ -83,10 +88,10 @@
         { "name": "Midtown Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
         { "name": "Midtown Bay", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
         { "name": "Meyer Mansion", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
-        { "name": "Martin Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
-        { "name": "Wallich Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
-        { "name": "Leedon Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
-        { "name": "Goodwood Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" }
+        { "name": "Martin Modern", "top": "2021-05", "yearType": "actual_top", "units": 450, "tenure": "99 年", "url": "https://www.guocoland.com.sg/resi_sg.shtml", "sourceUrl": "https://www.guocoland.com.sg/Documents/AnnualRpt/AnnRep2021.pdf" },
+        { "name": "Wallich Residence", "top": "2017-10", "yearType": "actual_top", "units": 181, "tenure": "99 年", "url": "https://www.guocoland.com.sg/resi_sg.shtml", "sourceUrl": "https://www.guocoland.com.sg/Documents/Announcements/2018/AnnRep2018.pdf" },
+        { "name": "Leedon Residence", "top": "2015-06", "yearType": "actual_top", "units": 381, "tenure": "永久产权", "url": "https://www.guocoland.com.sg/resi_sg.shtml", "sourceUrl": "https://www.guocoland.com.sg/Documents/AnnualRpt/AnnRep2015.pdf" },
+        { "name": "Goodwood Residence", "top": "2013-06", "yearType": "actual_top", "units": 210, "tenure": "永久产权", "url": "https://www.guocoland.com.sg/SG/Goodwood-Residence.asp" }
       ]
     },
     "singhaiyi": {
@@ -99,10 +104,11 @@
         { "name": "Sora", "url": "https://www.singhaiyi.com/cn/sora.html" },
         { "name": "Skywaters Residences", "url": "https://www.singhaiyi.com/cn/skywaters-residences.html" },
         { "name": "Grand Dunman", "url": "https://www.singhaiyi.com/property-projects.html" },
-        { "name": "Parc Clematis", "url": "https://www.singhaiyi.com/property-projects.html" },
-        { "name": "The Gazania", "url": "https://www.singhaiyi.com/completed-projects.html" },
-        { "name": "The Lilium", "url": "https://www.singhaiyi.com/completed-projects.html" },
-        { "name": "City Suites", "url": "https://www.singhaiyi.com/completed-projects.html" },
+        { "name": "Parc Clematis", "top": "2023", "yearType": "completion", "units": 1468, "tenure": "99 年", "url": "https://www.singhaiyi.com/completed-projects.html" },
+        { "name": "The Gazania", "top": "2022-11", "yearType": "completion", "units": 250, "tenure": "永久产权", "url": "https://www.singhaiyi.com/the-gazania.html" },
+        { "name": "The Lilium", "top": "2021-11", "yearType": "completion", "units": 80, "tenure": "永久产权", "url": "https://www.singhaiyi.com/the-lilium.html" },
+        { "name": "City Suites", "top": "2017-08", "yearType": "actual_top", "units": 56, "tenure": "永久产权", "url": "https://www.singhaiyi.com/completed-projects.html", "sourceUrl": "https://www.singhaiyi.com/property-projects.html" },
+        { "name": "Charlton Residences", "top": "2014-05", "yearType": "actual_top", "units": 21, "tenure": "永久产权", "url": "https://www.singhaiyi.com/completed-projects.html", "sourceUrl": "https://www.singhaiyi.com/property-projects.html" },
         { "name": "The Vales", "url": "https://www.singhaiyi.com/completed-projects.html" }
       ]
     },
@@ -111,6 +117,7 @@
       "nameZh": "美联地产",
       "website": "https://www.mclland.com.sg/",
       "source": "https://www.mclland.com.sg/about-us",
+      "domains": ["mclland.com.sg"],
       "match": ["mcl land"],
       "projects": [
         { "name": "Nava Grove", "url": "https://www.mclland.com.sg/about-us" },
@@ -118,9 +125,11 @@
         { "name": "Copen Grand", "url": "https://www.mclland.com.sg/about-us" },
         { "name": "Tembusu Grand", "url": "https://www.mclland.com.sg/about-us" },
         { "name": "Piccadilly Grand", "url": "https://www.mclland.com.sg/about-us" },
-        { "name": "Leedon Green", "url": "https://www.mclland.com.sg/about-us" },
-        { "name": "J Gateway", "url": "https://www.mclland.com.sg/about-us" },
-        { "name": "Margaret Ville", "url": "https://www.mclland.com.sg/about-us" },
+        { "name": "Leedon Green", "top": "2023", "yearType": "completion", "units": 638, "tenure": "永久产权", "url": "https://www.mclland.com.sg/about-us", "sourceUrl": "https://webfile.hkland.com/assets/financial-reports-and-results/2024/en/ar2023.pdf" },
+        { "name": "Parc Esta", "top": "2022", "yearType": "completion", "units": 1404, "tenure": "99 年", "url": "https://www.mclland.com.sg/about-us", "sourceUrl": "https://webfile.hkland.com/assets/financial-reports-and-results/2023/en/ar2022.pdf" },
+        { "name": "J Gateway", "top": "2016", "yearType": "completion", "units": 738, "tenure": "99 年", "url": "https://www.mclland.com.sg/about-us", "sourceUrl": "https://webfile.hkland.com/assets/financial-reports-and-results/2017/en/ar2016.pdf" },
+        { "name": "Margaret Ville", "top": "2021", "yearType": "completion", "units": 309, "tenure": "99 年", "url": "https://www.mclland.com.sg/about-us", "sourceUrl": "https://webfile.hkland.com/assets/financial-reports-and-results/2022/en/hll_20220303.pdf" },
+        { "name": "LakeVille", "top": "2017", "yearType": "completion", "units": 699, "tenure": "99 年", "url": "https://www.mclland.com.sg/about-us", "sourceUrl": "https://webfile.hkland.com/assets/financial-reports-and-results/2017/en/ar2016.pdf" },
         { "name": "Lake Grande", "url": "https://www.mclland.com.sg/about-us" },
         { "name": "Sol Acres", "url": "https://www.mclland.com.sg/about-us" },
         { "name": "Hallmark Residences", "url": "https://www.mclland.com.sg/about-us" },
@@ -137,8 +146,12 @@
       "projects": [
         { "name": "Aurelle of Tampines", "url": "https://www.simlian.com.sg/property/aurelleoftampines/" },
         { "name": "Emerald of Katong", "url": "https://www.simlian.com.sg/property/emeraldofkatong/" },
-        { "name": "Treasure at Tampines", "url": "https://www.simlian.com.sg/property/treasure-at-tampines/" },
-        { "name": "The Lincoln Residences", "year": 2011, "url": "https://www.simlian.com.sg/portfolio/residential/our-portfolio/lincoln-residences/" }
+        { "name": "Treasure at Tampines", "top": "2023", "yearType": "actual_top", "units": 2203, "tenure": "99 年", "url": "https://www.simlian.com.sg/property/treasure-at-tampines/" },
+        { "name": "Hillion Residences", "top": "2017", "yearType": "actual_top", "units": 546, "tenure": "99 年", "url": "https://www.simlian.com.sg/property/hillion-residences/" },
+        { "name": "Parc Vera", "top": "2015", "yearType": "actual_top", "units": 452, "url": "https://www.simlian.com.sg/property/parc-vera/" },
+        { "name": "Waterview", "top": "2014-01", "yearType": "actual_top", "units": 696, "tenure": "99 年", "url": "https://www.simlian.com.sg/property/waterview/" },
+        { "name": "The Lincoln Residences", "year": 2011, "top": "2011-12", "yearType": "actual_top", "units": 99, "tenure": "永久产权", "url": "https://www.simlian.com.sg/property/the-lincoln-residences/" },
+        { "name": "The Amery", "top": "2010-11", "yearType": "actual_top", "units": 78, "tenure": "永久产权", "url": "https://www.simlian.com.sg/property/the-amery/" }
       ]
     },
     "bukit-sembawang": {
@@ -148,16 +161,16 @@
       "source": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio",
       "match": ["singapore united estates"],
       "projects": [
-        { "name": "8@BT", "url": "https://www.bukitsembawang.sg/8atbt" },
+        { "name": "8@BT", "top": "2027 Q4", "yearType": "estimated_top", "units": 158, "tenure": "99 年", "url": "https://www.bukitsembawang.sg/8atbt", "sourceUrl": "https://www.bukitsembawang.sg/pdf/Press/2024/%5BMEDIA%20RELEASE%5D%20BSEL%20to%20Preview%208%40BT.pdf" },
         { "name": "Pollen Collection II", "url": "https://www.bukitsembawang.sg/PollenCollection-2" },
         { "name": "Pollen Collection", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Pollen-Collection" },
         { "name": "Luxus Hills", "url": "https://www.bukitsembawang.sg/LuxusHills" },
         { "name": "Nim Collection", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
         { "name": "Watercove", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
-        { "name": "LIV @ MB", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
-        { "name": "The Atelier", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
-        { "name": "8 St Thomas", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
-        { "name": "Skyline Residences", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" },
+        { "name": "LIV @ MB", "top": "2025-03", "yearType": "actual_top", "units": 298, "tenure": "99 年", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio", "sourceUrl": "https://www.bukitsembawang.sg/pdf/gm/2025/BSEL_Annual_Report2025.pdf" },
+        { "name": "The Atelier", "top": "2024-05", "yearType": "actual_top", "units": 120, "tenure": "永久产权", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio", "sourceUrl": "https://www.bukitsembawang.sg/pdf/gm/2024/BSEL_Annual_Report2024.pdf" },
+        { "name": "8 St Thomas", "top": "2018-01", "yearType": "actual_top", "units": 250, "tenure": "永久产权", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio", "sourceUrl": "https://bukitsembawang.sg/pdf/AR2018.pdf" },
+        { "name": "Skyline Residences", "top": "2015-08", "yearType": "actual_top", "units": 283, "tenure": "永久产权", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio", "sourceUrl": "https://www.bukitsembawang.sg/pdf/AR2016.pdf" },
         { "name": "Paterson Suites", "url": "https://www.bukitsembawang.sg/Bespoke-Homes-Portfolio" }
       ]
     },
@@ -172,7 +185,13 @@
         { "name": "AUREA", "url": "https://www.aurea.com.sg/" },
         { "name": "AMBER HOUSE", "url": "https://www.amberhouse.com.sg/en" },
         { "name": "The Reserve Residences", "url": "https://www.fareast.com.sg/en/residential/the-reserve-residences" },
-        { "name": "RESIDE at River Valley", "url": "https://www.reside.com.sg/" }
+        { "name": "RESIDE at River Valley", "url": "https://www.reside.com.sg/" },
+        { "name": "One Holland Village Residences", "top": "2024-07", "yearType": "actual_top", "units": 296, "tenure": "99 年", "url": "https://www.fareast.com/en/residential/one-holland-village-residences" },
+        { "name": "Parksuites", "top": "2023", "yearType": "actual_top", "units": 119, "tenure": "110 年", "url": "https://www.fareast.com/en/residential/Parksuites" },
+        { "name": "Bijou", "top": "2018", "yearType": "actual_top", "units": 120, "tenure": "永久产权", "url": "https://www.fareast.com/en/residential/Bijou" },
+        { "name": "The Scotts Tower", "top": "2016", "yearType": "actual_top", "units": 231, "tenure": "103 年", "url": "https://www.fareast.com/en/residential/the-scotts-tower" },
+        { "name": "Altez", "top": "2014", "yearType": "completion", "units": 280, "tenure": "99 年", "url": "https://www.fareast.com/en/residential/altez" },
+        { "name": "The Clift", "top": "2011", "yearType": "completion", "units": 312, "tenure": "99 年", "url": "https://www.fareast.com/en/residential/the-clift" }
       ]
     },
     "allgreen": {
@@ -184,10 +203,10 @@
       "match": ["allgreen"],
       "projects": [
         { "name": "Promenade Peak", "url": "https://www.promenadepeak.com.sg/" },
-        { "name": "Pasir Ris 8", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
-        { "name": "Royalgreen", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
-        { "name": "Juniper Hill", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
-        { "name": "Fourth Avenue Residences", "url": "https://www.allgreen.com.sg/local-projects/past-projects/fourthavenueresidences/" },
+        { "name": "Pasir Ris 8", "units": 487, "tenure": "99 年", "url": "https://allgreen.com.sg/project-category/live/current-projects/" },
+        { "name": "Royalgreen", "top": "2021-12", "yearType": "actual_top", "units": 285, "tenure": "永久产权", "url": "https://allgreen.com.sg/project-category/live/current-projects/", "sourceUrl": "https://links.sgx.com/FileOpen/Allgreen%20Properties%20Limited%20and%20its%20subsidiary%20companies%20-%2031Dec2022.ashx?App=Announcement&FileID=761206" },
+        { "name": "Juniper Hill", "top": "2022-03", "yearType": "actual_top", "units": 115, "tenure": "永久产权", "url": "https://allgreen.com.sg/project-category/live/current-projects/", "sourceUrl": "https://links.sgx.com/FileOpen/Allgreen%20Properties%20Limited%20and%20its%20subsidiary%20companies%20-%2031Dec2022.ashx?App=Announcement&FileID=761206" },
+        { "name": "Fourth Avenue Residences", "top": "2022-12", "yearType": "actual_top", "units": 476, "tenure": "99 年", "url": "https://www.allgreen.com.sg/local-projects/past-projects/fourthavenueresidences/" },
         { "name": "SkySuites@Anson", "url": "https://www.allgreen.com.sg/local-projects/past-projects/skysuitesanson/" },
         { "name": "Cairnhill Residences", "url": "https://www.allgreen.com.sg/local-projects/past-projects/cairnhill-residences/" },
         { "name": "Chestnut Green", "url": "https://www.allgreen.com.sg/local-projects/past-projects/chestnut-green/" },
@@ -201,12 +220,12 @@
       "source": "https://singholdings.com/about/",
       "match": ["sing holdings"],
       "projects": [
-        { "name": "North Gaia", "url": "https://singholdings.com/about/" },
-        { "name": "Parc Botannia", "url": "https://singholdings.com/about/" },
-        { "name": "Robin Residences", "url": "https://singholdings.com/about/" },
+        { "name": "North Gaia", "top": "2025-07", "yearType": "actual_top", "units": 616, "tenure": "99 年", "propertyType": "EC", "url": "https://singholdings.com/projects/north-gaia/" },
+        { "name": "Parc Botannia", "top": "2022", "yearType": "actual_top", "units": 735, "tenure": "99 年", "url": "https://singholdings.com/projects/parc-botannia/" },
+        { "name": "Robin Residences", "top": "2015-12", "yearType": "actual_top", "units": 134, "tenure": "永久产权", "url": "https://singholdings.com/projects/robin-residences/" },
         { "name": "Bellerive", "url": "https://singholdings.com/about/" },
-        { "name": "The Laurels", "url": "https://singholdings.com/about/" },
-        { "name": "Waterwoods", "url": "https://singholdings.com/about/" }
+        { "name": "The Laurels", "units": 229, "tenure": "永久产权", "url": "https://singholdings.com/projects/the-laurels/" },
+        { "name": "Waterwoods", "top": "2015-12", "yearType": "actual_top", "units": 373, "tenure": "99 年", "propertyType": "EC", "url": "https://singholdings.com/projects/waterwoods/" }
       ]
     },
     "kingsford": {
@@ -217,48 +236,91 @@
       "match": ["kingsford"],
       "projects": [
         { "name": "Lentor Gardens Residences", "url": "https://kingsford.com.sg/property/lentor-gardens-residences/" },
-        { "name": "One Marina Gardens", "url": "https://kingsford.com.sg/property/one-marina-gardens/" },
-        { "name": "Chuan Park", "url": "https://kingsford.com.sg/property/chuan-park/" },
-        { "name": "The Hill @One North", "url": "https://kingsford.com.sg/property/the-hill-one-north/" },
-        { "name": "Normanton Park", "url": "https://kingsford.com.sg/property/normanton-park/" },
-        { "name": "Kingsford Waterbay", "url": "https://kingsford.com.sg/property/kingsford-waterbay/" },
-        { "name": "Kingsford Hillview Peak", "url": "https://kingsford.com.sg/property/kingsford-hillview-peak/" }
+        { "name": "One Marina Gardens", "top": "2029-04-30", "yearType": "expected_vp", "units": 937, "tenure": "99 年", "url": "https://kingsford.com.sg/onemarinagardens/" },
+        { "name": "Chuan Park", "top": "2028-09-30", "yearType": "expected_vp", "units": 916, "tenure": "99 年", "url": "https://kingsford.com.sg/chuanpark/" },
+        { "name": "The Hill @One North", "top": "2027-12-31", "yearType": "expected_vp", "units": 142, "tenure": "99 年", "url": "https://kingsford.com.sg/thehills1north/" },
+        { "name": "Normanton Park", "top": "2023-12", "yearType": "actual_top", "units": 1862, "tenure": "99 年", "url": "https://kingsford.com.sg/normanton-parks/" },
+        { "name": "Kingsford Waterbay", "top": "2018-12", "yearType": "actual_top", "units": 1165, "tenure": "99 年", "url": "https://kingsford.com.sg/property/kingsford-waterbay/" },
+        { "name": "Kingsford Hillview Peak", "top": "2017-03", "yearType": "actual_top", "units": 512, "tenure": "99 年", "url": "https://kingsford.com.sg/property/kingsford-hillview-peak/" }
       ]
-    },
-    "singland": {
-      "name": "Singapore Land Group",
-      "nameZh": "新加坡置地",
-      "website": "https://www.singaporeland.com/",
-      "source": "https://www.singaporeland.com/portfolio_category/residential/",
-      "match": ["singapore land group"],
-      "projects": []
     },
     "capitaland": {
       "name": "CapitaLand Development",
       "nameZh": "凯德置地",
       "website": "https://www.capitaland.com/",
-      "source": "https://www.capitaland.com/",
+      "source": "https://www.capitaland.com/sg/en/stay/residential-development-listing.html",
       "match": ["capitaland"],
-      "projects": []
+      "projects": [
+        { "name": "Marine Blue", "top": "2016-10-10", "yearType": "actual_top", "units": 124, "tenure": "永久产权", "url": "https://www.capitaland.com/en/find-a-property/global-property-listing/residential/marine-blue.html" },
+        { "name": "Sky Vue", "top": "2016-07-21", "yearType": "actual_top", "units": 694, "tenure": "99 年", "url": "https://www.capitaland.com/en/find-a-property/global-property-listing/residential/sky-vue.html" },
+        { "name": "Bedok Residences", "top": "2015-05-22", "yearType": "actual_top", "units": 583, "tenure": "99 年", "url": "https://www.capitaland.com/en/development/our-portfolio/residential/bedok-residences.html" },
+        { "name": "Sky Habitat", "top": "2015-04-27", "yearType": "actual_top", "units": 509, "tenure": "99 年", "url": "https://www.capitaland.com/sg/en/stay/residential-development-listing/sky-habitat.html" },
+        { "name": "d’Leedon", "top": "2014-10-21", "yearType": "actual_top", "units": 1715, "tenure": "99 年", "url": "https://www.capitaland.com/sg/en/stay/residential-development-listing/d-leedon.html" },
+        { "name": "The Interlace", "top": "2013-09-13", "yearType": "actual_top", "units": 1040, "tenure": "99 年", "url": "https://www.capitaland.com/sg/en/stay/residential-development-listing/the-interlace.html" }
+      ]
+    },
+    "frasers": {
+      "name": "Frasers Property",
+      "nameZh": "星狮地产",
+      "website": "https://www.frasersproperty.com/sg",
+      "source": "https://www.frasersproperty.com/sg/our-portfolio/residential",
+      "match": ["frasers property", "frasers centrepoint"],
+      "projects": [
+        { "name": "Rivière", "top": "2023-01-17", "yearType": "actual_top", "units": 455, "tenure": "99 年", "url": "https://www.frasersproperty.com/sg/riviere/residences" },
+        { "name": "Seaside Residences", "top": "2021-02", "yearType": "actual_top", "units": 843, "tenure": "99 年", "url": "https://www.frasersproperty.com/sg/seaside-residences/explore" },
+        { "name": "North Park Residences", "top": "2018-10-31", "yearType": "actual_top", "units": 920, "tenure": "99 年", "url": "https://www.frasersproperty.com/sg/press-releases/2022/june/frasers-property-north-park-residences-and-northpoint-city-top-winners-at-FIABCI-2022.html" },
+        { "name": "Watertown", "top": "2017-09", "yearType": "actual_top", "units": 992, "tenure": "99 年", "url": "https://www.frasersproperty.com/sg/our-portfolio/residential/watertown" },
+        { "name": "RiverTrees Residences", "top": "2017-05", "yearType": "actual_top", "units": 496, "tenure": "99 年", "url": "https://www.frasersproperty.com/sg/our-portfolio/residential", "sourceUrl": "https://investor.frasersproperty.com/newsroom/20170807_195118_TQ5_BXDJ7I0LAAQZTW25.3.pdf" },
+        { "name": "eCO", "top": "2017-02", "yearType": "actual_top", "units": 750, "tenure": "99 年", "url": "https://www.frasersproperty.com/sg/our-portfolio/residential", "sourceUrl": "https://investor.frasersproperty.com/newsroom/20170511_070730_TQ5_65S3V3JERS4CLTF3.3.pdf" }
+      ]
+    },
+    "keppel": {
+      "name": "Keppel Real Estate",
+      "nameZh": "吉宝房地产",
+      "website": "https://www.keppel.com/realestate",
+      "source": "https://www.keppel.com/realestate/sg/About-Us/Our-Projects",
+      "match": ["keppel land", "keppel real estate"],
+      "projects": [
+        { "name": "The Reef at King’s Dock", "top": "2024", "yearType": "completion", "units": 429, "tenure": "99 年", "url": "https://www.keppel.com/media/the-reef-at-kings-dock-sells-more-than-90-of-units-released-on-launch-weekend/" },
+        { "name": "19 Nassim", "top": "2023", "yearType": "completion", "units": 101, "tenure": "99 年", "url": "https://www.keppel.com/realestate/sg/About-Us/Our-Projects", "sourceUrl": "https://www.keppel.com/annualreport2022/theme/default/pdf/keppel-corporation-ar-22-major-properties.pdf" },
+        { "name": "The Garden Residences", "top": "2021", "yearType": "completion", "units": 613, "tenure": "99 年", "url": "https://www.keppel.com/realestate/sg/About-Us/Our-Projects" },
+        { "name": "Highline Residences", "top": "2018 Q1", "yearType": "actual_top", "units": 500, "tenure": "99 年", "url": "https://www.keppel.com/realestate/sg/Special-Features-Library/Behind-the-Scenes-at-Highline-Residences" },
+        { "name": "The Glades", "top": "2016", "yearType": "completion", "units": 726, "tenure": "99 年", "url": "https://www.keppel.com/realestate/sg/About-Us/Our-Projects" },
+        { "name": "Corals at Keppel Bay", "top": "2016", "yearType": "completion", "units": 366, "tenure": "99 年", "url": "https://www.keppel.com/realestate/sg/About-Us/Our-Projects", "sourceUrl": "https://www.keppel.com/en/file/sustainability/sustainability-reports/kcl-sr-16.pdf" }
+      ]
+    },
+    "wing-tai": {
+      "name": "Wing Tai Holdings",
+      "nameZh": "永泰控股",
+      "website": "https://www.wingtaiasia.com/",
+      "source": "https://www.wingtaiasia.com/our-portfolio/residential/",
+      "match": ["wing tai"],
+      "projects": [
+        { "name": "The LakeGarden Residences", "top": "2027", "yearType": "estimated_completion", "units": 306, "tenure": "99 年", "url": "https://www.wingtaiasia.com/our-portfolio/residential/" },
+        { "name": "The M", "top": "2023-08-23", "yearType": "actual_top", "units": 522, "tenure": "99 年", "url": "https://www.wingtaiasia.com/our-portfolio/residential/the-m/" },
+        { "name": "The Crest", "top": "2017-02", "yearType": "actual_top", "units": 469, "tenure": "99 年", "url": "https://www.wingtaiasia.com/our-portfolio/residential/", "sourceUrl": "https://www.wingtaiasia.com/wp-content/uploads/2022/08/Wing-Tai-Holdings-Limited-Annual-Report-2017.pdf" },
+        { "name": "The Tembusu", "top": "2016-08", "yearType": "actual_top", "units": 337, "tenure": "永久产权", "url": "https://www.wingtaiasia.com/our-portfolio/residential/", "sourceUrl": "https://www.wingtaiasia.com/wp-content/uploads/2022/08/Wing-Tai-Holdings-Limited-Annual-Report-2017.pdf" },
+        { "name": "Le Nouvel Ardmore", "top": "2014", "yearType": "completion", "units": 43, "tenure": "永久产权", "url": "https://www.wingtaiasia.com/our-portfolio/residential/le-nouvel-ardmore/" }
+      ]
     }
   },
   "spvOverrides": {
     "_note": "不透明 SPV → 集团。每条都需单独查证后再加；合资项目列出全部参与方。",
-    "topaz residential pte ltd/topaz commercial pte ltd": ["uol", "singland", "capitaland"],
+    "topaz residential pte ltd/topaz commercial pte ltd": ["uol", "capitaland"],
     "grand dunman pte ltd": ["singhaiyi"],
     "taurus properties sg pte ltd": ["cdl", "mcl-land"],
     "tembusu residential pte ltd": ["cdl", "mcl-land"],
     "transcend residential (toa payoh) pte ltd": ["cdl"],
     "tripartite developers pte ltd": ["cdl"],
-    "united venture development (meyer) pte ltd": ["uol", "singland"],
-    "united venture development (no. 5) pte ltd": ["uol", "singland"],
+    "united venture development (meyer) pte ltd": ["uol"],
+    "united venture development (no. 5) pte ltd": ["uol"],
     "lakeside residential pte ltd": ["singhaiyi"],
     "shenton residential property pte. ltd": ["singhaiyi"],
     "springleaf residence pte ltd": ["guocoland"],
     "guoco midtown pte ltd/midtown bay pte ltd": ["guocoland"],
     "golden ray edge 3 pte ltd": ["mcl-land"],
     "hc land (clementi) pte ltd": ["mcl-land"],
-    "tamarind development pte ltd": ["uol", "singland", "capitaland"],
+    "tamarind development pte ltd": ["uol", "capitaland"],
     "chuan park development pte ltd": ["kingsford"],
     "fe landmark pte ltd/fec residences trustee pte ltd/fec retail trustee pte ltd": ["far-east"],
     "urban park pte ltd": ["far-east"],

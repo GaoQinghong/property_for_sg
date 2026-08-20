@@ -1,17 +1,34 @@
 import type { Project } from "./types";
 
-export type DeveloperProject = { name: string; year?: number; url: string };
+export type DeveloperProject = {
+  name: string;
+  /** A year published in the developer's portfolio; not assumed to be TOP. */
+  year?: number;
+  /** TOP year/date only when explicitly verified. */
+  top?: string | number;
+  /** Keeps actual TOP, completion and forward-looking dates distinct. */
+  yearType?: "actual_top" | "completion" | "estimated_top" | "estimated_completion" | "expected_vp" | "unknown";
+  units?: number;
+  tenure?: string;
+  propertyType?: string;
+  url: string;
+  /** Evidence for the facts above when it differs from the project page. */
+  sourceUrl?: string;
+};
 
 export type DeveloperGroup = {
   name: string;
   nameZh?: string;
   website: string;
   source: string;
+  domains?: string[];
   match: string[];
   projects: DeveloperProject[];
 };
 
 export type DeveloperDirectory = {
+  updatedAt?: string;
+  note?: string;
   groups: Record<string, DeveloperGroup>;
   /** SPV name (lowercased) → the groups behind it. Most launches are JVs. */
   spvOverrides: Record<string, string[]>;
@@ -66,10 +83,31 @@ export function officialProjectUrl(project: Project, groups: DeveloperGroup[]): 
 
 export type HistoryEntry = DeveloperProject & { group: string };
 
+const historyYear = (entry: DeveloperProject) => {
+  const fromFact = entry.top == null ? NaN : Number.parseInt(String(entry.top), 10);
+  return Number.isFinite(fromFact) ? fromFact : (entry.year ?? Number.NEGATIVE_INFINITY);
+};
+
+const historyDateType: Partial<Record<NonNullable<DeveloperProject["yearType"]>, string>> = {
+  actual_top: "实际 TOP",
+  completion: "竣工",
+  estimated_top: "预计 TOP",
+  estimated_completion: "预计竣工",
+  expected_vp: "预计空置交付",
+};
+
+export function developerProjectDateLabel(entry: DeveloperProject): string {
+  if (entry.top != null) {
+    const type = entry.yearType ? historyDateType[entry.yearType] : undefined;
+    return `${entry.top}${type ? ` · ${type}` : ""}`;
+  }
+  if (entry.year) return `${entry.year} · 官网目录年份`;
+  return "年份待核实";
+}
+
 /**
- * Other developments by the same groups, newest first. Entries without a
- * published year sort ahead of dated ones — those are the current and upcoming
- * launches, which are "nearest in time" by definition.
+ * Other developments by the same groups, sorted by an explicitly published
+ * TOP/completion/reference year. Unknown dates stay at the end.
  */
 export function pastProjects(project: Project, groups: DeveloperGroup[]): HistoryEntry[] {
   const projectKey = normalise(project.name);
@@ -85,7 +123,7 @@ export function pastProjects(project: Project, groups: DeveloperGroup[]): Histor
     }
   }
 
-  return merged.sort((a, b) => (b.year ?? Number.POSITIVE_INFINITY) - (a.year ?? Number.POSITIVE_INFINITY));
+  return merged.sort((a, b) => historyYear(b) - historyYear(a) || a.name.localeCompare(b.name));
 }
 
 export const groupLabel = (group: DeveloperGroup) =>

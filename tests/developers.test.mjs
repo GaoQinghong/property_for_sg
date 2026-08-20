@@ -49,6 +49,18 @@ test("每个集团条目都完整且链接指向自有域名", async () => {
         assert.ok(Number.isInteger(entry.year) && entry.year > 1990 && entry.year < 2040,
           `${key}/${entry.name} 年份不合理：${entry.year}`);
       }
+      if ("sourceUrl" in entry) {
+        assert.ok(entry.sourceUrl?.startsWith("https://"), `${key}/${entry.name} 的 sourceUrl 非 https`);
+      }
+      if ("yearType" in entry) {
+        assert.ok([
+          "actual_top", "completion", "estimated_top", "estimated_completion", "expected_vp", "unknown",
+        ].includes(entry.yearType), `${key}/${entry.name} 的 yearType 不受支持：${entry.yearType}`);
+        assert.ok("top" in entry, `${key}/${entry.name} 有 yearType 但没有对应日期`);
+      }
+      if ("units" in entry) {
+        assert.ok(Number.isInteger(entry.units) && entry.units > 0, `${key}/${entry.name} 户数不合理`);
+      }
     }
   }
 });
