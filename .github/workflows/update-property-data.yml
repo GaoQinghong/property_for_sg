@@ -28,6 +28,11 @@ jobs:
         run: npm run data:update-projects
         env:
           URA_ACCESS_KEY: ${{ secrets.URA_ACCESS_KEY }}
+      # New projects arrive without a footprint. Capturing it re-runs the
+      # enrichment, so the 1km school figures stay per-address rather than
+      # collapsing back to a single pin.
+      - name: Capture address footprints
+        run: npm run data:capture-footprints
       # Guards the freshly fetched data before it is committed: coordinates in
       # bounds, no mojibake, and no distances derived from fallback pins.
       - name: Validate data
@@ -38,6 +43,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/projects.json public/data/project-audit.json
+          git add public/data/projects.json public/data/project-audit.json public/data/schools.json
           git diff --cached --quiet || git commit -m "Update URA property data"
           git push

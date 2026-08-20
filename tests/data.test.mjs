@@ -57,6 +57,58 @@ test("精确定位的项目都补全了地铁与学校", async () => {
   assert.deepEqual(missing.map((project) => project.name), []);
 });
 
+test("多门牌楼盘按每个门牌点判定 1km 优先权", () => {
+  const stations = [{ name: "S", ref: "X1", lat: 1.3, lng: 103.8, station: "subway", status: "operating" }];
+  // Two blocks 400m apart; the school sits 900m from one and 1.3km from the other.
+  const schools = [{ name: "SPLIT PRIMARY", type: "小学", lat: 1.3, lng: 103.79191 }];
+  const project = {
+    name: "Z",
+    lat: 1.3,
+    lng: 103.8,
+    locationAccuracy: "exact",
+    addressPoints: [{ lat: 1.3, lng: 103.8 }, { lat: 1.3, lng: 103.80360 }],
+  };
+  const result = enrichProject(project, { stations, schools });
+  assert.equal(result.schoolsWithin1km, 0, "并非所有门牌都在 1km 内，不应计入");
+  assert.equal(result.schoolsWithin1kmPartial, 1, "应标注为部分栋可及");
+
+  // The same school against a single-point project inside the radius.
+  const single = enrichProject(
+    { name: "Y", lat: 1.3, lng: 103.8, locationAccuracy: "exact" },
+    { stations, schools },
+  );
+  assert.equal(single.schoolsWithin1km, 1);
+  assert.equal(single.schoolsWithin1kmPartial, 0);
+});
+
+test("门牌点都落在项目附近且无重复", async () => {
+  const { projects } = await readData("projects.json");
+  const multi = projects.filter((project) => project.addressPoints?.length);
+  assert.ok(multi.length > 10, `仅 ${multi.length} 个项目记录了门牌点`);
+  for (const project of multi) {
+    assert.ok(project.addressPoints.length > 1, `${project.name} 只有一个门牌点却存了数组`);
+    for (const point of project.addressPoints) {
+      assert.ok(validCoordinates(point), `${project.name} 门牌点越界`);
+      const away = distanceMetres(project, point);
+      assert.ok(away <= 1000, `${project.name} 门牌点距主坐标 ${Math.round(away)}m，疑似匹配到别的楼盘`);
+    }
+  }
+});
+
+test("临界项目同时给出确定与部分栋两个口径", async () => {
+  const { projects } = await readData("projects.json");
+  for (const project of projects) {
+    if (project.locationAccuracy !== "exact") continue;
+    assert.equal(typeof project.schoolsWithin1km, "number", `${project.name} 缺少 schoolsWithin1km`);
+    assert.equal(typeof project.schoolsWithin1kmPartial, "number", `${project.name} 缺少 schoolsWithin1kmPartial`);
+    // A single-address project can never straddle the radius.
+    if (!project.addressPoints) {
+      assert.equal(project.schoolsWithin1kmPartial, 0,
+        `${project.name} 只有一个门牌却标了部分栋可及`);
+    }
+  }
+});
+
 test("enrichProject 拒绝为估算坐标编造距离", () => {
   const stations = [{ name: "Newton", ref: "NS21", lat: 1.3138, lng: 103.8384, station: "subway", status: "operating" }];
   const schools = [{ name: "TEST PRIMARY", type: "小学", lat: 1.3140, lng: 103.8390 }];

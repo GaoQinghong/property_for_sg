@@ -14,7 +14,9 @@
     "data:simplify-rail": "node scripts/simplify-rail.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "data:recalibrate-schools": "node scripts/recalibrate-schools.mjs",
+    "data:capture-footprints": "node scripts/capture-footprints.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

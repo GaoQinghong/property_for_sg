@@ -195,3 +195,20 @@ test("交互控件带有 aria-pressed 状态", async () => {
   const layers = document.querySelectorAll(".map-layers button[aria-pressed]");
   assert.equal(layers.length, 4);
 });
+
+test("临界楼盘同时显示确定与部分栋两个口径", async () => {
+  const { window, document } = await mount();
+  const input = document.querySelector("#search");
+  const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
+
+  setter.call(input, "Reserve Residences");
+  input.dispatchEvent(new window.Event("input", { bubbles: true }));
+  await new Promise((resolve) => window.setTimeout(resolve, 0));
+  document.querySelector(".project-card").dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
+  await new Promise((resolve) => window.setTimeout(resolve, 0));
+
+  const text = document.querySelector(".detail-card .school-count").textContent;
+  assert.match(text, /1km 内 1 所小学/);
+  assert.match(text, /另 1 所仅部分栋可及/);
+  assert.ok(document.querySelector(".detail-card .school-note"), "应给出门牌跨度的说明");
+});

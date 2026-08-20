@@ -15,10 +15,14 @@ export type Project = {
   mrt: string;
   /** Nearest primary school, same shape as `mrt`. */
   school: string;
-  /** Primary schools inside the 1km priority radius; null when unlocated. */
+  /** Primary schools within 1km of *every* block; null when unlocated. */
   schoolsWithin1km?: number | null;
+  /** Schools within 1km of some blocks but not all — the site straddles the radius. */
+  schoolsWithin1kmPartial?: number | null;
   lat: number;
   lng: number;
+  /** Per-block address points, present only when a project registers several. */
+  addressPoints?: { lat: number; lng: number }[];
   updatedAt?: string;
   source?: string;
   locationAccuracy?: "exact" | "district";

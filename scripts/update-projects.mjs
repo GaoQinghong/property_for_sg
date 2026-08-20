@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { geocodeProject, validCoordinates } from "./lib/geo.mjs";
+import { distanceMetres, geocodeProject, validCoordinates } from "./lib/geo.mjs";
 import { enrichProjects } from "./lib/enrich.mjs";
 import { findUnrepaired, repairMojibake } from "./lib/text.mjs";
 
@@ -42,6 +42,16 @@ function reusableCoordinates(old) {
   if (old.locationAccuracy !== "exact") return null;
   const point = { lat: Number(old.lat), lng: Number(old.lng) };
   return validCoordinates(point) ? point : null;
+}
+/**
+ * Per-block address points come from `scripts/capture-footprints.mjs`, not from
+ * URA, so carry them across a refresh — but only while the project has not
+ * moved, since a re-geocode invalidates the whole footprint.
+ */
+function carriedOver(old, coordinates) {
+  if (!old.addressPoints?.length || !coordinates) return {};
+  const moved = distanceMetres({ lat: Number(old.lat), lng: Number(old.lng) }, coordinates);
+  return Number.isFinite(moved) && moved < 50 ? { addressPoints: old.addressPoints } : {};
 }
 function svy21ToWgs84(x, y) {
   // SVY21 is locally almost linear across Singapore. This local tangent-plane
@@ -112,7 +122,7 @@ for (const row of pipelineRows) {
     status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
     developer:row.developerName || sales?.developer || old.developer || "待公布", tenure:old.tenure || "待公布", launch:old.launch || "尚未公布",
     top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"),
-    ...coordinates, locationAccuracy, updatedAt, source:"URA"
+    ...coordinates, ...carriedOver(old, coordinates), locationAccuracy, updatedAt, source:"URA"
   });
   mergedKeys.add(key);
 }
@@ -142,7 +152,7 @@ for (const [key, sales] of salesByName) {
     id:key.toLowerCase(), name:sales.project, area:old.area || `${sales.street || "新加坡"} · D${String(sales.district || "—").padStart(2,"0")}`,
     status:launched > 0 ? "在售" : "确定开发", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
     launch:old.launch || (launched > 0 ? "已开盘" : "尚未公布"), top:old.top || "待公布",
-    ...coordinates, locationAccuracy, updatedAt, source:"URA"
+    ...coordinates, ...carriedOver(old, coordinates), locationAccuracy, updatedAt, source:"URA"
   });
 }
 

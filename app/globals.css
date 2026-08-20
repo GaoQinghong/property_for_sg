@@ -590,6 +590,16 @@ button { color: inherit; }
   color: var(--muted);
 }
 
+.school-note {
+  display: block;
+  margin-top: 3px;
+  padding-left: 8px;
+  border-left: 2px solid #e0e6e2;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--faint);
+}
+
 .card-district {
   display: block;
   margin-top: 3px;

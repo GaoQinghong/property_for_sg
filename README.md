@@ -69,10 +69,25 @@ URA 的 `developer` 字段登记的是项目公司（SPV），不是集团 —�
 
 详情卡片里的「最近地铁」「最近小学」是由项目坐标计算的**直线距离**，不是步行距离。只有 `locationAccuracy: "exact"` 的项目才会给出距离；仍在用邮区中心估算位置的项目一律显示「待定位」，避免把估算坐标算出的数字当成事实呈现。
 
-若某天 URA 又出现无法解析地址的项目，可手动跑：
+学校坐标按 MOE 登记邮编在 OneMap 上重新校准过。原先来自 OSM 的坐标里，326 所中有 304 所偏差超过 10m、126 所超过 50m —— 画图钉无所谓，但足以让一所学校在 1km 判定上进出。
+
+### 1km 小学优先权
+
+MOE 按每户**实际门牌地址**量 1km，而大型楼盘会登记多个门牌、跨度可达数百米。例如 The Reserve Residences 到 Methodist Girls' Primary，21 Jalan Anak Bukit 是 989m（在范围内），15 号是 1083m（不在）。
+
+因此本站对每个门牌点分别计算：
+
+- `schoolsWithin1km` — 所有门牌点都在 1km 内的学校数
+- `schoolsWithin1kmPartial` — 只有部分门牌点在范围内的学校数，界面单独标注
+
+门牌点由 `capture-footprints.mjs` 从 OneMap 抓取（含分页，Luxus Hills 这类洋房区有 60 个门牌点、跨度 818m）。目前 35/124 个项目有多个门牌点，9 个处于 1km 临界。
+
+### 手动重跑数据
 
 ```bash
-npm run data:backfill-locations   # 重新地理编码 + 重算距离
+npm run data:backfill-locations    # 重新地理编码 + 重算距离
+npm run data:recalibrate-schools   # 按邮编校准学校坐标
+npm run data:capture-footprints    # 抓门牌点 + 重算 1km 口径
 ```
 
 ## 部署

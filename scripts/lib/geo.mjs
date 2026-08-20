@@ -51,6 +51,47 @@ async function throttle() {
   nextAllowedCall = Date.now() + MIN_INTERVAL_MS;
 }
 
+async function searchPage(searchVal, pageNum, attempt = 0) {
+  await throttle();
+  const url = new URL(ONEMAP_SEARCH);
+  url.search = new URLSearchParams({ searchVal, returnGeom: "Y", getAddrDetails: "Y", pageNum: String(pageNum) });
+  const response = await fetch(url, { headers: { "User-Agent": "property_for_sg data updater" } });
+  if (response.status === 429 && attempt < 4) {
+    await new Promise((resolve) => setTimeout(resolve, 2000 * 2 ** attempt));
+    return searchPage(searchVal, pageNum, attempt + 1);
+  }
+  if (!response.ok) return { results: [], totalPages: 0 };
+  const payload = await response.json().catch(() => null);
+  return {
+    results: (payload?.results ?? [])
+      .map((hit) => ({
+        lat: Number(hit.LATITUDE),
+        lng: Number(hit.LONGITUDE),
+        label: String(hit.SEARCHVAL ?? ""),
+        address: String(hit.ADDRESS ?? ""),
+        postal: String(hit.POSTAL ?? ""),
+      }))
+      .filter(validCoordinates),
+    totalPages: Number(payload?.totalNumPages ?? 1),
+  };
+}
+
+/**
+ * Every OneMap hit for a query. The API pages at 10 results, and a landed
+ * estate can register far more addresses than that, so paginate — a truncated
+ * list would silently understate how far a development spreads.
+ */
+export async function searchAddresses(searchVal, { maxPages = 6 } = {}) {
+  const first = await searchPage(searchVal, 1);
+  const all = [...first.results];
+  const pages = Math.min(first.totalPages, maxPages);
+  for (let page = 2; page <= pages; page += 1) {
+    const next = await searchPage(searchVal, page);
+    all.push(...next.results);
+  }
+  return all;
+}
+
 async function searchOnce(searchVal, attempt = 0) {
   await throttle();
   const url = new URL(ONEMAP_SEARCH);

@@ -449,8 +449,15 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
         <dt>最近小学<span className="unit-note">直线</span></dt>
         <dd>
           {project.school}
-          {typeof project.schoolsWithin1km === "number"
-            && <span className="school-count">1km 内 {project.schoolsWithin1km} 所小学</span>}
+          {typeof project.schoolsWithin1km === "number" && <span className="school-count">
+            1km 内 {project.schoolsWithin1km} 所小学
+            {(project.schoolsWithin1kmPartial ?? 0) > 0 && <>
+              ，另 {project.schoolsWithin1kmPartial} 所仅部分栋可及
+              <span className="school-note">
+                该楼盘门牌跨度较大，报名优先权按各户实际地址计算
+              </span>
+            </>}
+          </span>}
         </dd>
       </div>
     </dl>
@@ -516,7 +523,9 @@ function DataInfo({ updatedAt, onClose }: { updatedAt: string; onClose: () => vo
         <dt>坐标</dt>
         <dd>优先取 URA 提供的 SVY21 坐标，其余通过 OneMap 地理编码。仍无法解析的项目按邮区中心估算，详情卡片会明确标注。</dd>
         <dt>地铁与学校距离</dt>
-        <dd>由项目坐标与 OSM 站点、MOE 学校名录计算的<b>直线距离</b>，非步行距离，仅供粗略参考。</dd>
+        <dd>由项目坐标计算的<b>直线距离</b>，非步行距离。学校坐标已按 MOE 登记邮编在 OneMap 上重新校准（原 OSM 坐标平均偏差数十米，足以影响 1km 判定）。</dd>
+        <dt>1km 小学优先权</dt>
+        <dd>MOE 按各户<b>实际门牌地址</b>量 1km。大型楼盘分多个门牌、跨度可达数百米，因此本站对每个门牌点分别计算：全部门牌都在 1km 内才计入「1km 内」，只有部分门牌在范围内的单独标注。仍属参考，报名请以 MOE 官方查询为准。</dd>
         <dt>轨道线路</dt>
         <dd>OpenStreetMap，含建设中与规划中线路（虚线）。几何已按 4m 容差简化。</dd>
         <dt>开发商与历史楼盘</dt>
