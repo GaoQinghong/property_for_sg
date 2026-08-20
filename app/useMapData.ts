@@ -5,7 +5,9 @@ import { EMPTY_DIRECTORY, type DeveloperDirectory } from "./developers";
 const dataUrl = (name: string) => new URL(`./data/${name}`, document.baseURI).href;
 
 async function loadJson<T>(name: string): Promise<T> {
-  const response = await fetch(dataUrl(name));
+  // GitHub Pages may otherwise reuse yesterday's JSON after a data-only
+  // deployment. Each dataset is fetched at most once per page session.
+  const response = await fetch(dataUrl(name), { cache: "no-store" });
   if (!response.ok) throw new Error(`${name}: HTTP ${response.status}`);
   return response.json() as Promise<T>;
 }
