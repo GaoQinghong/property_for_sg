@@ -36,7 +36,34 @@ jobs:
       # Guards the freshly fetched data before it is committed: coordinates in
       # bounds, no mojibake, and no distances derived from fallback pins.
       - name: Validate data
-        run: npm test
+        id: validate
+        # `shell: bash` sets pipefail; without it `tee` would swallow a failing
+        # exit code and let rejected data through.
+        shell: bash
+        run: npm test 2>&1 | tee /tmp/validate.log
+      # Reading Actions logs needs a token, so when validation rejects a batch
+      # publish the offending data and the failing assertions as artifacts —
+      # otherwise the only signal is a red cross with no way to see why.
+      - name: Publish rejected data
+        if: failure() && steps.validate.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rejected-data
+          path: |
+            /tmp/validate.log
+            public/data/projects.json
+            public/data/project-audit.json
+          retention-days: 14
+      - name: Summarise failure
+        if: failure() && steps.validate.outcome == 'failure'
+        run: |
+          {
+            echo "## 数据校验未通过，本次未提交"
+            echo
+            echo '```'
+            grep -E "^(not ok|  +(error|expected|actual):)" /tmp/validate.log | head -40 || tail -40 /tmp/validate.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Verify production build
         run: npm run build
       - name: Commit data changes
