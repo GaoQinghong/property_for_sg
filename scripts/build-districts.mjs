@@ -16,6 +16,7 @@
  *   node scripts/build-districts.mjs [--dry-run]
  */
 import { readFile, writeFile } from "node:fs/promises";
+import polygonClipping from "polygon-clipping";
 import { centroidOf, containsPoint, districtOfPostal } from "./lib/districts.mjs";
 import { distanceMetres, searchAddresses } from "./lib/geo.mjs";
 
@@ -65,11 +66,23 @@ function simplify(points, tolerance) {
 
 const round = (ring) => ring.map(([x, y]) => [Number(x.toFixed(5)), Number(y.toFixed(5))]);
 
+function simplifyRing(ring, tolerance) {
+  if (ring.length < 4) return [];
+  const first = ring[0], last = ring[ring.length - 1];
+  // Douglas-Peucker treats the first and last point as a baseline. GeoJSON
+  // rings repeat the first point at the end, producing a zero-length baseline
+  // and unstable simplification. Open the ring, simplify, then close it again.
+  const open = first[0] === last[0] && first[1] === last[1] ? ring.slice(0, -1) : ring;
+  const reduced = round(simplify(open, tolerance));
+  if (reduced.length < 3) return [];
+  return [...reduced, reduced[0]];
+}
+
 function simplifyGeometry(geometry, tolerance) {
   const polygons = geometry.type === "MultiPolygon" ? geometry.coordinates : [geometry.coordinates];
   const out = polygons
     .map((rings) => rings
-      .map((ring) => round(simplify(ring, tolerance)))
+      .map((ring) => simplifyRing(ring, tolerance))
       // A ring needs 4 positions to stay a closed polygon.
       .filter((ring) => ring.length >= 4))
     .filter((rings) => rings.length > 0);
@@ -188,6 +201,24 @@ for (const record of records) {
   });
 }
 
+// Dissolve the subzones into one geometry per D district. The subzone features
+// still carry the supply fill and tooltips; these 28 geometries are drawn as a
+// separate heavy outline so the user sees postal districts rather than a mesh
+// of 332 planning subzones.
+const boundaries = [];
+for (let district = 1; district <= 28; district += 1) {
+  const geometries = records
+    .filter((record) => record.votes.size
+      && [...record.votes.entries()].sort((a, b) => b[1] - a[1])[0][0] === district)
+    .map((record) => record.geometry.type === "MultiPolygon"
+      ? record.geometry.coordinates
+      : [record.geometry.coordinates]);
+  if (!geometries.length) continue;
+  const dissolved = polygonClipping.union(...geometries);
+  const geometry = simplifyGeometry({ type: "MultiPolygon", coordinates: dissolved }, 12);
+  if (geometry) boundaries.push({ type: "Feature", properties: { district }, geometry });
+}
+
 const byDistrict = {};
 features.forEach((f) => { byDistrict[f.properties.district] = (byDistrict[f.properties.district] ?? 0) + 1; });
 const missing = [...Array(28)].map((_, i) => i + 1).filter((d) => !byDistrict[d]);
@@ -214,7 +245,7 @@ for (const [district, held] of accumulator) {
   };
 }
 
-const output = { type: "FeatureCollection", labels, features };
+const output = { type: "FeatureCollection", labels, boundaries, features };
 const json = `${JSON.stringify(output)}\n`;
 
 console.log(`\n产出 ${features.length} 个分区多边形，丢弃 ${dropped} 个`);
@@ -225,6 +256,7 @@ console.log(`跨越多个 D 区的分区：${straddling.length} 个（按占多�
 straddling.slice(0, 8).forEach((f) =>
   console.log(`   ${f.properties.subzone.padEnd(28)} D${f.properties.straddles.join(" / D")}`));
 console.log(`标签点：${Object.keys(labels).length} 个`);
+console.log(`邮区外轮廓：${boundaries.length} 条`);
 console.log(`文件大小：${(json.length / 1024).toFixed(0)}KB`);
 
 if (dryRun) console.log("\n--dry-run：未写入文件。");

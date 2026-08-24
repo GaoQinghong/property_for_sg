@@ -19,6 +19,8 @@ export type DistrictCollection = {
   type: "FeatureCollection";
   /** Area-weighted label anchor per district, precomputed by the build script. */
   labels?: Record<string, { lat: number; lng: number }>;
+  /** Dissolved D01–D28 geometries used for the heavy outer outlines. */
+  boundaries?: DistrictFeature[];
   features: DistrictFeature[];
 };
 

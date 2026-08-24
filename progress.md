@@ -2,7 +2,7 @@
 
 这份文件记录本项目的当前状态、在飞工作与未解决问题。**每次开工先读它，读完用 `git log --oneline -8` 和 `git branch -a` 核对是否已过期**（这份文件靠人工维护，可能落后于仓库）。
 
-最后更新：2026-08-22
+最后更新：2026-08-24
 
 ---
 
@@ -23,6 +23,8 @@ CI 会先跑 lint → typecheck → test → build，全过才部署。
 | 开发商集团目录 | URA 登记的是项目公司（SPV），需还原成集团；含历史楼盘与官方链接 |
 | 前端重写 | 懒加载图层、canvas 渲染站点、视口裁剪、移动端恢复列表、对比度与字号修正、假按钮改为真功能 |
 | 工程化 | 删除全部脚手架残留、修好坏掉的测试、CI 真正跑校验 |
+| 邮区外轮廓 | 将 332 个 URA 分区按 D01–D28 融合成 28 条独立深色外轮廓；内部边线降为弱提示，真实 Leaflet 已截图验证 |
+| 楼盘用途 | 124/124 项目展示「纯住宅* / 商住一体」；商住项目用已核验名称或 URA 登记商业实体识别，其余明确标为 URA 住宅数据推定 |
 
 邮区图层已于 `0447cc2` 合并进 main 并部署。做法与局限见 README「邮区边界与色块」一节。
 
@@ -30,26 +32,7 @@ CI 会先跑 lint → typecheck → test → build，全过才部署。
 
 ## 未解决
 
-### 邮区边界在页面上看不到（最高优先级）
-
-用户反馈：打开线上站点，点「D 邮区」图层后**看不到边界和色块**。**尚未定位，下次开工先查这个。**
-
-已排除的：
-
-- 线上跑的确实是最新构建 —— `index-DKJPbgSn.js` 与本地构建产物哈希一致
-- bundle 里含全部相关代码（`邮区`、`districts.json`、`当前筛选下的项目数`、`该分区跨`、`district-label` 均能搜到）
-- `districts.json` 线上返回 200，332 个多边形 / 28 个 D 区 / 28 个标签点，数字与本地一致
-- CI `Deploy GitHub Pages` → success
-- 不是缓存（已让用户硬刷新）
-
-**下一步该查的**（按怀疑程度排序）：
-
-1. **几何是否被简化坏了。** `scripts/build-districts.mjs` 里对每个 ring 跑 Douglas-Peucker，但闭合 ring 的首尾是同一个点，`perpendicular()` 对退化线段的处理可能产出无效多边形。先直接看 `public/data/districts.json` 里的坐标是否合理、ring 是否闭合、能否被 geojson 校验器接受。
-2. **坐标顺序。** GeoJSON 是 `[lng, lat]`，确认 `simplifyGeometry` 与 `centroidOf` 没有把 x/y 弄反（`centroidOf` 累加 `ring[j][0]` 当 lng）。
-3. **运行时是否抛错。** 浏览器控制台看有没有 `L.geoJSON` 相关异常；jsdom 测试用的是 Leaflet 桩，抓不到真实 Leaflet 的报错。
-4. **视觉太弱。** fillOpacity 0.42 + 0.7px 描边叠在 OSM 瓦片上是否根本看不出来。
-
-注意 `tests/ui.test.mjs` 里的邮区测试**通过了也不能说明它在真实 Leaflet 里能画出来** —— 那套测试用的 Leaflet 是 Proxy 桩，任何调用都不会失败。这正是它没能拦住这个问题的原因。
+邮区边界问题已解决。根因不是数据或 Leaflet 报错，而是原界面只以相同强度画出 332 个 URA 子区边线，没有 28 个邮区的独立外轮廓；密集项目标记进一步遮挡后，看起来像没有边界。`scripts/build-districts.mjs` 现在生成 `boundaries`，前端用深蓝粗线单独绘制。
 
 ### 每日数据更新校验失败
 
@@ -65,7 +48,7 @@ commit `9d81a99` 已加诊断：校验失败时会把被拒的 `projects.json` �
 
 ## 环境限制
 
-- **浏览器扩展一直连不上，没法截图验证 UI。** 前端验证靠 jsdom + esbuild 把真实组件挂起来跑集成测试（`tests/ui.test.mjs`）。涉及视觉效果的改动，需要人工在浏览器里确认。
+- **可使用 Codex 应用内浏览器做本地截图验证。** 仍保留 jsdom 集成测试作为 CI 回归保护；真实 Leaflet 的视觉与路径结果应在本地预览复核。
 - **Actions 日志接口 403**（即使公开仓库也要鉴权）。失败原因看 workflow 上传的 artifact 和 job summary。
 - **GitHub 未认证 API 限额 60/小时**，不要用轮询去打。
 - **本机 `~/.npmrc` 指向字节内网源。** 项目已加 `.npmrc` 锁定公共源覆盖它 —— 曾经因此让 lockfile 里 67 个包指向内网地址，CI 直接装不上。改依赖后确认 lockfile 全部指向 `registry.npmjs.org`。

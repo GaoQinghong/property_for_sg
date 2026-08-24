@@ -27,6 +27,10 @@ export type Project = {
   source?: string;
   locationAccuracy?: "exact" | "district";
   website?: string;
+  /** Actual/project-marketing use where verified; otherwise inferred from URA's residential datasets. */
+  useType: "residential" | "mixed";
+  useBasis: "verified" | "inferred";
+  useSource?: string;
 };
 
 export type RailLine = {

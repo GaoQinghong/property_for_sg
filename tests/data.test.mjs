@@ -35,6 +35,25 @@ test("项目 id 唯一", async () => {
   assert.equal(new Set(ids).size, ids.length, "存在重复的项目 id");
 });
 
+test("每个项目都有可追溯的用途分类", async () => {
+  const { projects } = await readData("projects.json");
+  for (const project of projects) {
+    assert.ok(["residential", "mixed"].includes(project.useType), `${project.name} 缺少用途分类`);
+    assert.ok(["verified", "inferred"].includes(project.useBasis), `${project.name} 缺少分类依据`);
+    assert.match(project.useSource || "", /^https:\/\//, `${project.name} 缺少用途来源`);
+  }
+  assert.ok(projects.some((project) => project.useType === "mixed"), "未识别出商住一体项目");
+});
+
+test("邮区数据包含 28 条独立外轮廓", async () => {
+  const districts = await readData("districts.json");
+  assert.equal(districts.boundaries?.length, 28, "邮区外轮廓应覆盖 D01–D28");
+  assert.deepEqual(
+    [...districts.boundaries.map((feature) => feature.properties.district)].sort((a, b) => a - b),
+    Array.from({ length: 28 }, (_, index) => index + 1),
+  );
+});
+
 test("名称不含未修复的乱码", async () => {
   const { projects } = await readData("projects.json");
   const mangled = projects.filter((project) => project.name.includes("�"));

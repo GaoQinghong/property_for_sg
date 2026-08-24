@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { distanceMetres, geocodeProject, validCoordinates } from "./lib/geo.mjs";
 import { enrichProjects } from "./lib/enrich.mjs";
 import { findUnrepaired, repairMojibake } from "./lib/text.mjs";
+import { classifyProjectUse } from "./lib/project-use.mjs";
 
 const DATA_FILE = new URL("../public/data/projects.json", import.meta.url);
 const accessKey = process.env.URA_ACCESS_KEY;
@@ -173,7 +174,10 @@ const [stations, schools] = await Promise.all([
   readFile(new URL("../public/data/mrt-stations.json", import.meta.url), "utf8").then(JSON.parse),
   readFile(new URL("../public/data/schools.json", import.meta.url), "utf8").then(JSON.parse),
 ]);
-const enriched = enrichProjects(merged, { stations, schools });
+const enriched = enrichProjects(merged, { stations, schools }).map(project => ({
+  ...project,
+  ...classifyProjectUse(project),
+}));
 
 await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:enriched}, null, 2)}\n`);
 await writeFile(new URL("../public/data/project-audit.json", import.meta.url), `${JSON.stringify({updatedAt,...audit}, null, 2)}\n`);

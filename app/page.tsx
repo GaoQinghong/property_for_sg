@@ -194,11 +194,14 @@ export default function Home() {
       const fill = fillFor(count);
       const shape = L.geoJSON(feature, {
         style: {
-          color: "#2c3f36",
-          weight: 0.7,
-          opacity: 0.45,
+          // Subzones provide the fill only. Drawing all 332 internal edges at
+          // the same strength hid the 28 postal districts in a planning-area
+          // mesh, which looked like there was no district boundary at all.
+          color: "#426252",
+          weight: 0.35,
+          opacity: 0.18,
           fillColor: fill ?? "#ffffff",
-          fillOpacity: fill ? 0.42 : 0.04,
+          fillOpacity: fill ? 0.34 : 0.025,
         },
       });
       const caveat = straddles
@@ -210,6 +213,22 @@ export default function Home() {
         { sticky: true },
       );
       shape.addTo(layer);
+    });
+
+    // A separate dissolved geometry makes D01–D28 legible above the subzone
+    // fills. It is intentionally drawn after the fills and before labels.
+    (districts.boundaries ?? []).forEach((feature) => {
+      L.geoJSON(feature, {
+        interactive: false,
+        style: {
+          color: "#173f6f",
+          weight: 2.4,
+          opacity: 0.92,
+          fill: false,
+          lineCap: "round",
+          lineJoin: "round",
+        },
+      }).addTo(layer);
     });
 
     Object.entries(districts.labels ?? {}).forEach(([key, point]) => {
@@ -378,6 +397,9 @@ export default function Home() {
                 {project.units.toLocaleString()} 户
               </span>
             </div>
+            <span className={`use-badge ${project.useType}`} title={project.useBasis === "verified" ? "项目资料已核验" : "依据 URA 住宅项目数据推定"}>
+              {project.useType === "mixed" ? "商住一体" : "纯住宅*"}
+            </span>
             <h3>{project.name}</h3>
             <p>
               {streetOf(project.area)}
@@ -505,6 +527,12 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
         <dd>{district ? <>{districtLabel(district)}<span className="district-name">{DISTRICT_NAMES[district]}</span></> : "待公布"}</dd>
       </div>
       <div><dt>街道</dt><dd>{streetOf(project.area) || "待公布"}</dd></div>
+      <div className="wide">
+        <dt>项目用途</dt>
+        <dd><span className={`use-badge ${project.useType}`}>{project.useType === "mixed" ? "商住一体" : "纯住宅*"}</span>
+          <span className="use-note">{project.useBasis === "verified" ? "项目资料已核验" : "依据 URA 住宅数据推定，非住宅组成仍建议以批文/官网复核"}</span>
+        </dd>
+      </div>
       <div className="wide">
         <dt>开发商<span className="unit-note">URA 登记</span></dt>
         <dd>

@@ -21,7 +21,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "19nassim",
@@ -42,7 +45,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "21anderson",
@@ -63,7 +69,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "8bt",
@@ -84,7 +93,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "amberhouse",
@@ -105,7 +117,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ardorresidence",
@@ -126,7 +141,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "arinaeastresidences",
@@ -147,7 +165,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "artisan8",
@@ -168,7 +189,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "aspenlinq",
@@ -189,7 +213,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "atlassia",
@@ -248,7 +275,10 @@
           "lng": 103.901085
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "aurea",
@@ -269,7 +299,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "aurelleoftampines",
@@ -290,7 +323,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "bagnallhaus",
@@ -311,7 +347,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "belgraviaace",
@@ -574,7 +613,10 @@
           "lng": 103.865737
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "bloomsburyresidences",
@@ -595,7 +637,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "botanicclunypark",
@@ -616,7 +661,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "boulevard88",
@@ -637,7 +685,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "canberracrescentresidences",
@@ -658,7 +709,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "canninghillpiers",
@@ -679,7 +733,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "cashewgreen",
@@ -778,7 +835,10 @@
           "lng": 103.76988
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "chuanpark",
@@ -799,7 +859,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "claydence",
@@ -820,7 +883,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "coastalcabana",
@@ -907,7 +973,10 @@
           "lng": 103.956833
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "copengrand",
@@ -978,7 +1047,10 @@
           "lng": 103.731288
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "cuscadenreserve",
@@ -999,7 +1071,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "dalveyhaus",
@@ -1020,7 +1095,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "duetemily",
@@ -1041,7 +1119,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "dunearnhouse",
@@ -1062,7 +1143,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "elta",
@@ -1083,7 +1167,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "emeraldofkatong",
@@ -1104,7 +1191,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "faberresidence",
@@ -1163,7 +1253,10 @@
           "lng": 103.753723
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "gemsville",
@@ -1184,7 +1277,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "granddunman",
@@ -1243,7 +1339,10 @@
           "lng": 103.89132
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "grange1866",
@@ -1264,7 +1363,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "hillockgreen",
@@ -1285,7 +1387,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "hudsonplaceresidences",
@@ -1316,7 +1421,10 @@
           "lng": 103.795159
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ikigai",
@@ -1337,7 +1445,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jansenhouse",
@@ -1358,7 +1469,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jervoismansion",
@@ -1409,7 +1523,10 @@
           "lng": 103.823964
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jervoisprive",
@@ -1430,7 +1547,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jden",
@@ -1451,7 +1571,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ksuites",
@@ -1472,7 +1595,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "kassia",
@@ -1493,7 +1619,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "koparatnewton",
@@ -1528,7 +1657,10 @@
           "lng": 103.841064
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "kovanjewel",
@@ -1549,7 +1681,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "lentorgardensresidences",
@@ -1604,7 +1739,10 @@
           "lng": 103.831912
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "lentoria",
@@ -1625,7 +1763,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "mattarresidences",
@@ -1646,7 +1787,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "meyerblue",
@@ -1667,7 +1811,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "midtownbay",
@@ -1688,7 +1835,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "narraresidences",
@@ -1709,7 +1859,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "navagrove",
@@ -1730,7 +1883,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "newportresidences",
@@ -1751,7 +1907,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "northgaia",
@@ -1818,7 +1977,10 @@
           "lng": 103.845673
         }
       ],
-      "schoolsWithin1kmPartial": 2
+      "schoolsWithin1kmPartial": 2,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "norwoodgrand",
@@ -1839,7 +2001,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ocho",
@@ -1860,7 +2025,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "onemarinagardens",
@@ -1881,7 +2049,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ottoplace",
@@ -1902,7 +2073,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "parcclematis",
@@ -2037,7 +2211,10 @@
           "lng": 103.759789
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "parksuites",
@@ -2084,7 +2261,10 @@
           "lng": 103.783221
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "parktownresidence",
@@ -2105,7 +2285,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "penrith",
@@ -2136,7 +2319,10 @@
           "lng": 103.808767
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "phoenixresidences",
@@ -2175,7 +2361,10 @@
           "lng": 103.757304
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pineryresidences",
@@ -2196,7 +2385,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pinetreehill",
@@ -2235,7 +2427,10 @@
           "lng": 103.776147
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pollencollection",
@@ -2482,7 +2677,10 @@
           "lng": 103.859517
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pollencollectionii",
@@ -2721,7 +2919,10 @@
           "lng": 103.860241
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "promenadepeak",
@@ -2742,7 +2943,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pullmanresidencesnewton",
@@ -2763,7 +2967,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "rivelletampines",
@@ -2784,7 +2991,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "rivergreen",
@@ -2805,7 +3015,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "rivermodern",
@@ -2826,7 +3039,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "royalhallmark",
@@ -2847,7 +3063,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "skywatersresidences",
@@ -2868,7 +3087,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sophiaregency",
@@ -2889,7 +3111,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sora",
@@ -2910,7 +3135,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "springwatersvillas",
@@ -2957,7 +3185,10 @@
           "lng": 103.823735
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "springleafresidence",
@@ -2978,7 +3209,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tembusugrand",
@@ -3017,7 +3251,10 @@
           "lng": 103.89715
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tengahgardenresidences",
@@ -3048,7 +3285,10 @@
           "lng": 103.725359
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "terrahill",
@@ -3111,7 +3351,10 @@
           "lng": 103.79363
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thearcadyatboonkeng",
@@ -3132,7 +3375,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thebronze",
@@ -3153,7 +3399,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thecollectiveatonesophia",
@@ -3174,7 +3423,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thecontinuum",
@@ -3195,7 +3447,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thegatz",
@@ -3216,7 +3471,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thegazania",
@@ -3271,7 +3529,10 @@
           "lng": 103.878916
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thegivernyresidences",
@@ -3292,7 +3553,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thehillonenorth",
@@ -3331,7 +3595,10 @@
           "lng": 103.790246
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thehillshore",
@@ -3352,7 +3619,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thehyde",
@@ -3373,7 +3643,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thelakegardenresidences",
@@ -3404,7 +3677,10 @@
           "lng": 103.725594
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "themyst",
@@ -3425,7 +3701,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theorie",
@@ -3446,7 +3725,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thereserveresidences",
@@ -3509,7 +3791,10 @@
           "lng": 103.777416
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "therobertsonopus",
@@ -3530,7 +3815,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thesen",
@@ -3551,7 +3839,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theshorefront",
@@ -3586,7 +3877,10 @@
           "lng": 103.960012
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tmwmaxwell",
@@ -3617,7 +3911,10 @@
           "lng": 103.844706
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "unionsquareresidences",
@@ -3638,7 +3935,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "upperhouseatorchardboulevard",
@@ -3659,7 +3959,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "velabay",
@@ -3690,7 +3993,10 @@
           "lng": 103.941588
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "wresidencesmarinaviewsingapore",
@@ -3711,7 +4017,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "zyongrand",
@@ -3732,7 +4041,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thomsonreserve",
@@ -3779,7 +4091,10 @@
           "lng": 103.831289
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "51ansonansoncentre",
@@ -3800,7 +4115,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "amberwoodatholland",
@@ -3871,7 +4189,10 @@
           "lng": 103.788064
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "landedhousingdevelopment",
@@ -3892,7 +4213,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "lucernegrand",
@@ -3935,7 +4259,10 @@
           "lng": 103.720214
         }
       ],
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "luxushills",
@@ -4198,7 +4525,10 @@
           "lng": 103.870794
         }
       ],
-      "schoolsWithin1kmPartial": 3
+      "schoolsWithin1kmPartial": 3,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "oneleonieresidences",
@@ -4219,7 +4549,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "residentialapartments",
@@ -4240,7 +4573,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "skywatersresidencestheskywaters",
@@ -4261,7 +4597,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "solanogrand",
@@ -4282,7 +4621,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sophiameadow",
@@ -4303,7 +4645,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sunstonehill",
@@ -4324,7 +4669,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tengahgardenresidencestengahgardengalleria",
@@ -4345,7 +4693,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thecairnhill",
@@ -4366,7 +4717,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theopalhauz",
@@ -4387,7 +4741,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 2,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theranz",
@@ -4408,7 +4765,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 3,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "therobertsonopusrobertsonwalk",
@@ -4429,7 +4789,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "mixed",
+      "useBasis": "verified",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "verdjoochiat",
@@ -4450,7 +4813,10 @@
       "updatedAt": "2026-08-18",
       "source": "URA",
       "schoolsWithin1km": 1,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "wynwoodgrand",
@@ -4529,7 +4895,10 @@
           "lng": 103.791665
         }
       ],
-      "schoolsWithin1kmPartial": 1
+      "schoolsWithin1kmPartial": 1,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": 6,
@@ -4549,7 +4918,10 @@
       "updatedAt": "2026-08-18",
       "locationAccuracy": "exact",
       "schoolsWithin1km": 0,
-      "schoolsWithin1kmPartial": 0
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "inferred",
+      "useSource": "https://eservice.ura.gov.sg/maps/api/"
     }
   ]
 }
