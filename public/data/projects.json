@@ -10,7 +10,7 @@
       "units": 56,
       "sold": 41,
       "developer": "Creative Investments Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Newton · 470m",
@@ -24,7 +24,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "19nassim",
@@ -34,7 +36,7 @@
       "units": 101,
       "sold": 75,
       "developer": "Parksville Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2019 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Napier · 250m",
@@ -48,7 +50,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "21anderson",
@@ -58,7 +62,7 @@
       "units": 19,
       "sold": 16,
       "developer": "Anderson International Properties Pte. Ltd/Raffles Legend Properties Pte. Ltd.",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Stevens · 850m",
@@ -72,7 +76,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "8bt",
@@ -82,7 +88,7 @@
       "units": 158,
       "sold": 117,
       "developer": "Bukit One Pte. Ltd.",
-      "tenure": "99 年",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "已开盘",
       "top": "2028",
       "mrt": "Beauty World · 110m",
@@ -96,7 +102,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "amberhouse",
@@ -106,7 +114,7 @@
       "units": 105,
       "sold": 86,
       "developer": "Urban Park Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tanjong Katong · 400m",
@@ -120,7 +128,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "ardorresidence",
@@ -130,7 +140,7 @@
       "units": 35,
       "sold": 32,
       "developer": "NS Property (Haig) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tanjong Katong · 790m",
@@ -144,7 +154,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "arinaeastresidences",
@@ -154,7 +166,7 @@
       "units": 107,
       "sold": 85,
       "developer": "ZACD LV Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Katong Park · 270m",
@@ -168,7 +180,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "artisan8",
@@ -178,7 +192,7 @@
       "units": 34,
       "sold": 21,
       "developer": "Apex Asia (2) Pte. Ltd.",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Upper Thomson · 380m",
@@ -192,7 +206,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "aspenlinq",
@@ -202,7 +218,7 @@
       "units": 18,
       "sold": 17,
       "developer": "Optimus Hill Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "999 年（自 1841 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Somerset · 550m",
@@ -216,7 +232,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "atlassia",
@@ -226,7 +244,7 @@
       "units": 31,
       "sold": 27,
       "developer": "K16 Place Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Eunos · 750m",
@@ -278,7 +296,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "aurea",
@@ -288,7 +308,7 @@
       "units": 188,
       "sold": 70,
       "developer": "GMC Property Pte. Ltd.",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Nicoll Highway · 420m",
@@ -302,7 +322,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "aurelleoftampines",
@@ -312,7 +334,7 @@
       "units": 760,
       "sold": 757,
       "developer": "Sim Lian JV (Northbank) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tampines North · 260m",
@@ -326,7 +348,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "bagnallhaus",
@@ -336,7 +360,7 @@
       "units": 113,
       "sold": 104,
       "developer": "RL Bagnall Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Sungei Bedok · 270m",
@@ -350,7 +374,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "belgraviaace",
@@ -360,7 +386,7 @@
       "units": 107,
       "sold": 83,
       "developer": "Fairview Developments Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tavistock · 1.1km",
@@ -616,7 +642,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "bloomsburyresidences",
@@ -626,7 +654,7 @@
       "units": 358,
       "sold": 316,
       "developer": "Media Circle Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "2028",
       "mrt": "Commonwealth · 1000m",
@@ -640,7 +668,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "botanicclunypark",
@@ -664,7 +694,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "boulevard88",
@@ -674,7 +705,7 @@
       "units": 154,
       "sold": 142,
       "developer": "Granmil Holdings Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Orchard Boulevard · 460m",
@@ -688,7 +719,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "canberracrescentresidences",
@@ -698,7 +731,7 @@
       "units": 376,
       "sold": 341,
       "developer": "Peak Crescent Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Canberra · 390m",
@@ -712,7 +745,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "canninghillpiers",
@@ -722,7 +757,7 @@
       "units": 696,
       "sold": 690,
       "developer": "DBS Trustee Limited/Legend Commercial Trustee Pte Ltd/Legend Quay Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2021 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Fort Canning · 130m",
@@ -736,7 +771,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "cashewgreen",
@@ -746,7 +783,7 @@
       "units": 19,
       "sold": 17,
       "developer": "Lucky Realty Co Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "999 年（自 1883 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Cashew · 470m",
@@ -838,7 +875,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "chuanpark",
@@ -848,7 +887,7 @@
       "units": 916,
       "sold": 884,
       "developer": "Chuan Park Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "2027",
       "mrt": "Lorong Chuan · 160m",
@@ -862,7 +901,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "claydence",
@@ -872,7 +913,7 @@
       "units": 28,
       "sold": 20,
       "developer": "Hong How Land Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Eunos · 810m",
@@ -886,7 +927,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "coastalcabana",
@@ -896,7 +939,7 @@
       "units": 748,
       "sold": 617,
       "developer": "Pasir Ris Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "2028",
       "mrt": "Pasir Ris · 1.0km",
@@ -976,7 +1019,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "copengrand",
@@ -986,7 +1031,7 @@
       "units": 639,
       "sold": 638,
       "developer": "Taurus Properties SG Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2021 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tengah · 670m",
@@ -1050,7 +1095,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "cuscadenreserve",
@@ -1060,7 +1107,7 @@
       "units": 192,
       "sold": 11,
       "developer": "Cuscaden Homes Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2018 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Orchard Boulevard · 160m",
@@ -1074,7 +1121,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "dalveyhaus",
@@ -1084,7 +1133,7 @@
       "units": 17,
       "sold": 13,
       "developer": "Dalvey Breeze Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Stevens · 430m",
@@ -1098,7 +1147,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "duetemily",
@@ -1108,7 +1159,7 @@
       "units": 20,
       "sold": 2,
       "developer": "ZACD Property Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Little India · 280m",
@@ -1122,7 +1173,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "dunearnhouse",
@@ -1146,7 +1199,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "elta",
@@ -1156,7 +1211,7 @@
       "units": 501,
       "sold": 414,
       "developer": "HC Land (Clementi) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Clementi · 730m",
@@ -1170,7 +1225,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "emeraldofkatong",
@@ -1180,7 +1237,7 @@
       "units": 846,
       "sold": 844,
       "developer": "Sim Lian JV (Katong) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tanjong Katong · 620m",
@@ -1194,7 +1251,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "faberresidence",
@@ -1204,7 +1263,7 @@
       "units": 399,
       "sold": 386,
       "developer": "Faber Residence Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "2028",
       "mrt": "Clementi · 1.1km",
@@ -1256,7 +1315,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "gemsville",
@@ -1266,7 +1327,7 @@
       "units": 24,
       "sold": 7,
       "developer": "East Asia Geylang Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Aljunied · 700m",
@@ -1280,7 +1341,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "granddunman",
@@ -1290,7 +1353,7 @@
       "units": 1008,
       "sold": 917,
       "developer": "Grand Dunman Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2022 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Dakota · 780m",
@@ -1342,7 +1405,9 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "grange1866",
@@ -1352,7 +1417,7 @@
       "units": 60,
       "sold": 59,
       "developer": "Grange 1866 Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Orchard · 450m",
@@ -1366,7 +1431,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "hillockgreen",
@@ -1376,7 +1443,7 @@
       "units": 474,
       "sold": 470,
       "developer": "Lentor Central Developments Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2022 年起）",
       "launch": "尚未公布",
       "top": "2026",
       "mrt": "Lentor · 280m",
@@ -1390,7 +1457,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "hudsonplaceresidences",
@@ -1400,7 +1469,7 @@
       "units": 327,
       "sold": 213,
       "developer": "Media Circle Alpha Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "2029",
       "mrt": "Commonwealth · 1000m",
@@ -1424,7 +1493,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "ikigai",
@@ -1434,7 +1505,7 @@
       "units": 16,
       "sold": 14,
       "developer": "Opulent Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Novena · 480m",
@@ -1448,7 +1519,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "jansenhouse",
@@ -1458,7 +1531,7 @@
       "units": 21,
       "sold": 20,
       "developer": "Mequity GS Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "999 年（自 1876 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Kovan · 940m",
@@ -1472,7 +1545,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "jervoismansion",
@@ -1482,7 +1557,7 @@
       "units": 130,
       "sold": 105,
       "developer": "Kimen Realty Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tiong Bahru · 840m",
@@ -1526,7 +1601,9 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "jervoisprive",
@@ -1536,7 +1613,7 @@
       "units": 43,
       "sold": 16,
       "developer": "Jervois Midas Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Redhill · 600m",
@@ -1550,7 +1627,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "jden",
@@ -1560,7 +1639,7 @@
       "units": 368,
       "sold": 362,
       "developer": "Tanglin R.E. Holdings Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Jurong East · 210m",
@@ -1574,7 +1653,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "ksuites",
@@ -1584,7 +1665,7 @@
       "units": 19,
       "sold": 16,
       "developer": "EG Properties Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Eunos · 970m",
@@ -1598,7 +1679,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "kassia",
@@ -1608,7 +1691,7 @@
       "units": 276,
       "sold": 229,
       "developer": "Tripartite Developers Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tampines East · 1.2km",
@@ -1622,7 +1705,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "koparatnewton",
@@ -1632,7 +1717,7 @@
       "units": 378,
       "sold": 372,
       "developer": "CEL Newton Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2019 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Newton · 340m",
@@ -1660,7 +1745,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "kovanjewel",
@@ -1670,7 +1757,7 @@
       "units": 34,
       "sold": 19,
       "developer": "Soon Lian Realty Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Kovan · 500m",
@@ -1684,7 +1771,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "lentorgardensresidences",
@@ -1694,7 +1783,7 @@
       "units": 499,
       "sold": 270,
       "developer": "Kingsford Lentor Project Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Lentor · 440m",
@@ -1742,7 +1831,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "lentoria",
@@ -1752,7 +1843,7 @@
       "units": 267,
       "sold": 252,
       "developer": "Lentor View Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2022 年起）",
       "launch": "尚未公布",
       "top": "2027",
       "mrt": "Lentor · 190m",
@@ -1766,7 +1857,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "mattarresidences",
@@ -1776,7 +1869,7 @@
       "units": 26,
       "sold": 7,
       "developer": "L.K. Ang Construction Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Mattar · 240m",
@@ -1790,7 +1883,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "meyerblue",
@@ -1800,7 +1895,7 @@
       "units": 226,
       "sold": 178,
       "developer": "United Venture Development (Meyer) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "2028",
       "mrt": "Katong Park · 640m",
@@ -1814,7 +1909,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "midtownbay",
@@ -1824,7 +1921,7 @@
       "units": 219,
       "sold": 146,
       "developer": "Guoco Midtown Pte Ltd/Midtown Bay Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2018 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Esplanade · 380m",
@@ -1838,7 +1935,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "narraresidences",
@@ -1848,7 +1947,7 @@
       "units": 540,
       "sold": 202,
       "developer": "Dairy Farm Walk JV Development Pte Ltd",
-      "tenure": "99 年",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "2026 年",
       "top": "2030",
       "mrt": "Cashew · 410m",
@@ -1862,7 +1961,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "navagrove",
@@ -1872,7 +1973,7 @@
       "units": 552,
       "sold": 551,
       "developer": "Golden Ray Edge 3 Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Dover · 910m",
@@ -1886,7 +1987,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "newportresidences",
@@ -1896,7 +1999,7 @@
       "units": 246,
       "sold": 202,
       "developer": "CDL Pisces Commercial Pte Ltd/CDL Pisces Serviced Residences Pte Ltd/Hong Leong Properties Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Prince Edward Road · 230m",
@@ -1910,7 +2013,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "northgaia",
@@ -1920,7 +2025,7 @@
       "units": 616,
       "sold": 615,
       "developer": "Sing Holdings (Yishun) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2021 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Yishun · 1.3km",
@@ -1980,7 +2085,9 @@
       "schoolsWithin1kmPartial": 2,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "norwoodgrand",
@@ -1990,7 +2097,7 @@
       "units": 348,
       "sold": 319,
       "developer": "CDL Stellar Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Woodlands South · 480m",
@@ -2004,7 +2111,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "ocho",
@@ -2014,7 +2123,7 @@
       "units": 20,
       "sold": 1,
       "developer": "Primest Land V1 Pte. Ltd.",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Dakota · 520m",
@@ -2028,7 +2137,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "onemarinagardens",
@@ -2038,7 +2149,7 @@
       "units": 937,
       "sold": 659,
       "developer": "Kingsford Marina Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Marina South · 170m",
@@ -2052,7 +2163,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "ottoplace",
@@ -2062,7 +2175,7 @@
       "units": 600,
       "sold": 596,
       "developer": "Hoi Hup Sunway Plantation Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Chinese Garden · 970m",
@@ -2076,7 +2189,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "parcclematis",
@@ -2086,7 +2201,7 @@
       "units": 1468,
       "sold": 1445,
       "developer": "Sing-Haiyi Gold Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2019 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Clementi · 730m",
@@ -2214,7 +2329,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "parksuites",
@@ -2224,7 +2341,7 @@
       "units": 119,
       "sold": 37,
       "developer": "Kentish View Pte Ltd/Lucky Pinnacle Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "110 年（自 2017 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Dover · 800m",
@@ -2264,7 +2381,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "parktownresidence",
@@ -2274,7 +2393,7 @@
       "units": 1193,
       "sold": 1167,
       "developer": "Topaz Residential Pte Ltd/Topaz Commercial Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tampines North · 260m",
@@ -2288,7 +2407,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "penrith",
@@ -2298,7 +2419,7 @@
       "units": 462,
       "sold": 454,
       "developer": "Margaret Rise Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "2029",
       "mrt": "Redhill · 710m",
@@ -2322,7 +2443,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "phoenixresidences",
@@ -2332,7 +2455,7 @@
       "units": 74,
       "sold": 70,
       "developer": "USB (Phoenix) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2019 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Petir · 1.1km",
@@ -2364,7 +2487,9 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "pineryresidences",
@@ -2374,7 +2499,7 @@
       "units": 588,
       "sold": 550,
       "developer": "Hoi Hup Sunway Tampines Residential Pte Ltd/Hoi Hup Sunway Tampines Commercial Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Bedok North · 450m",
@@ -2388,7 +2513,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "pinetreehill",
@@ -2398,7 +2525,7 @@
       "units": 520,
       "sold": 519,
       "developer": "United Venture Development (No. 5) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2022 年起）",
       "launch": "尚未公布",
       "top": "2026",
       "mrt": "Dover · 910m",
@@ -2430,7 +2557,9 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "pollencollection",
@@ -2440,7 +2569,7 @@
       "units": 132,
       "sold": 124,
       "developer": "Singapore United Estates Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2019 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tavistock · 1.3km",
@@ -2680,7 +2809,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "pollencollectionii",
@@ -2690,7 +2821,7 @@
       "units": 186,
       "sold": 42,
       "developer": "Singapore United Estates Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tavistock · 990m",
@@ -2922,7 +3053,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "promenadepeak",
@@ -2932,7 +3065,7 @@
       "units": 596,
       "sold": 429,
       "developer": "Valerian Residential Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Great World · 280m",
@@ -2946,7 +3079,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "pullmanresidencesnewton",
@@ -2956,7 +3091,7 @@
       "units": 340,
       "sold": 339,
       "developer": "EL Development (Horizon) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Newton · 210m",
@@ -2970,7 +3105,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "rivelletampines",
@@ -2980,7 +3117,7 @@
       "units": 572,
       "sold": 557,
       "developer": "Sim Lian JV (Tampines 7) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tampines West · 580m",
@@ -2994,7 +3131,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "rivergreen",
@@ -3004,7 +3143,7 @@
       "units": 524,
       "sold": 495,
       "developer": "Winchamp Investment Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Great World · 220m",
@@ -3018,7 +3157,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "rivermodern",
@@ -3028,7 +3169,7 @@
       "units": 455,
       "sold": 428,
       "developer": "River Modern Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Great World · 220m",
@@ -3042,7 +3183,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "royalhallmark",
@@ -3052,7 +3195,7 @@
       "units": 32,
       "sold": 31,
       "developer": "H Homes Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tanjong Katong · 1.1km",
@@ -3066,7 +3209,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "skywatersresidences",
@@ -3076,7 +3221,7 @@
       "units": 146,
       "sold": 6,
       "developer": "Shenton Residential Property Pte. Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Shenton Way · 260m",
@@ -3090,7 +3235,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "sophiaregency",
@@ -3114,7 +3261,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "sora",
@@ -3124,7 +3272,7 @@
       "units": 440,
       "sold": 226,
       "developer": "Lakeside Residential Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Lakeside · 1.1km",
@@ -3138,7 +3286,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "springwatersvillas",
@@ -3148,7 +3298,7 @@
       "units": 6,
       "sold": 4,
       "developer": "South Island Mata Ayer Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "953 年（自 1931 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Yishun · 1.2km",
@@ -3188,7 +3338,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "springleafresidence",
@@ -3198,7 +3350,7 @@
       "units": 941,
       "sold": 920,
       "developer": "Springleaf Residence Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Mayflower · 1.1km",
@@ -3212,7 +3364,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "tembusugrand",
@@ -3222,7 +3376,7 @@
       "units": 638,
       "sold": 632,
       "developer": "Tembusu Residential Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2022 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tanjong Katong · 620m",
@@ -3254,7 +3408,9 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "tengahgardenresidences",
@@ -3264,7 +3420,7 @@
       "units": 863,
       "sold": 861,
       "developer": "TENGAH GARDEN DEVELOPMENT PTE. LTD./TGA DEVELOPMENT PTE. LTD.",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Tengah · 1.2km",
@@ -3288,7 +3444,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "terrahill",
@@ -3298,7 +3456,7 @@
       "units": 270,
       "sold": 212,
       "developer": "Hoi Hup Sunway Kent Ridge Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Pasir Panjang · 170m",
@@ -3354,7 +3512,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thearcadyatboonkeng",
@@ -3364,7 +3524,7 @@
       "units": 172,
       "sold": 107,
       "developer": "KSH Ultra Unity Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Boon Keng · 480m",
@@ -3378,7 +3538,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thebronze",
@@ -3402,7 +3564,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "thecollectiveatonesophia",
@@ -3412,7 +3575,7 @@
       "units": 367,
       "sold": 99,
       "developer": "Sophia Residential Pte Ltd/Sophia Commercial Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Rochor · 400m",
@@ -3426,7 +3589,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thecontinuum",
@@ -3436,7 +3601,7 @@
       "units": 816,
       "sold": 797,
       "developer": "Hoi Hup Sunway Katong Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Dakota · 750m",
@@ -3450,7 +3615,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thegatz",
@@ -3460,7 +3627,7 @@
       "units": 6,
       "sold": 0,
       "developer": "HUUSO REALTY PTE LTD",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Dakota · 520m",
@@ -3474,7 +3641,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thegazania",
@@ -3484,7 +3653,7 @@
       "units": 250,
       "sold": 247,
       "developer": "Singhaiyi Huajiang Sun Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Bartley · 250m",
@@ -3532,7 +3701,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thegivernyresidences",
@@ -3542,7 +3713,7 @@
       "units": 6,
       "sold": 2,
       "developer": "Robin Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Stevens · 250m",
@@ -3556,7 +3727,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thehillonenorth",
@@ -3566,7 +3739,7 @@
       "units": 142,
       "sold": 141,
       "developer": "Kingsford Real Estate Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2022 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Buona Vista · 400m",
@@ -3598,7 +3771,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thehillshore",
@@ -3608,7 +3783,7 @@
       "units": 59,
       "sold": 9,
       "developer": "Hillside View Development Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Haw Par Villa · 500m",
@@ -3622,7 +3797,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thehyde",
@@ -3632,7 +3809,7 @@
       "units": 117,
       "sold": 115,
       "developer": "Aurum Land Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Newton · 760m",
@@ -3646,7 +3823,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thelakegardenresidences",
@@ -3656,7 +3835,7 @@
       "units": 306,
       "sold": 303,
       "developer": "Winville Investment Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Lakeside · 1.1km",
@@ -3680,7 +3859,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "themyst",
@@ -3690,7 +3871,7 @@
       "units": 408,
       "sold": 396,
       "developer": "CDL Aries Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Cashew · 360m",
@@ -3704,7 +3885,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "theorie",
@@ -3714,7 +3897,7 @@
       "units": 777,
       "sold": 741,
       "developer": "Transcend Residential (Toa Payoh) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Caldecott · 420m",
@@ -3728,7 +3911,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thereserveresidences",
@@ -3738,7 +3923,7 @@
       "units": 732,
       "sold": 722,
       "developer": "FE Landmark Pte Ltd/FEC Residences Trustee Pte Ltd/FEC Retail Trustee Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Beauty World · 270m",
@@ -3794,7 +3979,9 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "therobertsonopus",
@@ -3804,7 +3991,7 @@
       "units": 348,
       "sold": 210,
       "developer": "RIVERSIDE PROPERTY PTE. LTD",
-      "tenure": "待公布",
+      "tenure": "999 年（自 1841 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Fort Canning · 260m",
@@ -3818,7 +4005,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thesen",
@@ -3828,7 +4017,7 @@
       "units": 347,
       "sold": 143,
       "developer": "SL Capital (8) Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Beauty World · 620m",
@@ -3842,7 +4031,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "theshorefront",
@@ -3852,7 +4043,7 @@
       "units": 23,
       "sold": 16,
       "developer": "165@Loyang Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "946 年（自 1937 年起）",
       "launch": "已开盘",
       "top": "待公布",
       "mrt": "Pasir Ris East · 1.4km",
@@ -3880,7 +4071,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "tmwmaxwell",
@@ -3890,7 +4083,7 @@
       "units": 324,
       "sold": 6,
       "developer": "Maxwell Commercial Pte Ltd/Maxwell Residential Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2023 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Maxwell · 190m",
@@ -3914,7 +4107,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "unionsquareresidences",
@@ -3924,7 +4119,7 @@
       "units": 366,
       "sold": 212,
       "developer": "CDL Libra Pte Ltd/CDL Conservo Pte Ltd/Centro Property Holding Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Havelock · 330m",
@@ -3938,7 +4133,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "upperhouseatorchardboulevard",
@@ -3948,7 +4145,7 @@
       "units": 301,
       "sold": 247,
       "developer": "United Venture Development (No.7) Pte Ltd",
-      "tenure": "99 年",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "2025 年 7 月",
       "top": "2029",
       "mrt": "Orchard Boulevard · 130m",
@@ -3962,7 +4159,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "velabay",
@@ -3972,7 +4171,7 @@
       "units": 515,
       "sold": 382,
       "developer": "Bayshore Walk Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2025 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Bayshore · 340m",
@@ -3996,7 +4195,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "wresidencesmarinaviewsingapore",
@@ -4006,7 +4207,7 @@
       "units": 683,
       "sold": 15,
       "developer": "Boulevard Development Pte Ltd/Boulevard Midtown Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2021 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Shenton Way · 160m",
@@ -4020,7 +4221,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "zyongrand",
@@ -4030,7 +4233,7 @@
       "units": 706,
       "sold": 636,
       "developer": "CDL-MFA Altair Property Pte Ltd/CDL-MFA Vega Property Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "99 年（自 2024 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Havelock · 300m",
@@ -4044,7 +4247,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "thomsonreserve",
@@ -4094,7 +4299,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified"
     },
     {
       "id": "51ansonansoncentre",
@@ -4118,7 +4324,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "amberwoodatholland",
@@ -4192,7 +4399,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "landedhousingdevelopment",
@@ -4202,7 +4410,7 @@
       "units": 6,
       "sold": 0,
       "developer": "Singapore United Estates Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Tavistock · 1.3km",
@@ -4216,7 +4424,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "lucernegrand",
@@ -4262,7 +4472,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "luxushills",
@@ -4272,7 +4483,7 @@
       "units": 156,
       "sold": 0,
       "developer": "Singapore United Estates Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "999 年（自 1879 年起）",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Serangoon North · 1.1km",
@@ -4528,7 +4739,9 @@
       "schoolsWithin1kmPartial": 3,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "oneleonieresidences",
@@ -4552,7 +4765,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "residentialapartments",
@@ -4562,7 +4776,7 @@
       "units": 876,
       "sold": 0,
       "developer": "Times Square Mall Pte Ltd/Polaris Time Square Residences Pte Ltd",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Orchard Boulevard · 200m",
@@ -4576,7 +4790,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "skywatersresidencestheskywaters",
@@ -4600,7 +4816,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "solanogrand",
@@ -4624,7 +4841,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "sophiameadow",
@@ -4648,7 +4866,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "sunstonehill",
@@ -4672,7 +4891,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "tengahgardenresidencestengahgardengalleria",
@@ -4696,7 +4916,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "thecairnhill",
@@ -4720,7 +4941,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "theopalhauz",
@@ -4744,7 +4966,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "theranz",
@@ -4768,7 +4991,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "therobertsonopusrobertsonwalk",
@@ -4792,7 +5016,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "mixed",
       "useBasis": "verified",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": "verdjoochiat",
@@ -4802,7 +5027,7 @@
       "units": 18,
       "sold": 0,
       "developer": "MNG 108 PTE LTD",
-      "tenure": "待公布",
+      "tenure": "永久产权",
       "launch": "尚未公布",
       "top": "待公布",
       "mrt": "Eunos · 560m",
@@ -4816,7 +5041,9 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "wynwoodgrand",
@@ -4898,7 +5125,8 @@
       "schoolsWithin1kmPartial": 1,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "pending"
     },
     {
       "id": 6,
@@ -4921,7 +5149,8 @@
       "schoolsWithin1kmPartial": 0,
       "useType": "residential",
       "useBasis": "inferred",
-      "useSource": "https://eservice.ura.gov.sg/maps/api/"
+      "useSource": "https://eservice.ura.gov.sg/maps/api/",
+      "tenureBasis": "verified"
     }
   ]
 }

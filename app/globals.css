@@ -308,6 +308,7 @@ button { color: inherit; }
 .use-badge.mixed { border-color: #d5b976; background: #fff8e8; color: #755416; }
 .facts .use-badge { margin: 0 8px 0 0; vertical-align: middle; }
 .use-note { display: block; margin-top: 5px; color: var(--faint); font-size: 11px; line-height: 1.35; }
+.tenure-note { display: block; margin-top: 3px; color: var(--faint); font-size: 11px; }
 
 .project-card h3 {
   margin: 10px 0 4px;
@@ -318,7 +319,7 @@ button { color: inherit; }
 
 .card-stats {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1fr 1.2fr;
   margin-top: 14px;
   gap: 8px;
   font-size: 12px;

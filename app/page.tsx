@@ -410,6 +410,7 @@ export default function Home() {
             <div className="card-stats">
               <span><small>开盘</small>{project.launch}</span>
               <span><small>最近地铁</small>{project.mrt.split(" · ")[0]}</span>
+              <span><small>产权</small>{project.tenure}</span>
             </div>
           </button>)}
           {!visible.length && dataStatus === "ready" && <div className="empty">没有符合条件的项目</div>}
@@ -527,6 +528,10 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
         <dd>{district ? <>{districtLabel(district)}<span className="district-name">{DISTRICT_NAMES[district]}</span></> : "待公布"}</dd>
       </div>
       <div><dt>街道</dt><dd>{streetOf(project.area) || "待公布"}</dd></div>
+      <div>
+        <dt>产权</dt>
+        <dd>{project.tenure}{project.tenureSource && <span className="tenure-note">URA 成交记录</span>}</dd>
+      </div>
       <div className="wide">
         <dt>项目用途</dt>
         <dd><span className={`use-badge ${project.useType}`}>{project.useType === "mixed" ? "商住一体" : "纯住宅*"}</span>

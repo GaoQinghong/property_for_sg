@@ -9,6 +9,8 @@ export type Project = {
   sold: number;
   developer: string;
   tenure: string;
+  tenureBasis?: "verified" | "pending";
+  tenureSource?: string;
   launch: string;
   top: string;
   /** "Newton · 470m", or "待定位" when the project has no exact position. */

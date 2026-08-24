@@ -40,7 +40,7 @@ test("当前楼盘会补入 TOP、户数和产权，不用历史目录猜测", (
   assert.ok(upperhouse, "UOL 应列出 Upperhouse");
   assert.equal(upperhouse.units, 301);
   assert.equal(upperhouse.top, "2029");
-  assert.equal(upperhouse.tenure, "99 年");
+  assert.equal(upperhouse.tenure, "99 年（自 2024 年起）");
   assert.equal(upperhouse.status, "在售");
 });
 

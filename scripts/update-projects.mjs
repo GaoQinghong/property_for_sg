@@ -3,6 +3,7 @@ import { distanceMetres, geocodeProject, validCoordinates } from "./lib/geo.mjs"
 import { enrichProjects } from "./lib/enrich.mjs";
 import { findUnrepaired, repairMojibake } from "./lib/text.mjs";
 import { classifyProjectUse } from "./lib/project-use.mjs";
+import { tenureFromApi } from "./lib/tenure.mjs";
 
 const DATA_FILE = new URL("../public/data/projects.json", import.meta.url);
 const accessKey = process.env.URA_ACCESS_KEY;
@@ -121,7 +122,7 @@ for (const row of pipelineRows) {
   merged.push({
     id:key.toLowerCase(), name:row.project, area:old.area || `${row.street || "新加坡"} · D${String(row.district || sales?.district || "—").padStart(2,"0")}`,
     status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
-    developer:row.developerName || sales?.developer || old.developer || "待公布", tenure:old.tenure || "待公布", launch:old.launch || "尚未公布",
+    developer:row.developerName || sales?.developer || old.developer || "待公布", ...tenureFromApi(old, row, sales, month), launch:old.launch || "尚未公布",
     top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"),
     ...coordinates, ...carriedOver(old, coordinates), locationAccuracy, updatedAt, source:"URA"
   });
@@ -151,7 +152,7 @@ for (const [key, sales] of salesByName) {
   }
   merged.push({
     id:key.toLowerCase(), name:sales.project, area:old.area || `${sales.street || "新加坡"} · D${String(sales.district || "—").padStart(2,"0")}`,
-    status:launched > 0 ? "在售" : "确定开发", units, sold, developer:sales.developer || old.developer || "待公布", tenure:old.tenure || "待公布",
+    status:launched > 0 ? "在售" : "确定开发", units, sold, developer:sales.developer || old.developer || "待公布", ...tenureFromApi(old, sales, month),
     launch:old.launch || (launched > 0 ? "已开盘" : "尚未公布"), top:old.top || "待公布",
     ...coordinates, ...carriedOver(old, coordinates), locationAccuracy, updatedAt, source:"URA"
   });

@@ -45,6 +45,18 @@ test("每个项目都有可追溯的用途分类", async () => {
   assert.ok(projects.some((project) => project.useType === "mixed"), "未识别出商住一体项目");
 });
 
+test("每个项目都标注产权且官方成交产权可追溯", async () => {
+  const { projects } = await readData("projects.json");
+  for (const project of projects) {
+    assert.ok(project.tenure, `${project.name} 缺少产权`);
+    assert.ok(["verified", "pending"].includes(project.tenureBasis), `${project.name} 缺少产权核验状态`);
+    if (project.tenureBasis === "pending") assert.equal(project.tenure, "待公布", `${project.name} 待核产权不应猜测`);
+    if (project.tenureSource) assert.match(project.tenureSource, /^https:\/\//, `${project.name} 产权来源非法`);
+  }
+  assert.ok(projects.filter((project) => project.tenureBasis === "verified").length > 100, "已核验产权覆盖率异常偏低");
+  assert.equal(projects.find((project) => project.name === "The Continuum")?.tenure, "永久产权");
+});
+
 test("邮区数据包含 28 条独立外轮廓", async () => {
   const districts = await readData("districts.json");
   assert.equal(districts.boundaries?.length, 28, "邮区外轮廓应覆盖 D01–D28");
