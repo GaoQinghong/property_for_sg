@@ -109,7 +109,8 @@ for (const row of pipelineRows) {
   const month = sales && latestSales(sales);
   const units = Number(month?.unitsAvail || row.totalUnits || 0);
   const sold = Number(month?.soldToDate || 0);
-  if (month && units > 0 && sold >= units) { audit.soldOut.push({name:row.project,units,sold}); continue; }
+  const soldOut = Boolean(month && units > 0 && sold >= units);
+  if (soldOut) audit.soldOut.push({name:row.project,units,sold});
   let coordinates = reusableCoordinates(old);
   if (!coordinates && sales?.x && sales?.y) coordinates = svy21ToWgs84(Number(sales.x), Number(sales.y));
   if (!coordinates) coordinates = await geocodeProject({ project: row.project, street: row.street });
@@ -121,7 +122,7 @@ for (const row of pipelineRows) {
   }
   merged.push({
     id:key.toLowerCase(), name:row.project, area:old.area || `${row.street || "新加坡"} · D${String(row.district || sales?.district || "—").padStart(2,"0")}`,
-    status:month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发"), units, sold,
+    status:soldOut ? "售罄" : (month?.launchedToDate > 0 ? "在售" : (old.status === "即将开盘" ? "即将开盘" : "确定开发")), units, sold,
     developer:row.developerName || sales?.developer || old.developer || "待公布", ...tenureFromApi(old, row, sales, month), launch:old.launch || "尚未公布",
     top:row.expectedTOPYear && row.expectedTOPYear !== "na" ? String(row.expectedTOPYear) : (old.top || "待公布"),
     ...coordinates, ...carriedOver(old, coordinates), locationAccuracy, updatedAt, source:"URA"
@@ -161,7 +162,7 @@ for (const [key, sales] of salesByName) {
 for (const old of oldData.projects.filter(project => project.status === "土地供应" || project.source === "开发商资料")) {
   if (!merged.some(project => normalise(project.name) === normalise(old.name))) merged.push({...old, updatedAt});
 }
-const statusOrder = { "在售":0, "即将开盘":1, "确定开发":2, "土地供应":3 };
+const statusOrder = { "在售":0, "售罄":1, "即将开盘":2, "确定开发":3, "土地供应":4 };
 merged.sort((a,b) => (statusOrder[a.status] ?? 99) - (statusOrder[b.status] ?? 99) || a.name.localeCompare(b.name));
 
 for (const project of merged) project.name = repairMojibake(project.name);

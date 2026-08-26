@@ -293,6 +293,7 @@
 }
 
 .status-在售 { background: #e7f3ed; color: var(--green) !important; }
+.status-售罄 { background: #f0e8f3; color: var(--sold-out) !important; }
 .status-即将开盘 { background: #f7eee5; color: var(--orange) !important; }
 .status-确定开发 { background: #e7f0f3; color: var(--blue) !important; }
 

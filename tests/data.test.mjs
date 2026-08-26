@@ -13,7 +13,7 @@ import { repairMojibake } from "../scripts/lib/text.mjs";
 const readData = async (name) =>
   JSON.parse(await readFile(new URL(`../public/data/${name}`, import.meta.url), "utf8"));
 
-const STATUSES = new Set(["在售", "即将开盘", "确定开发", "土地供应"]);
+const STATUSES = new Set(["在售", "售罄", "即将开盘", "确定开发", "土地供应"]);
 
 test("每个项目都有渲染所需的字段且坐标在新加坡境内", async () => {
   const { projects } = await readData("projects.json");
@@ -33,6 +33,14 @@ test("项目 id 唯一", async () => {
   const { projects } = await readData("projects.json");
   const ids = projects.map((project) => String(project.id));
   assert.equal(new Set(ids).size, ids.length, "存在重复的项目 id");
+});
+
+test("供应管道中的售罄新盘仍保留在地图", async () => {
+  const { projects } = await readData("projects.json");
+  const lentorMansion = projects.find((project) => project.name.toUpperCase() === "LENTOR MANSION");
+  assert.ok(lentorMansion, "Lentor Mansion 不应因售罄而从地图消失");
+  assert.equal(lentorMansion.status, "售罄");
+  assert.equal(lentorMansion.sold, lentorMansion.units);
 });
 
 test("每个项目都有可追溯的用途分类", async () => {

@@ -53,7 +53,10 @@ test("排名页渲染全部集团、方法和安全外链", async () => {
   const window = await mount();
   const { document } = window;
   assert.match(document.querySelector(".ranking-hero h2").textContent, /当前活跃度排名/);
-  assert.equal(document.querySelectorAll("details.rank-card").length, 16);
+  assert.equal(
+    document.querySelectorAll("details.rank-card").length,
+    Object.keys(files["developers.json"].groups).length,
+  );
   assert.deepEqual(
     [...document.querySelectorAll(".method-card dt")].map((element) => element.textContent),
     ["55%", "45%"],

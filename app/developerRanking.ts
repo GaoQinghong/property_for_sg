@@ -53,10 +53,11 @@ function rowFrom(entry: DeveloperProject, current?: Project): PortfolioRow {
 
 const statusOrder: Record<PortfolioRow["status"], number> = {
   "在售": 0,
-  "即将开盘": 1,
-  "确定开发": 2,
-  "土地供应": 3,
-  "历史项目": 4,
+  "售罄": 1,
+  "即将开盘": 2,
+  "确定开发": 3,
+  "土地供应": 4,
+  "历史项目": 5,
 };
 
 /**

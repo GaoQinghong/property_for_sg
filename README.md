@@ -1,6 +1,6 @@
 # 狮城新盘地图 · property_for_sg
 
-新加坡私人住宅与 EC 的研究地图：在 Leaflet 地图上叠加 URA 在售 / 即将开盘 / 确定开发 / 土地供应项目，以及地铁线路、学校与商场。
+新加坡私人住宅与 EC 的研究地图：在 Leaflet 地图上叠加 URA 在售 / 售罄但仍在建 / 即将开盘 / 确定开发 / 土地供应项目，以及地铁线路、学校与商场。
 
 线上地址：<https://gaoqinghong.github.io/property_for_sg/>
 

@@ -7,6 +7,7 @@
   --line: #dfe5e1;
   --paper: #f7f8f5;
   --green: #176b4d;
+  --sold-out: #755083;
   --orange: #a85718;       /* was #d57531 at 3.27:1 */
   --blue: #397b94;
   --grey: #5f6763;         /* was #7d8581 at 3.79:1 */
@@ -285,6 +286,7 @@ button { color: inherit; }
 
 .status i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none; }
 .status.sale { color: var(--green); }
+.status.sold-out { color: var(--sold-out); }
 .status.soon { color: var(--orange); }
 .status.confirmed { color: var(--blue); }
 .status.land { color: var(--grey); }
@@ -364,6 +366,7 @@ button { color: inherit; }
 }
 
 .real-map-pin.sale { background: var(--green); }
+.real-map-pin.sold-out { background: var(--sold-out); }
 .real-map-pin.soon { background: var(--orange); }
 .real-map-pin.confirmed { background: var(--blue); }
 .real-map-pin.land { background: var(--grey); }
@@ -502,6 +505,7 @@ button { color: inherit; }
 .legend span { display: flex; align-items: center; gap: 5px; }
 .legend i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
 .legend i.sale { background: var(--green); }
+.legend i.sold-out { background: var(--sold-out); }
 .legend i.soon { background: var(--orange); }
 .legend i.confirmed { background: var(--blue); }
 .legend i.land { background: var(--grey); }

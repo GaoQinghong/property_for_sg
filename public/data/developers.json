@@ -83,7 +83,7 @@
       "match": ["guocoland", "guoco midtown"],
       "projects": [
         { "name": "Springleaf Residence", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
-        { "name": "Lentor Mansion", "year": 2027, "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
+        { "name": "Lentor Mansion", "top": "2027", "yearType": "estimated_completion", "units": 533, "tenure": "99 年", "url": "https://www.guocoland.com.sg/Documents/PressReleases/2024/Lentor_Mansion_introduces_Luxury_Mansion_Living_final.pdf", "sourceUrl": "https://www.guocoland.com.sg/Documents/PressReleases/2024/Media_Release_Lentor_Mansion_sold_75_at_launch.pdf" },
         { "name": "Lentor Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
         { "name": "Midtown Modern", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
         { "name": "Midtown Bay", "url": "https://www.guocoland.com.sg/resi_sg.shtml" },
@@ -92,6 +92,17 @@
         { "name": "Wallich Residence", "top": "2017-10", "yearType": "actual_top", "units": 181, "tenure": "99 年", "url": "https://www.guocoland.com.sg/resi_sg.shtml", "sourceUrl": "https://www.guocoland.com.sg/Documents/Announcements/2018/AnnRep2018.pdf" },
         { "name": "Leedon Residence", "top": "2015-06", "yearType": "actual_top", "units": 381, "tenure": "永久产权", "url": "https://www.guocoland.com.sg/resi_sg.shtml", "sourceUrl": "https://www.guocoland.com.sg/Documents/AnnualRpt/AnnRep2015.pdf" },
         { "name": "Goodwood Residence", "top": "2013-06", "yearType": "actual_top", "units": 210, "tenure": "永久产权", "url": "https://www.guocoland.com.sg/SG/Goodwood-Residence.asp" }
+      ]
+    },
+    "hong-leong-holdings": {
+      "name": "Hong Leong Holdings",
+      "nameZh": "丰隆控股",
+      "website": "https://www.hongleongholdings.com.sg/",
+      "source": "https://hi-life.hongleong.com.sg/January2026/live-article08.html",
+      "domains": ["hongleongholdings.com.sg", "hongleong.com.sg"],
+      "match": ["hong leong holdings"],
+      "projects": [
+        { "name": "Lentor Mansion", "top": "2027", "yearType": "estimated_completion", "units": 533, "tenure": "99 年", "url": "https://hi-life.hongleong.com.sg/January2026/live-article08.html", "sourceUrl": "https://www.guocoland.com.sg/Documents/PressReleases/2024/Media_Release_Lentor_Mansion_sold_75_at_launch.pdf" }
       ]
     },
     "singhaiyi": {
@@ -317,6 +328,7 @@
     "lakeside residential pte ltd": ["singhaiyi"],
     "shenton residential property pte. ltd": ["singhaiyi"],
     "springleaf residence pte ltd": ["guocoland"],
+    "lentor mansion pte ltd": ["guocoland", "hong-leong-holdings"],
     "guoco midtown pte ltd/midtown bay pte ltd": ["guocoland"],
     "golden ray edge 3 pte ltd": ["mcl-land"],
     "hc land (clementi) pte ltd": ["mcl-land"],

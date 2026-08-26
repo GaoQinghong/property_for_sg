@@ -32,7 +32,7 @@ import {
   useRailData,
 } from "./useMapData";
 
-const STATUS_FILTERS = ["全部", "在售", "即将开盘", "确定开发", "土地供应"] as const;
+const STATUS_FILTERS = ["全部", "在售", "售罄", "即将开盘", "确定开发", "土地供应"] as const;
 type StatusFilter = (typeof STATUS_FILTERS)[number];
 
 /** Place pins are noise at city zoom, so they only render once zoomed in. */
@@ -565,6 +565,7 @@ export default function Home() {
 
         <div className="legend">
           <span><i className="sale" aria-hidden="true" />在售</span>
+          <span><i className="sold-out" aria-hidden="true" />售罄</span>
           <span><i className="soon" aria-hidden="true" />即将开盘</span>
           <span><i className="confirmed" aria-hidden="true" />确定开发</span>
           <span><i className="land" aria-hidden="true" />土地供应</span>
@@ -593,7 +594,7 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
   onToggleFavourite: () => void;
   onClose: () => void;
 }) {
-  const onSale = project.status === "在售";
+  const inventoryKnown = project.status === "在售" || project.status === "售罄";
   const unlocated = project.mrt === UNLOCATED;
   const district = districtOf(project.area);
   const groups = resolveGroups(project, directory);
@@ -618,8 +619,8 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
 
     <div className="inventory">
       <div><strong>{project.units.toLocaleString()}</strong><small>总户数</small></div>
-      <div><strong>{onSale ? project.sold.toLocaleString() : "—"}</strong><small>已售</small></div>
-      <div><strong>{onSale ? (project.units - project.sold).toLocaleString() : "—"}</strong><small>估算未售</small></div>
+      <div><strong>{inventoryKnown ? project.sold.toLocaleString() : "—"}</strong><small>已售</small></div>
+      <div><strong>{inventoryKnown ? (project.units - project.sold).toLocaleString() : "—"}</strong><small>估算未售</small></div>
     </div>
 
     <dl className="facts">
@@ -733,7 +734,7 @@ function DataInfo({ updatedAt, onClose }: { updatedAt: string; onClose: () => vo
       <h2 id="data-info-title">数据说明</h2>
       <dl>
         <dt>项目与库存</dt>
-        <dd>URA 开发商销售月报（PMI_Resi_Developer_Sales）与住宅供应管道（PMI_Resi_Pipeline），每日自动同步，最后更新 {updatedAt}。URA 在次月 15 日发布上月销售数据。</dd>
+        <dd>URA 开发商销售月报（PMI_Resi_Developer_Sales）与住宅供应管道（PMI_Resi_Pipeline），每日自动同步，最后更新 {updatedAt}。URA 在次月 15 日发布上月销售数据；仍在供应管道中的售罄新盘会保留并明确标注。</dd>
         <dt>坐标</dt>
         <dd>优先取 URA 提供的 SVY21 坐标，其余通过 OneMap 地理编码。仍无法解析的项目按邮区中心估算，详情卡片会明确标注。</dd>
         <dt>地铁与学校距离</dt>

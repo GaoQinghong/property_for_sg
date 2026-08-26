@@ -42,8 +42,8 @@ const normalise = (value: string) => value.toUpperCase().replace(/[^A-Z0-9]/g, "
  * Resolves the parent groups behind URA's `developer` field.
  *
  * URA registers the project-specific SPV ("Topaz Residential Pte Ltd"), not the
- * brand, so 121 of 124 projects carry a unique developer string — and most of
- * those SPVs are joint ventures, hence a list rather than a single group.
+ * brand. Most records therefore carry a unique developer string, and many are
+ * joint ventures, hence a list rather than a single group.
  * Resolution runs most-authoritative first:
  *   1. an explicit, individually verified override for an opaque SPV
  *   2. the project appears in a group's own published portfolio

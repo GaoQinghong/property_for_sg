@@ -1,4 +1,4 @@
-export type ProjectStatus = "在售" | "即将开盘" | "确定开发" | "土地供应";
+export type ProjectStatus = "在售" | "售罄" | "即将开盘" | "确定开发" | "土地供应";
 
 export type Project = {
   id: number | string;
@@ -66,6 +66,7 @@ export type Place = {
 
 export const STATUS_CLASS: Record<ProjectStatus, string> = {
   在售: "sale",
+  售罄: "sold-out",
   即将开盘: "soon",
   确定开发: "confirmed",
   土地供应: "land",

@@ -193,7 +193,10 @@ test("有官方项目页时主按钮跳官网，否则退回搜索", async () =>
 test("交互控件带有 aria-pressed 状态", async () => {
   const { document } = await mount();
   const tabs = document.querySelectorAll(".status-tabs button[aria-pressed]");
-  assert.equal(tabs.length, 5);
+  assert.deepEqual(
+    [...tabs].map((button) => button.textContent),
+    ["全部", "在售", "售罄", "即将开盘", "确定开发", "土地供应"],
+  );
   const layers = document.querySelectorAll(".map-layers button[aria-pressed]");
   assert.equal(layers.length, 6);
 });
