@@ -80,6 +80,10 @@ test("URA 市场区边界完整覆盖 CCR、RCR、OCR", async () => {
 test("20 年分析报告随网站发布且包含核心章节", async () => {
   const html = await readFile(new URL("../public/reports/singapore-property-20y.html", import.meta.url), "utf8");
   assert.match(html, /新加坡20年：家庭收入、私宅价格/);
+  assert.match(html, /2021–2026：整体私宅 PPI vs 实际 GDP/);
+  assert.match(html, /私宅累计领先实际 GDP：约 <b>9\.2 个百分点<\/b>/);
+  assert.match(html, /www\.ura\.gov\.sg\/news\/media\/pr26-57/);
+  assert.match(html, /www\.mti\.gov\.sg\/newsroom\/mti-upgrades-2026-gdp-growth-forecast/);
   assert.match(html, /CCR \/ RCR \/ OCR/);
   assert.match(html, /2026 Q1/);
   assert.match(html, /Thomson Reserve/);
