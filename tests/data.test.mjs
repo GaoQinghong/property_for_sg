@@ -84,6 +84,9 @@ test("20 年分析报告随网站发布且包含核心章节", async () => {
   assert.match(html, /私宅累计领先实际 GDP：约 <b>9\.2 个百分点<\/b>/);
   assert.match(html, /www\.ura\.gov\.sg\/news\/media\/pr26-57/);
   assert.match(html, /www\.mti\.gov\.sg\/newsroom\/mti-upgrades-2026-gdp-growth-forecast/);
+  assert.match(html, /总结：二手房与新盘应该分析什么/);
+  assert.match(html, /Premium Years（溢价消化年数）/);
+  assert.match(html, /Safety Margin（买入安全边际）/);
   assert.match(html, /CCR \/ RCR \/ OCR/);
   assert.match(html, /2026 Q1/);
   assert.match(html, /Thomson Reserve/);
