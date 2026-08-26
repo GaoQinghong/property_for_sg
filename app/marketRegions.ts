@@ -9,6 +9,11 @@ export type MarketRegionFeature = {
 export type MarketRegionCollection = {
   type: "FeatureCollection";
   labels?: Record<MarketSegment, { lat: number; lng: number }>;
+  boundaries?: Array<{
+    type: "Feature";
+    properties: { between: string };
+    geometry: { type: "MultiLineString"; coordinates: number[][][] };
+  }>;
   features: MarketRegionFeature[];
 };
 

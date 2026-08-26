@@ -63,6 +63,38 @@ const features = order.map((segment) => {
   };
 });
 
+function edgeMap(feature) {
+  const edges = new Map();
+  for (const polygon of feature.geometry.coordinates) {
+    for (const ring of polygon) {
+      for (let index = 1; index < ring.length; index += 1) {
+        const a = ring[index - 1], b = ring[index];
+        const aKey = `${a[0]},${a[1]}`, bKey = `${b[0]},${b[1]}`;
+        const key = aKey < bKey ? `${aKey}|${bKey}` : `${bKey}|${aKey}`;
+        edges.set(key, [a, b]);
+      }
+    }
+  }
+  return edges;
+}
+
+// Only shared borders are decision-relevant. Drawing every region's complete
+// coastline buries CCR–RCR and RCR–OCR in hundreds of island outlines.
+const edgeMaps = new Map(features.map((feature) => [feature.properties.segment, edgeMap(feature)]));
+const boundaries = [];
+for (let left = 0; left < order.length; left += 1) {
+  for (let right = left + 1; right < order.length; right += 1) {
+    const a = order[left], b = order[right];
+    const aEdges = edgeMaps.get(a), bEdges = edgeMaps.get(b);
+    const lines = [...aEdges].filter(([key]) => bEdges.has(key)).map(([, line]) => line);
+    if (lines.length) boundaries.push({
+      type: "Feature",
+      properties: { between: `${a}/${b}` },
+      geometry: { type: "MultiLineString", coordinates: lines },
+    });
+  }
+}
+
 const output = {
   type: "FeatureCollection",
   source: "URA REALIS market-segment definition; URA Master Plan subzone geometry",
@@ -71,7 +103,8 @@ const output = {
     RCR: { lat: 1.322, lng: 103.906 },
     OCR: { lat: 1.397, lng: 103.746 },
   },
+  boundaries,
   features,
 };
 await writeFile(target, `${JSON.stringify(output)}\n`);
-console.log(`已写入 ${features.length} 个市场区：${features.map((feature) => feature.properties.segment).join(" / ")}`);
+console.log(`已写入 ${features.length} 个市场区、${boundaries.length} 条公共分界：${features.map((feature) => feature.properties.segment).join(" / ")}`);

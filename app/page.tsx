@@ -285,25 +285,29 @@ export default function Home() {
           fillOpacity: 0.13,
         },
       }).addTo(layer);
-      // White halo separates the boundary from OSM roads, MRT lines and fills.
-      L.geoJSON(feature, {
+    });
+
+    (marketRegions.boundaries ?? []).forEach((boundary) => {
+      // Only the shared market borders get heavy strokes. Coastlines remain
+      // encoded by the coloured wash and no longer compete with the answer.
+      L.geoJSON(boundary, {
         pane: "marketRegionLines",
         interactive: false,
         style: {
           color: "#ffffff",
-          weight: 8,
-          opacity: 0.9,
+          weight: 11,
+          opacity: 0.96,
           fill: false,
           lineCap: "round",
           lineJoin: "round",
         },
       }).addTo(layer);
-      L.geoJSON(feature, {
+      L.geoJSON(boundary, {
         pane: "marketRegionLines",
         interactive: false,
         style: {
-          color: style.color,
-          weight: 4.5,
+          color: "#16283f",
+          weight: 6,
           opacity: 1,
           fill: false,
           lineCap: "round",
@@ -501,7 +505,7 @@ export default function Home() {
         </div>
       </aside>
 
-      <section className="map" aria-label="新加坡项目地图">
+      <section className={showMarketRegions ? "map market-regions-visible" : "map"} aria-label="新加坡项目地图">
         <div ref={mapElement} className="real-map" />
 
         <div className="map-layers" role="group" aria-label="地图图层">

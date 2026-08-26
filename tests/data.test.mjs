@@ -70,6 +70,7 @@ test("URA 市场区边界完整覆盖 CCR、RCR、OCR", async () => {
   const regions = await readData("market-regions.json");
   assert.deepEqual(regions.features.map((feature) => feature.properties.segment).sort(), ["CCR", "OCR", "RCR"]);
   assert.deepEqual(Object.keys(regions.labels).sort(), ["CCR", "OCR", "RCR"]);
+  assert.ok(regions.boundaries.length >= 2, "应生成市场区之间的公共分界线");
   for (const feature of regions.features) {
     assert.equal(feature.geometry.type, "MultiPolygon");
     assert.ok(feature.geometry.coordinates.length > 0, `${feature.properties.segment} 边界为空`);

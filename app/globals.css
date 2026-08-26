@@ -930,3 +930,7 @@ button { color: inherit; }
 .market-region-legend { bottom: 62px; }
 .market-region-legend.above-district { bottom: 128px; }
 .market-region-legend i { border-radius: 3px; }
+
+.market-regions-visible .project-marker-shell { opacity: .42; }
+.market-regions-visible .project-marker-shell:hover,
+.market-regions-visible .project-marker-shell.active { opacity: 1; }
