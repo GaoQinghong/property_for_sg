@@ -462,6 +462,7 @@ button { color: inherit; }
 
 .map-layers button.active { background: #f0f4f1; color: var(--ink); }
 .map-layers .mrt.active span { background: var(--green); color: #fff; }
+.map-layers .market-regions.active span { background: #8f3152; color: #fff; }
 .map-layers .place-小.active span { border-radius: 50%; background: #3a6394; color: #fff; }
 .map-layers .place-中.active span { border-radius: 50%; background: #5c4589; color: #fff; }
 .map-layers .place-购.active span { background: #a8445c; color: #fff; }
@@ -849,8 +850,8 @@ button { color: inherit; }
     font-size: 11px;
   }
 
-  .map-layers { left: 12px; top: 12px; }
-  .zoom-hint { left: 12px; top: 62px; }
+  .map-layers { left: 12px; right: 52px; top: 12px; flex-wrap: wrap; }
+  .zoom-hint { left: 12px; top: 110px; }
 
   .detail-card {
     left: 10px;
@@ -904,3 +905,26 @@ button { color: inherit; }
 
 .district-legend .ramp { display: flex; gap: 11px; }
 .district-legend .ramp i { width: 11px; height: 11px; border-radius: 3px; }
+
+/* ---------- URA market-segment layer ---------- */
+
+.market-region-label-shell { background: none !important; border: 0 !important; }
+
+.market-region-label {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+  padding: 3px 7px;
+  border: 2px solid var(--region-color);
+  border-radius: 7px;
+  background: #fffffff0;
+  color: var(--region-color);
+  box-shadow: 0 2px 7px #23352c38;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.market-region-legend { bottom: 62px; }
+.market-region-legend.above-district { bottom: 128px; }
+.market-region-legend i { border-radius: 3px; }

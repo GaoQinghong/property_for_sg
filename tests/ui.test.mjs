@@ -73,6 +73,7 @@ async function mount() {
     "schools.json": await readData("schools.json"),
     "malls.json": await readData("malls.json"),
     "districts.json": await readData("districts.json"),
+    "market-regions.json": await readData("market-regions.json"),
   };
   const requested = [];
   window.fetch = async (input) => {
@@ -194,7 +195,7 @@ test("交互控件带有 aria-pressed 状态", async () => {
   const tabs = document.querySelectorAll(".status-tabs button[aria-pressed]");
   assert.equal(tabs.length, 5);
   const layers = document.querySelectorAll(".map-layers button[aria-pressed]");
-  assert.equal(layers.length, 5);
+  assert.equal(layers.length, 6);
 });
 
 test("临界楼盘同时显示确定与部分栋两个口径", async () => {
@@ -243,4 +244,16 @@ test("邮区色块用单色渐变编码供应量，而非 28 种身份色", asyn
   const source = await readFile(new URL("app/districtLayer.ts", projectRoot), "utf8");
   const hexes = new Set([...source.matchAll(/#[0-9a-f]{6}/gi)].map((m) => m[0].toLowerCase()));
   assert.ok(hexes.size <= 6, `渐变档位应精简，实际 ${hexes.size} 个色值`);
+});
+
+test("市场区图层懒加载并显示 CCR/RCR/OCR 图例", async () => {
+  const { window, document, requested } = await mount();
+  assert.ok(!requested.includes("market-regions.json"), "默认不应下载市场区边界");
+  const toggle = [...document.querySelectorAll(".map-layers button")]
+    .find((button) => button.textContent.includes("CCR/RCR/OCR"));
+  assert.ok(toggle, "应有市场区图层按钮");
+  toggle.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
+  for (let i = 0; i < 12; i += 1) await new Promise((resolve) => window.setTimeout(resolve, 0));
+  assert.ok(requested.includes("market-regions.json"), "开启后应下载市场区边界");
+  assert.match(document.querySelector(".market-region-legend")?.textContent ?? "", /CCR.*RCR.*OCR/);
 });

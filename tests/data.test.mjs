@@ -66,6 +66,16 @@ test("邮区数据包含 28 条独立外轮廓", async () => {
   );
 });
 
+test("URA 市场区边界完整覆盖 CCR、RCR、OCR", async () => {
+  const regions = await readData("market-regions.json");
+  assert.deepEqual(regions.features.map((feature) => feature.properties.segment).sort(), ["CCR", "OCR", "RCR"]);
+  assert.deepEqual(Object.keys(regions.labels).sort(), ["CCR", "OCR", "RCR"]);
+  for (const feature of regions.features) {
+    assert.equal(feature.geometry.type, "MultiPolygon");
+    assert.ok(feature.geometry.coordinates.length > 0, `${feature.properties.segment} 边界为空`);
+  }
+});
+
 test("名称不含未修复的乱码", async () => {
   const { projects } = await readData("projects.json");
   const mangled = projects.filter((project) => project.name.includes("�"));

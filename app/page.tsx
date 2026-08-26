@@ -12,6 +12,7 @@ import {
 } from "./types";
 import { DISTRICT_NAMES, districtLabel, districtOf, streetOf } from "./districts";
 import { SUPPLY_BUCKETS, countByDistrict, fillFor, type DistrictFeature } from "./districtLayer";
+import { MARKET_REGION_STYLE } from "./marketRegions";
 import {
   groupLabel,
   developerProjectDateLabel,
@@ -27,6 +28,7 @@ import {
   usePlaceData,
   useProjects,
   useDistricts,
+  useMarketRegions,
   useRailData,
 } from "./useMapData";
 
@@ -58,6 +60,7 @@ export default function Home() {
   const [onlyFavourites, setOnlyFavourites] = useState(false);
   const [showMrt, setShowMrt] = useState(true);
   const [showDistricts, setShowDistricts] = useState(false);
+  const [showMarketRegions, setShowMarketRegions] = useState(false);
   // Schools and malls stay off until asked for: 557 extra pins bury the
   // projects, and their data is only fetched when a layer is switched on.
   const [placeFilters, setPlaceFilters] = useState<Record<PlaceType, boolean>>({
@@ -72,6 +75,7 @@ export default function Home() {
 
   const { lines: railLines, stations: railStations } = useRailData(showMrt);
   const districts = useDistricts(showDistricts);
+  const marketRegions = useMarketRegions(showMarketRegions);
   const anyPlaceLayer = placeFilters.小学 || placeFilters.中学 || placeFilters.商场;
   const places = usePlaceData(placeFilters.小学 || placeFilters.中学, placeFilters.商场);
 
@@ -81,6 +85,7 @@ export default function Home() {
   const mrtLayer = useRef<L.LayerGroup | null>(null);
   const placesLayer = useRef<L.LayerGroup | null>(null);
   const districtLayer = useRef<L.LayerGroup | null>(null);
+  const marketRegionLayer = useRef<L.LayerGroup | null>(null);
   const stationRenderer = useRef<L.Canvas | null>(null);
   const markersById = useRef(new Map<string, L.Marker>());
 
@@ -120,6 +125,7 @@ export default function Home() {
     mrtLayer.current = L.layerGroup().addTo(map);
     // Added before the others so the wash sits under every pin.
     districtLayer.current = L.layerGroup().addTo(map);
+    marketRegionLayer.current = L.layerGroup().addTo(map);
     placesLayer.current = L.layerGroup().addTo(map);
 
     const onViewChange = () => setMapView((value) => ({ zoom: map.getZoom(), version: value.version + 1 }));
@@ -135,6 +141,7 @@ export default function Home() {
       mrtLayer.current = null;
       placesLayer.current = null;
       districtLayer.current = null;
+      marketRegionLayer.current = null;
       markers.clear();
       setMapReady(false);
     };
@@ -243,9 +250,50 @@ export default function Home() {
         }),
         interactive: false,
         keyboard: false,
+        zIndexOffset: 1000,
       }).addTo(layer);
     });
   }, [mapReady, showDistricts, districts, visible]);
+
+  // URA residential market segments. These are analytical market boundaries,
+  // distinct from postal districts and planning areas.
+  useEffect(() => {
+    const layer = marketRegionLayer.current;
+    if (!mapReady || !layer) return;
+    layer.clearLayers();
+    if (!showMarketRegions) return;
+
+    marketRegions.features.forEach((feature) => {
+      const style = MARKET_REGION_STYLE[feature.properties.segment];
+      L.geoJSON(feature, {
+        interactive: false,
+        style: {
+          color: style.color,
+          weight: 2.8,
+          opacity: 0.95,
+          fillColor: style.color,
+          fillOpacity: 0.035,
+          lineCap: "round",
+          lineJoin: "round",
+        },
+      }).addTo(layer);
+    });
+
+    Object.entries(marketRegions.labels ?? {}).forEach(([segment, point]) => {
+      const key = segment as keyof typeof MARKET_REGION_STYLE;
+      const style = MARKET_REGION_STYLE[key];
+      L.marker([point.lat, point.lng], {
+        icon: L.divIcon({
+          className: "market-region-label-shell",
+          html: `<span class="market-region-label" style="--region-color:${style.color}">${key}</span>`,
+          iconSize: [48, 24],
+          iconAnchor: [24, 12],
+        }),
+        interactive: false,
+        keyboard: false,
+      }).addTo(layer);
+    });
+  }, [mapReady, showMarketRegions, marketRegions]);
 
   useEffect(() => {
     const layer = mrtLayer.current;
@@ -431,6 +479,12 @@ export default function Home() {
           ><span aria-hidden="true">D</span>邮区</button>
           <button
             type="button"
+            className={showMarketRegions ? "active market-regions" : "market-regions"}
+            aria-pressed={showMarketRegions}
+            onClick={() => setShowMarketRegions((value) => !value)}
+          ><span aria-hidden="true">区</span>CCR/RCR/OCR</button>
+          <button
+            type="button"
             className={showMrt ? "active mrt" : "mrt"}
             aria-pressed={showMrt}
             onClick={() => setShowMrt((value) => !value)}
@@ -461,6 +515,13 @@ export default function Home() {
               <i style={{ background: bucket.color }} aria-hidden="true" />{bucket.label}
             </span>)}
           </span>
+        </div>}
+
+        {showMarketRegions && <div className={`legend market-region-legend${showDistricts ? " above-district" : ""}`}>
+          {(Object.entries(MARKET_REGION_STYLE) as [keyof typeof MARKET_REGION_STYLE, { name: string; color: string }][])
+            .map(([segment, style]) => <span key={segment}>
+              <i style={{ background: style.color }} aria-hidden="true" />{segment} · {style.name}
+            </span>)}
         </div>}
 
         <div className="legend">

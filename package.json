@@ -17,7 +17,8 @@
     "lint": "eslint .",
     "data:recalibrate-schools": "node scripts/recalibrate-schools.mjs",
     "data:capture-footprints": "node scripts/capture-footprints.mjs",
-    "data:build-districts": "node scripts/build-districts.mjs"
+    "data:build-districts": "node scripts/build-districts.mjs",
+    "data:build-market-regions": "node scripts/build-market-regions.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

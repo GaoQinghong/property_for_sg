@@ -2,7 +2,7 @@
 
 这份文件记录本项目的当前状态、在飞工作与未解决问题。**每次开工先读它，读完用 `git log --oneline -8` 和 `git branch -a` 核对是否已过期**（这份文件靠人工维护，可能落后于仓库）。
 
-最后更新：2026-08-24
+最后更新：2026-08-26
 
 ---
 
@@ -26,6 +26,7 @@ CI 会先跑 lint → typecheck → test → build，全过才部署。
 | 邮区外轮廓 | 将 332 个 URA 分区按 D01–D28 融合成 28 条独立深色外轮廓；内部边线降为弱提示，真实 Leaflet 已截图验证 |
 | 楼盘用途 | 124/124 项目展示「纯住宅* / 商住一体」；商住项目用已核验名称或 URA 登记商业实体识别，其余明确标为 URA 住宅数据推定 |
 | 楼盘产权 | 124/124 项目均显示产权；107 个有明确值，其中 105 个直接匹配 URA 新售/转售成交 Tenure（保留租期起算年），17 个未成交项目标「待公布」 |
+| URA 市场区图层 | 独立显示 CCR / RCR / OCR 分界、标签和图例；按 URA 官方市场区定义，将 Master Plan 子区融合成三块并懒加载 |
 
 邮区图层已于 `0447cc2` 合并进 main 并部署。做法与局限见 README「邮区边界与色块」一节。
 
@@ -77,6 +78,7 @@ npm run data:backfill-locations    # 重新地理编码 + 重算距离
 npm run data:recalibrate-schools   # 按邮编校准学校坐标
 npm run data:capture-footprints    # 抓门牌点 + 重算 1km 口径
 npm run data:build-districts       # 重建邮区边界
+npm run data:build-market-regions  # 从邮区底层分区重建 CCR/RCR/OCR
 npm run data:simplify-rail         # 简化轨道线路几何
 ```
 

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Place, Project, RailLine, RailStation } from "./types";
 import { EMPTY_DIRECTORY, type DeveloperDirectory } from "./developers";
 import { EMPTY_DISTRICTS, type DistrictCollection } from "./districtLayer";
+import { EMPTY_MARKET_REGIONS, type MarketRegionCollection } from "./marketRegions";
 
 const dataUrl = (name: string) => new URL(`./data/${name}`, document.baseURI).href;
 
@@ -126,6 +127,11 @@ export function useDeveloperDirectory(): DeveloperDirectory {
 /** Postal-district polygons, fetched the first time the layer is switched on. */
 export function useDistricts(enabled: boolean): DistrictCollection {
   return useLazyDataset<DistrictCollection>("districts.json", enabled, EMPTY_DISTRICTS);
+}
+
+/** URA CCR/RCR/OCR boundaries, fetched only when their layer is enabled. */
+export function useMarketRegions(enabled: boolean): MarketRegionCollection {
+  return useLazyDataset<MarketRegionCollection>("market-regions.json", enabled, EMPTY_MARKET_REGIONS);
 }
 
 /** Project ids the visitor has starred, persisted across sessions. */
