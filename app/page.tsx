@@ -117,6 +117,15 @@ export default function Home() {
     }).addTo(map);
     L.control.zoom({ position: "topright" }).addTo(map);
 
+    // Market fills sit below normal overlays; their outlined borders sit just
+    // above project pins so dense central markers cannot erase the boundary.
+    const marketFillPane = map.createPane("marketRegionFills");
+    marketFillPane.style.zIndex = "390";
+    marketFillPane.style.pointerEvents = "none";
+    const marketLinePane = map.createPane("marketRegionLines");
+    marketLinePane.style.zIndex = "610";
+    marketLinePane.style.pointerEvents = "none";
+
     mapInstance.current = map;
     // Stations are drawn on a canvas: 240 individual SVG nodes measurably
     // slowed panning on the previous build.
@@ -265,14 +274,38 @@ export default function Home() {
 
     marketRegions.features.forEach((feature) => {
       const style = MARKET_REGION_STYLE[feature.properties.segment];
+      // A stronger area wash makes the three bands readable as regions rather
+      // than three unrelated coastlines.
       L.geoJSON(feature, {
+        pane: "marketRegionFills",
+        interactive: false,
+        style: {
+          stroke: false,
+          fillColor: style.color,
+          fillOpacity: 0.13,
+        },
+      }).addTo(layer);
+      // White halo separates the boundary from OSM roads, MRT lines and fills.
+      L.geoJSON(feature, {
+        pane: "marketRegionLines",
+        interactive: false,
+        style: {
+          color: "#ffffff",
+          weight: 8,
+          opacity: 0.9,
+          fill: false,
+          lineCap: "round",
+          lineJoin: "round",
+        },
+      }).addTo(layer);
+      L.geoJSON(feature, {
+        pane: "marketRegionLines",
         interactive: false,
         style: {
           color: style.color,
-          weight: 2.8,
-          opacity: 0.95,
-          fillColor: style.color,
-          fillOpacity: 0.035,
+          weight: 4.5,
+          opacity: 1,
+          fill: false,
           lineCap: "round",
           lineJoin: "round",
         },
@@ -285,12 +318,13 @@ export default function Home() {
       L.marker([point.lat, point.lng], {
         icon: L.divIcon({
           className: "market-region-label-shell",
-          html: `<span class="market-region-label" style="--region-color:${style.color}">${key}</span>`,
-          iconSize: [48, 24],
-          iconAnchor: [24, 12],
+          html: `<span class="market-region-label" style="--region-color:${style.color}"><b>${key}</b><small>${style.name}</small></span>`,
+          iconSize: [104, 38],
+          iconAnchor: [52, 19],
         }),
         interactive: false,
         keyboard: false,
+        zIndexOffset: 2000,
       }).addTo(layer);
     });
   }, [mapReady, showMarketRegions, marketRegions]);

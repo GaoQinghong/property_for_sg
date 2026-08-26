@@ -15,7 +15,7 @@ export type MarketRegionCollection = {
 export const EMPTY_MARKET_REGIONS: MarketRegionCollection = { type: "FeatureCollection", features: [] };
 
 export const MARKET_REGION_STYLE: Record<MarketSegment, { name: string; color: string }> = {
-  CCR: { name: "核心中央区", color: "#8f3152" },
-  RCR: { name: "中央区其他地区", color: "#b06b16" },
-  OCR: { name: "中央区以外", color: "#23706a" },
+  CCR: { name: "核心中央区", color: "#a51f46" },
+  RCR: { name: "中央区其他地区", color: "#c75d00" },
+  OCR: { name: "中央区以外", color: "#00766c" },
 };

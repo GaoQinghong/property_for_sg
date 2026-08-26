@@ -462,7 +462,7 @@ button { color: inherit; }
 
 .map-layers button.active { background: #f0f4f1; color: var(--ink); }
 .map-layers .mrt.active span { background: var(--green); color: #fff; }
-.map-layers .market-regions.active span { background: #8f3152; color: #fff; }
+.map-layers .market-regions.active span { background: #a51f46; color: #fff; }
 .map-layers .place-小.active span { border-radius: 50%; background: #3a6394; color: #fff; }
 .map-layers .place-中.active span { border-radius: 50%; background: #5c4589; color: #fff; }
 .map-layers .place-购.active span { background: #a8445c; color: #fff; }
@@ -911,19 +911,21 @@ button { color: inherit; }
 .market-region-label-shell { background: none !important; border: 0 !important; }
 
 .market-region-label {
-  display: grid;
-  place-items: center;
-  min-width: 40px;
-  padding: 3px 7px;
-  border: 2px solid var(--region-color);
-  border-radius: 7px;
-  background: #fffffff0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 92px;
+  padding: 5px 8px;
+  border: 3px solid var(--region-color);
+  border-radius: 9px;
+  background: #fff;
   color: var(--region-color);
-  box-shadow: 0 2px 7px #23352c38;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: .04em;
+  box-shadow: 0 3px 10px #16281f55;
+  white-space: nowrap;
 }
+
+.market-region-label b { font-size: 14px; letter-spacing: .04em; }
+.market-region-label small { font-size: 10px; font-weight: 700; }
 
 .market-region-legend { bottom: 62px; }
 .market-region-legend.above-district { bottom: 128px; }

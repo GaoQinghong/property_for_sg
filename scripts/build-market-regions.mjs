@@ -14,6 +14,7 @@ import polygonClipping from "polygon-clipping";
 
 const source = new URL("../public/data/districts.json", import.meta.url);
 const target = new URL("../public/data/market-regions.json", import.meta.url);
+const SUBZONE_DATASET = "d_8594ae9ff96d0c708bc2af633048edfb";
 
 const CENTRAL_PLANNING_AREAS = new Set([
   "DOWNTOWN CORE", "ORCHARD", "MARINA EAST", "MARINA SOUTH", "MUSEUM", "NEWTON",
@@ -29,14 +30,32 @@ function marketSegment(feature) {
 }
 
 const districts = JSON.parse(await readFile(source, "utf8"));
+const districtBySubzone = new Map(districts.features.map((feature) => [
+  `${feature.properties.planningArea}\0${feature.properties.subzone}`,
+  feature,
+]));
+
+// Dissolve the original shared-edge geometry. Dissolving the independently
+// simplified postal shapes leaves hairline gaps between all 332 subzones;
+// when outlined those gaps look like an unreadable street network.
+const poll = await fetch(`https://api-open.data.gov.sg/v1/public/api/datasets/${SUBZONE_DATASET}/poll-download`)
+  .then((response) => response.json());
+if (!poll?.data?.url) throw new Error("data.gov.sg 未返回 Master Plan 下载地址");
+const masterPlan = await fetch(poll.data.url).then((response) => response.json());
+
 const order = ["OCR", "RCR", "CCR"];
+const rounded = (coordinates) => coordinates.map((polygon) => polygon.map((ring) =>
+  ring.map(([lng, lat]) => [Number(lng.toFixed(5)), Number(lat.toFixed(5))])));
 const features = order.map((segment) => {
-  const polygons = districts.features
-    .filter((feature) => marketSegment(feature) === segment)
+  const polygons = masterPlan.features
+    .filter((rawFeature) => {
+      const matched = districtBySubzone.get(`${rawFeature.properties.PLN_AREA_N}\0${rawFeature.properties.SUBZONE_N}`);
+      return matched && marketSegment(matched) === segment;
+    })
     .map((feature) => feature.geometry.type === "MultiPolygon"
       ? feature.geometry.coordinates
       : [feature.geometry.coordinates]);
-  const coordinates = polygonClipping.union(...polygons);
+  const coordinates = rounded(polygonClipping.union(...polygons));
   return {
     type: "Feature",
     properties: { segment },
