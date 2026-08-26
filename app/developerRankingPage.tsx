@@ -55,6 +55,7 @@ export default function DeveloperRankingPage() {
       <nav className="site-nav" aria-label="网站页面">
         <a href="#/">楼盘地图</a>
         <a href="#/developers" className="active" aria-current="page">开发商排名</a>
+        <a href="#/analysis">20年分析</a>
       </nav>
       <div className="ranking-updated"><span className="live-dot" aria-hidden="true" />数据截至 {updatedAt || directory.updatedAt || "载入中"}</div>
     </header>

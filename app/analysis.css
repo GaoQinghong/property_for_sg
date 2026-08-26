@@ -1,0 +1,46 @@
+.analysis-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #f4f6f3;
+}
+
+.analysis-page:focus { outline: none; }
+
+.analysis-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.report-open {
+  justify-self: end;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #b6cfc2;
+}
+
+.analysis-frame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 74px);
+  height: calc(100dvh - 74px);
+  border: 0;
+  background: #f5f6f8;
+}
+
+@media (max-width: 800px) {
+  .analysis-topbar {
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+  }
+
+  .analysis-topbar .brand small,
+  .report-open { display: none; }
+  .analysis-topbar .site-nav { grid-column: 1 / -1; justify-self: stretch; }
+  .analysis-topbar .site-nav a { flex: 1; text-align: center; padding-inline: 6px; }
+  .analysis-frame { height: calc(100dvh - 118px); }
+}

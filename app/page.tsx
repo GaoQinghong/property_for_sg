@@ -422,6 +422,7 @@ export default function Home() {
       <nav className="site-nav" aria-label="网站页面">
         <a href="#/" className="active" aria-current="page">楼盘地图</a>
         <a href="#/developers">开发商排名</a>
+        <a href="#/analysis">20年分析</a>
       </nav>
       <div className="header-meta">
         <span className="data-updated">

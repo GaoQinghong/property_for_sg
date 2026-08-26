@@ -77,6 +77,15 @@ test("URA 市场区边界完整覆盖 CCR、RCR、OCR", async () => {
   }
 });
 
+test("20 年分析报告随网站发布且包含核心章节", async () => {
+  const html = await readFile(new URL("../public/reports/singapore-property-20y.html", import.meta.url), "utf8");
+  assert.match(html, /新加坡20年：家庭收入、私宅价格/);
+  assert.match(html, /CCR \/ RCR \/ OCR/);
+  assert.match(html, /2026 Q1/);
+  assert.match(html, /Thomson Reserve/);
+  assert.ok((html.match(/<svg\b/g) ?? []).length >= 3, "报告图表数量异常");
+});
+
 test("名称不含未修复的乱码", async () => {
   const { projects } = await readData("projects.json");
   const mangled = projects.filter((project) => project.name.includes("�"));
