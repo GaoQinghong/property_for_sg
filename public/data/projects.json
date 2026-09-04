@@ -26,7 +26,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "19nassim",
@@ -52,7 +55,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "21anderson",
@@ -78,7 +84,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "8bt",
@@ -104,7 +113,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "amberhouse",
@@ -130,7 +142,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ardorresidence",
@@ -156,7 +171,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "arinaeastresidences",
@@ -182,7 +200,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "artisan8",
@@ -208,7 +229,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "aspenlinq",
@@ -234,7 +258,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "atlassia",
@@ -298,7 +325,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "aurea",
@@ -324,7 +354,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "aurelleoftampines",
@@ -350,7 +383,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "bagnallhaus",
@@ -376,7 +412,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "belgraviaace",
@@ -644,7 +683,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "bloomsburyresidences",
@@ -670,7 +712,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "botanicclunypark",
@@ -695,7 +740,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "boulevard88",
@@ -721,7 +769,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "canberracrescentresidences",
@@ -747,7 +798,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "canninghillpiers",
@@ -773,7 +827,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "cashewgreen",
@@ -877,7 +934,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "chuanpark",
@@ -903,7 +963,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "claydence",
@@ -929,7 +992,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "coastalcabana",
@@ -1021,7 +1087,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "copengrand",
@@ -1097,7 +1166,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "cuscadenreserve",
@@ -1123,7 +1195,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "dalveyhaus",
@@ -1149,7 +1224,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "duetemily",
@@ -1175,7 +1253,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "dunearnhouse",
@@ -1201,7 +1282,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "elta",
@@ -1227,7 +1311,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "emeraldofkatong",
@@ -1253,7 +1340,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "faberresidence",
@@ -1317,7 +1407,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "gemsville",
@@ -1343,7 +1436,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "granddunman",
@@ -1407,7 +1503,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "grange1866",
@@ -1433,7 +1532,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "hillockgreen",
@@ -1459,7 +1561,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "hudsonplaceresidences",
@@ -1495,7 +1600,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ikigai",
@@ -1521,7 +1629,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jansenhouse",
@@ -1547,7 +1658,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jervoismansion",
@@ -1603,7 +1717,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jervoisprive",
@@ -1629,7 +1746,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "jden",
@@ -1655,7 +1775,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ksuites",
@@ -1681,7 +1804,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "kassia",
@@ -1707,7 +1833,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "koparatnewton",
@@ -1747,7 +1876,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "kovanjewel",
@@ -1773,7 +1905,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "lentormansion",
@@ -1800,7 +1935,10 @@
       "useBasis": "verified",
       "useSource": "https://www.ura.gov.sg/news/media/pr22-39/",
       "tenureBasis": "verified",
-      "tenureSource": "https://www.ura.gov.sg/news/media/pr23-10/"
+      "tenureSource": "https://www.ura.gov.sg/news/media/pr23-10/",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "lentorgardensresidences",
@@ -1860,7 +1998,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "strata-landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://kingsford.com.sg/lentorgardensresidences/"
     },
     {
       "id": "lentoria",
@@ -1886,7 +2027,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "mattarresidences",
@@ -1912,7 +2056,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "meyerblue",
@@ -1938,7 +2085,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "midtownbay",
@@ -1964,7 +2114,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "narraresidences",
@@ -1990,7 +2143,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "navagrove",
@@ -2016,7 +2172,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "newportresidences",
@@ -2042,7 +2201,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "northgaia",
@@ -2114,7 +2276,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "norwoodgrand",
@@ -2140,7 +2305,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ocho",
@@ -2166,7 +2334,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "onemarinagardens",
@@ -2192,7 +2363,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "ottoplace",
@@ -2218,7 +2392,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "parcclematis",
@@ -2358,7 +2535,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "parksuites",
@@ -2410,7 +2590,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "parktownresidence",
@@ -2436,7 +2619,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "penrith",
@@ -2472,7 +2658,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "phoenixresidences",
@@ -2516,7 +2705,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pineryresidences",
@@ -2542,7 +2734,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pinetreehill",
@@ -2586,7 +2781,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pollencollection",
@@ -2838,7 +3036,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://www.bukitsembawang.sg/"
     },
     {
       "id": "pollencollectionii",
@@ -3082,7 +3283,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://www.bukitsembawang.sg/PollenCollection-2/"
     },
     {
       "id": "promenadepeak",
@@ -3108,7 +3312,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "pullmanresidencesnewton",
@@ -3134,7 +3341,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "rivelletampines",
@@ -3160,7 +3370,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "rivergreen",
@@ -3186,7 +3399,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "rivermodern",
@@ -3212,7 +3428,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "royalhallmark",
@@ -3238,7 +3457,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "skywatersresidences",
@@ -3264,7 +3486,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sophiaregency",
@@ -3289,7 +3514,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sora",
@@ -3315,7 +3543,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "springwatersvillas",
@@ -3367,7 +3598,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
     },
     {
       "id": "springleafresidence",
@@ -3393,7 +3627,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tembusugrand",
@@ -3437,7 +3674,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tengahgardenresidences",
@@ -3473,7 +3713,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "terrahill",
@@ -3541,7 +3784,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thearcadyatboonkeng",
@@ -3567,7 +3813,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thebronze",
@@ -3592,7 +3841,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thecollectiveatonesophia",
@@ -3618,7 +3870,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thecontinuum",
@@ -3644,7 +3899,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thegatz",
@@ -3670,7 +3928,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thegazania",
@@ -3730,7 +3991,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thegivernyresidences",
@@ -3756,7 +4020,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thehillonenorth",
@@ -3800,7 +4067,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thehillshore",
@@ -3826,7 +4096,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thehyde",
@@ -3852,7 +4125,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thelakegardenresidences",
@@ -3888,7 +4164,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "themyst",
@@ -3914,7 +4193,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theorie",
@@ -3940,7 +4222,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thereserveresidences",
@@ -4008,7 +4293,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "therobertsonopus",
@@ -4034,7 +4322,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thesen",
@@ -4060,7 +4351,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theshorefront",
@@ -4100,7 +4394,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tmwmaxwell",
@@ -4136,7 +4433,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "unionsquareresidences",
@@ -4162,7 +4462,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "upperhouseatorchardboulevard",
@@ -4188,7 +4491,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "velabay",
@@ -4224,7 +4530,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "wresidencesmarinaviewsingapore",
@@ -4250,7 +4559,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "zyongrand",
@@ -4276,7 +4588,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thomsonreserve",
@@ -4327,7 +4642,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "verified"
+      "tenureBasis": "verified",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "51ansonansoncentre",
@@ -4352,7 +4670,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "amberwoodatholland",
@@ -4427,7 +4748,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "landedhousingdevelopment",
@@ -4453,7 +4777,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "lucernegrand",
@@ -4500,7 +4827,10 @@
       "useType": "mixed",
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "luxushills",
@@ -4768,7 +5098,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "oneleonieresidences",
@@ -4793,7 +5126,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "residentialapartments",
@@ -4819,7 +5155,10 @@
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "skywatersresidencestheskywaters",
@@ -4844,7 +5183,10 @@
       "useType": "mixed",
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "solanogrand",
@@ -4869,7 +5211,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sophiameadow",
@@ -4894,7 +5239,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "sunstonehill",
@@ -4919,7 +5267,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "tengahgardenresidencestengahgardengalleria",
@@ -4944,7 +5295,10 @@
       "useType": "mixed",
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "thecairnhill",
@@ -4969,7 +5323,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theopalhauz",
@@ -4994,7 +5351,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "theranz",
@@ -5019,7 +5379,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "therobertsonopusrobertsonwalk",
@@ -5044,7 +5407,10 @@
       "useType": "mixed",
       "useBasis": "verified",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "verdjoochiat",
@@ -5070,7 +5436,10 @@
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
       "tenureBasis": "verified",
-      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch"
+      "tenureSource": "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": "wynwoodgrand",
@@ -5153,7 +5522,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "pending"
+      "tenureBasis": "pending",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     },
     {
       "id": 6,
@@ -5177,7 +5549,10 @@
       "useType": "residential",
       "useBasis": "inferred",
       "useSource": "https://eservice.ura.gov.sg/maps/api/",
-      "tenureBasis": "verified"
+      "tenureBasis": "verified",
+      "housingType": "non-landed",
+      "housingTypeBasis": "inferred",
+      "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
     }
   ]
 }

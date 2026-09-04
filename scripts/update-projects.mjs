@@ -3,6 +3,7 @@ import { distanceMetres, geocodeProject, validCoordinates } from "./lib/geo.mjs"
 import { enrichProjects } from "./lib/enrich.mjs";
 import { findUnrepaired, repairMojibake } from "./lib/text.mjs";
 import { classifyProjectUse } from "./lib/project-use.mjs";
+import { classifyHousingType } from "./lib/housing-type.mjs";
 import { tenureFromApi } from "./lib/tenure.mjs";
 
 const DATA_FILE = new URL("../public/data/projects.json", import.meta.url);
@@ -179,6 +180,7 @@ const [stations, schools] = await Promise.all([
 const enriched = enrichProjects(merged, { stations, schools }).map(project => ({
   ...project,
   ...classifyProjectUse(project),
+  ...classifyHousingType(project),
 }));
 
 await writeFile(DATA_FILE, `${JSON.stringify({updatedAt, source:"URA developer sales, URA pipeline and GLS programme", projects:enriched}, null, 2)}\n`);

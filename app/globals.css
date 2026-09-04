@@ -215,6 +215,8 @@ button { color: inherit; }
 
 .results-head b { font-size: 16px; color: var(--ink); }
 
+.quick-filters { display: flex; align-items: center; gap: 6px; }
+
 .favourite-filter {
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -230,6 +232,23 @@ button { color: inherit; }
   background: #fdf6e6;
   border-color: #e2c785;
   color: #6b4e12;
+}
+
+.housing-filter {
+  border: 1px solid #b8c9c0;
+  border-radius: 18px;
+  padding: 5px 10px;
+  background: #f2f4f3;
+  cursor: pointer;
+  color: #78817c;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.housing-filter.active {
+  background: #edf7f2;
+  border-color: #6fa58b;
+  color: #176b4d;
 }
 
 .filter-count {
@@ -308,6 +327,20 @@ button { color: inherit; }
   letter-spacing: .03em;
 }
 .use-badge.mixed { border-color: #d5b976; background: #fff8e8; color: #755416; }
+.housing-badge {
+  display: inline-flex;
+  width: fit-content;
+  margin: 8px 0 0 5px;
+  padding: 3px 7px;
+  border: 1px solid #b8a5d6;
+  border-radius: 999px;
+  background: #f5f0fb;
+  color: #5f3b8f;
+  font-size: 10px;
+  font-weight: 800;
+}
+.housing-badge.landed { border-color: #80aa8d; background: #edf7ef; color: #28643b; }
+.facts .housing-badge { margin: 0 8px 0 0; vertical-align: middle; }
 .facts .use-badge { margin: 0 8px 0 0; vertical-align: middle; }
 .use-note { display: block; margin-top: 5px; color: var(--faint); font-size: 11px; line-height: 1.35; }
 .tenure-note { display: block; margin-top: 3px; color: var(--faint); font-size: 11px; }

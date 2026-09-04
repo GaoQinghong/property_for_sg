@@ -111,6 +111,19 @@ test("状态筛选会缩小结果集", async () => {
   assert.equal(document.querySelectorAll(".project-card").length, onSale);
 });
 
+test("有地住宅筛选可在地图和列表中显示或隐藏", async () => {
+  const { window, document } = await mount();
+  const landedCount = projects.projects.filter((project) => project.housingType !== "non-landed").length;
+  const toggle = [...document.querySelectorAll(".housing-filter")][0];
+  assert.ok(toggle, "应有有地/分层有地筛选按钮");
+  assert.equal(toggle.getAttribute("aria-pressed"), "true");
+
+  toggle.dispatchEvent(new window.MouseEvent("click", { bubbles: true }));
+  await new Promise((resolve) => window.setTimeout(resolve, 0));
+  assert.equal(document.querySelectorAll(".project-card").length, projects.projects.length - landedCount);
+  assert.equal(toggle.getAttribute("aria-pressed"), "false");
+});
+
 test("学校与商场数据在图层开启前不会下载", async () => {
   const { requested } = await mount();
   assert.ok(requested.includes("projects.json"), "项目数据应立即加载");

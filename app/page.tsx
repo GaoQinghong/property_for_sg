@@ -58,6 +58,7 @@ export default function Home() {
   const [activeStatus, setActiveStatus] = useState<StatusFilter>("全部");
   const [query, setQuery] = useState("");
   const [onlyFavourites, setOnlyFavourites] = useState(false);
+  const [showLanded, setShowLanded] = useState(true);
   const [showMrt, setShowMrt] = useState(true);
   const [showDistricts, setShowDistricts] = useState(false);
   const [showMarketRegions, setShowMarketRegions] = useState(false);
@@ -93,11 +94,12 @@ export default function Home() {
     const keyword = query.trim().toLowerCase();
     return projects.filter((project) => {
       if (activeStatus !== "全部" && project.status !== activeStatus) return false;
+      if (!showLanded && project.housingType !== "non-landed") return false;
       if (onlyFavourites && !favourites.has(String(project.id))) return false;
       if (!keyword) return true;
       return `${project.name} ${project.area} ${project.developer}`.toLowerCase().includes(keyword);
     });
-  }, [projects, activeStatus, query, onlyFavourites, favourites]);
+  }, [projects, activeStatus, query, onlyFavourites, favourites, showLanded]);
 
   // Derived, not stored: a project filtered out of `visible` therefore closes
   // its own detail card, which previously stayed open describing a project
@@ -461,12 +463,20 @@ export default function Home() {
 
         <div className="results-head">
           <span><b>{visible.length}</b> 个项目</span>
-          <button
-            type="button"
-            className={onlyFavourites ? "favourite-filter active" : "favourite-filter"}
-            aria-pressed={onlyFavourites}
-            onClick={() => setOnlyFavourites((value) => !value)}
-          >★ 只看收藏 <span className="filter-count">{favourites.size}</span></button>
+          <span className="quick-filters">
+            <button
+              type="button"
+              className={showLanded ? "housing-filter active" : "housing-filter"}
+              aria-pressed={showLanded}
+              onClick={() => setShowLanded((value) => !value)}
+            >有地/分层有地</button>
+            <button
+              type="button"
+              className={onlyFavourites ? "favourite-filter active" : "favourite-filter"}
+              aria-pressed={onlyFavourites}
+              onClick={() => setOnlyFavourites((value) => !value)}
+            >★ 收藏 <span className="filter-count">{favourites.size}</span></button>
+          </span>
         </div>
 
         <div className="project-list">
@@ -487,6 +497,9 @@ export default function Home() {
             <span className={`use-badge ${project.useType}`} title={project.useBasis === "verified" ? "项目资料已核验" : "依据 URA 住宅项目数据推定"}>
               {project.useType === "mixed" ? "商住一体" : "纯住宅*"}
             </span>
+            {project.housingType !== "non-landed" && <span className={`housing-badge ${project.housingType}`}>
+              {project.housingType === "landed" ? "Landed" : "含 Strata Landed"}
+            </span>}
             <h3>{project.name}</h3>
             <p>
               {streetOf(project.area)}
@@ -637,6 +650,15 @@ function ProjectDetail({ project, directory, dataUpdatedAt, favourite, onToggleF
         <dt>项目用途</dt>
         <dd><span className={`use-badge ${project.useType}`}>{project.useType === "mixed" ? "商住一体" : "纯住宅*"}</span>
           <span className="use-note">{project.useBasis === "verified" ? "项目资料已核验" : "依据 URA 住宅数据推定，非住宅组成仍建议以批文/官网复核"}</span>
+        </dd>
+      </div>
+      <div className="wide">
+        <dt>住宅形态</dt>
+        <dd>
+          {project.housingType === "landed" && <span className="housing-badge landed">Landed</span>}
+          {project.housingType === "strata-landed" && <span className="housing-badge strata-landed">含 Strata Landed</span>}
+          {project.housingType === "non-landed" && <span>非有地住宅</span>}
+          <span className="use-note">{project.housingTypeBasis === "verified" ? "项目或 URA 资料已核验" : "依据当前 URA 项目记录推定"}</span>
         </dd>
       </div>
       <div className="wide">

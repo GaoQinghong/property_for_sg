@@ -33,6 +33,10 @@ export type Project = {
   useType: "residential" | "mixed";
   useBasis: "verified" | "inferred";
   useSource?: string;
+  /** Physical housing form, separate from residential/mixed project use. */
+  housingType: "non-landed" | "landed" | "strata-landed";
+  housingTypeBasis: "verified" | "inferred";
+  housingTypeSource?: string;
 };
 
 export type RailLine = {

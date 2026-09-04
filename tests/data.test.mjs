@@ -9,6 +9,7 @@ import test from "node:test";
 import { distanceMetres, validCoordinates } from "../scripts/lib/geo.mjs";
 import { enrichProject } from "../scripts/lib/enrich.mjs";
 import { repairMojibake } from "../scripts/lib/text.mjs";
+import { classifyHousingType } from "../scripts/lib/housing-type.mjs";
 
 const readData = async (name) =>
   JSON.parse(await readFile(new URL(`../public/data/${name}`, import.meta.url), "utf8"));
@@ -51,6 +52,26 @@ test("每个项目都有可追溯的用途分类", async () => {
     assert.match(project.useSource || "", /^https:\/\//, `${project.name} 缺少用途来源`);
   }
   assert.ok(projects.some((project) => project.useType === "mixed"), "未识别出商住一体项目");
+});
+
+test("每个项目都有住宅形态且有地分类可追溯", async () => {
+  const { projects } = await readData("projects.json");
+  for (const project of projects) {
+    assert.ok(["non-landed", "landed", "strata-landed"].includes(project.housingType), `${project.name} 缺少住宅形态`);
+    assert.ok(["verified", "inferred"].includes(project.housingTypeBasis), `${project.name} 缺少住宅形态依据`);
+    assert.match(project.housingTypeSource || "", /^https:\/\//, `${project.name} 缺少住宅形态来源`);
+    assert.deepEqual(classifyHousingType(project), {
+      housingType: project.housingType,
+      housingTypeBasis: project.housingTypeBasis,
+      housingTypeSource: project.housingTypeSource,
+    });
+  }
+  assert.deepEqual(
+    projects.filter((project) => project.housingType === "landed").map((project) => project.name).sort(),
+    ["CASHEW GREEN", "Landed housing development", "POLLEN COLLECTION", "Pollen Collection II", "SPRING WATERS VILLAS"].sort(),
+  );
+  assert.equal(projects.find((project) => project.name === "Lentor Gardens Residences")?.housingType, "strata-landed");
+  assert.equal(projects.find((project) => project.name === "Springleaf Residence")?.housingType, "non-landed");
 });
 
 test("每个项目都标注产权且官方成交产权可追溯", async () => {
