@@ -190,9 +190,10 @@
       "nameZh": "远东机构",
       "website": "https://www.fareast.com/",
       "source": "https://www.fareast.com/en/new-developments",
-      "domains": ["fareast.com", "fareast.com.sg", "amberhouse.com.sg", "aurea.com.sg", "reside.com.sg"],
+      "domains": ["fareast.com", "fareast.com.sg", "amberhouse.com.sg", "aurea.com.sg", "reside.com.sg", "theserra.com.sg"],
       "match": ["fe landmark", "fec "],
       "projects": [
+        { "name": "The Serra Residences", "top": "2030 Q4", "yearType": "estimated_top", "units": 133, "tenure": "永久产权", "url": "https://www.theserra.com.sg/" },
         { "name": "AUREA", "url": "https://www.aurea.com.sg/" },
         { "name": "AMBER HOUSE", "url": "https://www.amberhouse.com.sg/en" },
         { "name": "The Reserve Residences", "url": "https://www.fareast.com.sg/en/residential/the-reserve-residences" },
@@ -337,6 +338,7 @@
     "fe landmark pte ltd/fec residences trustee pte ltd/fec retail trustee pte ltd": ["far-east"],
     "urban park pte ltd": ["far-east"],
     "gmc property pte. ltd.": ["far-east"],
+    "transurban properties pte. ltd.": ["far-east"],
     "bukit one pte. ltd.": ["bukit-sembawang"],
     "valerian residential pte ltd": ["allgreen"]
   }

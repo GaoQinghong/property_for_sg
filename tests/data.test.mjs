@@ -44,6 +44,18 @@ test("供应管道中的售罄新盘仍保留在地图", async () => {
   assert.equal(lentorMansion.sold, lentorMansion.units);
 });
 
+test("URA 小体量门槛外、开发商已公布的新盘仍保留在地图", async () => {
+  const { projects } = await readData("projects.json");
+  const serra = projects.find((project) => project.name === "The Serra Residences");
+  assert.ok(serra, "The Serra Residences 应按开发商资料补入");
+  assert.equal(serra.source, "开发商资料");
+  assert.equal(serra.units, 133);
+  assert.equal(serra.tenure, "永久产权");
+  assert.equal(serra.locationAccuracy, "exact");
+  assert.equal(serra.schoolsWithin1km, 1);
+  assert.equal(serra.website, "https://www.theserra.com.sg/");
+});
+
 test("每个项目都有可追溯的用途分类", async () => {
   const { projects } = await readData("projects.json");
   for (const project of projects) {

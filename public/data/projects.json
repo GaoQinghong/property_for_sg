@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18",
-  "source": "URA developer sales, URA pipeline and GLS programme",
+  "updatedAt": "2026-09-07",
+  "source": "URA developer sales, URA pipeline and GLS programme; developer official project data",
   "projects": [
     {
       "id": "10evelyn",
@@ -4646,6 +4646,36 @@
       "housingType": "non-landed",
       "housingTypeBasis": "inferred",
       "housingTypeSource": "https://eservice.ura.gov.sg/maps/api/"
+    },
+    {
+      "id": "theserraresidences",
+      "name": "The Serra Residences",
+      "area": "Bassein Road · D11",
+      "status": "即将开盘",
+      "units": 133,
+      "sold": 0,
+      "developer": "Transurban Properties Pte. Ltd.",
+      "tenure": "永久产权",
+      "launch": "预计 2026 Q4（具体日期待开发商公布）",
+      "top": "预计 2030 Q4",
+      "mrt": "Novena · 520m",
+      "school": "ST. JOSEPH'S INSTITUTION JUNIOR · 630m",
+      "lat": 1.322975299820296,
+      "lng": 103.8478226689818,
+      "locationAccuracy": "exact",
+      "updatedAt": "2026-09-07",
+      "source": "开发商资料",
+      "website": "https://www.theserra.com.sg/",
+      "schoolsWithin1km": 1,
+      "schoolsWithin1kmPartial": 0,
+      "useType": "residential",
+      "useBasis": "verified",
+      "useSource": "https://www.theserra.com.sg/",
+      "tenureBasis": "verified",
+      "tenureSource": "https://www.theserra.com.sg/",
+      "housingType": "non-landed",
+      "housingTypeBasis": "verified",
+      "housingTypeSource": "https://www.theserra.com.sg/"
     },
     {
       "id": "51ansonansoncentre",

@@ -4,6 +4,7 @@ const VERIFIED_HOUSING_TYPES = new Map([
   ["POLLEN COLLECTION", { type: "landed", source: "https://www.bukitsembawang.sg/" }],
   ["POLLEN COLLECTION II", { type: "landed", source: "https://www.bukitsembawang.sg/PollenCollection-2/" }],
   ["SPRING WATERS VILLAS", { type: "landed", source: "https://eservice.ura.gov.sg/property-market-information/pmiResidentialTransactionSearch" }],
+  ["THE SERRA RESIDENCES", { type: "non-landed", source: "https://www.theserra.com.sg/" }],
   ["LENTOR GARDENS RESIDENCES", { type: "strata-landed", source: "https://kingsford.com.sg/lentorgardensresidences/" }],
 ]);
 
